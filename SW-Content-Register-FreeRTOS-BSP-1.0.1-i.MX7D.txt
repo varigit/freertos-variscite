@@ -1,0 +1,53 @@
+Release Name:             Version: 1.0.1
+FreeRTOS BSP for
+i.MX 7Dual
+Package - FreeRTOS BSP
+
+CMSIS DSP Library         Description: A digital signal processing
+                          library for Cortex-M cores from ARM
+                          Version: 1.4.4 (CMSIS download 4.2)
+                          Author:  ARM
+                          License: Open Source - BSD-3-Clause
+                          Format: source code
+                          URL: http://silver.arm.com
+                          Location:
+                          FreeRTOS_BSP_1.0.1_iMX7D/platform/CMSIS/DSP_lib
+
+CMSIS Core header files   Description: Industry-standard header files
+                          distributed by ARM for Cortex-M cores
+                          Version: 4.20
+                          Author:  ARM
+                          License: Open Source - BSD-3-Clause
+                          Format: source code
+                          URL: http://silver.arm.com
+                          Location:
+                          FreeRTOS_BSP_1.0.1_iMX7D/platform/CMSIS/Include
+
+FreeRTOS BSP              Description: The peripheral driver wrap the H/W
+Peripheral Driver         register access into a set of stateless functional
+                          primitives which provide the building blocks for
+                          applications.
+                          Version: 1.0.1
+                          Author: Freescale
+                          License: Open Source - BSD-3-Clause
+                          Format: source code
+                          Location: FreeRTOS_BSP_1.0.1_iMX7D/platform/drivers
+
+Package - FreeRTOS(tm)    Description: A real-time operating system
+                          (RTOS) from Real Time Engineers, Ltd.
+                          Version: 8.0.0
+                          Author: Real Time Engineers, Ltd.
+                          License: Modified GPLv2.  See
+                          FreeRTOS_BSP_1.0.1_iMX7D/rtos/FreeRTOS/License/license.txt
+                          Format: source code
+                          URL: http://www.freertos.org
+                          Location: FreeRTOS_BSP_1.0.1_iMX7D/rtos/FreeRTOS
+
+Package - OpenAMP         Description: Open Asymmetric Multi Processing (OpenAMP)
+                          provides software components that enable development of software
+                          applications for Asymmetric Multiprocessing (AMP) systems.
+                          Author: Mentor Graphics, Ltd.
+                          License: Open Source - BSD-3-Clause
+                          Format: source code
+                          URL: https://github.com/OpenAMP/open-amp
+                          Location: FreeRTOS_BSP_1.0.1_iMX7D/middleware/multicore/open-amp
