@@ -88,6 +88,36 @@ void configure_i2c_pins(I2C_Type* base);
 /* ===================================================================*/
 void configure_uart_pins(UART_Type* base);
 
+/*
+** ===================================================================
+**     Method      :  pin_mux_ECSPI (component PinSettings)
+*/
+/*!
+**     @brief
+**         ECSPI method sets registers according routing settings. Call
+**         this method code to route desired pins into:
+**         ECSPI1,ECSPI2,ECSPI3,ECSPI4 peripherals.
+**     @param
+**         ECSPI_Type* base - ECSPI base address 1..4
+*/
+/* ===================================================================*/
+void configure_ecspi_pins(ECSPI_Type* base);
+
+/*
+** ===================================================================
+**     Method      :  pin_mux_slave_ECSPI (component PinSettings)
+*/
+/*!
+**     @brief
+**         ECSPI method sets registers according routing settings. Call
+**         this method code to route desired pins into:
+**         ECSPI1,ECSPI2,ECSPI3,ECSPI4 peripherals.
+**     @param
+**         ECSPI_Type* base - ECSPI base address 1..4
+*/
+/* ===================================================================*/
+void configure_ecspi_slave_pins(ECSPI_Type* base);
+
 #endif /* __PIN_MUX_H__ */
 /*******************************************************************************
  * EOF

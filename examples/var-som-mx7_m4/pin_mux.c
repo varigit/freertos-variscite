@@ -158,6 +158,97 @@ void configure_uart_pins(UART_Type* base)
     }
 }
 
+void configure_ecspi_pins(ECSPI_Type* base)
+{
+    switch((uint32_t)base)
+    {
+        case ECSPI1_BASE:
+            // ECSPI1 iomux configuration
+            /* daisy chain selection */
+            IOMUXC_ECSPI1_MISO_SELECT_INPUT = 1;
+
+            /* iomux */
+            IOMUXC_SW_MUX_CTL_PAD_ECSPI1_SCLK = IOMUXC_SW_MUX_CTL_PAD_ECSPI1_SCLK_MUX_MODE(0);    /* ECSPI SLK  */
+            IOMUXC_SW_MUX_CTL_PAD_ECSPI1_MOSI = IOMUXC_SW_MUX_CTL_PAD_ECSPI1_MOSI_MUX_MODE(0);    /* ECSPI MOSI */
+            IOMUXC_SW_MUX_CTL_PAD_ECSPI1_MISO = IOMUXC_SW_MUX_CTL_PAD_ECSPI1_MISO_MUX_MODE(0);    /* ECSPI MISO  */
+            IOMUXC_SW_MUX_CTL_PAD_ECSPI1_SS0  = IOMUXC_SW_MUX_CTL_PAD_ECSPI1_SS0_MUX_MODE(0);     /* ECSPI SS0 */
+
+            /* pad control */
+            IOMUXC_SW_PAD_CTL_PAD_ECSPI1_SCLK = IOMUXC_SW_PAD_CTL_PAD_ECSPI1_SCLK_PE_MASK  |
+                                                IOMUXC_SW_PAD_CTL_PAD_ECSPI1_SCLK_PS(0)    |      /* pull down */
+                                                IOMUXC_SW_PAD_CTL_PAD_ECSPI1_SCLK_DSE(0)   |
+                                                IOMUXC_SW_PAD_CTL_PAD_ECSPI1_SCLK_HYS_MASK;
+
+            IOMUXC_SW_PAD_CTL_PAD_ECSPI1_MOSI = IOMUXC_SW_PAD_CTL_PAD_ECSPI1_MOSI_DSE(0)   |
+                                                IOMUXC_SW_PAD_CTL_PAD_ECSPI1_MOSI_HYS_MASK;
+
+            IOMUXC_SW_PAD_CTL_PAD_ECSPI1_MISO = IOMUXC_SW_PAD_CTL_PAD_ECSPI1_MISO_HYS_MASK;
+
+            IOMUXC_SW_PAD_CTL_PAD_ECSPI1_SS0 =  IOMUXC_SW_PAD_CTL_PAD_ECSPI1_SS0_PE_MASK   |
+                                                IOMUXC_SW_PAD_CTL_PAD_ECSPI1_SS0_PS(3)     |      /* pull up */
+                                                IOMUXC_SW_PAD_CTL_PAD_ECSPI1_SS0_DSE(0)    |
+                                                IOMUXC_SW_PAD_CTL_PAD_ECSPI1_SS0_HYS_MASK;
+            break;
+        case ECSPI2_BASE:
+                // ECSPI1 iomux configuration
+                /* daisy chain selection */
+                IOMUXC_ECSPI2_MISO_SELECT_INPUT = 0;
+
+                /* iomux */
+                IOMUXC_SW_MUX_CTL_PAD_ECSPI2_SCLK = IOMUXC_SW_MUX_CTL_PAD_ECSPI2_SCLK_MUX_MODE(0);    /* ECSPI SLK  */
+                IOMUXC_SW_MUX_CTL_PAD_ECSPI2_MOSI = IOMUXC_SW_MUX_CTL_PAD_ECSPI2_MOSI_MUX_MODE(0);    /* ECSPI MOSI */
+                IOMUXC_SW_MUX_CTL_PAD_ECSPI2_MISO = IOMUXC_SW_MUX_CTL_PAD_ECSPI2_MISO_MUX_MODE(0);    /* ECSPI MISO  */
+                IOMUXC_SW_MUX_CTL_PAD_ECSPI2_SS0  = IOMUXC_SW_MUX_CTL_PAD_ECSPI2_SS0_MUX_MODE(0);     /* ECSPI SS0 */
+
+                /* pad control */
+                IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SCLK = IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SCLK_PE_MASK  |
+                                                    IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SCLK_PS(0)    |      /* pull down */
+                                                    IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SCLK_DSE(0)   |
+                                                    IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SCLK_HYS_MASK;
+
+                IOMUXC_SW_PAD_CTL_PAD_ECSPI2_MOSI = IOMUXC_SW_PAD_CTL_PAD_ECSPI2_MOSI_HYS_MASK;
+
+                IOMUXC_SW_PAD_CTL_PAD_ECSPI2_MISO = IOMUXC_SW_PAD_CTL_PAD_ECSPI2_MISO_DSE(0)   |
+                                                    IOMUXC_SW_PAD_CTL_PAD_ECSPI2_MISO_HYS_MASK;
+
+                IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SS0 =  IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SS0_PE_MASK   |
+                                                    IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SS0_PS(3)     |      /* pull up */
+                                                    IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SS0_DSE(0)    |
+                                                    IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SS0_HYS_MASK;
+            break;
+        default:
+            break;
+    }
+}
+
+void configure_ecspi_slave_pins(ECSPI_Type* base)
+{
+    switch((uint32_t)base)
+    {
+        case ECSPI2_BASE:
+            /* daisy chain selection */
+            IOMUXC_ECSPI2_SCLK_SELECT_INPUT = 0;
+            IOMUXC_ECSPI2_MOSI_SELECT_INPUT = 0;
+            IOMUXC_ECSPI2_SS0_B_SELECT_INPUT = 0;
+
+            /* iomux */
+            IOMUXC_SW_MUX_CTL_PAD_ECSPI2_SCLK = IOMUXC_SW_MUX_CTL_PAD_ECSPI2_SCLK_MUX_MODE(0);    /* ECSPI SLK  */
+            IOMUXC_SW_MUX_CTL_PAD_ECSPI2_MOSI = IOMUXC_SW_MUX_CTL_PAD_ECSPI2_MOSI_MUX_MODE(0);    /* ECSPI MOSI */
+            IOMUXC_SW_MUX_CTL_PAD_ECSPI2_MISO = IOMUXC_SW_MUX_CTL_PAD_ECSPI2_MISO_MUX_MODE(0);    /* ECSPI MISO  */
+            IOMUXC_SW_MUX_CTL_PAD_ECSPI2_SS0  = IOMUXC_SW_MUX_CTL_PAD_ECSPI2_SS0_MUX_MODE(0);     /* ECSPI SS0 */
+
+            /* pad control */
+            IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SCLK = IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SCLK_HYS_MASK;
+            IOMUXC_SW_PAD_CTL_PAD_ECSPI2_MOSI = IOMUXC_SW_PAD_CTL_PAD_ECSPI2_MOSI_HYS_MASK;
+            IOMUXC_SW_PAD_CTL_PAD_ECSPI2_MISO = IOMUXC_SW_PAD_CTL_PAD_ECSPI2_MISO_DSE(0)   |
+                                                IOMUXC_SW_PAD_CTL_PAD_ECSPI2_MISO_HYS_MASK;
+            IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SS0  = IOMUXC_SW_PAD_CTL_PAD_ECSPI2_SS0_HYS_MASK;
+            break;
+        default:
+            break;
+    }
+}
+
 /*******************************************************************************
  * EOF
  ******************************************************************************/

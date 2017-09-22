@@ -113,6 +113,23 @@
 #define BOARD_I2C_HANDLER                     I2C2_Handler
 #define BOARD_I2C_ISL12057_ADDR               (0x68)
 
+/* ECSPI information for master mode */
+#define BOARD_ECSPI_MASTER_RDC_PDAP           rdcPdapEcspi2
+#define BOARD_ECSPI_MASTER_CCM_ROOT           ccmRootEcspi2
+#define BOARD_ECSPI_MASTER_CCM_CCGR           ccmCcgrGateEcspi2
+#define BOARD_ECSPI_MASTER_BASEADDR           ECSPI2
+#define BOARD_ECSPI_MASTER_CHANNEL            ecspiSelectChannel0
+#define BOARD_ECSPI_MASTER_IRQ_NUM            eCSPI2_IRQn
+#define BOARD_ECSPI_MASTER_HANDLER            eCSPI2_Handler
+/* ECSPI information for slave mode */
+#define BOARD_ECSPI_SLAVE_RDC_PDAP            rdcPdapEcspi2
+#define BOARD_ECSPI_SLAVE_CCM_ROOT            ccmRootEcspi2
+#define BOARD_ECSPI_SLAVE_CCM_CCGR            ccmCcgrGateEcspi2
+#define BOARD_ECSPI_SLAVE_BASEADDR            ECSPI2
+#define BOARD_ECSPI_SLAVE_CHANNEL             ecspiSelectChannel0
+#define BOARD_ECSPI_SLAVE_IRQ_NUM             eCSPI2_IRQn
+#define BOARD_ECSPI_SLAVE_HANDLER             eCSPI2_Handler
+
 /* FlexCAN information for this board */
 #define BOARD_FLEXCAN_RDC_PDAP                rdcPdapFlexCan2
 #define BOARD_FLEXCAN_CCM_ROOT                ccmRootCan2
