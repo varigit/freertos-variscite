@@ -113,23 +113,23 @@ void configure_i2c_pins(I2C_Type* base)
             break;
         case I2C4_BASE:
             // I2C4 iomux configuration
-            IOMUXC_SW_MUX_CTL_PAD_SAI1_RX_SYNC = IOMUXC_SW_MUX_CTL_PAD_SAI1_RX_SYNC_MUX_MODE(3) |
-                                                 IOMUXC_SW_MUX_CTL_PAD_SAI1_RX_SYNC_SION_MASK;
-            IOMUXC_SW_MUX_CTL_PAD_SAI1_RX_BCLK = IOMUXC_SW_MUX_CTL_PAD_SAI1_RX_BCLK_MUX_MODE(3) |
-                                                 IOMUXC_SW_MUX_CTL_PAD_SAI1_RX_BCLK_SION_MASK;
+            IOMUXC_SW_MUX_CTL_PAD_I2C4_SCL = IOMUXC_SW_MUX_CTL_PAD_I2C4_SCL_MUX_MODE(0) |
+                                             IOMUXC_SW_MUX_CTL_PAD_I2C4_SCL_SION_MASK;
+            IOMUXC_SW_MUX_CTL_PAD_I2C4_SDA = IOMUXC_SW_MUX_CTL_PAD_I2C4_SDA_MUX_MODE(0) |
+                                             IOMUXC_SW_MUX_CTL_PAD_I2C4_SDA_SION_MASK;
 
-            IOMUXC_I2C4_SCL_SELECT_INPUT = IOMUXC_I2C4_SCL_SELECT_INPUT_DAISY(3);
-            IOMUXC_I2C4_SDA_SELECT_INPUT = IOMUXC_I2C4_SDA_SELECT_INPUT_DAISY(3);
+            IOMUXC_I2C4_SCL_SELECT_INPUT = IOMUXC_I2C4_SCL_SELECT_INPUT_DAISY(2);
+            IOMUXC_I2C4_SDA_SELECT_INPUT = IOMUXC_I2C4_SDA_SELECT_INPUT_DAISY(2);
 
-            IOMUXC_SW_PAD_CTL_PAD_SAI1_RX_SYNC = IOMUXC_SW_PAD_CTL_PAD_SAI1_RX_SYNC_PE_MASK  |
-                                                 IOMUXC_SW_PAD_CTL_PAD_SAI1_RX_SYNC_PS(3)    |
-                                                 IOMUXC_SW_PAD_CTL_PAD_SAI1_RX_SYNC_DSE(0)   |
-                                                 IOMUXC_SW_PAD_CTL_PAD_SAI1_RX_SYNC_HYS_MASK;
+            IOMUXC_SW_PAD_CTL_PAD_I2C4_SCL = IOMUXC_SW_PAD_CTL_PAD_I2C4_SCL_PE_MASK  |
+                                             IOMUXC_SW_PAD_CTL_PAD_I2C4_SCL_PS(3)    |
+                                             IOMUXC_SW_PAD_CTL_PAD_I2C4_SCL_DSE(0)   |
+                                             IOMUXC_SW_PAD_CTL_PAD_I2C4_SCL_HYS_MASK;
 
-            IOMUXC_SW_MUX_CTL_PAD_SAI1_RX_BCLK = IOMUXC_SW_PAD_CTL_PAD_SAI1_RX_BCLK_PE_MASK  |
-                                                 IOMUXC_SW_PAD_CTL_PAD_SAI1_RX_BCLK_PS(3)    |
-                                                 IOMUXC_SW_PAD_CTL_PAD_SAI1_RX_BCLK_DSE(0)   |
-                                                 IOMUXC_SW_PAD_CTL_PAD_SAI1_RX_BCLK_HYS_MASK;
+            IOMUXC_SW_PAD_CTL_PAD_I2C4_SDA = IOMUXC_SW_PAD_CTL_PAD_I2C4_SDA_PE_MASK  |
+                                             IOMUXC_SW_PAD_CTL_PAD_I2C4_SDA_PS(3)    |
+                                             IOMUXC_SW_PAD_CTL_PAD_I2C4_SDA_DSE(0)   |
+                                             IOMUXC_SW_PAD_CTL_PAD_I2C4_SDA_HYS_MASK;
             break;
         default:
             break;
