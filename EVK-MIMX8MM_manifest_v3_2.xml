@@ -1,0 +1,1915 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ksdk:manifest xmlns:ksdk="http://nxp.com/ksdk/2.0/ksdk_manifest_v3.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nxp.com/ksdk/2.0/ksdk_manifest_v3.0.xsd http://nxp.com/mcuxpresso/sdk/sdk_manifest_v3.2.xsd" format_version="3.2" api_version="2.0.0" name="SDK version 2.5.0 package for EVK-MIMX8MM board" brief="This is SDK version 2.5.0 manifest file. It describes the content of the SDK version 2.5.0 package for EVK-MIMX8MM board and additional settings for tools that support SDK version 2.5.0" id="SDK_2.x_EVK-MIMX8MM" configuration="5af8f74315d269c7f36605d08553c6f1">
+  <defines>
+    <define name="CPU_$|package|" value=""/>
+    <define name="CPU_$|package|_$|core|" value=""/>
+  </defines>
+  <ksdk id="KSDK250" name="KSDK250" version="2.5.0"/>
+  <compilers>
+    <compiler id="compiler_gcc" type="gcc" name="gcc"/>
+  </compilers>
+  <toolchainSettings/>
+  <toolchains>
+    <toolchain id="armgcc" name="GCC_ARM_Embedded" full_name="GCC ARM Embedded" type="armgcc" compiler="compiler_gcc" version="7.2.1" vendor="GCC ARM Embedded" vendor_url="http://launchpad.net/gcc-arm-embedded"/>
+  </toolchains>
+  <boards>
+    <board id="evkmimx8mm" name="EVK-MIMX8MM" package="MIMX8MM6DVTLZ" version="1.0.0" href="http://www.nxp.com/iMX8M">
+      <description>The evkmimx8mm is an development platform for MIMX8MM3, MIMX8MM4, MIMX8MM5, MIMX8MM6 MCUs</description>
+      <image type="image" path="docs/images">
+        <files mask="ZEBU-MIMX8MM.gif"/>
+      </image>
+      <metadataSet>
+        <metadata key="vendor" value="NXP"/>
+        <metadata key="html">
+          <specific>
+            <content>
+The i.MX 8M Mini family of boards provides a powerful and flexible development system for NXP®'s Cortex-M4 MCUs. 
+        </content>
+          </specific>
+        </metadata>
+      </metadataSet>
+      <examples>
+        <example id="evkmimx8mm_cmsis_ecspi_int_loopback_transfer" name="cmsis_ecspi_int_loopback_transfer" category="cmsis_driver_examples/ecspi" path="boards/evkmimx8mm/cmsis_driver_examples/ecspi/int_loopback_transfer" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/cmsis_driver_examples/ecspi/int_loopback_transfer" type="xml">
+            <files mask="cmsis_ecspi_int_loopback_transfer.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_cmsis_ecspi_sdma_loopback_transfer" name="cmsis_ecspi_sdma_loopback_transfer" category="cmsis_driver_examples/ecspi" path="boards/evkmimx8mm/cmsis_driver_examples/ecspi/sdma_loopback_transfer" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/cmsis_driver_examples/ecspi/sdma_loopback_transfer" type="xml">
+            <files mask="cmsis_ecspi_sdma_loopback_transfer.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_cmsis_ii2c_int_b2b_transfer_master" name="cmsis_ii2c_int_b2b_transfer_master" category="cmsis_driver_examples/i2c" path="boards/evkmimx8mm/cmsis_driver_examples/i2c/int_b2b_transfer/master" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/cmsis_driver_examples/i2c/int_b2b_transfer/master" type="xml">
+            <files mask="cmsis_ii2c_int_b2b_transfer_master.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_cmsis_ii2c_int_b2b_transfer_slave" name="cmsis_ii2c_int_b2b_transfer_slave" category="cmsis_driver_examples/i2c" path="boards/evkmimx8mm/cmsis_driver_examples/i2c/int_b2b_transfer/slave" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/cmsis_driver_examples/i2c/int_b2b_transfer/slave" type="xml">
+            <files mask="cmsis_ii2c_int_b2b_transfer_slave.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_cmsis_iuart_interrupt_transfer" name="cmsis_iuart_interrupt_transfer" category="cmsis_driver_examples/uart" path="boards/evkmimx8mm/cmsis_driver_examples/uart/interrupt_transfer" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/cmsis_driver_examples/uart/interrupt_transfer" type="xml">
+            <files mask="cmsis_iuart_interrupt_transfer.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_cmsis_iuart_sdma_transfer" name="cmsis_iuart_sdma_transfer" category="cmsis_driver_examples/uart" path="boards/evkmimx8mm/cmsis_driver_examples/uart/sdma_transfer" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/cmsis_driver_examples/uart/sdma_transfer" type="xml">
+            <files mask="cmsis_iuart_sdma_transfer.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_hello_world" name="hello_world" category="demo_apps" path="boards/evkmimx8mm/demo_apps/hello_world" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/demo_apps/hello_world" type="xml">
+            <files mask="hello_world.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_sai_low_power_audio" name="sai_low_power_audio" category="demo_apps/sai_low_power_audio" path="boards/evkmimx8mm/demo_apps/sai_low_power_audio" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/demo_apps/sai_low_power_audio" type="xml">
+            <files mask="sai_low_power_audio.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_ecspi_loopback" name="ecspi_loopback" category="driver_examples/ecspi" path="boards/evkmimx8mm/driver_examples/ecspi/ecspi_loopback" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/ecspi/ecspi_loopback" type="xml">
+            <files mask="ecspi_loopback.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_ecspi_interrupt_b2b_transfer_master" name="ecspi_interrupt_b2b_transfer_master" category="driver_examples/ecspi" path="boards/evkmimx8mm/driver_examples/ecspi/interrupt_b2b_transfer/master" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/ecspi/interrupt_b2b_transfer/master" type="xml">
+            <files mask="ecspi_interrupt_b2b_transfer_master.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_ecspi_interrupt_b2b_transfer_slave" name="ecspi_interrupt_b2b_transfer_slave" category="driver_examples/ecspi" path="boards/evkmimx8mm/driver_examples/ecspi/interrupt_b2b_transfer/slave" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/ecspi/interrupt_b2b_transfer/slave" type="xml">
+            <files mask="ecspi_interrupt_b2b_transfer_slave.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_ecspi_polling_b2b_transfer_master" name="ecspi_polling_b2b_transfer_master" category="driver_examples/ecspi" path="boards/evkmimx8mm/driver_examples/ecspi/polling_b2b_transfer/master" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/ecspi/polling_b2b_transfer/master" type="xml">
+            <files mask="ecspi_polling_b2b_transfer_master.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_ecspi_polling_b2b_transfer_slave" name="ecspi_polling_b2b_transfer_slave" category="driver_examples/ecspi" path="boards/evkmimx8mm/driver_examples/ecspi/polling_b2b_transfer/slave" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/ecspi/polling_b2b_transfer/slave" type="xml">
+            <files mask="ecspi_polling_b2b_transfer_slave.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_igpio_led_output" name="igpio_led_output" category="driver_examples/gpio" path="boards/evkmimx8mm/driver_examples/gpio/led_output" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/gpio/led_output" type="xml">
+            <files mask="igpio_led_output.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_gpt_capture" name="gpt_capture" category="driver_examples/gpt" path="boards/evkmimx8mm/driver_examples/gpt/capture" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/gpt/capture" type="xml">
+            <files mask="gpt_capture.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_gpt_timer" name="gpt_timer" category="driver_examples/gpt" path="boards/evkmimx8mm/driver_examples/gpt/timer" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/gpt/timer" type="xml">
+            <files mask="gpt_timer.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_ii2c_interrupt_b2b_transfer_master" name="ii2c_interrupt_b2b_transfer_master" category="driver_examples/i2c" path="boards/evkmimx8mm/driver_examples/i2c/interrupt_b2b_transfer/master" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/i2c/interrupt_b2b_transfer/master" type="xml">
+            <files mask="ii2c_interrupt_b2b_transfer_master.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_ii2c_interrupt_b2b_transfer_slave" name="ii2c_interrupt_b2b_transfer_slave" category="driver_examples/i2c" path="boards/evkmimx8mm/driver_examples/i2c/interrupt_b2b_transfer/slave" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/i2c/interrupt_b2b_transfer/slave" type="xml">
+            <files mask="ii2c_interrupt_b2b_transfer_slave.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_ii2c_polling_b2b_transfer_master" name="ii2c_polling_b2b_transfer_master" category="driver_examples/i2c" path="boards/evkmimx8mm/driver_examples/i2c/polling_b2b_transfer/master" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/i2c/polling_b2b_transfer/master" type="xml">
+            <files mask="ii2c_polling_b2b_transfer_master.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_ii2c_polling_b2b_transfer_slave" name="ii2c_polling_b2b_transfer_slave" category="driver_examples/i2c" path="boards/evkmimx8mm/driver_examples/i2c/polling_b2b_transfer/slave" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/i2c/polling_b2b_transfer/slave" type="xml">
+            <files mask="ii2c_polling_b2b_transfer_slave.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_pdm_hwvad" name="pdm_hwvad" category="driver_examples/pdm" path="boards/evkmimx8mm/driver_examples/pdm/pdm_hwvad" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/pdm/pdm_hwvad" type="xml">
+            <files mask="pdm_hwvad.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_pdm_interrupt" name="pdm_interrupt" category="driver_examples/pdm" path="boards/evkmimx8mm/driver_examples/pdm/pdm_interrupt" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/pdm/pdm_interrupt" type="xml">
+            <files mask="pdm_interrupt.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_pdm_sai_interrupt" name="pdm_sai_interrupt" category="driver_examples/pdm" path="boards/evkmimx8mm/driver_examples/pdm/pdm_sai_interrupt" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/pdm/pdm_sai_interrupt" type="xml">
+            <files mask="pdm_sai_interrupt.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_pdm_sai_interrupt_transfer" name="pdm_sai_interrupt_transfer" category="driver_examples/pdm" path="boards/evkmimx8mm/driver_examples/pdm/pdm_sai_interrupt_transfer" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/pdm/pdm_sai_interrupt_transfer" type="xml">
+            <files mask="pdm_sai_interrupt_transfer.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_pdm_sai_sdma" name="pdm_sai_sdma" category="driver_examples/pdm" path="boards/evkmimx8mm/driver_examples/pdm/pdm_sai_sdma" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/pdm/pdm_sai_sdma" type="xml">
+            <files mask="pdm_sai_sdma.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_pdm_sdma_transfer" name="pdm_sdma_transfer" category="driver_examples/pdm" path="boards/evkmimx8mm/driver_examples/pdm/pdm_sdma_transfer" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/pdm/pdm_sdma_transfer" type="xml">
+            <files mask="pdm_sdma_transfer.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_ipwm" name="ipwm" category="driver_examples/pwm" path="boards/evkmimx8mm/driver_examples/pwm" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/pwm" type="xml">
+            <files mask="ipwm.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_rdc" name="rdc" category="driver_examples" path="boards/evkmimx8mm/driver_examples/rdc" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/rdc" type="xml">
+            <files mask="rdc.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_sai_interrupt_transfer" name="sai_interrupt_transfer" category="driver_examples/sai" path="boards/evkmimx8mm/driver_examples/sai/interrupt_transfer" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/sai/interrupt_transfer" type="xml">
+            <files mask="sai_interrupt_transfer.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_sai_sdma_transfer" name="sai_sdma_transfer" category="driver_examples/sai" path="boards/evkmimx8mm/driver_examples/sai/sdma_transfer" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/sai/sdma_transfer" type="xml">
+            <files mask="sai_sdma_transfer.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_sdma_memory_to_memory" name="sdma_memory_to_memory" category="driver_examples/sdma" path="boards/evkmimx8mm/driver_examples/sdma/memory_to_memory" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/sdma/memory_to_memory" type="xml">
+            <files mask="sdma_memory_to_memory.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_sdma_scatter_gather" name="sdma_scatter_gather" category="driver_examples/sdma/scatter_gather" path="boards/evkmimx8mm/driver_examples/sdma/scatter_gather" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/sdma/scatter_gather" type="xml">
+            <files mask="sdma_scatter_gather.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_sema4_uboot" name="sema4_uboot" category="driver_examples/sema4" path="boards/evkmimx8mm/driver_examples/sema4/uboot" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/sema4/uboot" type="xml">
+            <files mask="sema4_uboot.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_tmu_1_monitor_threshold" name="tmu_1_monitor_threshold" category="driver_examples/tmu_1" path="boards/evkmimx8mm/driver_examples/tmu_1/monitor_threshold" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/tmu_1/monitor_threshold" type="xml">
+            <files mask="tmu_1_monitor_threshold.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_tmu_1_temperature_polling" name="tmu_1_temperature_polling" category="driver_examples/tmu_1" path="boards/evkmimx8mm/driver_examples/tmu_1/temperature_polling" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/tmu_1/temperature_polling" type="xml">
+            <files mask="tmu_1_temperature_polling.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_iuart_auto_baudrate_detect" name="iuart_auto_baudrate_detect" category="driver_examples/uart" path="boards/evkmimx8mm/driver_examples/uart/auto_baudrate_detect" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/uart/auto_baudrate_detect" type="xml">
+            <files mask="iuart_auto_baudrate_detect.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_iuart_idle_detect_sdma_transfer" name="iuart_idle_detect_sdma_transfer" category="driver_examples/uart" path="boards/evkmimx8mm/driver_examples/uart/idle_detect_sdma_transfer" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/uart/idle_detect_sdma_transfer" type="xml">
+            <files mask="iuart_idle_detect_sdma_transfer.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_iuart_interrupt" name="iuart_interrupt" category="driver_examples/uart" path="boards/evkmimx8mm/driver_examples/uart/interrupt" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/uart/interrupt" type="xml">
+            <files mask="iuart_interrupt.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_iuart_interrupt_rb_transfer" name="iuart_interrupt_rb_transfer" category="driver_examples/uart" path="boards/evkmimx8mm/driver_examples/uart/interrupt_rb_transfer" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/uart/interrupt_rb_transfer" type="xml">
+            <files mask="iuart_interrupt_rb_transfer.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_iuart_interrupt_transfer" name="iuart_interrupt_transfer" category="driver_examples/uart" path="boards/evkmimx8mm/driver_examples/uart/interrupt_transfer" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/uart/interrupt_transfer" type="xml">
+            <files mask="iuart_interrupt_transfer.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_iuart_polling" name="iuart_polling" category="driver_examples/uart" path="boards/evkmimx8mm/driver_examples/uart/polling" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/uart/polling" type="xml">
+            <files mask="iuart_polling.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_iuart_sdma_transfer" name="iuart_sdma_transfer" category="driver_examples/uart" path="boards/evkmimx8mm/driver_examples/uart/sdma_transfer" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/uart/sdma_transfer" type="xml">
+            <files mask="iuart_sdma_transfer.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_wdog01" name="wdog01" category="driver_examples/wdog" path="boards/evkmimx8mm/driver_examples/wdog" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/driver_examples/wdog" type="xml">
+            <files mask="wdog01.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_rpmsg_lite_pingpong_rtos_linux_remote" name="rpmsg_lite_pingpong_rtos_linux_remote" category="multicore_examples" path="boards/evkmimx8mm/multicore_examples/rpmsg_lite_pingpong_rtos/linux_remote" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/multicore_examples/rpmsg_lite_pingpong_rtos/linux_remote" type="xml">
+            <files mask="rpmsg_lite_pingpong_rtos_linux_remote.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_rpmsg_lite_str_echo_rtos_imxcm4" name="rpmsg_lite_str_echo_rtos_imxcm4" category="multicore_examples" path="boards/evkmimx8mm/multicore_examples/rpmsg_lite_str_echo_rtos" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/multicore_examples/rpmsg_lite_str_echo_rtos" type="xml">
+            <files mask="rpmsg_lite_str_echo_rtos_imxcm4.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_freertos_ecspi_loopback" name="freertos_ecspi_loopback" category="rtos_examples/freertos_ecspi/ecspi_loopback" path="boards/evkmimx8mm/rtos_examples/freertos_ecspi/ecspi_loopback" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/rtos_examples/freertos_ecspi/ecspi_loopback" type="xml">
+            <files mask="freertos_ecspi_loopback.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_freertos_event" name="freertos_event" category="rtos_examples" path="boards/evkmimx8mm/rtos_examples/freertos_event" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/rtos_examples/freertos_event" type="xml">
+            <files mask="freertos_event.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_freertos_generic" name="freertos_generic" category="rtos_examples" path="boards/evkmimx8mm/rtos_examples/freertos_generic" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/rtos_examples/freertos_generic" type="xml">
+            <files mask="freertos_generic.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_freertos_hello" name="freertos_hello" category="rtos_examples" path="boards/evkmimx8mm/rtos_examples/freertos_hello" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/rtos_examples/freertos_hello" type="xml">
+            <files mask="freertos_hello.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_freertos_i2c" name="freertos_i2c" category="rtos_examples" path="boards/evkmimx8mm/rtos_examples/freertos_i2c" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/rtos_examples/freertos_i2c" type="xml">
+            <files mask="freertos_i2c.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_freertos_mutex" name="freertos_mutex" category="rtos_examples" path="boards/evkmimx8mm/rtos_examples/freertos_mutex" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/rtos_examples/freertos_mutex" type="xml">
+            <files mask="freertos_mutex.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_freertos_queue" name="freertos_queue" category="rtos_examples" path="boards/evkmimx8mm/rtos_examples/freertos_queue" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/rtos_examples/freertos_queue" type="xml">
+            <files mask="freertos_queue.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_freertos_sem" name="freertos_sem" category="rtos_examples" path="boards/evkmimx8mm/rtos_examples/freertos_sem" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/rtos_examples/freertos_sem" type="xml">
+            <files mask="freertos_sem.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_freertos_swtimer" name="freertos_swtimer" category="rtos_examples" path="boards/evkmimx8mm/rtos_examples/freertos_swtimer" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/rtos_examples/freertos_swtimer" type="xml">
+            <files mask="freertos_swtimer.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_freertos_tickless" name="freertos_tickless" category="rtos_examples" path="boards/evkmimx8mm/rtos_examples/freertos_tickless" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/rtos_examples/freertos_tickless" type="xml">
+            <files mask="freertos_tickless.xml"/>
+          </external>
+        </example>
+        <example id="evkmimx8mm_freertos_uart" name="freertos_uart" category="rtos_examples" path="boards/evkmimx8mm/rtos_examples/freertos_uart" toolchain="armgcc">
+          <external path="boards/evkmimx8mm/rtos_examples/freertos_uart" type="xml">
+            <files mask="freertos_uart.xml"/>
+          </external>
+        </example>
+      </examples>
+    </board>
+  </boards>
+  <devices>
+    <device id="MIMX8MM6xxxLZ" full_name="MIMX8MM6xxxLZ" name="MIMX8MM6" version="1.0.0">
+      <description>The MIMX8MM6 are ARM Cortex-M4 and Cortex-A53 based microcontrollers for embedded applications.</description>
+      <image type="image" path="docs/images">
+        <files mask="device.jpg"/>
+      </image>
+      <metadataSet>
+        <metadata key="vendor" value="NXP"/>
+        <metadata key="vendor.device.type" value="i.MX"/>
+        <metadata key="html">
+          <specific>
+            <content>
+        The MIMX8MM6 are ARM Cortex-M4 and Cortex-A53 based microcontrollers for embedded applications. 
+        </content>
+          </specific>
+        </metadata>
+        <metadata key="vendor.device.family" value="MIMX8MMx"/>
+      </metadataSet>
+      <core fpu="true" id="m4_MIMX8MM6xxxLZ" name="m4" type="cm4"/>
+      <memory>
+        <memoryBlock access="RW" addr="08000000" id="QSPI_FLASH_MIMX8MM6xxxLZ" name="QSPI_FLASH" size="08000000" type="Flash"/>
+        <memoryBlock access="RW" addr="20000000" id="SRAM_UPPER_MIMX8MM6xxxLZ" name="SRAM_UPPER" size="00020000" type="RAM"/>
+        <memoryBlock access="RW" addr="1ffe0000" id="SRAM_LOWER_MIMX8MM6xxxLZ" name="SRAM_LOWER" size="00020000" type="RAM"/>
+      </memory>
+      <total_memory flash_size_kb="0" ram_size_kb="256"/>
+      <package id="MIMX8MM6DVTLZ" name="MIMX8MM6DVTLZ"/>
+      <evaluation_boards>
+        <evaluation_board name="evkmimx8mm"/>
+      </evaluation_boards>
+      <linkerSettings nature="c_nature">
+        <linker property="start_symbol" value="ResetISR"/>
+        <linker property="text_align" value="4"/>
+        <linker property="data_align" value="4"/>
+        <linker property="bss_align" value="4"/>
+        <linker property="mtb_supported" value="false"/>
+      </linkerSettings>
+      <linkerSettings nature="cpp_nature">
+        <linker property="start_symbol" value="ResetISR"/>
+        <linker property="text_align" value="4"/>
+        <linker property="data_align" value="4"/>
+        <linker property="bss_align" value="4"/>
+        <linker property="mtb_supported" value="false"/>
+      </linkerSettings>
+    </device>
+  </devices>
+  <components>
+    <component id="platform.drivers.clock.MIMX8MM6" name="clock" full_name="Clock Driver" type="driver" brief="Clock Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.common.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.1.0" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_clock.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_clock.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.common.MIMX8MM6" name="common" full_name="COMMON Driver" type="driver" brief="COMMON Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.1" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_common.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_common.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.ecspi.MIMX8MM6" name="ecspi" type="driver" brief="ECSPI Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_ecspi.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_ecspi.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.ecspi_freertos.MIMX8MM6" name="ecspi_freertos" type="driver" brief="ECSPI Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="middleware.freertos.MIMX8MM6 middleware.template_application.freertos.MIMX8MM6 platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6 platform.drivers.ecspi.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers/freertos" type="src">
+        <files mask="fsl_ecspi_freertos.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers/freertos" type="c_include">
+        <files mask="fsl_ecspi_freertos.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.ecspi_sdma.MIMX8MM6" name="ecspi_sdma" type="driver" brief="ECSPI SDMA Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6 platform.drivers.ecspi.MIMX8MM6 platform.drivers.sdma.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.1" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_ecspi_sdma.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_ecspi_sdma.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.gpc_2.MIMX8MM6" name="gpc" full_name="GPC Driver" type="driver" brief="GPC Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.1" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_gpc.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_gpc.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.gpt.MIMX8MM6" name="gpt" type="driver" brief="GPT Driver" devices="MIMX8MM6xxxLZ" version="2.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_gpt.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_gpt.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.igpio.MIMX8MM6" name="gpio" type="driver" brief="GPIO Driver" devices="MIMX8MM6xxxLZ" version="2.0.1" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_gpio.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_gpio.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.ii2c.MIMX8MM6" name="i2c" type="driver" brief="I2C Driver" devices="MIMX8MM6xxxLZ" version="2.0.4" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_i2c.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_i2c.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.ii2c_freertos.MIMX8MM6" name="i2c_freertos" type="driver" brief="I2C Driver" dependency="middleware.freertos.MIMX8MM6 middleware.template_application.freertos.MIMX8MM6 platform.drivers.ii2c.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.4" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers/freertos" type="src">
+        <files mask="fsl_i2c_freertos.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers/freertos" type="c_include">
+        <files mask="fsl_i2c_freertos.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.iomuxc.MIMX8MM6" name="iomuxc" full_name="IOMUXC Driver" type="driver" brief="IOMUXC Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_iomuxc.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.ipwm.MIMX8MM6" name="ipwm" type="driver" brief="PWM Driver" devices="MIMX8MM6xxxLZ" version="2.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_pwm.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_pwm.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.iuart.MIMX8MM6" name="iuart" type="driver" brief="IUART Driver" devices="MIMX8MM6xxxLZ" version="2.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_uart.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_uart.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.iuart_freertos.MIMX8MM6" name="iuart_freertos" type="driver" brief="IUART Freertos Driver" dependency="middleware.freertos.MIMX8MM6 middleware.template_application.freertos.MIMX8MM6 platform.drivers.iuart.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers/freertos" type="src">
+        <files mask="fsl_uart_freertos.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers/freertos" type="c_include">
+        <files mask="fsl_uart_freertos.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.iuart_sdma.MIMX8MM6" name="iuart_sdma" type="driver" brief="IUART SDMA Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6 platform.drivers.iuart.MIMX8MM6 platform.drivers.sdma.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.1" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_uart_sdma.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_uart_sdma.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.memory.MIMX8MM6" name="memory" full_name="Memory Driver" type="driver" brief="MEMORY Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_memory.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.mu.MIMX8MM6" name="mu" full_name="MU Driver" type="driver" brief="MU Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.2" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_mu.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_mu.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.pdm.MIMX8MM6" name="pdm" full_name="PDM Driver" type="driver" brief="PDM Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.1" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_pdm.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_pdm.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.pdm_sdma.MIMX8MM6" name="pdm_sdma" full_name="PDM Driver" type="driver" brief="PDM Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6 platform.drivers.pdm.MIMX8MM6 platform.drivers.sdma.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_pdm_sdma.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_pdm_sdma.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.rdc.MIMX8MM6" name="rdc" full_name="RDC Driver" type="driver" brief="RDC Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_rdc.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_rdc.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.rdc_sema42.MIMX8MM6" name="rdc_sema42" full_name="RDC SEMA42 Driver" type="driver" brief="RDC SEMA42 Driver" devices="MIMX8MM6xxxLZ" version="2.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_rdc_sema42.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_rdc_sema42.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.sai.MIMX8MM6" name="sai" full_name="SAI Driver" type="driver" brief="SAI Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.1.7" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_sai.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_sai.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.sai_sdma.MIMX8MM6" name="sai_sdma" full_name="SAI Driver" type="driver" brief="SAI Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6 platform.drivers.sai.MIMX8MM6 platform.drivers.sdma.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.1.5" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_sai_sdma.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_sai_sdma.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.sdma.MIMX8MM6" name="sdma" full_name="SDMA Driver" type="driver" brief="SDMA Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_sdma.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_sdma.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.sema4.MIMX8MM6" name="sema4" full_name="SEMA4 Driver" type="driver" brief="SEMA4 Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_sema4.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_sema4.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.tmu_1.MIMX8MM6" name="tmu" full_name="TMU Driver" type="driver" brief="TMU Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_tmu.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_tmu.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.wdog01.MIMX8MM6" name="wdog" full_name="wdog01 Driver" type="driver" brief="wdog01 Driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.1" user_visible="true">
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="src">
+        <files mask="fsl_wdog.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_wdog.h"/>
+      </source>
+    </component>
+    <component id="platform.utilities.assert.MIMX8MM6" name="assert" type="utilities" dependency="platform.utilities.debug_console.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/utilities" target_path="utilities" type="src">
+        <files mask="fsl_assert.c"/>
+      </source>
+    </component>
+    <component id="platform.utilities.debug_console.MIMX8MM6" name="debug_console" type="utilities" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/utilities/str" target_path="utilities" type="src">
+        <files mask="fsl_str.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/utilities/str" target_path="utilities" type="c_include">
+        <files mask="fsl_str.h"/>
+      </source>
+      <source path="devices/MIMX8MM6/utilities" target_path="utilities" type="src">
+        <files mask="fsl_debug_console.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/utilities" target_path="utilities" type="c_include">
+        <files mask="fsl_debug_console.h"/>
+        <files mask="fsl_debug_console_conf.h"/>
+      </source>
+    </component>
+    <component id="platform.utilities.misc_utilities.MIMX8MM6" name="misc_utilities" type="utilities" brief="Utilities which is needed for particular toolchain like the SBRK function required to address limitation between HEAP and STACK in GCC toolchain library." devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/utilities" target_path="utilities" type="src" toolchain="armgcc">
+        <files mask="fsl_sbrk.c"/>
+      </source>
+    </component>
+    <component id="docs.images.MIMX8MM6" name="images" type="other" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="docs/images" type="image">
+        <files mask="EVK-MIMX8MM.gif"/>
+      </source>
+      <source path="docs/images" type="image">
+        <files mask="device.jpg"/>
+      </source>
+    </component>
+    <component id="middleware.freertos.freertos_tickless_gpt.MIMX8MM6" name="freertos_tickless_gpt" full_name="FreeRTOS_gpt_tickless" type="other" brief="FreeRTOS gpt tickless" category="Operating System/FreeRTOS Operating System" dependency="middleware.freertos.MIMX8MM6 middleware.template_application.freertos.MIMX8MM6 platform.drivers.gpt.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="rtos/amazon-freertos/lib/FreeRTOS/portable/low_power_tickless" target_path="amazon-freertos/FreeRTOS/portable" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" type="src">
+        <files mask="fsl_tickless_gpt.c"/>
+      </source>
+    </component>
+    <component id="middleware.freertos.heap.heap_1.MIMX8MM6" name="heap_1" full_name="FreeRTOS_heap_1" type="other" brief="FreeRTOS heap_1 allocator" category="Operating System/FreeRTOS Operating System" dependency="middleware.freertos.MIMX8MM6 middleware.template_application.freertos.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="rtos/amazon-freertos/lib/FreeRTOS/portable/MemMang" target_path="amazon-freertos/FreeRTOS/portable" type="src">
+        <files mask="heap_1.c"/>
+      </source>
+    </component>
+    <component id="middleware.freertos.heap.heap_2.MIMX8MM6" name="heap_2" full_name="FreeRTOS_heap_2" type="other" brief="FreeRTOS heap_2 allocator" category="Operating System/FreeRTOS Operating System" dependency="middleware.freertos.MIMX8MM6 middleware.template_application.freertos.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="rtos/amazon-freertos/lib/FreeRTOS/portable/MemMang" target_path="amazon-freertos/FreeRTOS/portable" type="src">
+        <files mask="heap_2.c"/>
+      </source>
+    </component>
+    <component id="middleware.freertos.heap.heap_3.MIMX8MM6" name="heap_3" full_name="FreeRTOS_heap_3" type="other" brief="FreeRTOS heap_3 allocator" category="Operating System/FreeRTOS Operating System" dependency="middleware.freertos.MIMX8MM6 middleware.template_application.freertos.MIMX8MM6 platform.utilities.misc_utilities.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="rtos/amazon-freertos/lib/FreeRTOS/portable/MemMang" target_path="amazon-freertos/FreeRTOS/portable" type="src">
+        <files mask="heap_3.c"/>
+      </source>
+    </component>
+    <component id="middleware.freertos.heap.heap_4.MIMX8MM6" name="heap_4" full_name="FreeRTOS_heap_4" type="other" brief="FreeRTOS heap_4 allocator" category="Operating System/FreeRTOS Operating System" dependency="middleware.freertos.MIMX8MM6 middleware.template_application.freertos.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="rtos/amazon-freertos/lib/FreeRTOS/portable/MemMang" target_path="amazon-freertos/FreeRTOS/portable" type="src">
+        <files mask="heap_4.c"/>
+      </source>
+    </component>
+    <component id="middleware.freertos.heap.heap_5.MIMX8MM6" name="heap_5" full_name="FreeRTOS_heap_5" type="other" brief="FreeRTOS heap_5 allocator" category="Operating System/FreeRTOS Operating System" dependency="middleware.freertos.MIMX8MM6 middleware.template_application.freertos.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="rtos/amazon-freertos/lib/FreeRTOS/portable/MemMang" target_path="amazon-freertos/FreeRTOS/portable" type="src">
+        <files mask="heap_5.c"/>
+      </source>
+    </component>
+    <component id="tools.MIMX8MM6" name="tools" type="other" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="tools/cmake_toolchain_files" type="script">
+        <files mask="armgcc.cmake"/>
+        <files mask="armgcc_force_cpp.cmake"/>
+      </source>
+    </component>
+    <component id="middleware.multicore.rpmsg_lite.MIMX8MM6" name="rpmsg_lite" full_name="Remote Procedure Messaging Lite library" type="middleware" brief="RPMsg-Lite" category="Multicore/RPMsg-Lite" devices="MIMX8MM6xxxLZ" version="1.2.0" user_visible="false">
+      <source path="middleware/multicore/rpmsg_lite/doc/search" target_path="rpmsg_lite/doc" type="script">
+        <files mask="all_0.js"/>
+        <files mask="all_1.js"/>
+        <files mask="all_2.js"/>
+        <files mask="all_3.js"/>
+        <files mask="all_4.js"/>
+        <files mask="all_5.js"/>
+        <files mask="all_6.js"/>
+        <files mask="all_7.js"/>
+        <files mask="classes_0.js"/>
+        <files mask="files_0.js"/>
+        <files mask="functions_0.js"/>
+        <files mask="groups_0.js"/>
+        <files mask="pages_0.js"/>
+        <files mask="search.js"/>
+        <files mask="searchdata.js"/>
+        <files mask="typedefs_0.js"/>
+        <files mask="variables_0.js"/>
+        <files mask="variables_1.js"/>
+        <files mask="variables_2.js"/>
+        <files mask="variables_3.js"/>
+        <files mask="variables_4.js"/>
+        <files mask="variables_5.js"/>
+        <files mask="variables_6.js"/>
+        <files mask="variables_7.js"/>
+      </source>
+      <source path="middleware/multicore/rpmsg_lite/doc/search" target_path="rpmsg_lite/doc" type="doc">
+        <files mask="all_0.html"/>
+        <files mask="all_1.html"/>
+        <files mask="all_2.html"/>
+        <files mask="all_3.html"/>
+        <files mask="all_4.html"/>
+        <files mask="all_5.html"/>
+        <files mask="all_6.html"/>
+        <files mask="all_7.html"/>
+        <files mask="classes_0.html"/>
+        <files mask="files_0.html"/>
+        <files mask="functions_0.html"/>
+        <files mask="groups_0.html"/>
+        <files mask="nomatches.html"/>
+        <files mask="pages_0.html"/>
+        <files mask="search.css"/>
+        <files mask="typedefs_0.html"/>
+        <files mask="variables_0.html"/>
+        <files mask="variables_1.html"/>
+        <files mask="variables_2.html"/>
+        <files mask="variables_3.html"/>
+        <files mask="variables_4.html"/>
+        <files mask="variables_5.html"/>
+        <files mask="variables_6.html"/>
+        <files mask="variables_7.html"/>
+      </source>
+      <source path="middleware/multicore/rpmsg_lite/doc/search" target_path="rpmsg_lite/doc" type="image">
+        <files mask="close.png"/>
+        <files mask="mag_sel.png"/>
+        <files mask="search_l.png"/>
+        <files mask="search_m.png"/>
+        <files mask="search_r.png"/>
+      </source>
+      <source path="middleware/multicore/rpmsg_lite/doc" target_path="rpmsg_lite/doc" type="script">
+        <files mask="dynsections.js"/>
+        <files mask="group__config.js"/>
+        <files mask="group__rpmsg__lite.js"/>
+        <files mask="group__rpmsg__ns.js"/>
+        <files mask="group__rpmsg__queue.js"/>
+        <files mask="jquery.js"/>
+        <files mask="modules.js"/>
+        <files mask="navtree.js"/>
+        <files mask="navtreedata.js"/>
+        <files mask="navtreeindex0.js"/>
+        <files mask="resize.js"/>
+      </source>
+      <source path="middleware/multicore/rpmsg_lite/doc" target_path="rpmsg_lite/doc" type="doc">
+        <files mask="customdoxygen.css"/>
+        <files mask="dir_5a30104352ef4255dc24354b02eb2d20.html"/>
+        <files mask="dir_97aefd0d527b934f1d99a682da8fe6a9.html"/>
+        <files mask="doxygen.css"/>
+        <files mask="group__config.html"/>
+        <files mask="group__rpmsg__lite.html"/>
+        <files mask="group__rpmsg__ns.html"/>
+        <files mask="group__rpmsg__queue.html"/>
+        <files mask="index.html"/>
+        <files mask="modules.html"/>
+        <files mask="navtree.css"/>
+        <files mask="rpmsg__default__config_8h.html"/>
+        <files mask="rpmsg__default__config_8h_source.html"/>
+        <files mask="rpmsg__lite_8h_source.html"/>
+        <files mask="rpmsg__ns_8h_source.html"/>
+        <files mask="rpmsg__queue_8h_source.html"/>
+        <files mask="tabs.css"/>
+      </source>
+      <source path="middleware/multicore/rpmsg_lite/doc" target_path="rpmsg_lite/doc" type="image">
+        <files mask="arrowdown.png"/>
+        <files mask="arrowright.png"/>
+        <files mask="bc_s.png"/>
+        <files mask="bdwn.png"/>
+        <files mask="closed.png"/>
+        <files mask="doc.png"/>
+        <files mask="doxygen.png"/>
+        <files mask="folderclosed.png"/>
+        <files mask="folderopen.png"/>
+        <files mask="nav_f.png"/>
+        <files mask="nav_g.png"/>
+        <files mask="nav_h.png"/>
+        <files mask="nxp_logo_small.png"/>
+        <files mask="open.png"/>
+        <files mask="rpmsg_isoosi.png"/>
+        <files mask="rpmsg_lite_arch.png"/>
+        <files mask="rpmsg_lite_send_receive.png"/>
+        <files mask="splitbar.png"/>
+        <files mask="sync_off.png"/>
+        <files mask="sync_on.png"/>
+        <files mask="tab_a.png"/>
+        <files mask="tab_b.png"/>
+        <files mask="tab_h.png"/>
+        <files mask="tab_s.png"/>
+      </source>
+      <source path="middleware/multicore/rpmsg_lite/lib/common" target_path="rpmsg_lite" type="src">
+        <files mask="llist.c"/>
+      </source>
+      <source path="middleware/multicore/rpmsg_lite/lib/include" target_path="rpmsg_lite" type="c_include">
+        <files mask="llist.h"/>
+        <files mask="rpmsg_compiler.h"/>
+        <files mask="rpmsg_default_config.h"/>
+        <files mask="rpmsg_lite.h"/>
+        <files mask="rpmsg_ns.h"/>
+        <files mask="virtio_ring.h"/>
+        <files mask="virtqueue.h"/>
+      </source>
+      <source path="middleware/multicore/rpmsg_lite/lib/rpmsg_lite" target_path="rpmsg_lite" type="src">
+        <files mask="rpmsg_lite.c"/>
+        <files mask="rpmsg_ns.c"/>
+      </source>
+      <source path="middleware/multicore/rpmsg_lite/lib/virtio" target_path="rpmsg_lite" type="src">
+        <files mask="virtqueue.c"/>
+      </source>
+      <source path="middleware/multicore/rpmsg_lite" target_path="rpmsg_lite" type="doc">
+        <files mask="readme.txt"/>
+      </source>
+    </component>
+    <component id="middleware.multicore.rpmsg_lite.bm.MIMX8MM6" name="rpmsg_lite_bm_env" full_name="RPMsg-Lite baremetal environment layer" type="middleware" brief="RPMsg-Lite_baremetal_env" category="Multicore/RPMsg-Lite BM" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="false">
+      <source path="middleware/multicore/rpmsg_lite/lib/include" target_path="rpmsg_lite/env/bm" type="c_include">
+        <files mask="rpmsg_env.h"/>
+      </source>
+      <source path="middleware/multicore/rpmsg_lite/lib/rpmsg_lite/porting/environment" target_path="rpmsg_lite/env/bm" type="src">
+        <files mask="rpmsg_env_bm.c"/>
+      </source>
+    </component>
+    <component id="middleware.multicore.rpmsg_lite.bm.config.MIMX8MM6" name="rpmsg_lite_bm_config" full_name="RPMsg-Lite BM configuration" type="middleware" brief="RPMsg-Lite_bm_config" category="Multicore/RPMsg-Lite BM" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="middleware/multicore/rpmsg_lite/template_application" target_path="source" type="c_include">
+        <files mask="rpmsg_config.h"/>
+      </source>
+    </component>
+    <component id="middleware.multicore.rpmsg_lite.freertos.MIMX8MM6" name="rpmsg_lite_freertos_env" full_name="RPMsg-Lite FreeRTOS environment layer" type="middleware" brief="RPMsg-Lite_freertos_env" category="Multicore/RPMsg-Lite FreeRTOS" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="false">
+      <source path="middleware/multicore/rpmsg_lite/lib/include" target_path="rpmsg_lite/env/freertos" type="c_include">
+        <files mask="rpmsg_env.h"/>
+        <files mask="rpmsg_queue.h"/>
+      </source>
+      <source path="middleware/multicore/rpmsg_lite/lib/rpmsg_lite/porting/environment" target_path="rpmsg_lite/env/freertos" type="src">
+        <files mask="rpmsg_env_freertos.c"/>
+      </source>
+      <source path="middleware/multicore/rpmsg_lite/lib/rpmsg_lite" target_path="rpmsg_lite/env/freertos" type="src">
+        <files mask="rpmsg_queue.c"/>
+      </source>
+    </component>
+    <component id="middleware.multicore.rpmsg_lite.freertos.config.MIMX8MM6" name="rpmsg_lite_freertos_config" full_name="RPMsg-Lite FreeRTOS configuration" type="middleware" brief="RPMsg-Lite_freertos_config" category="Multicore/RPMsg-Lite FreeRTOS" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="middleware/multicore/rpmsg_lite/template_application" target_path="source" type="c_include">
+        <files mask="rpmsg_config.h"/>
+      </source>
+    </component>
+    <component id="middleware.multicore.rpmsg_lite.imx8mm_m4_bm.MIMX8MM6" name="rpmsg_lite_imx8mm_m4_bm" full_name="Remote Procedure Messaging Lite porting layer for evkmimx8mm board" type="middleware" brief="RPMsg-Lite_evkmimx8mm_porting_layer" category="Multicore/RPMsg-Lite BM" dependency="middleware.multicore.rpmsg_lite.bm.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="1.2.0" user_visible="true">
+      <source path="middleware/multicore/rpmsg_lite/lib/include/platform/imx8mm_m4" target_path="rpmsg_lite/porting" type="c_include">
+        <files mask="rpmsg_platform.h"/>
+      </source>
+      <source path="middleware/multicore/rpmsg_lite/lib/rpmsg_lite/porting/platform/imx8mm_m4" target_path="rpmsg_lite/porting" type="src">
+        <files mask="rpmsg_platform.c"/>
+      </source>
+    </component>
+    <component id="middleware.multicore.rpmsg_lite.imx8mm_m4_freertos.MIMX8MM6" name="rpmsg_lite_imx8mm_m4_freertos" full_name="Remote Procedure Messaging Lite porting layer for evkmimx8mm board" type="middleware" brief="RPMsg-Lite_evkmcimx8mm_m4_porting_layer" category="Multicore/RPMsg-Lite FreeRTOS" dependency="middleware.freertos.MIMX8MM6 middleware.freertos.heap.heap_4.MIMX8MM6 middleware.multicore.rpmsg_lite.freertos.MIMX8MM6 middleware.template_application.freertos.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="1.2.0" user_visible="true">
+      <source path="middleware/multicore/rpmsg_lite/lib/include/platform/imx8mm_m4" target_path="rpmsg_lite/porting" type="c_include">
+        <files mask="rpmsg_platform.h"/>
+      </source>
+      <source path="middleware/multicore/rpmsg_lite/lib/rpmsg_lite/porting/platform/imx8mm_m4" target_path="rpmsg_lite/porting" type="src">
+        <files mask="rpmsg_platform.c"/>
+      </source>
+    </component>
+    <component id="middleware.baremetal.MIMX8MM6" name="baremetal" full_name="Baremetal" type="OS" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <defines>
+        <define name="SDK_OS_BAREMETAL" value=""/>
+        <define name="FSL_RTOS_BM" value=""/>
+      </defines>
+    </component>
+    <component id="middleware.freertos.MIMX8MM6" name="freertos" full_name="Amazon-FreeRTOS Kernel" type="OS" brief="Amazon FreeRTOS, Real Time Operating System" dependency="middleware.template_application.freertos.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="10.0.1" user_visible="true">
+      <defines>
+        <define name="SDK_OS_FREE_RTOS" value=""/>
+        <define name="FSL_RTOS_FREE_RTOS" value=""/>
+      </defines>
+      <source path="rtos/amazon-freertos/lib/FreeRTOS/portable/GCC/ARM_CM4F" target_path="amazon-freertos/FreeRTOS/portable" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" type="src" toolchain="armgcc">
+        <files mask="fsl_tickless_systick.c"/>
+        <files mask="port.c"/>
+      </source>
+      <source path="rtos/amazon-freertos/lib/FreeRTOS/portable/GCC/ARM_CM4F" target_path="amazon-freertos/FreeRTOS/portable" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" type="c_include" toolchain="armgcc">
+        <files mask="fsl_tickless_generic.h"/>
+        <files mask="portmacro.h"/>
+      </source>
+      <source path="rtos/amazon-freertos/lib/FreeRTOS/portable" target_path="amazon-freertos/FreeRTOS/portable" type="doc">
+        <files mask="readme.txt"/>
+      </source>
+      <source path="rtos/amazon-freertos/lib/FreeRTOS" target_path="amazon-freertos/FreeRTOS" type="src">
+        <files mask="event_groups.c"/>
+        <files mask="list.c"/>
+        <files mask="queue.c"/>
+        <files mask="stream_buffer.c"/>
+        <files mask="tasks.c"/>
+        <files mask="timers.c"/>
+      </source>
+      <source path="rtos/amazon-freertos/lib/include/private" target_path="amazon-freertos/include" type="c_include">
+        <files mask="deprecated_definitions.h"/>
+        <files mask="list.h"/>
+        <files mask="mpu_wrappers.h"/>
+        <files mask="portable.h"/>
+        <files mask="projdefs.h"/>
+        <files mask="stack_macros.h"/>
+      </source>
+      <source path="rtos/amazon-freertos/lib/include" target_path="amazon-freertos/include" type="c_include">
+        <files mask="event_groups.h"/>
+        <files mask="FreeRTOS.h"/>
+        <files mask="freertos_tasks_c_additions.h"/>
+        <files mask="message_buffer.h"/>
+        <files mask="queue.h"/>
+        <files mask="semphr.h"/>
+        <files mask="stream_buffer.h"/>
+        <files mask="task.h"/>
+        <files mask="timers.h"/>
+      </source>
+      <source path="rtos/amazon-freertos" target_path="amazon-freertos/license" type="other">
+        <files mask="LICENSE"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS" name="CMSIS" type="CMSIS" dependency="platform.CMSIS_DSP_Lib platform.CMSIS_DSP_Lib.arm_cortexM4lf_math.MIMX8MM6 platform.CMSIS_Driver platform.CMSIS_Driver_Include.CAN_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.Ethernet_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.Ethernet_MAC_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.Ethernet_PHY_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.Flash_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.I2C_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.MCI_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.NAND_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.SAI_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.SPI_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.USART_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.USB_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.USB_Device_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.USB_Host_CMSISInclude.MIMX8MM6 platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6" version="5.1.1" user_visible="true">
+      <source path="CMSIS" type="doc">
+        <files mask="LICENSE.txt"/>
+      </source>
+      <source path="CMSIS/Include" type="c_include">
+        <files mask="arm_common_tables.h"/>
+        <files mask="arm_const_structs.h"/>
+        <files mask="arm_math.h"/>
+        <files mask="cmsis_armcc.h"/>
+        <files mask="cmsis_armclang.h"/>
+        <files mask="cmsis_compiler.h"/>
+        <files mask="cmsis_gcc.h"/>
+        <files mask="cmsis_iccarm.h"/>
+        <files mask="cmsis_version.h"/>
+        <files mask="core_armv8mbl.h"/>
+        <files mask="core_armv8mml.h"/>
+        <files mask="core_cm0.h"/>
+        <files mask="core_cm0plus.h"/>
+        <files mask="core_cm23.h"/>
+        <files mask="core_cm3.h"/>
+        <files mask="core_cm33.h"/>
+        <files mask="core_cm4.h"/>
+        <files mask="core_cm7.h"/>
+        <files mask="core_sc000.h"/>
+        <files mask="core_sc300.h"/>
+        <files mask="mpu_armv7.h"/>
+        <files mask="mpu_armv8.h"/>
+        <files mask="tz_context.h"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_DSP_Lib" name="CMSIS_DSP_Lib" type="CMSIS" version="1.5.2" user_visible="true">
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_class_marks_example" type="doc">
+        <files mask="Abstract.txt"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_class_marks_example" type="project">
+        <files mask="arm_class_marks_example.uvoptx"/>
+        <files mask="arm_class_marks_example.uvprojx"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_class_marks_example" type="src">
+        <files mask="arm_class_marks_example_f32.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_class_marks_example" type="configuration">
+        <files mask="arm_class_marks_example.ini"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_class_marks_example/RTE" type="c_include">
+        <files mask="RTE_Components.h"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_class_marks_example/RTE/Device/ARMCM0" type="asm_include">
+        <files mask="startup_ARMCM0.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_class_marks_example/RTE/Device/ARMCM0" type="src">
+        <files mask="system_ARMCM0.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_class_marks_example/RTE/Device/ARMCM3" type="asm_include">
+        <files mask="startup_ARMCM3.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_class_marks_example/RTE/Device/ARMCM3" type="src">
+        <files mask="system_ARMCM3.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_class_marks_example/RTE/Device/ARMCM4_FP" type="asm_include">
+        <files mask="startup_ARMCM4.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_class_marks_example/RTE/Device/ARMCM4_FP" type="src">
+        <files mask="system_ARMCM4.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_class_marks_example/RTE/Device/ARMCM7_SP" type="asm_include">
+        <files mask="startup_ARMCM7.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_class_marks_example/RTE/Device/ARMCM7_SP" type="src">
+        <files mask="system_ARMCM7.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_convolution_example" type="doc">
+        <files mask="Abstract.txt"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_convolution_example" type="project">
+        <files mask="arm_convolution_example.uvoptx"/>
+        <files mask="arm_convolution_example.uvprojx"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_convolution_example" type="src">
+        <files mask="arm_convolution_example_f32.c"/>
+        <files mask="math_helper.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_convolution_example" type="configuration">
+        <files mask="arm_convolution_example.ini"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_convolution_example" type="c_include">
+        <files mask="math_helper.h"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_convolution_example/RTE" type="c_include">
+        <files mask="RTE_Components.h"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_convolution_example/RTE/Device/ARMCM0" type="asm_include">
+        <files mask="startup_ARMCM0.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_convolution_example/RTE/Device/ARMCM0" type="src">
+        <files mask="system_ARMCM0.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_convolution_example/RTE/Device/ARMCM3" type="asm_include">
+        <files mask="startup_ARMCM3.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_convolution_example/RTE/Device/ARMCM3" type="src">
+        <files mask="system_ARMCM3.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_convolution_example/RTE/Device/ARMCM4_FP" type="asm_include">
+        <files mask="startup_ARMCM4.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_convolution_example/RTE/Device/ARMCM4_FP" type="src">
+        <files mask="system_ARMCM4.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_convolution_example/RTE/Device/ARMCM7_SP" type="asm_include">
+        <files mask="startup_ARMCM7.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_convolution_example/RTE/Device/ARMCM7_SP" type="src">
+        <files mask="system_ARMCM7.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_dotproduct_example" type="doc">
+        <files mask="Abstract.txt"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_dotproduct_example" type="project">
+        <files mask="arm_dotproduct_example.uvoptx"/>
+        <files mask="arm_dotproduct_example.uvprojx"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_dotproduct_example" type="src">
+        <files mask="arm_dotproduct_example_f32.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_dotproduct_example" type="configuration">
+        <files mask="arm_dotproduct_example.ini"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_dotproduct_example/RTE" type="c_include">
+        <files mask="RTE_Components.h"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_dotproduct_example/RTE/Device/ARMCM0" type="asm_include">
+        <files mask="startup_ARMCM0.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_dotproduct_example/RTE/Device/ARMCM0" type="src">
+        <files mask="system_ARMCM0.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_dotproduct_example/RTE/Device/ARMCM3" type="asm_include">
+        <files mask="startup_ARMCM3.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_dotproduct_example/RTE/Device/ARMCM3" type="src">
+        <files mask="system_ARMCM3.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_dotproduct_example/RTE/Device/ARMCM4_FP" type="asm_include">
+        <files mask="startup_ARMCM4.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_dotproduct_example/RTE/Device/ARMCM4_FP" type="src">
+        <files mask="system_ARMCM4.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_dotproduct_example/RTE/Device/ARMCM7_SP" type="asm_include">
+        <files mask="startup_ARMCM7.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_dotproduct_example/RTE/Device/ARMCM7_SP" type="src">
+        <files mask="system_ARMCM7.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fft_bin_example" type="doc">
+        <files mask="Abstract.txt"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fft_bin_example" type="project">
+        <files mask="arm_fft_bin_example.uvoptx"/>
+        <files mask="arm_fft_bin_example.uvprojx"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fft_bin_example" type="src">
+        <files mask="arm_fft_bin_data.c"/>
+        <files mask="arm_fft_bin_example_f32.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fft_bin_example" type="configuration">
+        <files mask="arm_fft_bin_example.ini"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fft_bin_example/RTE" type="c_include">
+        <files mask="RTE_Components.h"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fft_bin_example/RTE/Device/ARMCM0" type="asm_include">
+        <files mask="startup_ARMCM0.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fft_bin_example/RTE/Device/ARMCM0" type="src">
+        <files mask="system_ARMCM0.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fft_bin_example/RTE/Device/ARMCM3" type="asm_include">
+        <files mask="startup_ARMCM3.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fft_bin_example/RTE/Device/ARMCM3" type="src">
+        <files mask="system_ARMCM3.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fft_bin_example/RTE/Device/ARMCM4_FP" type="asm_include">
+        <files mask="startup_ARMCM4.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fft_bin_example/RTE/Device/ARMCM4_FP" type="src">
+        <files mask="system_ARMCM4.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fft_bin_example/RTE/Device/ARMCM7_SP" type="asm_include">
+        <files mask="startup_ARMCM7.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fft_bin_example/RTE/Device/ARMCM7_SP" type="src">
+        <files mask="system_ARMCM7.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fir_example" type="doc">
+        <files mask="Abstract.txt"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fir_example" type="project">
+        <files mask="arm_fir_example.uvoptx"/>
+        <files mask="arm_fir_example.uvprojx"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fir_example" type="src">
+        <files mask="arm_fir_data.c"/>
+        <files mask="arm_fir_example_f32.c"/>
+        <files mask="math_helper.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fir_example" type="configuration">
+        <files mask="arm_fir_example.ini"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fir_example" type="c_include">
+        <files mask="math_helper.h"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fir_example/RTE" type="c_include">
+        <files mask="RTE_Components.h"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fir_example/RTE/Device/ARMCM0" type="asm_include">
+        <files mask="startup_ARMCM0.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fir_example/RTE/Device/ARMCM0" type="src">
+        <files mask="system_ARMCM0.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fir_example/RTE/Device/ARMCM3" type="asm_include">
+        <files mask="startup_ARMCM3.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fir_example/RTE/Device/ARMCM3" type="src">
+        <files mask="system_ARMCM3.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fir_example/RTE/Device/ARMCM4_FP" type="asm_include">
+        <files mask="startup_ARMCM4.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fir_example/RTE/Device/ARMCM4_FP" type="src">
+        <files mask="system_ARMCM4.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fir_example/RTE/Device/ARMCM7_SP" type="asm_include">
+        <files mask="startup_ARMCM7.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_fir_example/RTE/Device/ARMCM7_SP" type="src">
+        <files mask="system_ARMCM7.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_graphic_equalizer_example" type="doc">
+        <files mask="Abstract.txt"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_graphic_equalizer_example" type="project">
+        <files mask="arm_graphic_equalizer_example.uvoptx"/>
+        <files mask="arm_graphic_equalizer_example.uvprojx"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_graphic_equalizer_example" type="src">
+        <files mask="arm_graphic_equalizer_data.c"/>
+        <files mask="arm_graphic_equalizer_example_q31.c"/>
+        <files mask="math_helper.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_graphic_equalizer_example" type="configuration">
+        <files mask="arm_graphic_equalizer_example.ini"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_graphic_equalizer_example" type="c_include">
+        <files mask="math_helper.h"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_graphic_equalizer_example/RTE" type="c_include">
+        <files mask="RTE_Components.h"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_graphic_equalizer_example/RTE/Device/ARMCM0" type="asm_include">
+        <files mask="startup_ARMCM0.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_graphic_equalizer_example/RTE/Device/ARMCM0" type="src">
+        <files mask="system_ARMCM0.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_graphic_equalizer_example/RTE/Device/ARMCM3" type="asm_include">
+        <files mask="startup_ARMCM3.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_graphic_equalizer_example/RTE/Device/ARMCM3" type="src">
+        <files mask="system_ARMCM3.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_graphic_equalizer_example/RTE/Device/ARMCM4_FP" type="asm_include">
+        <files mask="startup_ARMCM4.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_graphic_equalizer_example/RTE/Device/ARMCM4_FP" type="src">
+        <files mask="system_ARMCM4.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_graphic_equalizer_example/RTE/Device/ARMCM7_SP" type="asm_include">
+        <files mask="startup_ARMCM7.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_graphic_equalizer_example/RTE/Device/ARMCM7_SP" type="src">
+        <files mask="system_ARMCM7.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_linear_interp_example" type="doc">
+        <files mask="Abstract.txt"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_linear_interp_example" type="project">
+        <files mask="arm_linear_interp_example.uvoptx"/>
+        <files mask="arm_linear_interp_example.uvprojx"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_linear_interp_example" type="src">
+        <files mask="arm_linear_interp_data.c"/>
+        <files mask="arm_linear_interp_example_f32.c"/>
+        <files mask="math_helper.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_linear_interp_example" type="configuration">
+        <files mask="arm_linear_interp_example.ini"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_linear_interp_example" type="c_include">
+        <files mask="math_helper.h"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_linear_interp_example/RTE" type="c_include">
+        <files mask="RTE_Components.h"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_linear_interp_example/RTE/Device/ARMCM0" type="asm_include">
+        <files mask="startup_ARMCM0.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_linear_interp_example/RTE/Device/ARMCM0" type="src">
+        <files mask="system_ARMCM0.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_linear_interp_example/RTE/Device/ARMCM3" type="asm_include">
+        <files mask="startup_ARMCM3.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_linear_interp_example/RTE/Device/ARMCM3" type="src">
+        <files mask="system_ARMCM3.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_linear_interp_example/RTE/Device/ARMCM4_FP" type="asm_include">
+        <files mask="startup_ARMCM4.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_linear_interp_example/RTE/Device/ARMCM4_FP" type="src">
+        <files mask="system_ARMCM4.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_linear_interp_example/RTE/Device/ARMCM7_SP" type="asm_include">
+        <files mask="startup_ARMCM7.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_linear_interp_example/RTE/Device/ARMCM7_SP" type="src">
+        <files mask="system_ARMCM7.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_matrix_example" type="doc">
+        <files mask="Abstract.txt"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_matrix_example" type="project">
+        <files mask="arm_matrix_example.uvoptx"/>
+        <files mask="arm_matrix_example.uvprojx"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_matrix_example" type="src">
+        <files mask="arm_matrix_example_f32.c"/>
+        <files mask="math_helper.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_matrix_example" type="configuration">
+        <files mask="arm_matrix_example.ini"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_matrix_example" type="c_include">
+        <files mask="math_helper.h"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_matrix_example/RTE" type="c_include">
+        <files mask="RTE_Components.h"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_matrix_example/RTE/Device/ARMCM0" type="asm_include">
+        <files mask="startup_ARMCM0.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_matrix_example/RTE/Device/ARMCM0" type="src">
+        <files mask="system_ARMCM0.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_matrix_example/RTE/Device/ARMCM3" type="asm_include">
+        <files mask="startup_ARMCM3.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_matrix_example/RTE/Device/ARMCM3" type="src">
+        <files mask="system_ARMCM3.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_matrix_example/RTE/Device/ARMCM4_FP" type="asm_include">
+        <files mask="startup_ARMCM4.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_matrix_example/RTE/Device/ARMCM4_FP" type="src">
+        <files mask="system_ARMCM4.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_matrix_example/RTE/Device/ARMCM7_SP" type="asm_include">
+        <files mask="startup_ARMCM7.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_matrix_example/RTE/Device/ARMCM7_SP" type="src">
+        <files mask="system_ARMCM7.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_signal_converge_example" type="doc">
+        <files mask="Abstract.txt"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_signal_converge_example" type="project">
+        <files mask="arm_signal_converge_example.uvoptx"/>
+        <files mask="arm_signal_converge_example.uvprojx"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_signal_converge_example" type="src">
+        <files mask="arm_signal_converge_data.c"/>
+        <files mask="arm_signal_converge_example_f32.c"/>
+        <files mask="math_helper.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_signal_converge_example" type="configuration">
+        <files mask="arm_signal_converge_example.ini"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_signal_converge_example" type="c_include">
+        <files mask="math_helper.h"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_signal_converge_example/RTE" type="c_include">
+        <files mask="RTE_Components.h"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_signal_converge_example/RTE/Device/ARMCM0" type="asm_include">
+        <files mask="startup_ARMCM0.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_signal_converge_example/RTE/Device/ARMCM0" type="src">
+        <files mask="system_ARMCM0.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_signal_converge_example/RTE/Device/ARMCM3" type="asm_include">
+        <files mask="startup_ARMCM3.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_signal_converge_example/RTE/Device/ARMCM3" type="src">
+        <files mask="system_ARMCM3.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_signal_converge_example/RTE/Device/ARMCM4_FP" type="asm_include">
+        <files mask="startup_ARMCM4.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_signal_converge_example/RTE/Device/ARMCM4_FP" type="src">
+        <files mask="system_ARMCM4.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_signal_converge_example/RTE/Device/ARMCM7_SP" type="asm_include">
+        <files mask="startup_ARMCM7.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_signal_converge_example/RTE/Device/ARMCM7_SP" type="src">
+        <files mask="system_ARMCM7.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_sin_cos_example" type="doc">
+        <files mask="Abstract.txt"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_sin_cos_example" type="project">
+        <files mask="arm_sin_cos_example.uvoptx"/>
+        <files mask="arm_sin_cos_example.uvprojx"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_sin_cos_example" type="src">
+        <files mask="arm_sin_cos_example_f32.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_sin_cos_example" type="configuration">
+        <files mask="arm_sin_cos_example.ini"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_sin_cos_example/RTE" type="c_include">
+        <files mask="RTE_Components.h"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_sin_cos_example/RTE/Device/ARMCM0" type="asm_include">
+        <files mask="startup_ARMCM0.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_sin_cos_example/RTE/Device/ARMCM0" type="src">
+        <files mask="system_ARMCM0.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_sin_cos_example/RTE/Device/ARMCM3" type="asm_include">
+        <files mask="startup_ARMCM3.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_sin_cos_example/RTE/Device/ARMCM3" type="src">
+        <files mask="system_ARMCM3.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_sin_cos_example/RTE/Device/ARMCM4_FP" type="asm_include">
+        <files mask="startup_ARMCM4.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_sin_cos_example/RTE/Device/ARMCM4_FP" type="src">
+        <files mask="system_ARMCM4.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_sin_cos_example/RTE/Device/ARMCM7_SP" type="asm_include">
+        <files mask="startup_ARMCM7.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_sin_cos_example/RTE/Device/ARMCM7_SP" type="src">
+        <files mask="system_ARMCM7.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_variance_example" type="doc">
+        <files mask="Abstract.txt"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_variance_example" type="project">
+        <files mask="arm_variance_example.uvoptx"/>
+        <files mask="arm_variance_example.uvprojx"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_variance_example" type="src">
+        <files mask="arm_variance_example_f32.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_variance_example" type="configuration">
+        <files mask="arm_variance_example.ini"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_variance_example/RTE" type="c_include">
+        <files mask="RTE_Components.h"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_variance_example/RTE/Device/ARMCM0" type="asm_include">
+        <files mask="startup_ARMCM0.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_variance_example/RTE/Device/ARMCM0" type="src">
+        <files mask="system_ARMCM0.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_variance_example/RTE/Device/ARMCM3" type="asm_include">
+        <files mask="startup_ARMCM3.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_variance_example/RTE/Device/ARMCM3" type="src">
+        <files mask="system_ARMCM3.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_variance_example/RTE/Device/ARMCM4_FP" type="asm_include">
+        <files mask="startup_ARMCM4.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_variance_example/RTE/Device/ARMCM4_FP" type="src">
+        <files mask="system_ARMCM4.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_variance_example/RTE/Device/ARMCM7_SP" type="asm_include">
+        <files mask="startup_ARMCM7.s"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Examples/ARM/arm_variance_example/RTE/Device/ARMCM7_SP" type="src">
+        <files mask="system_ARMCM7.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Source/ARM" type="script">
+        <files mask="arm_cortexM_math_Build.bat"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Source/ARM" type="project">
+        <files mask="arm_cortexM_math.uvoptx"/>
+        <files mask="arm_cortexM_math.uvprojx"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Source/BasicMathFunctions" type="src">
+        <files mask="arm_abs_f32.c"/>
+        <files mask="arm_abs_q15.c"/>
+        <files mask="arm_abs_q31.c"/>
+        <files mask="arm_abs_q7.c"/>
+        <files mask="arm_add_f32.c"/>
+        <files mask="arm_add_q15.c"/>
+        <files mask="arm_add_q31.c"/>
+        <files mask="arm_add_q7.c"/>
+        <files mask="arm_dot_prod_f32.c"/>
+        <files mask="arm_dot_prod_q15.c"/>
+        <files mask="arm_dot_prod_q31.c"/>
+        <files mask="arm_dot_prod_q7.c"/>
+        <files mask="arm_mult_f32.c"/>
+        <files mask="arm_mult_q15.c"/>
+        <files mask="arm_mult_q31.c"/>
+        <files mask="arm_mult_q7.c"/>
+        <files mask="arm_negate_f32.c"/>
+        <files mask="arm_negate_q15.c"/>
+        <files mask="arm_negate_q31.c"/>
+        <files mask="arm_negate_q7.c"/>
+        <files mask="arm_offset_f32.c"/>
+        <files mask="arm_offset_q15.c"/>
+        <files mask="arm_offset_q31.c"/>
+        <files mask="arm_offset_q7.c"/>
+        <files mask="arm_scale_f32.c"/>
+        <files mask="arm_scale_q15.c"/>
+        <files mask="arm_scale_q31.c"/>
+        <files mask="arm_scale_q7.c"/>
+        <files mask="arm_shift_q15.c"/>
+        <files mask="arm_shift_q31.c"/>
+        <files mask="arm_shift_q7.c"/>
+        <files mask="arm_sub_f32.c"/>
+        <files mask="arm_sub_q15.c"/>
+        <files mask="arm_sub_q31.c"/>
+        <files mask="arm_sub_q7.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Source/CommonTables" type="src">
+        <files mask="arm_common_tables.c"/>
+        <files mask="arm_const_structs.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Source/ComplexMathFunctions" type="src">
+        <files mask="arm_cmplx_conj_f32.c"/>
+        <files mask="arm_cmplx_conj_q15.c"/>
+        <files mask="arm_cmplx_conj_q31.c"/>
+        <files mask="arm_cmplx_dot_prod_f32.c"/>
+        <files mask="arm_cmplx_dot_prod_q15.c"/>
+        <files mask="arm_cmplx_dot_prod_q31.c"/>
+        <files mask="arm_cmplx_mag_f32.c"/>
+        <files mask="arm_cmplx_mag_q15.c"/>
+        <files mask="arm_cmplx_mag_q31.c"/>
+        <files mask="arm_cmplx_mag_squared_f32.c"/>
+        <files mask="arm_cmplx_mag_squared_q15.c"/>
+        <files mask="arm_cmplx_mag_squared_q31.c"/>
+        <files mask="arm_cmplx_mult_cmplx_f32.c"/>
+        <files mask="arm_cmplx_mult_cmplx_q15.c"/>
+        <files mask="arm_cmplx_mult_cmplx_q31.c"/>
+        <files mask="arm_cmplx_mult_real_f32.c"/>
+        <files mask="arm_cmplx_mult_real_q15.c"/>
+        <files mask="arm_cmplx_mult_real_q31.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Source/ControllerFunctions" type="src">
+        <files mask="arm_pid_init_f32.c"/>
+        <files mask="arm_pid_init_q15.c"/>
+        <files mask="arm_pid_init_q31.c"/>
+        <files mask="arm_pid_reset_f32.c"/>
+        <files mask="arm_pid_reset_q15.c"/>
+        <files mask="arm_pid_reset_q31.c"/>
+        <files mask="arm_sin_cos_f32.c"/>
+        <files mask="arm_sin_cos_q31.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Source/FastMathFunctions" type="src">
+        <files mask="arm_cos_f32.c"/>
+        <files mask="arm_cos_q15.c"/>
+        <files mask="arm_cos_q31.c"/>
+        <files mask="arm_sin_f32.c"/>
+        <files mask="arm_sin_q15.c"/>
+        <files mask="arm_sin_q31.c"/>
+        <files mask="arm_sqrt_q15.c"/>
+        <files mask="arm_sqrt_q31.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Source/FilteringFunctions" type="src">
+        <files mask="arm_biquad_cascade_df1_32x64_init_q31.c"/>
+        <files mask="arm_biquad_cascade_df1_32x64_q31.c"/>
+        <files mask="arm_biquad_cascade_df1_f32.c"/>
+        <files mask="arm_biquad_cascade_df1_fast_q15.c"/>
+        <files mask="arm_biquad_cascade_df1_fast_q31.c"/>
+        <files mask="arm_biquad_cascade_df1_init_f32.c"/>
+        <files mask="arm_biquad_cascade_df1_init_q15.c"/>
+        <files mask="arm_biquad_cascade_df1_init_q31.c"/>
+        <files mask="arm_biquad_cascade_df1_q15.c"/>
+        <files mask="arm_biquad_cascade_df1_q31.c"/>
+        <files mask="arm_biquad_cascade_df2T_f32.c"/>
+        <files mask="arm_biquad_cascade_df2T_f64.c"/>
+        <files mask="arm_biquad_cascade_df2T_init_f32.c"/>
+        <files mask="arm_biquad_cascade_df2T_init_f64.c"/>
+        <files mask="arm_biquad_cascade_stereo_df2T_f32.c"/>
+        <files mask="arm_biquad_cascade_stereo_df2T_init_f32.c"/>
+        <files mask="arm_conv_f32.c"/>
+        <files mask="arm_conv_fast_opt_q15.c"/>
+        <files mask="arm_conv_fast_q15.c"/>
+        <files mask="arm_conv_fast_q31.c"/>
+        <files mask="arm_conv_opt_q15.c"/>
+        <files mask="arm_conv_opt_q7.c"/>
+        <files mask="arm_conv_partial_f32.c"/>
+        <files mask="arm_conv_partial_fast_opt_q15.c"/>
+        <files mask="arm_conv_partial_fast_q15.c"/>
+        <files mask="arm_conv_partial_fast_q31.c"/>
+        <files mask="arm_conv_partial_opt_q15.c"/>
+        <files mask="arm_conv_partial_opt_q7.c"/>
+        <files mask="arm_conv_partial_q15.c"/>
+        <files mask="arm_conv_partial_q31.c"/>
+        <files mask="arm_conv_partial_q7.c"/>
+        <files mask="arm_conv_q15.c"/>
+        <files mask="arm_conv_q31.c"/>
+        <files mask="arm_conv_q7.c"/>
+        <files mask="arm_correlate_f32.c"/>
+        <files mask="arm_correlate_fast_opt_q15.c"/>
+        <files mask="arm_correlate_fast_q15.c"/>
+        <files mask="arm_correlate_fast_q31.c"/>
+        <files mask="arm_correlate_opt_q15.c"/>
+        <files mask="arm_correlate_opt_q7.c"/>
+        <files mask="arm_correlate_q15.c"/>
+        <files mask="arm_correlate_q31.c"/>
+        <files mask="arm_correlate_q7.c"/>
+        <files mask="arm_fir_decimate_f32.c"/>
+        <files mask="arm_fir_decimate_fast_q15.c"/>
+        <files mask="arm_fir_decimate_fast_q31.c"/>
+        <files mask="arm_fir_decimate_init_f32.c"/>
+        <files mask="arm_fir_decimate_init_q15.c"/>
+        <files mask="arm_fir_decimate_init_q31.c"/>
+        <files mask="arm_fir_decimate_q15.c"/>
+        <files mask="arm_fir_decimate_q31.c"/>
+        <files mask="arm_fir_f32.c"/>
+        <files mask="arm_fir_fast_q15.c"/>
+        <files mask="arm_fir_fast_q31.c"/>
+        <files mask="arm_fir_init_f32.c"/>
+        <files mask="arm_fir_init_q15.c"/>
+        <files mask="arm_fir_init_q31.c"/>
+        <files mask="arm_fir_init_q7.c"/>
+        <files mask="arm_fir_interpolate_f32.c"/>
+        <files mask="arm_fir_interpolate_init_f32.c"/>
+        <files mask="arm_fir_interpolate_init_q15.c"/>
+        <files mask="arm_fir_interpolate_init_q31.c"/>
+        <files mask="arm_fir_interpolate_q15.c"/>
+        <files mask="arm_fir_interpolate_q31.c"/>
+        <files mask="arm_fir_lattice_f32.c"/>
+        <files mask="arm_fir_lattice_init_f32.c"/>
+        <files mask="arm_fir_lattice_init_q15.c"/>
+        <files mask="arm_fir_lattice_init_q31.c"/>
+        <files mask="arm_fir_lattice_q15.c"/>
+        <files mask="arm_fir_lattice_q31.c"/>
+        <files mask="arm_fir_q15.c"/>
+        <files mask="arm_fir_q31.c"/>
+        <files mask="arm_fir_q7.c"/>
+        <files mask="arm_fir_sparse_f32.c"/>
+        <files mask="arm_fir_sparse_init_f32.c"/>
+        <files mask="arm_fir_sparse_init_q15.c"/>
+        <files mask="arm_fir_sparse_init_q31.c"/>
+        <files mask="arm_fir_sparse_init_q7.c"/>
+        <files mask="arm_fir_sparse_q15.c"/>
+        <files mask="arm_fir_sparse_q31.c"/>
+        <files mask="arm_fir_sparse_q7.c"/>
+        <files mask="arm_iir_lattice_f32.c"/>
+        <files mask="arm_iir_lattice_init_f32.c"/>
+        <files mask="arm_iir_lattice_init_q15.c"/>
+        <files mask="arm_iir_lattice_init_q31.c"/>
+        <files mask="arm_iir_lattice_q15.c"/>
+        <files mask="arm_iir_lattice_q31.c"/>
+        <files mask="arm_lms_f32.c"/>
+        <files mask="arm_lms_init_f32.c"/>
+        <files mask="arm_lms_init_q15.c"/>
+        <files mask="arm_lms_init_q31.c"/>
+        <files mask="arm_lms_norm_f32.c"/>
+        <files mask="arm_lms_norm_init_f32.c"/>
+        <files mask="arm_lms_norm_init_q15.c"/>
+        <files mask="arm_lms_norm_init_q31.c"/>
+        <files mask="arm_lms_norm_q15.c"/>
+        <files mask="arm_lms_norm_q31.c"/>
+        <files mask="arm_lms_q15.c"/>
+        <files mask="arm_lms_q31.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Source/GCC" type="script">
+        <files mask="arm_cortexM_math_Build.bat"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Source/GCC" type="project">
+        <files mask="arm_cortexM_math.uvoptx"/>
+        <files mask="arm_cortexM_math.uvprojx"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Source/MatrixFunctions" type="src">
+        <files mask="arm_mat_add_f32.c"/>
+        <files mask="arm_mat_add_q15.c"/>
+        <files mask="arm_mat_add_q31.c"/>
+        <files mask="arm_mat_cmplx_mult_f32.c"/>
+        <files mask="arm_mat_cmplx_mult_q15.c"/>
+        <files mask="arm_mat_cmplx_mult_q31.c"/>
+        <files mask="arm_mat_init_f32.c"/>
+        <files mask="arm_mat_init_q15.c"/>
+        <files mask="arm_mat_init_q31.c"/>
+        <files mask="arm_mat_inverse_f32.c"/>
+        <files mask="arm_mat_inverse_f64.c"/>
+        <files mask="arm_mat_mult_f32.c"/>
+        <files mask="arm_mat_mult_fast_q15.c"/>
+        <files mask="arm_mat_mult_fast_q31.c"/>
+        <files mask="arm_mat_mult_q15.c"/>
+        <files mask="arm_mat_mult_q31.c"/>
+        <files mask="arm_mat_scale_f32.c"/>
+        <files mask="arm_mat_scale_q15.c"/>
+        <files mask="arm_mat_scale_q31.c"/>
+        <files mask="arm_mat_sub_f32.c"/>
+        <files mask="arm_mat_sub_q15.c"/>
+        <files mask="arm_mat_sub_q31.c"/>
+        <files mask="arm_mat_trans_f32.c"/>
+        <files mask="arm_mat_trans_q15.c"/>
+        <files mask="arm_mat_trans_q31.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Source/StatisticsFunctions" type="src">
+        <files mask="arm_max_f32.c"/>
+        <files mask="arm_max_q15.c"/>
+        <files mask="arm_max_q31.c"/>
+        <files mask="arm_max_q7.c"/>
+        <files mask="arm_mean_f32.c"/>
+        <files mask="arm_mean_q15.c"/>
+        <files mask="arm_mean_q31.c"/>
+        <files mask="arm_mean_q7.c"/>
+        <files mask="arm_min_f32.c"/>
+        <files mask="arm_min_q15.c"/>
+        <files mask="arm_min_q31.c"/>
+        <files mask="arm_min_q7.c"/>
+        <files mask="arm_power_f32.c"/>
+        <files mask="arm_power_q15.c"/>
+        <files mask="arm_power_q31.c"/>
+        <files mask="arm_power_q7.c"/>
+        <files mask="arm_rms_f32.c"/>
+        <files mask="arm_rms_q15.c"/>
+        <files mask="arm_rms_q31.c"/>
+        <files mask="arm_std_f32.c"/>
+        <files mask="arm_std_q15.c"/>
+        <files mask="arm_std_q31.c"/>
+        <files mask="arm_var_f32.c"/>
+        <files mask="arm_var_q15.c"/>
+        <files mask="arm_var_q31.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Source/SupportFunctions" type="src">
+        <files mask="arm_copy_f32.c"/>
+        <files mask="arm_copy_q15.c"/>
+        <files mask="arm_copy_q31.c"/>
+        <files mask="arm_copy_q7.c"/>
+        <files mask="arm_fill_f32.c"/>
+        <files mask="arm_fill_q15.c"/>
+        <files mask="arm_fill_q31.c"/>
+        <files mask="arm_fill_q7.c"/>
+        <files mask="arm_float_to_q15.c"/>
+        <files mask="arm_float_to_q31.c"/>
+        <files mask="arm_float_to_q7.c"/>
+        <files mask="arm_q15_to_float.c"/>
+        <files mask="arm_q15_to_q31.c"/>
+        <files mask="arm_q15_to_q7.c"/>
+        <files mask="arm_q31_to_float.c"/>
+        <files mask="arm_q31_to_q15.c"/>
+        <files mask="arm_q31_to_q7.c"/>
+        <files mask="arm_q7_to_float.c"/>
+        <files mask="arm_q7_to_q15.c"/>
+        <files mask="arm_q7_to_q31.c"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Source/TransformFunctions" type="asm_include">
+        <files mask="arm_bitreversal2.S"/>
+      </source>
+      <source path="CMSIS/DSP_Lib/Source/TransformFunctions" type="src">
+        <files mask="arm_bitreversal.c"/>
+        <files mask="arm_cfft_f32.c"/>
+        <files mask="arm_cfft_q15.c"/>
+        <files mask="arm_cfft_q31.c"/>
+        <files mask="arm_cfft_radix2_f32.c"/>
+        <files mask="arm_cfft_radix2_init_f32.c"/>
+        <files mask="arm_cfft_radix2_init_q15.c"/>
+        <files mask="arm_cfft_radix2_init_q31.c"/>
+        <files mask="arm_cfft_radix2_q15.c"/>
+        <files mask="arm_cfft_radix2_q31.c"/>
+        <files mask="arm_cfft_radix4_f32.c"/>
+        <files mask="arm_cfft_radix4_init_f32.c"/>
+        <files mask="arm_cfft_radix4_init_q15.c"/>
+        <files mask="arm_cfft_radix4_init_q31.c"/>
+        <files mask="arm_cfft_radix4_q15.c"/>
+        <files mask="arm_cfft_radix4_q31.c"/>
+        <files mask="arm_cfft_radix8_f32.c"/>
+        <files mask="arm_dct4_f32.c"/>
+        <files mask="arm_dct4_init_f32.c"/>
+        <files mask="arm_dct4_init_q15.c"/>
+        <files mask="arm_dct4_init_q31.c"/>
+        <files mask="arm_dct4_q15.c"/>
+        <files mask="arm_dct4_q31.c"/>
+        <files mask="arm_rfft_f32.c"/>
+        <files mask="arm_rfft_fast_f32.c"/>
+        <files mask="arm_rfft_fast_init_f32.c"/>
+        <files mask="arm_rfft_init_f32.c"/>
+        <files mask="arm_rfft_init_q15.c"/>
+        <files mask="arm_rfft_init_q31.c"/>
+        <files mask="arm_rfft_q15.c"/>
+        <files mask="arm_rfft_q31.c"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_DSP_Lib.arm_cortexM4lf_math.MIMX8MM6" name="arm_cortexM4lf_math" type="CMSIS_driver" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.CMSIS_DSP_Lib" devices="MIMX8MM6xxxLZ" version="1.5.2" user_visible="true">
+      <source path="CMSIS/Lib/GCC" type="lib" compiler="compiler_gcc">
+        <files mask="libarm_cortexM4lf_math.a"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_Driver" name="CMSIS_Driver" type="CMSIS" version="5.1.1" user_visible="true">
+      <source path="CMSIS/Driver/DriverTemplates" type="src">
+        <files mask="Driver_CAN.c"/>
+        <files mask="Driver_ETH_MAC.c"/>
+        <files mask="Driver_ETH_PHY.c"/>
+        <files mask="Driver_Flash.c"/>
+        <files mask="Driver_I2C.c"/>
+        <files mask="Driver_MCI.c"/>
+        <files mask="Driver_SAI.c"/>
+        <files mask="Driver_SPI.c"/>
+        <files mask="Driver_Storage.c"/>
+        <files mask="Driver_USART.c"/>
+        <files mask="Driver_USBD.c"/>
+        <files mask="Driver_USBH.c"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_Driver_Include.CAN_CMSISInclude.MIMX8MM6" name="CAN_CMSISInclude" type="CMSIS_driver" brief="CMSIS Driver_CAN.h" dependency="platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="1.2.0" user_visible="false">
+      <source path="CMSIS/Driver/Include" target_path="CMSIS_driver" type="c_include">
+        <files mask="Driver_CAN.h"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6" name="Common_CMSISInclude" type="CMSIS_driver" brief="CMSIS Driver_Common.h" devices="MIMX8MM6xxxLZ" version="5.1.1" user_visible="false">
+      <source path="CMSIS/Driver/Include" target_path="CMSIS_driver" type="c_include">
+        <files mask="Driver_Common.h"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_Driver_Include.Ethernet_CMSISInclude.MIMX8MM6" name="Ethernet_CMSISInclude" type="CMSIS_driver" brief="CMSIS Driver_ETH.h" dependency="platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.1.0" user_visible="false">
+      <source path="CMSIS/Driver/Include" target_path="CMSIS_driver" type="c_include">
+        <files mask="Driver_ETH.h"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_Driver_Include.Ethernet_MAC_CMSISInclude.MIMX8MM6" name="Ethernet_MAC_CMSISInclude" type="CMSIS_driver" brief="CMSIS Driver_ETH_MAC.h" dependency="platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.Ethernet_CMSISInclude.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.1.0" user_visible="false">
+      <source path="CMSIS/Driver/Include" target_path="CMSIS_driver" type="c_include">
+        <files mask="Driver_ETH_MAC.h"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_Driver_Include.Ethernet_PHY_CMSISInclude.MIMX8MM6" name="Ethernet_PHY_CMSISInclude" type="CMSIS_driver" brief="CMSIS Driver_ETH_PHY.h" dependency="platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.Ethernet_CMSISInclude.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.1.0" user_visible="false">
+      <source path="CMSIS/Driver/Include" target_path="CMSIS_driver" type="c_include">
+        <files mask="Driver_ETH_PHY.h"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_Driver_Include.Flash_CMSISInclude.MIMX8MM6" name="Flash_CMSISInclude" type="CMSIS_driver" brief="CMSIS Driver_Flash.h" dependency="platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.1.0" user_visible="false">
+      <source path="CMSIS/Driver/Include" target_path="CMSIS_driver" type="c_include">
+        <files mask="Driver_Flash.h"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_Driver_Include.I2C_CMSISInclude.MIMX8MM6" name="I2C_CMSISInclude" type="CMSIS_driver" brief="CMSIS Driver_I2C.h" dependency="platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.3.0" user_visible="false">
+      <source path="CMSIS/Driver/Include" target_path="CMSIS_driver" type="c_include">
+        <files mask="Driver_I2C.h"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_Driver_Include.MCI_CMSISInclude.MIMX8MM6" name="MCI_CMSISInclude" type="CMSIS_driver" brief="CMSIS Driver_MCI.h" dependency="platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.3.0" user_visible="false">
+      <source path="CMSIS/Driver/Include" target_path="CMSIS_driver" type="c_include">
+        <files mask="Driver_MCI.h"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_Driver_Include.NAND_CMSISInclude.MIMX8MM6" name="NAND_CMSISInclude" type="CMSIS_driver" brief="CMSIS Driver_NAND.h" dependency="platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.3.0" user_visible="false">
+      <source path="CMSIS/Driver/Include" target_path="CMSIS_driver" type="c_include">
+        <files mask="Driver_NAND.h"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_Driver_Include.SAI_CMSISInclude.MIMX8MM6" name="SAI_CMSISInclude" type="CMSIS_driver" brief="CMSIS Driver_SAI.h" dependency="platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="1.1.0" user_visible="false">
+      <source path="CMSIS/Driver/Include" target_path="CMSIS_driver" type="c_include">
+        <files mask="Driver_SAI.h"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_Driver_Include.SPI_CMSISInclude.MIMX8MM6" name="SPI_CMSISInclude" type="CMSIS_driver" brief="CMSIS Driver_SPI.h" dependency="platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.2.0" user_visible="false">
+      <source path="CMSIS/Driver/Include" target_path="CMSIS_driver" type="c_include">
+        <files mask="Driver_SPI.h"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_Driver_Include.USART_CMSISInclude.MIMX8MM6" name="USART_CMSISInclude" type="CMSIS_driver" brief="CMSIS Driver_USART.h" dependency="platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.3.0" user_visible="false">
+      <source path="CMSIS/Driver/Include" target_path="CMSIS_driver" type="c_include">
+        <files mask="Driver_USART.h"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_Driver_Include.USB_CMSISInclude.MIMX8MM6" name="USB_CMSISInclude" type="CMSIS_driver" brief="CMSIS Driver_USB.h" dependency="platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.2.0" user_visible="false">
+      <source path="CMSIS/Driver/Include" target_path="CMSIS_driver" type="c_include">
+        <files mask="Driver_USB.h"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_Driver_Include.USB_Device_CMSISInclude.MIMX8MM6" name="USB_Device_CMSISInclude" type="CMSIS_driver" brief="CMSIS Driver_USBD.h" dependency="platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.USB_CMSISInclude.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.2.0" user_visible="false">
+      <source path="CMSIS/Driver/Include" target_path="CMSIS_driver" type="c_include">
+        <files mask="Driver_USBD.h"/>
+      </source>
+    </component>
+    <component id="platform.CMSIS_Driver_Include.USB_Host_CMSISInclude.MIMX8MM6" name="USB_Host_CMSISInclude" type="CMSIS_driver" brief="CMSIS Driver_USBH.h" dependency="platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.USB_CMSISInclude.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.2.0" user_visible="false">
+      <source path="CMSIS/Driver/Include" target_path="CMSIS_driver" type="c_include">
+        <files mask="Driver_USBH.h"/>
+      </source>
+    </component>
+    <component id="platform.Include_common.MIMX8MM6" name="Include_common" type="CMSIS_Include" devices="MIMX8MM6xxxLZ" version="5.1.1" user_visible="true">
+      <source path="CMSIS/Include" type="c_include">
+        <files mask="arm_common_tables.h"/>
+        <files mask="arm_const_structs.h"/>
+        <files mask="arm_math.h"/>
+        <files mask="cmsis_armcc.h"/>
+        <files mask="cmsis_armclang.h"/>
+        <files mask="cmsis_compiler.h"/>
+        <files mask="cmsis_gcc.h"/>
+        <files mask="cmsis_iccarm.h"/>
+        <files mask="cmsis_version.h"/>
+        <files mask="core_armv8mbl.h"/>
+        <files mask="core_armv8mml.h"/>
+        <files mask="mpu_armv7.h"/>
+        <files mask="mpu_armv8.h"/>
+      </source>
+    </component>
+    <component id="platform.Include_core_cm4.MIMX8MM6" name="Include_core_cm4" type="CMSIS_Include" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="5.1.1" user_visible="true">
+      <source path="CMSIS/Include" type="c_include">
+        <files mask="core_cm4.h"/>
+      </source>
+    </component>
+    <component id="platform.devices.MIMX8MM6_CMSIS.MIMX8MM6" name="MIMX8MM6_CMSIS" type="CMSIS_Include" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6" type="src">
+        <files mask="system_MIMX8MM6_cm4.c"/>
+      </source>
+      <source path="devices/MIMX8MM6" type="c_include">
+        <files mask="fsl_device_registers.h"/>
+        <files mask="MIMX8MM6_cm4.h"/>
+        <files mask="MIMX8MM6_cm4_features.h"/>
+        <files mask="system_MIMX8MM6_cm4.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.ecspi_cmsis.MIMX8MM6" name="ecspi_cmsis" type="CMSIS_driver" brief="ECSPI CMSIS Driver" category="Device/SDK CMSIS Drivers" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="RTE_Device.MIMX8MM6 platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.SPI_CMSISInclude.MIMX8MM6 platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6 platform.drivers.ecspi.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/cmsis_drivers" target_path="drivers" type="src">
+        <files mask="fsl_ecspi_cmsis.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/cmsis_drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_ecspi_cmsis.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.ii2c_cmsis.MIMX8MM6" name="i2c_cmsis" type="CMSIS_driver" brief="I2C CMSIS Driver" category="Device/SDK CMSIS Drivers" dependency="RTE_Device.MIMX8MM6 platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.I2C_CMSISInclude.MIMX8MM6 platform.drivers.ii2c.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/cmsis_drivers" target_path="drivers" type="src">
+        <files mask="fsl_i2c_cmsis.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/cmsis_drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_i2c_cmsis.h"/>
+      </source>
+    </component>
+    <component id="platform.drivers.iuart_cmsis.MIMX8MM6" name="uart_cmsis" type="CMSIS_driver" brief="UART CMSIS Driver" category="Device/SDK CMSIS Drivers" dependency="RTE_Device.MIMX8MM6 platform.CMSIS_Driver_Include.Common_CMSISInclude.MIMX8MM6 platform.CMSIS_Driver_Include.USART_CMSISInclude.MIMX8MM6 platform.drivers.iuart.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="2.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/cmsis_drivers" target_path="drivers" type="src">
+        <files mask="fsl_uart_cmsis.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/cmsis_drivers" target_path="drivers" type="c_include">
+        <files mask="fsl_uart_cmsis.h"/>
+      </source>
+    </component>
+    <component id="platform.devices.MIMX8MM6_linker.MIMX8MM6" name="MIMX8MM6_linker" type="linker" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/gcc" type="linker" toolchain="armgcc">
+        <files mask="MIMX8MM6xxxxx_cm4_ddr_ram.ld"/>
+        <files mask="MIMX8MM6xxxxx_cm4_ram.ld"/>
+      </source>
+    </component>
+    <component id="platform.devices.MIMX8MM6_startup.MIMX8MM6" name="MIMX8MM6_startup" type="startup" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/gcc" type="asm_include" toolchain="armgcc">
+        <files mask="startup_MIMX8MM6_cm4.S"/>
+      </source>
+    </component>
+    <component id="RTE_Device.MIMX8MM6" name="RTE_Device" type="project_template" category="Device/SDK Project Template" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/template" target_path="board" type="c_include">
+        <files mask="RTE_Device.h"/>
+      </source>
+    </component>
+    <component id="middleware.template_application.freertos.MIMX8MM6" name="freertos" full_name="FreeRTOS template" type="project_template" brief="FreeRTOS template application" category="Operating System/FreeRTOS Operating System" dependency="middleware.freertos.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="10.0.1" user_visible="true">
+      <source path="rtos/amazon-freertos/lib/FreeRTOS/portable/MemMang" target_path="amazon-freertos/FreeRTOS/portable" type="src">
+        <files mask="heap_4.c"/>
+      </source>
+      <source path="rtos/amazon-freertos/lib/FreeRTOS/portable/MemMang" target_path="amazon-freertos/FreeRTOS/portable" exclude="true" type="src">
+        <files mask="heap_1.c"/>
+        <files mask="heap_2.c"/>
+        <files mask="heap_3.c"/>
+        <files mask="heap_5.c"/>
+      </source>
+      <source path="rtos/template_application/ARM_CM4F" target_path="source" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" type="c_include">
+        <files mask="FreeRTOSConfig.h"/>
+      </source>
+    </component>
+    <component id="platform.devices.MIMX8MM6_debugger.MIMX8MM6" name="MIMX8MM6_debugger" type="debugger" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6" type="xml">
+        <files mask="MIMX8MM6_cm4.xml"/>
+      </source>
+      <source path="devices/MIMX8MM6/debug" type="other">
+        <files mask="iMX8MM.sdf"/>
+      </source>
+    </component>
+    <component id="project_template.MIMX8MM6.MIMX8MM6" name="MIMX8MM6" type="project_template" category="Board Support/SDK Project Template" device_cores="m4_MIMX8MM6xxxLZ" core="cm4" dependency="platform.Include_common.MIMX8MM6 platform.Include_core_cm4.MIMX8MM6 platform.devices.MIMX8MM6_CMSIS.MIMX8MM6 platform.devices.MIMX8MM6_startup.MIMX8MM6 platform.drivers.clock.MIMX8MM6 platform.drivers.common.MIMX8MM6 platform.drivers.iuart.MIMX8MM6 platform.drivers.rdc.MIMX8MM6 platform.utilities.debug_console.MIMX8MM6" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="devices/MIMX8MM6/project_template" type="src">
+        <files mask="board.c"/>
+        <files mask="clock_config.c"/>
+        <files mask="peripherals.c"/>
+        <files mask="pin_mux.c"/>
+      </source>
+      <source path="devices/MIMX8MM6/project_template" type="c_include">
+        <files mask="board.h"/>
+        <files mask="clock_config.h"/>
+        <files mask="peripherals.h"/>
+        <files mask="pin_mux.h"/>
+      </source>
+    </component>
+    <component id="project_template.evkmimx8mm.MIMX8MM6" name="evkmimx8mm" type="project_template" category="Board Support/SDK Project Template" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="boards/evkmimx8mm/project_template" type="src">
+        <files mask="board.c"/>
+        <files mask="clock_config.c"/>
+        <files mask="peripherals.c"/>
+        <files mask="pin_mux.c"/>
+      </source>
+      <source path="boards/evkmimx8mm/project_template" type="c_include">
+        <files mask="board.h"/>
+        <files mask="clock_config.h"/>
+        <files mask="peripherals.h"/>
+        <files mask="pin_mux.h"/>
+      </source>
+    </component>
+    <component id="docs.MIMX8MM6.MIMX8MM6" name="MIMX8MM6" type="documentation" devices="MIMX8MM6xxxLZ" version="1.0.0" user_visible="true">
+      <source path="docs" type="doc">
+        <files mask="Getting Started with MCUXpresso SDK for i.MX 8M Mini.pdf"/>
+        <files mask="MCUXpresso SDK Release Notes for i.MX 8M Mini.pdf"/>
+      </source>
+    </component>
+    </components>
+</ksdk:manifest>
