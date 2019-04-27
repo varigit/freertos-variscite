@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['mu_5fbootcoreb',['MU_BootCoreB',['../group__mu.html#ga6eb0767a937aec58348579d118623481',1,'fsl_mu.h']]],
+  ['mu_5fbootothercore',['MU_BootOtherCore',['../group__mu.html#ga7e679937d4ed822e84f8b2f16feb9415',1,'fsl_mu.h']]],
+  ['mu_5fclearnmi',['MU_ClearNmi',['../group__mu.html#ga70fb7868a4b493eccf6c7742a9f25302',1,'fsl_mu.h']]],
+  ['mu_5fclearstatusflags',['MU_ClearStatusFlags',['../group__mu.html#gae9097788e142b8cb891eddfcbfc60c26',1,'fsl_mu.h']]],
+  ['mu_5fdeinit',['MU_Deinit',['../group__mu.html#ga956ac92cddf9794a9155b346f4db2044',1,'fsl_mu.h']]],
+  ['mu_5fdisableinterrupts',['MU_DisableInterrupts',['../group__mu.html#gaecadc0cf75fd66e80737b33c0971cbca',1,'fsl_mu.h']]],
+  ['mu_5fenableinterrupts',['MU_EnableInterrupts',['../group__mu.html#ga5ea7e2b8b70b2f7a44013e9a8dded335',1,'fsl_mu.h']]],
+  ['mu_5fgetflags',['MU_GetFlags',['../group__mu.html#ga4fbbf69b6157a909bcf6bb9523419834',1,'fsl_mu.h']]],
+  ['mu_5fgetothercorepowermode',['MU_GetOtherCorePowerMode',['../group__mu.html#ga4c9449aca64b03c381ae1b7e1720c61b',1,'fsl_mu.h']]],
+  ['mu_5fgetstatusflags',['MU_GetStatusFlags',['../group__mu.html#ga90e31d91ebb2a97c4b8ac449bb4e2a4e',1,'fsl_mu.h']]],
+  ['mu_5fhardwareresetothercore',['MU_HardwareResetOtherCore',['../group__mu.html#ga16044dabe953e6a7deecadbcdb0ba255',1,'fsl_mu.h']]],
+  ['mu_5fholdcorebreset',['MU_HoldCoreBReset',['../group__mu.html#gac23b13779f92f3a11b9c5c7c20b93e42',1,'fsl_mu.h']]],
+  ['mu_5fholdothercorereset',['MU_HoldOtherCoreReset',['../group__mu.html#gaaf22232af55418b163983b9c83e72e7f',1,'fsl_mu.h']]],
+  ['mu_5finit',['MU_Init',['../group__mu.html#ga59dde6d6ef6bd1016eafe1e6faf7a6d9',1,'fsl_mu.h']]],
+  ['mu_5freceivemsg',['MU_ReceiveMsg',['../group__mu.html#ga36b003e10632eed908184ddbfc48df25',1,'fsl_mu.h']]],
+  ['mu_5freceivemsgnonblocking',['MU_ReceiveMsgNonBlocking',['../group__mu.html#gabeb32b60cedae555c659126d75bda806',1,'fsl_mu.h']]],
+  ['mu_5fresetbothsides',['MU_ResetBothSides',['../group__mu.html#gaa13d5ba37ff0be6dd645ed9b28431cb5',1,'fsl_mu.h']]],
+  ['mu_5fsendmsg',['MU_SendMsg',['../group__mu.html#gaedd7d1f0418441a61a2587a8db322ecd',1,'fsl_mu.h']]],
+  ['mu_5fsendmsgnonblocking',['MU_SendMsgNonBlocking',['../group__mu.html#gae4e41714bd6cf6e3de866e1aaf5b85a2',1,'fsl_mu.h']]],
+  ['mu_5fsetclockonothercoreenable',['MU_SetClockOnOtherCoreEnable',['../group__mu.html#gaf134175fc2e3adc976bd8e8999124949',1,'fsl_mu.h']]],
+  ['mu_5fsetflags',['MU_SetFlags',['../group__mu.html#ga392ac71819def4a3e9d34fd1daf3fff0',1,'fsl_mu.h']]],
+  ['mu_5fsetflagsnonblocking',['MU_SetFlagsNonBlocking',['../group__mu.html#ga180ad60fda7f03cbcd98543bdb808a43',1,'fsl_mu.h']]],
+  ['mu_5ftriggerinterrupts',['MU_TriggerInterrupts',['../group__mu.html#ga1c78b4336b2f9ef4a4ca8ff22be7116c',1,'fsl_mu.h']]]
+];
