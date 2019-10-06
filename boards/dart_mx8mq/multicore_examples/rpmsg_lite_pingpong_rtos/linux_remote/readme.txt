@@ -48,7 +48,7 @@ Running the demo
 After the boot process succeeds, the ARM Cortex-M4 terminal displays the following information:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 RPMSG Ping-Pong FreeRTOS RTOS API Demo...
-RPMSG Share Base Addr is 0xb8000000
+RPMSG Share Base Addr is 0x40000000
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 During boot the Kernel,the ARM Cortex-M4 terminal displays the following information:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

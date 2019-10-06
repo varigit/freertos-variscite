@@ -23,7 +23,7 @@
 /*******************************************************************************
  * Definitions
  ******************************************************************************/
-#define RPMSG_LITE_SHMEM_BASE (0xB8000000U)
+#define RPMSG_LITE_SHMEM_BASE (0x40000000U)
 #define RPMSG_LITE_LINK_ID (RL_PLATFORM_IMX8MQ_M4_USER_LINK_ID)
 #define RPMSG_LITE_NS_ANNOUNCE_STRING "rpmsg-virtual-tty-channel-1"
 #define APP_TASK_STACK_SIZE (256)
