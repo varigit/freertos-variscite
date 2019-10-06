@@ -23,8 +23,8 @@
 /* Entry Point */
 ENTRY(Reset_Handler)
 
-HEAP_SIZE  = DEFINED(__heap_size__)  ? __heap_size__  : 0x400;
-STACK_SIZE = DEFINED(__stack_size__) ? __stack_size__ : 0x400;
+HEAP_SIZE  = DEFINED(__heap_size__)  ? __heap_size__  : 0x0400;
+STACK_SIZE = DEFINED(__stack_size__) ? __stack_size__ : 0x0400;
 
 /* Specify the memory areas */
 MEMORY
@@ -32,7 +32,7 @@ MEMORY
   m_interrupts          (RX)  : ORIGIN = 0x1FFE0000, LENGTH = 0x00000240
   m_text                (RX)  : ORIGIN = 0x1FFE0240, LENGTH = 0x0001FDC0
   m_data                (RW)  : ORIGIN = 0x20000000, LENGTH = 0x00020000
-  m_data2               (RW)  : ORIGIN = 0x80000000, LENGTH = 0x01000000
+  m_data2               (RW)  : ORIGIN = 0x7E000000, LENGTH = 0x01000000
 }
 
 /* Define output sections */
