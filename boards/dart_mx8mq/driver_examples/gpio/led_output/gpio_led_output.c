@@ -17,7 +17,7 @@
  ******************************************************************************/
 #define EXAMPLE_LED_GPIO GPIO4
 #define EXAMPLE_LED_GPIO_PIN 3U
-#define EXAMPLE_DELAY_COUNT 400000U
+#define EXAMPLE_DELAY_COUNT 800000U
 
 /*******************************************************************************
  * Prototypes

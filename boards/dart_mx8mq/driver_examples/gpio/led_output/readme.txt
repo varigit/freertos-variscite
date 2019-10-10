@@ -17,8 +17,6 @@ Board settings
 ==============
 No special settings are required.
 
-#### Please note this application can't support running with Linux BSP! ####
-
 Prepare the Demo
 ================
 1.  Connect 5V power supply and J-Link Debug Probe to the board, switch SW8 to power on the board
