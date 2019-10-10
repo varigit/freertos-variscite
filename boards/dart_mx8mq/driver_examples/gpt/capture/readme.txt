@@ -13,9 +13,11 @@ Hardware requirements
 
 Board settings
 ==============
-Connect input signal to TP803 Test Point.
+Connect input signal to the Test Point.
 
-
+#### Please note this application can't run if WM8904 is mounted ####
+GPT1_CAPTURE1/2 functions are only available from SAI3 pads used by WM8904.
+This pads are exported to the external connector only if WM8904 is not mounted.
 
 Prepare the Demo
 ================
