@@ -1,0 +1,20 @@
+digraph "sensors/mag3110_drv.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node9 [label="sensors/mag3110_drv.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="sensors/mag3110_drv.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mag3110__drv_8c.html",tooltip="The mag3110_drv.c file implements the MAG3110 sensor driver interfaces. "];
+  Node9 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="driverexamples/mag3110\l/mag3110_normal.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mag3110__normal_8c.html",tooltip="The mag3110_normal.c file implements the ISSDK MAG3110 sensor driver example demonstration with polli..."];
+  Node9 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="driverexamples/mag3110\l/mag3110_normal_interrupt.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mag3110__normal__interrupt_8c.html",tooltip="The mag3110_normal_interrupt.c file implements the ISSDK MAG3110 sensor driver example demonstration ..."];
+  Node9 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="driverexamples/mag3110\l/mag3110_oneshot.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mag3110__oneshot_8c.html",tooltip="The mag3110_oneshot.c file implements the ISSDK MAG3110 sensor driver example demonstration with poll..."];
+  Node9 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="driverexamples/demos\l/demo_11_axis_mult2b.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$demo__11__axis__mult2b_8c.html",tooltip="The demo_11_axis_mult2b.c file implements the ISSDK MMA8652, MAG3110, FXAS21002 and MPL3115 sensors 1..."];
+  Node9 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="driverexamples/demos\l/mag3110_demo.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mag3110__demo_8c.html",tooltip="The mag3110_demo.c file implements the ISSDK MAG3110 sensor demo example demonstration with interrupt..."];
+  Node9 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="driverexamples/demos\l/mag3110_poll_demo.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mag3110__poll__demo_8c.html",tooltip="The mag3110_poll_demo.c file implements the ISSDK MAG3110 sensor demo example demonstration with poll..."];
+}

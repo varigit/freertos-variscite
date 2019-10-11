@@ -1,0 +1,9 @@
+digraph "queueStatus"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node220 [label="queueStatus",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node220 -> Node221 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node221 [label="initSensorFusionGlobals",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__fusion_8h.html#a367d92b99365a8143700b76439915d65",tooltip="utility function to insert default values in the top level structure "];
+}

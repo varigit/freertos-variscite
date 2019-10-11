@@ -1,0 +1,25 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="BOARD_InitDebugConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$frdm-k64f_2board_8c.html#a4c84ccb952cb083367d7040cf9de3db8"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="BOARD_InitPins",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__pin__mux.html#ga2c9fe54b6b84723fbaa590a6f4576966",tooltip="Configures pin routing and optionally pin electrical features. "];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="BOARD_SystickEnable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$systick__utils_8c.html#ad43629969994e92bd3620e630bda24c8",tooltip="Function to enable systicks framework. "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="FXLC95000_I2C_CommandResponse",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxlc95000__drv_8c.html#a7ce291d9339bc2515ada199ee4c53692",tooltip="The interface function to read the sensor data. "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="int32_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__format__service_8h.html#a5d7069350a7d7e65686c77a8038f462f",tooltip="The interface function to append the data on the formated stream. "];
+  Node2 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="FXLC95000_I2C_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxlc95000__drv_8c.html#a32b4c71a3c3cbef9999416fdb83dc054",tooltip="The interface function to initialize the sensor. "];
+  Node15 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="FXLC95000_I2C_SetIdleTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxlc95000__drv_8c.html#a7d31c709c8c3637ebfa48265b0347e77",tooltip=": The interface function to set the I2C Idle Task. "];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="SMC_SetPowerModeVlpr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lpc54114_8c.html#a82cb114bb9a5ea2f235a0216709d70f8",tooltip="Configures the system to VLPR power mode. API name used from Kinetis family to maintain compatibility..."];
+}

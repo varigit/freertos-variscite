@@ -1,0 +1,9 @@
+digraph "DIFF_P_SPI_ReadPreprocess"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node60 [label="DIFF_P_SPI_ReadPreprocess",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node60 -> Node61 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node61 [label="DIFF_P_SPI_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$diff__p__drv_8h.html#a8daefe78cc812287f49b2f71b3afe24d",tooltip="The interface function to initialize the sensor. "];
+}

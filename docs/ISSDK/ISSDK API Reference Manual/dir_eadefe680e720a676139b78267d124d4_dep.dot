@@ -1,0 +1,9 @@
+digraph "boardkit/frdm-k22f/frdm-fxs-mult2-b" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_9e8127cfa8255b08fe5dbf6fbeefa392 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="frdm-k22f" fontname="Helvetica", fontsize="10", URL="dir_9e8127cfa8255b08fe5dbf6fbeefa392.html"]
+  dir_eadefe680e720a676139b78267d124d4 [shape=box, label="frdm-fxs-mult2-b", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_eadefe680e720a676139b78267d124d4.html"];
+  }
+}

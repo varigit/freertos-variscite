@@ -1,0 +1,14 @@
+digraph "sensors/fxls8962_drv.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node12 [label="sensors/fxls8962_drv.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="sensors/fxls8962_drv.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxls8962__drv_8c.html",tooltip="The fxls8962_drv.c file implements the FXLS8962 sensor driver interfaces. "];
+  Node12 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="driverexamples/demos\l/fxls8962_demo.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxls8962__demo_8c.html",tooltip="The fxls8962_demo.c file implements the ISSDK FXLS8962 sensor demo example demonstration with interru..."];
+  Node12 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="algorithms/pedometer\l/examples/pedometer_stepcount\l_fxls8962.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pedometer__stepcount__fxls8962_8c.html",tooltip="The pedometer_stepcount_fxls8962.c file implements the ISSDK FXLS8962 sensor driver example demonstra..."];
+  Node12 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="algorithms/pedometer\l/examples/pedometer_stepcount\l_motion_fxls8962.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pedometer__stepcount__motion__fxls8962_8c.html"];
+}

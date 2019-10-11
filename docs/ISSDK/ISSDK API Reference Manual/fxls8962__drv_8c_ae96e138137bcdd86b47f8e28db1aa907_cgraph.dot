@@ -1,0 +1,16 @@
+digraph "FXLS8962_SPI_Initialize"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node47 [label="FXLS8962_SPI_Initialize",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node47 -> Node48 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node48 [label="FXLS8962_SPI_ReadPreprocess",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxls8962__drv_8c.html#a0751397a32b4343a1563cb68fd0c0604",tooltip="The SPI Read Pre-Process function to generate Sensor specific SPI Message Header. ..."];
+  Node47 -> Node49 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node49 [label="FXLS8962_SPI_WritePreprocess",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxls8962__drv_8c.html#a0f5490049d975cb3e74971d62ccfee4c",tooltip="The SPI Write Pre-Process function to generate Sensor specific SPI Message Header. "];
+  Node47 -> Node50 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node50 [label="int32_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__format__service_8h.html#a5d7069350a7d7e65686c77a8038f462f",tooltip="The interface function to append the data on the formated stream. "];
+  Node47 -> Node51 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node51 [label="Register_SPI_Read",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$register__io__spi_8c.html#a76a3aee498397854509b81ae2da2f85e",tooltip="The interface function to read a sensor register. "];
+  Node51 -> Node50 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

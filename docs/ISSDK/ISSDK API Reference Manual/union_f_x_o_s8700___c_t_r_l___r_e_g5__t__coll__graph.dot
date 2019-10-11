@@ -1,0 +1,6 @@
+digraph "FXOS8700_CTRL_REG5_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FXOS8700_CTRL_REG5_t\n|+ int_cfg_drdy\l+ int_cfg_a_vecm\l+ int_cfg_ffmt\l+ int_cfg_pulse\l+ int_cfg_lndprt\l+ int_cfg_trans\l+ int_cfg_fifo\l+ int_cfg_aslp\l+ b\l+ w\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

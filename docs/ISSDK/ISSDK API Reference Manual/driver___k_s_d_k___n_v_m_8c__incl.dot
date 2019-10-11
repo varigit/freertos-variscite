@@ -1,0 +1,12 @@
+digraph "algorithms/sensorfusion/sources/driver_KSDK_NVM.c"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="algorithms/sensorfusion\l/sources/driver_KSDK_NVM.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="sensor_fusion.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__fusion_8h.html",tooltip="The sensor_fusion.h file implements the top level programming interface. "];
+  Node0 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="driver_KSDK_NVM.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$driver___k_s_d_k___n_v_m_8h.html",tooltip="middleware driver for NVM on Kinetis devices "];
+  Node0 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="fsl_flash.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

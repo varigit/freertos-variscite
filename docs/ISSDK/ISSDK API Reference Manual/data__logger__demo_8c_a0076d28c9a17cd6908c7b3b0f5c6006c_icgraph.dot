@@ -1,0 +1,12 @@
+digraph "process_host_command"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node52 [label="process_host_command",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node52 -> Node53 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node53 [label="Host_IO_Receive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$host__io__uart_8h.html#a3924d21a0703878695ebdb68f720fff9"];
+  Node53 -> Node54 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node54 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__logger__demo_8c.html#a840291bc02cba5474a4cb46a9b9566fe",tooltip="Main function. "];
+  Node52 -> Node54 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

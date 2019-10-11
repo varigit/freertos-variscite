@@ -1,0 +1,6 @@
+digraph "FXOS8700_M_THS_SRC_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FXOS8700_M_THS_SRC_t\n|+ m_ths_xhp\l+ m_ths_xhe\l+ m_ths_yhp\l+ m_ths_yhe\l+ m_ths_zhp\l+ m_ths_zhe\l+ _reserved_\l+ m_ths_ea\l+ b\l+ w\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

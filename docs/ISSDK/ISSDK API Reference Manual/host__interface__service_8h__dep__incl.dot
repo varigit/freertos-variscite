@@ -1,0 +1,10 @@
+digraph "drivers/host/host_interface_service.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node5 [label="drivers/host/host_interface\l_service.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="drivers/host/data_format\l_json.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$data__format__json_8h.html",tooltip="The format_json.h file describes the structures and definitions for the data-format standard JSON..."];
+  Node5 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="drivers/host/host_interface\l_service.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$host__interface__service_8c.html",tooltip="The dhost_interface_servicec file implements host interface functions. "];
+}

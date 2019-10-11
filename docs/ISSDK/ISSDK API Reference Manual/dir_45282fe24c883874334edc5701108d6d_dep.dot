@@ -1,0 +1,9 @@
+digraph "boardkit/frdm-kl25z/virtual_shield" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_f2aadd68a764bb6133fbd87649d632b2 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="frdm-kl25z" fontname="Helvetica", fontsize="10", URL="dir_f2aadd68a764bb6133fbd87649d632b2.html"]
+  dir_45282fe24c883874334edc5701108d6d [shape=box, label="virtual_shield", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_45282fe24c883874334edc5701108d6d.html"];
+  }
+}

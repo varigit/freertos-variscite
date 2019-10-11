@@ -1,0 +1,41 @@
+digraph "Sensor_I2C_Read"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node22 [label="Sensor_I2C_Read",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node22 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="DIFF_P_I2C_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$diff__p__drv_8h.html#af9855549e1b11ca8ca31df3f36c4b472",tooltip="The interface function to read the sensor data. "];
+  Node22 -> Node25 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node25 [label="FXAS21002_I2C_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxas21002__drv_8h.html#a2772f78de8e7ae03383d86c47fdb544c",tooltip="The interface function to read the sensor data. "];
+  Node22 -> Node27 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node27 [label="FXLC95000_I2C_CommandResponse",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxlc95000__drv_8h.html#aceb89b4fc88099b21318cacb6088f9cd",tooltip="The interface function to read the sensor data. "];
+  Node22 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="FXLS8471Q_Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$drivers_8h.html#ac818465f3f2f5bd60e71c5c7d8a8a261"];
+  Node22 -> Node32 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node32 [label="FXLS8962_I2C_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8962__drv_8h.html#a14a2159c85255ee4d333dd103740e87d",tooltip="The interface function to read the sensor data. "];
+  Node22 -> Node34 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node34 [label="FXOS8700_I2C_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxos8700__drv_8h.html#a0528c7633050aa23e89a79106d804cc6",tooltip="The interface function to read the sensor data. "];
+  Node22 -> Node36 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node36 [label="FXOS8700_Init",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$drivers_8h.html#ac61bf451efc3a4eab179dbc59268b3e7"];
+  Node22 -> Node38 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node38 [label="FXOS8700_ReadMagData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$driver___f_x_o_s8700_8c.html#a16645c35980d715e5252f30beebecaa2"];
+  Node22 -> Node40 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node40 [label="FXPQ3115_I2C_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxpq3115__drv_8h.html#ac85f1d786d7edcd444ef6d6cea0a8728",tooltip="The interface function to read the sensor data. "];
+  Node22 -> Node42 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node42 [label="ISL29023_I2C_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$isl29023__drv_8h.html#aa8ca6dc6e2e7a435afab374d122233c3",tooltip="The interface function to read the sensor data. "];
+  Node22 -> Node44 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node44 [label="MAG3110_I2C_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mag3110__drv_8h.html#ad21e17c18a85571ddb312850e5d61f30",tooltip="The interface function to read the sensor data. "];
+  Node22 -> Node46 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node46 [label="MAG3110_Read",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$drivers_8h.html#a2592117f3e2fed5f61ff029cb18fa556"];
+  Node22 -> Node48 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node48 [label="MMA845x_I2C_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mma845x__drv_8h.html#ae4cb15ca5ef625fef48a25d9a34ad1f6",tooltip="The interface function to read the sensor data. "];
+  Node22 -> Node50 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node50 [label="MMA8491Q_I2C_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mma8491q__drv_8h.html#ab6916f6933917650277444810e237473",tooltip="The interface function to read the sensor data. "];
+  Node22 -> Node52 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node52 [label="MMA865x_I2C_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mma865x__drv_8h.html#a4e26c023c983b903eae65c12775ab0cf",tooltip="The interface function to read the sensor data. "];
+  Node22 -> Node54 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node54 [label="MMA9553_I2C_CommandResponse",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mma9553__drv_8h.html#ac2adf4021d79f76664f040c381399468",tooltip="The interface function to read the sensor data. "];
+  Node22 -> Node56 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node56 [label="MPL3115_I2C_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mpl3115__drv_8h.html#a3ac7e30ac09a6557eebe24bb0c00e16f",tooltip="The interface function to read the sensor data. "];
+}

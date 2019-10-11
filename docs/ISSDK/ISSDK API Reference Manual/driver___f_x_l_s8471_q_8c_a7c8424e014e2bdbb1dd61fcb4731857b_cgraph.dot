@@ -1,0 +1,25 @@
+digraph "FXLS8471Q_Init"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node8 [label="FXLS8471Q_Init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="FXLS8471Q_SPI_ReadPreprocess",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxls8471q__drv_8c.html#af5467d1a6cf1e480e9bba282f8e5e01d",tooltip="The SPI Read Pre-Process function to generate Sensor specific SPI Message Header. ..."];
+  Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="FXLS8471Q_SPI_WritePreprocess",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxls8471q__drv_8c.html#adf2e7ee5af2707bd751372a9b4586595",tooltip="The SPI Write Pre-Process function to generate Sensor specific SPI Message Header. "];
+  Node8 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="int32_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__format__service_8h.html#a5d7069350a7d7e65686c77a8038f462f",tooltip="The interface function to append the data on the formated stream. "];
+  Node8 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Register_I2C_Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$register__io__i2c_8c.html#ac8a60c799d9dbc84531b4680762eb8dc",tooltip="The interface function to read a sensor register. "];
+  Node12 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Register_SPI_Read",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$register__io__spi_8c.html#a76a3aee498397854509b81ae2da2f85e",tooltip="The interface function to read a sensor register. "];
+  Node13 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="Sensor_I2C_Write",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__io__i2c_8c.html#aaac4c4f34b4dd37d3f202a1dbb4b000b",tooltip="Write register data to a sensor. "];
+  Node15 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="Sensor_SPI_Write",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__io__spi_8c.html#aaadd5fc1d790e7922e5303b4d61b67b4",tooltip="Write register data to a sensor. "];
+  Node17 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

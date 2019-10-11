@@ -1,0 +1,31 @@
+digraph "sensors/sensor_drv.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node4 [label="sensors/sensor_drv.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sensors/register_io\l_i2c.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$register__io__i2c_8h.html",tooltip="The register_io_i2c.h file declares low-level interface functions for reading and writing sensor regi..."];
+  Node4 -> Node137 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node137 [label="sensors/register_io\l_spi.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$register__io__spi_8h.html",tooltip="The register_io_spi.h file declares low-level interface functions for reading and writing sensor regi..."];
+  Node137 -> Node113 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node113 [label="algorithms/sensorfusion\l/sources/driver_FXLS8471Q.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$driver___f_x_l_s8471_q_8c.html",tooltip="Provides init() and read() functions for the FXLS8471Q 3-axis accel. "];
+  Node4 -> Node111 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node111 [label="sensors/sensor_io_i2c.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sensor__io__i2c_8c.html",tooltip="The sensor_io_i2c.c file contains definitions for low-level interface functions for reading and writi..."];
+  Node4 -> Node146 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node146 [label="sensors/sensor_io_spi.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sensor__io__spi_8c.html",tooltip="The sensor_io_spi.c file contains definitions for low-level interface functions for reading and writi..."];
+  Node4 -> Node112 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node112 [label="algorithms/sensorfusion\l/sources/driver_FXAS21002.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$driver___f_x_a_s21002_8c.html",tooltip="Provides init() and read() functions for the FXAS21002 gyroscope. "];
+  Node4 -> Node113 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node114 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node114 [label="algorithms/sensorfusion\l/sources/driver_FXLS8952.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$driver___f_x_l_s8952_8c.html",tooltip="Provides init() and read() functions for the FXLS8952 3-axis accelerometer. "];
+  Node4 -> Node115 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node115 [label="algorithms/sensorfusion\l/sources/driver_FXLS8962.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$driver___f_x_l_s8962_8c.html",tooltip="Provides init() and read() functions for the FXLS8962 3-axis accelerometer. "];
+  Node4 -> Node116 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node116 [label="algorithms/sensorfusion\l/sources/driver_MAG3110.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$driver___m_a_g3110_8c.html",tooltip="Provides init() and read() functions for the MAG3110 magnetometer. "];
+  Node4 -> Node117 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node117 [label="algorithms/sensorfusion\l/sources/driver_MMA845X.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$driver___m_m_a845_x_8c.html",tooltip="Provides init() and read() functions for the MMA845x 3-axis accel family. "];
+  Node4 -> Node118 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node118 [label="algorithms/sensorfusion\l/sources/driver_MMA8652.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$driver___m_m_a8652_8c.html",tooltip="Provides init() and read() functions for the MMA8652 3-axis accel family. "];
+  Node4 -> Node159 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node159 [label="algorithms/sensorfusion\l/sources/sensor_fusion.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sensor__fusion_8c.html",tooltip="The sensor_fusion.c file implements the top level programming interface. "];
+}

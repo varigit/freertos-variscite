@@ -1,0 +1,34 @@
+digraph "fRun_3DOF_G_BASIC"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node182 [label="fRun_3DOF_G_BASIC",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node182 -> Node183 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node183 [label="f3DOFTiltAndroid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$orientation_8h.html#a480280c72c7243e5c192cab628e0a38d",tooltip="Android accelerometer 3DOF tilt function computing, rotation matrix fR. "];
+  Node182 -> Node184 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node184 [label="f3DOFTiltNED",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$orientation_8h.html#addec350696b9ab89918808b56292bd9a",tooltip="Aerospace NED accelerometer 3DOF tilt function, computing rotation matrix fR. "];
+  Node182 -> Node185 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node185 [label="f3DOFTiltWin8",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$orientation_8h.html#a292e27a8f966749f38e5e7936b05e29b",tooltip="Windows 8 accelerometer 3DOF tilt function computing, rotation matrix fR. "];
+  Node182 -> Node186 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node186 [label="fAndroidAnglesDegFromRotation\lMatrix",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$orientation_8c.html#a77eeda9a699b1456bb8b02665ad80522",tooltip="extract the Android angles in degrees from the Android rotation matrix "];
+  Node182 -> Node192 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node192 [label="fInit_3DOF_G_BASIC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fusion_8c.html#a41f2c6419c8e0c019e08618283338d21"];
+  Node192 -> Node183 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node192 -> Node184 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node192 -> Node185 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node192 -> Node193 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node193 [label="fQuaternionFromRotationMatrix",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$orientation_8c.html#a04da5468213c1687c5b3485f15af288e",tooltip="compute the orientation quaternion from a 3x3 rotation matrix "];
+  Node182 -> Node195 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node195 [label="fLPFOrientationQuaternion",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$orientation_8c.html#ad60a32e44f24a4b8fa5bddfb23721bc8",tooltip="function low pass filters an orientation quaternion and computes virtual gyro rotation rate ..."];
+  Node195 -> Node197 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node197 [label="fRotationVectorDegFromQuaternion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$orientation_8c.html#aa48ae334cf6bbedf2b9e7423d17cb4ac",tooltip="computes rotation vector (deg) from rotation quaternion "];
+  Node182 -> Node199 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node199 [label="fNEDAnglesDegFromRotation\lMatrix",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$orientation_8c.html#aa781ea4b9430531df4697d3cb39f7454",tooltip="extract the NED angles in degrees from the NED rotation matrix "];
+  Node182 -> Node193 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node182 -> Node200 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node200 [label="fRotationMatrixFromQuaternion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$orientation_8c.html#ab93a6fd700fd1557e9b8f6796bfe3035",tooltip="compute the rotation matrix from an orientation quaternion "];
+  Node182 -> Node197 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node182 -> Node201 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node201 [label="fWin8AnglesDegFromRotation\lMatrix",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$orientation_8c.html#a13cd93780206a620abc7bdf7907e6dc6",tooltip="extract the Windows 8 angles in degrees from the Windows 8 rotation matrix "];
+}

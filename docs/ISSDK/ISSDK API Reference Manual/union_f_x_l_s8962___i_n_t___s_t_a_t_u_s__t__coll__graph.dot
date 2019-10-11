@@ -1,0 +1,6 @@
+digraph "FXLS8962_INT_STATUS_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FXLS8962_INT_STATUS_t\n|+ src_boot\l+ src_aslp\l+ src_orient\l+ src_sdcd_wt\l+ src_sdcd_ot\l+ src_buf\l+ src_ovf\l+ src_drdy\l+ b\l+ w\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

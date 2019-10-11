@@ -1,0 +1,30 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="BOARD_InitDebugConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$frdm-k64f_2board_8c.html#a4c84ccb952cb083367d7040cf9de3db8"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="BOARD_InitPins",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__pin__mux.html#ga2c9fe54b6b84723fbaa590a6f4576966",tooltip="Configures pin routing and optionally pin electrical features. "];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="fxls8471q_isr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxls8471q__spi__interrupt_8c.html#a5a40ec8c1cd28bb4b3b4d99d0223c780",tooltip="This is the Sensor Data Ready ISR implementation. "];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="FXLS8471Q_SPI_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8471q__drv_8c.html#a1a82c26ff39b7d12bb85cf62f32f25b7",tooltip="The interface function to configure he sensor. "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="int32_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__format__service_8h.html#a5d7069350a7d7e65686c77a8038f462f",tooltip="The interface function to append the data on the formated stream. "];
+  Node3 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="FXLS8471Q_SPI_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8471q__drv_8c.html#abaaef883aa8d1d70ac1e5d9b4efb5e26",tooltip="The interface function to initialize the sensor for I2C. "];
+  Node12 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="FXLS8471Q_SPI_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8471q__drv_8c.html#ad16c8372e2c0bcbcd12af93a2f223814",tooltip="The interface function to read the sensor data. "];
+  Node16 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="FXLS8471Q_SPI_SetIdleTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxls8471q__drv_8c.html#a114a400580705a963d24be3b401db679",tooltip=": The interface function to set the SPI Idle Task. "];
+  Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="SMC_SetPowerModeVlpr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lpc54114_8c.html#a82cb114bb9a5ea2f235a0216709d70f8",tooltip="Configures the system to VLPR power mode. API name used from Kinetis family to maintain compatibility..."];
+  Node3 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="SMC_SetPowerModeWait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lpc54114_8c.html#a5423cac017d1d1a8ac8bba8e91e80e29",tooltip="Configures the system to WAIT power mode. API name used from Kinetis family to maintain compatibility..."];
+}

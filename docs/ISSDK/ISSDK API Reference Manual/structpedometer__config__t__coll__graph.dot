@@ -1,0 +1,6 @@
+digraph "pedometer_config_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{pedometer_config_t\n|+ sleepminimum\l+ sleepmaximum\l+ sleepcount_threshold\l+ __pad0__\l+ sleep_dbcntm\l+ activity_dbcntm\l+ config\l+ bits\l+ keynetik\l+ activitycount_threshold\l+ stepcoalesce\l+ oneG\l+ frequency\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

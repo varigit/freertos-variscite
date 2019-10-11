@@ -1,0 +1,32 @@
+digraph "sensors/fxos8700_drv.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node12 [label="sensors/fxos8700_drv.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="sensors/fxos8700_drv.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxos8700__drv_8c.html",tooltip="The fxos8700_drv.c file implements the fxos8700 sensor driver functional interfaces. "];
+  Node12 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="driverexamples/fxos8700\l/fxos8700_fifo.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxos8700_2fxos8700__fifo_8c.html"];
+  Node12 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="driverexamples/fxos8700\l/fxos8700_interrupt.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxos8700__interrupt_8c.html",tooltip="The fxos8700_interrupt.c file implements the ISSDK FXOS8700 sensor driver example demonstration with ..."];
+  Node12 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="driverexamples/fxos8700\l/fxos8700_poll.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxos8700_2fxos8700__poll_8c.html"];
+  Node12 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="driverexamples/fxos8700\l/fxos8700_poll_spi.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxos8700__poll__spi_8c.html",tooltip="The fxos8700_poll_spi.c file implements the ISSDK FXOS8700 SPI sensor driver example demonstration fo..."];
+  Node12 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="driverexamples/demos\l/data_logger_demo.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__logger__demo_8c.html",tooltip="The data_logger_demo.c file implements the ISSDK Data Logger for RD-KL25-AGMP01 example demonstration..."];
+  Node12 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="driverexamples/demos\l/fxos8700_demo.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxos8700__demo_8c.html",tooltip="The fxos8700_demo.c file implements the ISSDK FXOS8700 sensor driver example demonstration with inter..."];
+  Node12 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="driverexamples/demos\l/fxos8700_poll_demo.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxos8700__poll__demo_8c.html"];
+  Node12 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="driverexamples/imx\l/mekmimx8qm/fxos8700\l/fxos8700_fifo.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$imx_2mekmimx8qm_2fxos8700_2fxos8700__fifo_8c.html"];
+  Node12 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="driverexamples/imx\l/mekmimx8qm/fxos8700\l/fxos8700_poll.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$imx_2mekmimx8qm_2fxos8700_2fxos8700__poll_8c.html"];
+  Node12 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="algorithms/sensorfusion\l/sources/driver_FXOS8700.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$driver___f_x_o_s8700_8c.html",tooltip="Provides init() and read() functions for the FXOS8700 6-axis accel plus mag. "];
+  Node12 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="algorithms/pedometer\l/examples/pedometer_stepcount\l_fxos8700.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pedometer__stepcount__fxos8700_8c.html",tooltip="The pedometer_stepcount_fxos8700.c file implements the ISSDK prdometer example using FXOS8700 sensor ..."];
+  Node12 -> Node25 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node25 [label="algorithms/pedometer\l/examples/pedometer_stepcount\l_motion_fxos8700.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pedometer__stepcount__motion__fxos8700_8c.html"];
+}

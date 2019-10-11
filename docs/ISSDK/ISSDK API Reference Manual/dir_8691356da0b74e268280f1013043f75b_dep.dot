@@ -1,0 +1,11 @@
+digraph "algorithms/pedometer/source" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_fee404f6f831fcfa321ee67f90b1e1c1 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="pedometer" fontname="Helvetica", fontsize="10", URL="dir_fee404f6f831fcfa321ee67f90b1e1c1.html"]
+  dir_8691356da0b74e268280f1013043f75b [shape=box, label="source", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_8691356da0b74e268280f1013043f75b.html"];
+  }
+  dir_0ad8eb24ff6e81580c7f28d977c24fc7 [shape=box label="include" URL="dir_0ad8eb24ff6e81580c7f28d977c24fc7.html"];
+  dir_8691356da0b74e268280f1013043f75b->dir_0ad8eb24ff6e81580c7f28d977c24fc7 [headlabel="1", labeldistance=1.5 headhref="dir_000004_000003.html"];
+}

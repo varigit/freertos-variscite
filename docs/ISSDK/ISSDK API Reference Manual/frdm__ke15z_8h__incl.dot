@@ -1,0 +1,16 @@
+digraph "boardkit/frdm-ke15z/frdm_ke15z.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="boardkit/frdm-ke15z\l/frdm_ke15z.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="pin_mux.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$frdm-ke15z_2pin__mux_8h.html"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="fsl_smc.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="MKE15Z7.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="RTE_Device.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$frdm-ke15z_2_r_t_e___device_8h.html"];
+  Node0 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="gpio_driver.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

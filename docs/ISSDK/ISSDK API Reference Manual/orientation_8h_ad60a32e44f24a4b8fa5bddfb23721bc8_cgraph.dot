@@ -1,0 +1,15 @@
+digraph "fLPFOrientationQuaternion"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node129 [label="fLPFOrientationQuaternion",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node129 -> Node130 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node130 [label="fqAeqNormqA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$orientation_8c.html#a3bcc5aef9bd7abd545d33660aa3ccbd0",tooltip="function normalizes a rotation quaternion and ensures q0 is non-negative "];
+  Node129 -> Node131 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node131 [label="fRotationVectorDegFromQuaternion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$orientation_8c.html#aa48ae334cf6bbedf2b9e7423d17cb4ac",tooltip="computes rotation vector (deg) from rotation quaternion "];
+  Node129 -> Node132 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node132 [label="qAeqAxB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$orientation_8c.html#a22a32becfcb162db012f41ff4f3bc942",tooltip="function compute the quaternion product qA = qA * qB "];
+  Node129 -> Node133 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node133 [label="qconjgAxB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$orientation_8c.html#adb2ea2734ac13ca77b3218d761fe45e0",tooltip="function compute the quaternion product conjg(qA) * qB "];
+}

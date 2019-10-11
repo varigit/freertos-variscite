@@ -1,0 +1,9 @@
+digraph "fatan_15deg"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node54 [label="fatan_15deg",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node54 -> Node55 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node55 [label="fatan_deg",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$approximations_8h.html#a09d50b3d2c3d4d24e447a9b960eb5267"];
+}

@@ -1,0 +1,34 @@
+digraph "Register_SPI_Write"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node54 [label="Register_SPI_Write",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node54 -> Node55 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node55 [label="DIFF_P_SPI_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$diff__p__drv_8h.html#a140a0a84d98f61e012d5c25d151c151e",tooltip="The interface function to configure he sensor. "];
+  Node54 -> Node57 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node57 [label="DIFF_P_SPI_DeInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$diff__p__drv_8h.html#a4a1f7443e2e3269d534817489fc6a944",tooltip="The interface function to De Initialize sensor.. "];
+  Node54 -> Node58 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node58 [label="DIFF_P_SPI_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$diff__p__drv_8h.html#a8daefe78cc812287f49b2f71b3afe24d",tooltip="The interface function to initialize the sensor. "];
+  Node54 -> Node59 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node59 [label="FXAS21002_SPI_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxas21002__drv_8h.html#aa0589840af24d3ff0f4121e9345cf000",tooltip="The interface function to configure he sensor. "];
+  Node54 -> Node61 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node61 [label="FXAS21002_SPI_Deinit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxas21002__drv_8h.html#aab5046784ac58fbf4cf1fa3a738122fa",tooltip="The interface function to De Initialize sensor.. "];
+  Node54 -> Node62 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node62 [label="FXLS8471Q_SPI_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8471q__drv_8h.html#a1a82c26ff39b7d12bb85cf62f32f25b7",tooltip="The interface function to configure he sensor. "];
+  Node54 -> Node64 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node64 [label="FXLS8962_SPI_Configure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxls8962__drv_8h.html#a742cbb5c5b1d65ffccf3b7d6c9615e0a",tooltip="The interface function to configure he sensor. "];
+  Node54 -> Node65 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node65 [label="FXLS8962_SPI_Deinit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxls8962__drv_8h.html#afa8884917291129b676fc1395fd95671",tooltip="The interface function to De Initialize sensor.. "];
+  Node54 -> Node66 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node66 [label="FXOS8700_SPI_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxos8700__drv_8h.html#ae7129952c935fb610a2c1cd327f59078",tooltip="The interface function to configure he sensor. "];
+  Node54 -> Node68 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node68 [label="FXOS8700_SPI_Deinit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxos8700__drv_8h.html#a1a82f26614dd4e35cf8eb5fba838f391",tooltip="The interface function to De Initialize sensor.. "];
+  Node54 -> Node69 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node69 [label="Sensor_SPI_Write",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__io__spi_8h.html#aaadd5fc1d790e7922e5303b4d61b67b4",tooltip="Write register data to a sensor. "];
+  Node69 -> Node55 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node69 -> Node59 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node69 -> Node62 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node69 -> Node64 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node69 -> Node66 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

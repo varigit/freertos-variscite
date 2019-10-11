@@ -1,0 +1,16 @@
+digraph "initializeStatusSubsystem"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="initializeStatusSubsystem",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="ssQueueStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$status_8c.html#a8b18fb2d1aa207d82a91b964e618fc6f"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ssSetStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$status_8c.html#aa1eec664ba18958c8e54d696402232b9"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ssUpdateStatus",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$status_8c.html#a163c3ee102397bef342e6e3e56b78a69"];
+  Node0 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="ssTest",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$status_8c.html#a965d11d38c1ccddb703fe6e29d087d8d"];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,19 @@
+digraph "Sensor_I2C_BlockWrite"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node7 [label="Sensor_I2C_BlockWrite",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="FXLC95000_I2C_CommandResponse",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxlc95000__drv_8h.html#aceb89b4fc88099b21318cacb6088f9cd",tooltip="The interface function to read the sensor data. "];
+  Node7 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="FXLC95000_I2C_FlashCommands",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxlc95000__drv_8h.html#a871aa55982b73b6f38f5bfa87a3c070e",tooltip="The interface function to write ROM CI Commands. "];
+  Node7 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="MMA9553_I2C_CommandResponse",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mma9553__drv_8h.html#ac2adf4021d79f76664f040c381399468",tooltip="The interface function to read the sensor data. "];
+  Node7 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="MMA9553_I2C_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mma9553__drv_8h.html#a98085b8d1389e48df874d4115f7ee2ac",tooltip="The interface function to configure he sensor. "];
+  Node7 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="MMA9553_I2C_DeInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mma9553__drv_8h.html#ad12d67ce4ddd0b5d95a937d643e3f369",tooltip="The interface function to De Initialize sensor.. "];
+  Node7 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="MMA9553_I2C_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mma9553__drv_8h.html#af91dd70fb511444f848db38d965c68c0",tooltip="The interface function to initialize the sensor. "];
+}

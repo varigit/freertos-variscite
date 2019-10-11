@@ -1,0 +1,30 @@
+digraph "algorithms/sensorfusion/sources/driver_FXLS8471Q.c"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="algorithms/sensorfusion\l/sources/driver_FXLS8471Q.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="board.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sensor_fusion.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__fusion_8h.html",tooltip="The sensor_fusion.h file implements the top level programming interface. "];
+  Node2 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="register_io_spi.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$register__io__spi_8h.html",tooltip="The register_io_spi.h file declares low-level interface functions for reading and writing sensor regi..."];
+  Node12 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="sensor_drv.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__drv_8h.html",tooltip="The sensor_drv.h file contains sensor state and error definitions. "];
+  Node0 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="sensor_io_spi.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__io__spi_8h.html",tooltip="The sensor_io_spi.h file declares low-level interface functions for reading and writing sensor regist..."];
+  Node17 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="sensor_io_i2c.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__io__i2c_8h.html",tooltip="The sensor_io_i2c.h file declares low-level interface functions for reading and writing sensor regist..."];
+  Node0 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="fxls8471q.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxls8471q_8h.html",tooltip="The fxls8471q.h file contains the register definitions for fxls8471q sensor driver. "];
+  Node0 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="fxls8471q_drv.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8471q__drv_8h.html",tooltip="The fxls8471q_drv.h file describes the fxls8471q driver interface and structures. ..."];
+  Node22 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node23 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="drivers.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$drivers_8h.html",tooltip="Provides function prototypes for driver level interfaces. "];
+}

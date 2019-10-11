@@ -1,0 +1,37 @@
+digraph "Register_SPI_Read"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node67 [label="Register_SPI_Read",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node67 -> Node68 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node68 [label="ADS_DIFF_PQuery",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$auto__detection__service__kl25z_8c.html#ae3d648f7414fad5a7cce5161b3592c92"];
+  Node67 -> Node71 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node71 [label="ADS_FXLS8471Query",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$auto__detection__service__kl25z_8c.html#a9e2ed26195eaf78326777a51c8ac1f3a"];
+  Node67 -> Node72 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node72 [label="ADS_FXLS8962Query",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$auto__detection__service__kl25z_8c.html#a7381a2e1ee8e3fb264314c9c71216c98"];
+  Node67 -> Node73 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node73 [label="DIFF_P_SPI_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$diff__p__drv_8h.html#a8daefe78cc812287f49b2f71b3afe24d",tooltip="The interface function to initialize the sensor. "];
+  Node67 -> Node75 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node75 [label="FXAS21002_SPI_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxas21002__drv_8h.html#a6a3e2b9d7fd78d3bcfbeae10000473c7",tooltip="The interface function to initialize the sensor. "];
+  Node67 -> Node77 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node77 [label="FXLS8471Q_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$drivers_8h.html#a7c8424e014e2bdbb1dd61fcb4731857b"];
+  Node67 -> Node78 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node78 [label="FXLS8471Q_SPI_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8471q__drv_8h.html#abaaef883aa8d1d70ac1e5d9b4efb5e26",tooltip="The interface function to initialize the sensor for I2C. "];
+  Node67 -> Node80 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node80 [label="FXLS8962_SPI_Initialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxls8962__drv_8h.html#ae96e138137bcdd86b47f8e28db1aa907",tooltip="The interface function to initialize the sensor. "];
+  Node67 -> Node81 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node81 [label="FXOS8700_SPI_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxos8700__drv_8h.html#ae968c689f91d84fb937839876121e3b4",tooltip="The interface function to initialize the sensor. "];
+  Node67 -> Node83 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node83 [label="Host_IO_Receive",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$host__io__uart_8h.html#a3924d21a0703878695ebdb68f720fff9"];
+  Node67 -> Node85 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node85 [label="MMA9553_SPI_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mma9553__drv_8h.html#a7aa85a35ea5947bf6ebd459911596bab",tooltip="The interface function to configure he sensor. "];
+  Node67 -> Node87 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node87 [label="MMA9553_SPI_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mma9553__drv_8h.html#aa9e0baf731b01815b94c95276e6be639",tooltip="The interface function to initialize the sensor. "];
+  Node67 -> Node88 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node88 [label="Sensor_SPI_BlockWrite",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__io__spi_8h.html#a6891c5409037ff96ef29750f131f4c00",tooltip="Write commands to a sensor. "];
+  Node88 -> Node87 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node88 -> Node85 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node67 -> Node93 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node93 [label="Sensor_SPI_Read",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__io__spi_8h.html#a77509913bc008bceacf1e5f500e7499d",tooltip="Read register data from a sensor. "];
+}

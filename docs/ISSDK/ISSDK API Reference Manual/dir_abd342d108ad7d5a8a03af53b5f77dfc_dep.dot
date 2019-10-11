@@ -1,0 +1,14 @@
+digraph "boardkit/frdm-kl27z" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6994211064bad48d3d63a6227f5100d6 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="boardkit" fontname="Helvetica", fontsize="10", URL="dir_6994211064bad48d3d63a6227f5100d6.html"]
+  subgraph clusterdir_abd342d108ad7d5a8a03af53b5f77dfc {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_abd342d108ad7d5a8a03af53b5f77dfc.html"];
+    dir_abd342d108ad7d5a8a03af53b5f77dfc [shape=plaintext label="frdm-kl27z"];
+    dir_c725d862fce0ac18a07990b6b78b0d8f [shape=box label="frdm" color="black" fillcolor="white" style="filled" URL="dir_c725d862fce0ac18a07990b6b78b0d8f.html"];
+    dir_989bbf9153e4562fd17ee3ff5937fdd2 [shape=box label="frdm-stbc-b3115" color="black" fillcolor="white" style="filled" URL="dir_989bbf9153e4562fd17ee3ff5937fdd2.html"];
+  }
+  }
+}

@@ -1,0 +1,16 @@
+digraph "fqAeqNormqA"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node167 [label="fqAeqNormqA",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node167 -> Node168 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node168 [label="fLPFOrientationQuaternion",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$orientation_8h.html#ad60a32e44f24a4b8fa5bddfb23721bc8",tooltip="function low pass filters an orientation quaternion and computes virtual gyro rotation rate ..."];
+  Node167 -> Node176 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node176 [label="fQuaternionFromRotationMatrix",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$orientation_8h.html#a04da5468213c1687c5b3485f15af288e",tooltip="compute the orientation quaternion from a 3x3 rotation matrix "];
+  Node176 -> Node181 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node181 [label="fRun_6DOF_GY_KALMAN",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fusion_8h.html#a942d619f897d6820d5c148bdc910f962"];
+  Node167 -> Node183 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node183 [label="fRun_3DOF_Y_BASIC",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fusion_8h.html#a288f51cd39aeb8ace643d844e219e9d3"];
+  Node167 -> Node181 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

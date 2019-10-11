@@ -1,0 +1,48 @@
+digraph "sensors/register_io_spi.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node6 [label="sensors/register_io\l_spi.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="sensors/sensor_io_spi.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__io__spi_8h.html",tooltip="The sensor_io_spi.h file declares low-level interface functions for reading and writing sensor regist..."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="sensors/diff_p_drv.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$diff__p__drv_8h.html",tooltip="The diff_p_drv.h file describes the DIFF_P driver interface and structures. "];
+  Node7 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="sensors/fxas21002_drv.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxas21002__drv_8h.html",tooltip="The fxas21002_drv.h file describes the fxas21002 driver interface and structures. ..."];
+  Node7 -> Node28 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node28 [label="sensors/fxlc95000_drv.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxlc95000__drv_8h.html",tooltip="The fxlc95000_drv.h file describes the FXLC95000L driver interface and structures. "];
+  Node7 -> Node33 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node33 [label="sensors/fxls8471q_drv.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8471q__drv_8h.html",tooltip="The fxls8471q_drv.h file describes the fxls8471q driver interface and structures. ..."];
+  Node33 -> Node40 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node40 [label="algorithms/sensorfusion\l/sources/driver_FXLS8471Q.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$driver___f_x_l_s8471_q_8c.html",tooltip="Provides init() and read() functions for the FXLS8471Q 3-axis accel. "];
+  Node7 -> Node41 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node41 [label="sensors/fxls8962_drv.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8962__drv_8h.html",tooltip="The fxls8962_drv.h file describes the FXLS8962AF driver interface and structures. ..."];
+  Node7 -> Node46 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node46 [label="sensors/fxos8700_drv.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxos8700__drv_8h.html",tooltip="The fxos8700_drv.h file describes the fxos8700 driver interface and structures. "];
+  Node7 -> Node59 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node59 [label="sensors/mma9553_drv.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mma9553__drv_8h.html",tooltip="The mma9553_drv.h file describes the MMA9553L driver interface and structures. "];
+  Node7 -> Node40 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node28 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node33 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node41 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node46 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node66 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node66 [label="sensors/host_io_uart.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$host__io__uart_8c.html",tooltip="The host_io_uart.c file contains definitions for UART based streaming interface for sending and resei..."];
+  Node6 -> Node59 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node67 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node67 [label="sensors/register_io\l_spi.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$register__io__spi_8c.html",tooltip="The register_io_spi.c file contains definitions for low-level interface functions for reading and wri..."];
+  Node6 -> Node68 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node68 [label="drivers/ads/lpc/auto\l_detection_service.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lpc_2auto__detection__service_8c.html"];
+  Node6 -> Node69 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node69 [label="drivers/ads/kinetis\l/auto_detection_service.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$kinetis_2auto__detection__service_8c.html"];
+  Node6 -> Node70 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node70 [label="drivers/ads/kinetis\l/auto_detection_service\l_kl25z.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$auto__detection__service__kl25z_8c.html",tooltip="The auto detection service file implements auto detection sequence for discovery of FRDM-KL25Z Board ..."];
+  Node6 -> Node71 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node71 [label="drivers/ads/qn/auto\l_detection_service.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$qn_2auto__detection__service_8c.html"];
+  Node6 -> Node72 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node72 [label="algorithms/sensorfusion\l/sources/sensor_fusion.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__fusion_8h.html",tooltip="The sensor_fusion.h file implements the top level programming interface. "];
+  Node72 -> Node40 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node40 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

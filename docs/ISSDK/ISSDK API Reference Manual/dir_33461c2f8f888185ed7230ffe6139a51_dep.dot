@@ -1,0 +1,13 @@
+digraph "boardkit/evk-mimxrt1060" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6994211064bad48d3d63a6227f5100d6 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="boardkit" fontname="Helvetica", fontsize="10", URL="dir_6994211064bad48d3d63a6227f5100d6.html"]
+  subgraph clusterdir_33461c2f8f888185ed7230ffe6139a51 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_33461c2f8f888185ed7230ffe6139a51.html"];
+    dir_33461c2f8f888185ed7230ffe6139a51 [shape=plaintext label="evk-mimxrt1060"];
+    dir_092cf8c92d29876d497d5f9ca0d95594 [shape=box label="frdm-stbc-agm01" color="black" fillcolor="white" style="filled" URL="dir_092cf8c92d29876d497d5f9ca0d95594.html"];
+  }
+  }
+}

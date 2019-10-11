@@ -1,0 +1,15 @@
+digraph "MMA9553_SPI_CommandResponse"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node43 [label="MMA9553_SPI_CommandResponse",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node43 -> Node44 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node44 [label="int32_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__format__service_8h.html#a5d7069350a7d7e65686c77a8038f462f",tooltip="The interface function to append the data on the formated stream. "];
+  Node43 -> Node45 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node45 [label="Sensor_SPI_BlockWrite",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__io__spi_8c.html#a6891c5409037ff96ef29750f131f4c00",tooltip="Write commands to a sensor. "];
+  Node45 -> Node44 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node43 -> Node52 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node52 [label="Sensor_SPI_Read",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__io__spi_8c.html#a77509913bc008bceacf1e5f500e7499d",tooltip="Read register data from a sensor. "];
+  Node52 -> Node44 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,28 @@
+digraph "MMA9553_SPI_Initialize"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node76 [label="MMA9553_SPI_Initialize",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node76 -> Node77 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node77 [label="BOARD_DELAY_ms",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$systick__utils_8c.html#ab052b802081fd87e1bda8d56e2c0db42",tooltip="Function to insert delays. "];
+  Node77 -> Node79 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node79 [label="int32_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__format__service_8h.html#a5d7069350a7d7e65686c77a8038f462f",tooltip="The interface function to append the data on the formated stream. "];
+  Node76 -> Node79 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node76 -> Node81 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node81 [label="MMA9553_SPI_ReadPreprocess",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mma9553__drv_8c.html#a78732222a3db47ae89b5b1197a12400d",tooltip="The SPI Read Pre-Process function to generate Sensor specific SPI Message Header. ..."];
+  Node76 -> Node82 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node82 [label="MMA9553_SPI_WritePreprocess",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mma9553__drv_8c.html#abb5f3aa9f13acdc91fd6053769f44dd1",tooltip="The SPI Write Pre-Process function to generate Sensor specific SPI Message Header. "];
+  Node76 -> Node83 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node83 [label="Register_SPI_BlockWrite",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$register__io__spi_8c.html#a0662e3575811a227d02c1cfe802744c5",tooltip="The interface function to block write to a sensor register. "];
+  Node83 -> Node79 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node76 -> Node85 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node85 [label="Register_SPI_Read",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$register__io__spi_8c.html#a76a3aee498397854509b81ae2da2f85e",tooltip="The interface function to read a sensor register. "];
+  Node85 -> Node79 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node76 -> Node86 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node86 [label="Sensor_SPI_BlockWrite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sensor__io__spi_8c.html#a6891c5409037ff96ef29750f131f4c00",tooltip="Write commands to a sensor. "];
+  Node86 -> Node79 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node86 -> Node83 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node86 -> Node77 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node86 -> Node85 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

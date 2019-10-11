@@ -1,0 +1,18 @@
+digraph "fWin8AnglesDegFromRotationMatrix"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node196 [label="fWin8AnglesDegFromRotation\lMatrix",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node196 -> Node197 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node197 [label="facos_deg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$approximations_8c.html#a084fe0ff189767dca40fbe330d7394f0"];
+  Node197 -> Node198 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node198 [label="fatan_deg",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$approximations_8c.html#a09d50b3d2c3d4d24e447a9b960eb5267"];
+  Node196 -> Node200 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node200 [label="fasin_deg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$approximations_8c.html#a956336cb9e7270c6cfbf667b1075c063"];
+  Node200 -> Node198 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node196 -> Node201 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node201 [label="fatan2_deg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$approximations_8c.html#aebfdfbd2df0fe4472f9861b0738bb410"];
+  Node201 -> Node198 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node196 -> Node198 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

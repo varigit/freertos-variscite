@@ -1,0 +1,15 @@
+digraph "conditionSample"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node34 [label="conditionSample",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node34 -> Node35 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node35 [label="FXLS8471Q_Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$drivers_8h.html#ac818465f3f2f5bd60e71c5c7d8a8a261"];
+  Node34 -> Node36 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node36 [label="FXOS8700_Init",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$drivers_8h.html#ac61bf451efc3a4eab179dbc59268b3e7"];
+  Node34 -> Node38 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node38 [label="FXOS8700_ReadMagData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$driver___f_x_o_s8700_8c.html#a16645c35980d715e5252f30beebecaa2"];
+  Node34 -> Node40 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node40 [label="MAG3110_Read",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$drivers_8h.html#a2592117f3e2fed5f61ff029cb18fa556"];
+}

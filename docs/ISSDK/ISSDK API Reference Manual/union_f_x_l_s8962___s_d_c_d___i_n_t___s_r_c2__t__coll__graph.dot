@@ -1,0 +1,6 @@
+digraph "FXLS8962_SDCD_INT_SRC2_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FXLS8962_SDCD_INT_SRC2_t\n|+ _reserved_\l+ z_wt_ef\l+ _reserved_1\l+ y_wt_ef\l+ _reserved_2\l+ x_wt_ef\l+ _reserved_3\l+ wt_ea\l+ b\l+ w\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

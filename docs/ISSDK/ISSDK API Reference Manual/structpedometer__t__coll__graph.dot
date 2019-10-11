@@ -1,0 +1,12 @@
+digraph "pedometer_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{pedometer_t\n||}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{pedometer_config_t\n|+ sleepminimum\l+ sleepmaximum\l+ sleepcount_threshold\l+ __pad0__\l+ sleep_dbcntm\l+ activity_dbcntm\l+ config\l+ bits\l+ keynetik\l+ activitycount_threshold\l+ stepcoalesce\l+ oneG\l+ frequency\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structpedometer__config__t.html",tooltip="This defines the configuration structure of the pedometer. "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +status" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{pedometer_status_tag\n|+ activity\l+ suspend\l+ activitychange\l+ stepchange\l+ suspendchange\l+ mergedflags\l+ bits\l+ byte\l+ status\l+ version\l+ stepcount\l+ distance\l+ speed\l+ calories\l+ sleepcount\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structpedometer__t_1_1pedometer__status__tag.html"];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +private" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{pedometer_private_tag\n|+ activitycount\l+ stepchg_stepcount\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structpedometer__t_1_1pedometer__private__tag.html"];
+}

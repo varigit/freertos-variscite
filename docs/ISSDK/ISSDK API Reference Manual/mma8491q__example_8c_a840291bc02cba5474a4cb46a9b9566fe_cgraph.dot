@@ -1,0 +1,29 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="BOARD_InitDebugConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$frdm-k64f_2board_8c.html#a4c84ccb952cb083367d7040cf9de3db8"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="BOARD_InitPins",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__pin__mux.html#ga2c9fe54b6b84723fbaa590a6f4576966",tooltip="Configures pin routing and optionally pin electrical features. "];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="int32_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__format__service_8h.html#a5d7069350a7d7e65686c77a8038f462f",tooltip="The interface function to append the data on the formated stream. "];
+  Node0 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mma8491q_en_delay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mma8491q__example_8c.html#ae398426f48bb0524f7981632fe131c09"];
+  Node0 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="MMA8491Q_I2C_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mma8491q__drv_8c.html#a139416bfb5a05d907f47700d0dfa73bd",tooltip="The interface function to initialize the sensor. "];
+  Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="MMA8491Q_I2C_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mma8491q__drv_8c.html#ab6916f6933917650277444810e237473",tooltip="The interface function to read the sensor data. "];
+  Node7 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="MMA8491Q_I2C_SetIdleTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mma8491q__drv_8c.html#a18f7cb777662c0ce9b0252c1a6ccb09c",tooltip=": The interface function to set the I2C Idle Task. "];
+  Node0 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mma8491q_timer_fwk_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mma8491q__example_8c.html#af67820e4317cee0db9852c3a80274428"];
+  Node0 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="SMC_SetPowerModeVlpr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lpc54114_8c.html#a82cb114bb9a5ea2f235a0216709d70f8",tooltip="Configures the system to VLPR power mode. API name used from Kinetis family to maintain compatibility..."];
+  Node0 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="SMC_SetPowerModeWait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lpc54114_8c.html#a5423cac017d1d1a8ac8bba8e91e80e29",tooltip="Configures the system to WAIT power mode. API name used from Kinetis family to maintain compatibility..."];
+}

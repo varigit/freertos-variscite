@@ -1,0 +1,42 @@
+digraph "Sensor_I2C_Write"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node60 [label="Sensor_I2C_Write",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node60 -> Node61 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node61 [label="DIFF_P_I2C_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$diff__p__drv_8h.html#ab6966a8c4618c35437648c001c1d641d",tooltip="The interface function to configure he sensor. "];
+  Node60 -> Node63 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node63 [label="FXAS21002_I2C_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxas21002__drv_8h.html#abef3b2c3849b49331142f7a6266fde9a",tooltip="The interface function to configure he sensor. "];
+  Node60 -> Node65 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node65 [label="FXLS8471Q_Idle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$drivers_8h.html#a79f26568f569b2f59c6cbb818f885789"];
+  Node60 -> Node66 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node66 [label="FXLS8471Q_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$drivers_8h.html#a7c8424e014e2bdbb1dd61fcb4731857b"];
+  Node60 -> Node67 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node67 [label="FXLS8962_I2C_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8962__drv_8h.html#a1b62cba67669ae79f5f3c2e5f846a6c7",tooltip="The interface function to configure he sensor. "];
+  Node67 -> Node68 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node68 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pedometer__stepcount__fxls8962_8c.html#a840291bc02cba5474a4cb46a9b9566fe",tooltip="This is the The main function implementation. "];
+  Node60 -> Node71 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node71 [label="FXOS8700_I2C_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxos8700__drv_8h.html#adcb4dbaa31a6b4ccd6031ee6cc97bb66",tooltip="The interface function to configure he sensor. "];
+  Node60 -> Node73 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node73 [label="FXOS8700_Idle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$drivers_8h.html#a885024916f4959fb4d226465b68f8e90"];
+  Node60 -> Node74 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node74 [label="FXOS8700_Init",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$drivers_8h.html#ac61bf451efc3a4eab179dbc59268b3e7"];
+  Node60 -> Node76 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node76 [label="FXPQ3115_I2C_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxpq3115__drv_8h.html#a02cdde2f932058060c53dc8314e8d03f",tooltip="The interface function to configure he sensor. "];
+  Node60 -> Node78 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node78 [label="ISL29023_I2C_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$isl29023__drv_8h.html#a7080e6e4c87f884467ded36ad2a1846a",tooltip="The interface function to configure he sensor. "];
+  Node60 -> Node80 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node80 [label="MAG3110_I2C_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mag3110__drv_8h.html#a2de85bf13cfe26dbc0ca9be7f4625cba",tooltip="The interface function to configure he sensor. "];
+  Node60 -> Node82 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node82 [label="MAG3110_Idle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$drivers_8h.html#a8b3e60cfe3482a21af1efd34d3e31cc2"];
+  Node60 -> Node83 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node83 [label="MAG3110_Init",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$drivers_8h.html#a20b118514f14ce008825433f72527ecd"];
+  Node60 -> Node68 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node60 -> Node85 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node85 [label="MMA845x_I2C_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mma845x__drv_8h.html#a6c537b63c09b23480c1a3d6ef6e29fef",tooltip="The interface function to configure he sensor. "];
+  Node60 -> Node87 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node87 [label="MMA865x_I2C_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mma865x__drv_8h.html#a5944d87d922a1bdbbf5f2574acc1e143",tooltip="The interface function to configure he sensor. "];
+  Node60 -> Node89 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node89 [label="MPL3115_I2C_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mpl3115__drv_8h.html#a8dce7c0e6c9d7ef6cf9c6c2fd3c093ae",tooltip="The interface function to configure he sensor. "];
+}

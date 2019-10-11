@@ -1,0 +1,18 @@
+digraph "ADS_MMA9553Query"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node134 [label="ADS_MMA9553Query",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node134 -> Node135 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node135 [label="BOARD_DELAY_ms",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$systick__utils_8c.html#ab052b802081fd87e1bda8d56e2c0db42",tooltip="Function to insert delays. "];
+  Node135 -> Node136 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node136 [label="int32_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__format__service_8h.html#a5d7069350a7d7e65686c77a8038f462f",tooltip="The interface function to append the data on the formated stream. "];
+  Node134 -> Node136 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node134 -> Node139 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node139 [label="Register_I2C_BlockWrite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$register__io__i2c_8c.html#ac5a66aa1b8d95d267c9d68cb475c9e01",tooltip="The interface function to write a sensor register. "];
+  Node139 -> Node136 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node134 -> Node140 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node140 [label="Register_I2C_Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$register__io__i2c_8c.html#ac8a60c799d9dbc84531b4680762eb8dc",tooltip="The interface function to read a sensor register. "];
+  Node140 -> Node136 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

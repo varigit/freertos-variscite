@@ -1,0 +1,11 @@
+digraph "drivers/gpio/kinetis" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_999ea29f6fe13f1ec5dc080b8071f0d8 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="gpio" fontname="Helvetica", fontsize="10", URL="dir_999ea29f6fe13f1ec5dc080b8071f0d8.html"]
+  dir_807d981233a0048c225e9ae0c4de669d [shape=box, label="kinetis", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_807d981233a0048c225e9ae0c4de669d.html"];
+  }
+  dir_6994211064bad48d3d63a6227f5100d6 [shape=box label="boardkit" fillcolor="white" style="filled" color="red" URL="dir_6994211064bad48d3d63a6227f5100d6.html"];
+  dir_807d981233a0048c225e9ae0c4de669d->dir_6994211064bad48d3d63a6227f5100d6 [headlabel="2", labeldistance=1.5 headhref="dir_000079_000007.html"];
+}

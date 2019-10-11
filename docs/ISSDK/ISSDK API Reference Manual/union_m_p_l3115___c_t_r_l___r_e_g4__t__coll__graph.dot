@@ -1,0 +1,6 @@
+digraph "MPL3115_CTRL_REG4_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MPL3115_CTRL_REG4_t\n|+ int_en_tchg\l+ int_en_pchg\l+ int_en_tth\l+ int_en_pth\l+ int_en_tw\l+ int_en_pw\l+ int_en_fifo\l+ int_en_drdy\l+ b\l+ w\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

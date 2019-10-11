@@ -1,0 +1,24 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="BOARD_InitDebugConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$frdm-k64f_2board_8c.html#a4c84ccb952cb083367d7040cf9de3db8"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="BOARD_InitPins",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__pin__mux.html#ga2c9fe54b6b84723fbaa590a6f4576966",tooltip="Configures pin routing and optionally pin electrical features. "];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="FXPQ3115_I2C_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxpq3115__drv_8c.html#adc40ddb8a9c7c0a986035679f04541c7",tooltip="The interface function to initialize the sensor. "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="int32_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__format__service_8h.html#a5d7069350a7d7e65686c77a8038f462f",tooltip="The interface function to append the data on the formated stream. "];
+  Node0 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="FXPQ3115_I2C_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxpq3115__drv_8c.html#ac85f1d786d7edcd444ef6d6cea0a8728",tooltip="The interface function to read the sensor data. "];
+  Node6 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Sensor_I2C_Write",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__io__i2c_8c.html#aaac4c4f34b4dd37d3f202a1dbb4b000b",tooltip="Write register data to a sensor. "];
+  Node8 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="SMC_SetPowerModeWait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lpc54114_8c.html#a5423cac017d1d1a8ac8bba8e91e80e29",tooltip="Configures the system to WAIT power mode. API name used from Kinetis family to maintain compatibility..."];
+}

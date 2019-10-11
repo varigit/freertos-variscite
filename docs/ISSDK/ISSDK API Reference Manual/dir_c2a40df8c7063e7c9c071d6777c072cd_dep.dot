@@ -1,0 +1,9 @@
+digraph "boardkit/lpcxpresso55s69/frdm-stbc-agm01" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_543f50a302421605af62e881f790b94b {
+    graph [ bgcolor="#ddddee", pencolor="black", label="lpcxpresso55s69" fontname="Helvetica", fontsize="10", URL="dir_543f50a302421605af62e881f790b94b.html"]
+  dir_c2a40df8c7063e7c9c071d6777c072cd [shape=box, label="frdm-stbc-agm01", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_c2a40df8c7063e7c9c071d6777c072cd.html"];
+  }
+}

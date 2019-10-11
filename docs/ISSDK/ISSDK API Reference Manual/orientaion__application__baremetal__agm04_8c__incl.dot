@@ -1,0 +1,45 @@
+digraph "driverexamples/demos/orientaion_application_baremetal_agm04.c"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="driverexamples/demos\l/orientaion_application\l_baremetal_agm04.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="board.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="pin_mux.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="clock_config.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="fsl_port.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="fsl_i2c.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="fsl_pit.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Driver_USART.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="fsl_i2c_cmsis.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="fsl_uart_cmsis.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="register_io_i2c.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$register__io__i2c_8h.html",tooltip="The register_io_i2c.h file declares low-level interface functions for reading and writing sensor regi..."];
+  Node0 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="host_io_uart.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$host__io__uart_8h.html",tooltip="The host_io_uart.h file contains the Host Protocol interface definitions and configuration. "];
+  Node16 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="gpio_driver.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="auto_detection_service.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="systick_utils.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$systick__utils_8h.html",tooltip="ARM Systick Utilities. "];
+  Node0 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="sensor_fusion.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__fusion_8h.html",tooltip="The sensor_fusion.h file implements the top level programming interface. "];
+  Node0 -> Node31 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="control.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$control_8h.html",tooltip="Defines control sub-system. "];
+  Node0 -> Node32 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node32 [label="status.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$status_8h.html",tooltip="Application-specific status subsystem. "];
+  Node0 -> Node33 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node33 [label="drivers.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$drivers_8h.html",tooltip="Provides function prototypes for driver level interfaces. "];
+  Node0 -> Node34 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node34 [label="driver_pit.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$driver__pit_8h.html",tooltip="Provides a simple abstraction for a periodic interval timer. "];
+}

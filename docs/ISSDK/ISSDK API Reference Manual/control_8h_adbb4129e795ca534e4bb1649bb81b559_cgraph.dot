@@ -1,0 +1,18 @@
+digraph "CreateAndSendPackets"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node8 [label="CreateAndSendPackets",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="int32_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__format__service_8h.html#a5d7069350a7d7e65686c77a8038f462f",tooltip="The interface function to append the data on the formated stream. "];
+  Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="readCommon",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$output__stream_8c.html#a96da70ac128170ff0d03feffa05ef769"];
+  Node8 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="sBufAppendItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$output__stream_8c.html#a7ad6e53b35d6fc860a1299ceff40a299",tooltip="Utility function used to place data in output buffer about to be transmitted via UART. "];
+  Node8 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="sBufAppendZeros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$output__stream_8c.html#a93db92e775dee51c4dbf2dca2aed05b3"];
+  Node12 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="throttle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$output__stream_8c.html#a16d1508470294835d76682195104898e",tooltip="(OVERSAMPLE_RATIO * MAXPACKETRATEHZ) / SENSORFS "];
+}

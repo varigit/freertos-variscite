@@ -1,0 +1,10 @@
+digraph "boardkit/frdm-ke15z/pin_mux.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="boardkit/frdm-ke15z\l/pin_mux.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="boardkit/frdm-ke15z\l/frdm_ke15z.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$frdm__ke15z_8h.html",tooltip="The frdm_ke15z.h file defines GPIO pin mappings for FRDM-KE15Z board. "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="boardkit/frdm-ke15z\l/pin_mux.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$frdm-ke15z_2pin__mux_8c.html"];
+}

@@ -1,0 +1,8 @@
+digraph "algorithms/sensorfusion/sources/debug.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="algorithms/sensorfusion\l/sources/debug.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="algorithms/sensorfusion\l/sources/output_stream.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$output__stream_8c.html",tooltip="Implements streaming function for the status subsystem. See status.h. "];
+}

@@ -1,0 +1,8 @@
+digraph "mma9553_i2c_sensorhandle_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{mma9553_i2c_sensorhandle_t\n|+ pCommDrv\l+ isInitialized\l+ slaveAddress\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +deviceInfo" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{registerDeviceInfo_t\n|+ idleFunction\l+ functionParam\l+ deviceInstance\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structregister_device_info__t.html",tooltip="This structure defines the device specific info required by register I/O. "];
+}

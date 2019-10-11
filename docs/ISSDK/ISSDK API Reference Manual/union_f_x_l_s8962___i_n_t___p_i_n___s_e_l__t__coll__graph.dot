@@ -1,0 +1,6 @@
+digraph "FXLS8962_INT_PIN_SEL_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FXLS8962_INT_PIN_SEL_t\n|+ wk_out_int2\l+ boot_int2\l+ aslp_int2\l+ orient_int2\l+ sdcd_wt_int2\l+ sdcd_ot_int2\l+ buf_int2\l+ drdy_int2\l+ b\l+ w\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

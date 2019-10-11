@@ -1,0 +1,9 @@
+digraph "ADS_DIFF_P_SPI_ReadPreprocess"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node48 [label="ADS_DIFF_P_SPI_ReadPreprocess",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node48 -> Node49 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node49 [label="ADS_InitSPI_DIFF_P",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$lpc_2auto__detection__service_8c.html#ad62f3052de3e4b8bf43fde88bfdea1c9"];
+}

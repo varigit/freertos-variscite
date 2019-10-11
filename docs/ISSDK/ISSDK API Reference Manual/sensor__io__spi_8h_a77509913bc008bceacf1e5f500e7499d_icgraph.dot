@@ -1,0 +1,23 @@
+digraph "Sensor_SPI_Read"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node20 [label="Sensor_SPI_Read",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node20 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="DIFF_P_SPI_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$diff__p__drv_8h.html#a2b8d7e753c5e830200a8a7cacc327073",tooltip="The interface function to read the sensor data. "];
+  Node20 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="FXAS21002_SPI_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxas21002__drv_8h.html#a7d9d71cedd7f34f0cec84627fa94a73f",tooltip="The interface function to read the sensor data. "];
+  Node20 -> Node25 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node25 [label="FXLC95000_SPI_CommandResponse",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxlc95000__drv_8h.html#ac1215eeedc9ffa5b5d3ee5b133d7ee2a",tooltip="The interface function to read the sensor data. "];
+  Node20 -> Node27 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node27 [label="FXLS8471Q_Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$drivers_8h.html#ac818465f3f2f5bd60e71c5c7d8a8a261"];
+  Node20 -> Node28 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node28 [label="FXLS8471Q_SPI_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8471q__drv_8h.html#ad16c8372e2c0bcbcd12af93a2f223814",tooltip="The interface function to read the sensor data. "];
+  Node20 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="FXLS8962_SPI_ReadData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxls8962__drv_8h.html#a28138a58c06aa727c707aa927d95105c",tooltip="The interface function to read the sensor data. "];
+  Node20 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="FXOS8700_SPI_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxos8700__drv_8h.html#afc06d66f845ef2b99f1fcace0900b79d",tooltip="The interface function to read the sensor data. "];
+  Node20 -> Node33 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node33 [label="MMA9553_SPI_CommandResponse",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mma9553__drv_8h.html#a429c90eecb38e688d08310a3d3be3c81",tooltip="The interface function to read the sensor data. "];
+}

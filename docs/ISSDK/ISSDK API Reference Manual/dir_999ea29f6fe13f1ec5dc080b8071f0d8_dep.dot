@@ -1,0 +1,18 @@
+digraph "drivers/gpio" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_14bc92f4b96c8519b376567118ac28b3 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="drivers" fontname="Helvetica", fontsize="10", URL="dir_14bc92f4b96c8519b376567118ac28b3.html"]
+  subgraph clusterdir_999ea29f6fe13f1ec5dc080b8071f0d8 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_999ea29f6fe13f1ec5dc080b8071f0d8.html"];
+    dir_999ea29f6fe13f1ec5dc080b8071f0d8 [shape=plaintext label="gpio"];
+    dir_fc35740a06f7daf54b8a98171d85a9f4 [shape=box label="i.mx" color="black" fillcolor="white" style="filled" URL="dir_fc35740a06f7daf54b8a98171d85a9f4.html"];
+    dir_807d981233a0048c225e9ae0c4de669d [shape=box label="kinetis" color="black" fillcolor="white" style="filled" URL="dir_807d981233a0048c225e9ae0c4de669d.html"];
+    dir_7f8d96163e4e0b785540ea0d9c7e69e6 [shape=box label="lpc" color="black" fillcolor="white" style="filled" URL="dir_7f8d96163e4e0b785540ea0d9c7e69e6.html"];
+    dir_39f4cee135afd1726b397b5722054908 [shape=box label="qn" color="black" fillcolor="white" style="filled" URL="dir_39f4cee135afd1726b397b5722054908.html"];
+  }
+  }
+  dir_6994211064bad48d3d63a6227f5100d6 [shape=box label="boardkit" fillcolor="white" style="filled" color="red" URL="dir_6994211064bad48d3d63a6227f5100d6.html"];
+  dir_807d981233a0048c225e9ae0c4de669d->dir_6994211064bad48d3d63a6227f5100d6 [headlabel="2", labeldistance=1.5 headhref="dir_000079_000007.html"];
+}

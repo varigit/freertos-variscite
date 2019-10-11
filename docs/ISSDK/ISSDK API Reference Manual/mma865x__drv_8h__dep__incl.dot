@@ -1,0 +1,24 @@
+digraph "sensors/mma865x_drv.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node9 [label="sensors/mma865x_drv.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="sensors/mma865x_drv.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mma865x__drv_8c.html",tooltip="The mma865x_drv.c file implements the mma865x functional interface. "];
+  Node9 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="driverexamples/mma865x\l/mma865x_fifo.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mma865x__fifo_8c.html",tooltip="The mma865x_fifo.c file implements the ISSDK MMA865x sensor driver example demonstration with FIFO mo..."];
+  Node9 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="driverexamples/mma865x\l/mma865x_freefall.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mma865x__freefall_8c.html",tooltip="The mma865x_freefall.c file implements the ISSDK MMA865x sensor driver example demonstration for Free..."];
+  Node9 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="driverexamples/mma865x\l/mma865x_interrupt.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mma865x__interrupt_8c.html",tooltip="The mma865x_interrupt.c file implements the ISSDK MMA865x sensor driver example demonstration with In..."];
+  Node9 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="driverexamples/mma865x\l/mma865x_poll.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mma865x__poll_8c.html",tooltip="The mma865x_poll.c file implements the ISSDK MMA865x sensor driver example demonstration with Normal ..."];
+  Node9 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="driverexamples/demos\l/demo_11_axis_mult2b.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$demo__11__axis__mult2b_8c.html",tooltip="The demo_11_axis_mult2b.c file implements the ISSDK MMA8652, MAG3110, FXAS21002 and MPL3115 sensors 1..."];
+  Node9 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="driverexamples/demos\l/mma865x_demo.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mma865x__demo_8c.html",tooltip="The mma865x_demo.c file implements the ISSDK MMA865x sensor demo example demonstration with interrupt..."];
+  Node9 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="algorithms/pedometer\l/examples/pedometer_stepcount\l_mma8652.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pedometer__stepcount__mma8652_8c.html",tooltip="The pedometer_stepcount_mma8652.c file implements the ISSDK prdometer example using MMA8652 sensor as..."];
+  Node9 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="algorithms/pedometer\l/examples/pedometer_stepcount\l_motion_mma8652.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pedometer__stepcount__motion__mma8652_8c.html"];
+}

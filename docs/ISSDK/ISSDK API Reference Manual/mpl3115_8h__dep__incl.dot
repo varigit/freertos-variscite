@@ -1,0 +1,20 @@
+digraph "sensors/mpl3115.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="sensors/mpl3115.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sensors/mpl3115_drv.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mpl3115__drv_8h.html",tooltip="The mpl3115_drv.h file describes the MPL3115 driver interface and structures. "];
+  Node1 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="drivers/ads/lpc/auto\l_detection_service.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lpc_2auto__detection__service_8c.html"];
+  Node1 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="drivers/ads/kinetis\l/auto_detection_service.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$kinetis_2auto__detection__service_8c.html"];
+  Node1 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="drivers/ads/kinetis\l/auto_detection_service\l_kl25z.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$auto__detection__service__kl25z_8c.html",tooltip="The auto detection service file implements auto detection sequence for discovery of FRDM-KL25Z Board ..."];
+  Node1 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="drivers/ads/qn/auto\l_detection_service.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$qn_2auto__detection__service_8c.html"];
+  Node1 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="algorithms/sensorfusion\l/sources/main_baremetal.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__baremetal_8c.html",tooltip="Bare metal implementation of sensor fusion on FRDM-K64F. "];
+  Node1 -> Node25 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node25 [label="algorithms/sensorfusion\l/sources/main_freertos\l_two_tasks.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__freertos__two__tasks_8c.html",tooltip="FreeRTOS (two task) implementation of sensor fusion on FRDM-K64F. "];
+}

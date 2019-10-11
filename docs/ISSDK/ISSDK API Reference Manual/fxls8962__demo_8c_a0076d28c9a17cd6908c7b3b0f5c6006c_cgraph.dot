@@ -1,0 +1,17 @@
+digraph "process_host_command"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node44 [label="process_host_command",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node44 -> Node45 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node45 [label="BOARD_SystickStart",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$systick__utils_8c.html#ac4471deeef0c2a93b7d4263259b0ed63",tooltip="Function to Record the Start systick. "];
+  Node44 -> Node46 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node46 [label="FXLS8962_I2C_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8962__drv_8c.html#a1b62cba67669ae79f5f3c2e5f846a6c7",tooltip="The interface function to configure he sensor. "];
+  Node44 -> Node50 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node50 [label="FXLS8962_I2C_DeInit",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8962__drv_8c.html#a13160308eebd2dce90198d9f1388ad27",tooltip="The interface function to De Initialize sensor.. "];
+  Node44 -> Node53 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node53 [label="FXLS8962_I2C_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8962__drv_8c.html#a3feb216e29e778afa66f401c009f75eb",tooltip="The interface function to initialize the sensor. "];
+  Node44 -> Node55 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node55 [label="Host_IO_Send",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$host__io__uart_8c.html#a719ad6da4502e713f1573b5353af9617"];
+}

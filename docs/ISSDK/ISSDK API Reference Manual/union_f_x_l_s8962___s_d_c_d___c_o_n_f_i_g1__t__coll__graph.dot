@@ -1,0 +1,6 @@
+digraph "FXLS8962_SDCD_CONFIG1_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FXLS8962_SDCD_CONFIG1_t\n|+ z_wt_en\l+ y_wt_en\l+ x_wt_en\l+ z_ot_en\l+ y_ot_en\l+ x_ot_en\l+ wt_ele\l+ ot_ele\l+ b\l+ w\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

@@ -1,0 +1,13 @@
+digraph "boardkit/lpcxpresso54114" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6994211064bad48d3d63a6227f5100d6 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="boardkit" fontname="Helvetica", fontsize="10", URL="dir_6994211064bad48d3d63a6227f5100d6.html"]
+  subgraph clusterdir_311984c7c6eeb5b62dd470fcd53a1b8f {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_311984c7c6eeb5b62dd470fcd53a1b8f.html"];
+    dir_311984c7c6eeb5b62dd470fcd53a1b8f [shape=plaintext label="lpcxpresso54114"];
+    dir_ae51520c3634dccc94b0ba4d5c61e415 [shape=box label="frdm-stbc-agm01" color="black" fillcolor="white" style="filled" URL="dir_ae51520c3634dccc94b0ba4d5c61e415.html"];
+  }
+  }
+}

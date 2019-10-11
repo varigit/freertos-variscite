@@ -1,0 +1,22 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="BOARD_InitDebugConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$frdm-k64f_2board_8c.html#a4c84ccb952cb083367d7040cf9de3db8"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="BOARD_InitPins",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__pin__mux.html#ga2c9fe54b6b84723fbaa590a6f4576966",tooltip="Configures pin routing and optionally pin electrical features. "];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="int32_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__format__service_8h.html#a5d7069350a7d7e65686c77a8038f462f",tooltip="The interface function to append the data on the formated stream. "];
+  Node0 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ISL29023_I2C_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$isl29023__drv_8c.html#a7080e6e4c87f884467ded36ad2a1846a",tooltip="The interface function to configure he sensor. "];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="ISL29023_I2C_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$isl29023__drv_8c.html#a590d476df5662e5e3eaf99a0789136ca",tooltip="The interface function to initialize the sensor. "];
+  Node7 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="ISL29023_I2C_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$isl29023__drv_8c.html#aa8ca6dc6e2e7a435afab374d122233c3",tooltip="The interface function to read the sensor data. "];
+  Node9 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

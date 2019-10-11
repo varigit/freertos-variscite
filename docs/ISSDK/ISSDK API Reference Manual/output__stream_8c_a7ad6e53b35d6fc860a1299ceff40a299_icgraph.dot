@@ -1,0 +1,14 @@
+digraph "sBufAppendItem"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node15 [label="sBufAppendItem",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="appendZerosOrientBuf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$orientaion__application__baremetal__agm01_8c.html#affc6785c2a861503e9d86d9ab0b09330",tooltip="appendZerosOrientBuf utility function "];
+  Node15 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="CreateAndSendPackets",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$output__stream_8c.html#adbb4129e795ca534e4bb1649bb81b559"];
+  Node15 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="sBufAppendZeros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$output__stream_8c.html#a93db92e775dee51c4dbf2dca2aed05b3"];
+  Node20 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

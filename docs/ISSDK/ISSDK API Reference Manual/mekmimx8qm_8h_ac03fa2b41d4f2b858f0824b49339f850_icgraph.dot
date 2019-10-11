@@ -1,0 +1,13 @@
+digraph "SMC_SetPowerModeVlpr"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SMC_SetPowerModeVlpr",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="BOARD_BootClockVLPR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$frdm-ke15z_2clock__config_8h.html#aeda06d8bee4b00642713d50a62d8edc9",tooltip="This function executes configuration of clocks. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="fxlc95000_enSensor",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxlc95000__flash__demo_8c.html#a4d3c6a49cdb7699813aa88ce1bc3d7e5"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pedometer__stepcount__fxos8700_8c.html#a840291bc02cba5474a4cb46a9b9566fe",tooltip="Main function. "];
+}

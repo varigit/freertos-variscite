@@ -1,0 +1,18 @@
+digraph "boardkit/frdm-kl25z" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6994211064bad48d3d63a6227f5100d6 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="boardkit" fontname="Helvetica", fontsize="10", URL="dir_6994211064bad48d3d63a6227f5100d6.html"]
+  subgraph clusterdir_f2aadd68a764bb6133fbd87649d632b2 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_f2aadd68a764bb6133fbd87649d632b2.html"];
+    dir_f2aadd68a764bb6133fbd87649d632b2 [shape=plaintext label="frdm-kl25z"];
+    dir_c65ec8d46555442672cae3bf87b01bd9 [shape=box label="frdm" color="black" fillcolor="white" style="filled" URL="dir_c65ec8d46555442672cae3bf87b01bd9.html"];
+    dir_54eb647d12bc0a5306a611726d08cf3b [shape=box label="frdm-stbc-a8471" color="black" fillcolor="white" style="filled" URL="dir_54eb647d12bc0a5306a611726d08cf3b.html"];
+    dir_47851bfa6a51edca62284cee01cd508d [shape=box label="frdm-stbc-a8491" color="black" fillcolor="white" style="filled" URL="dir_47851bfa6a51edca62284cee01cd508d.html"];
+    dir_38198e8a248fc4a9daff2f3fa18ebdd5 [shape=box label="frdm-stbc-p3115" color="black" fillcolor="white" style="filled" URL="dir_38198e8a248fc4a9daff2f3fa18ebdd5.html"];
+    dir_42cad9d316ff4a9127b562622aa96f88 [shape=box label="rd-kl25z" color="black" fillcolor="white" style="filled" URL="dir_42cad9d316ff4a9127b562622aa96f88.html"];
+    dir_45282fe24c883874334edc5701108d6d [shape=box label="virtual_shield" color="black" fillcolor="white" style="filled" URL="dir_45282fe24c883874334edc5701108d6d.html"];
+  }
+  }
+}

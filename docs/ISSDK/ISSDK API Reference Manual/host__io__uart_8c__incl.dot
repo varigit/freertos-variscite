@@ -1,0 +1,22 @@
+digraph "sensors/host_io_uart.c"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="sensors/host_io_uart.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="stdlib.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="fsl_common.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="host_io_uart.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$host__io__uart_8h.html",tooltip="The host_io_uart.h file contains the Host Protocol interface definitions and configuration. "];
+  Node0 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="register_io_i2c.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$register__io__i2c_8h.html",tooltip="The register_io_i2c.h file declares low-level interface functions for reading and writing sensor regi..."];
+  Node0 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="register_io_spi.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$register__io__spi_8h.html",tooltip="The register_io_spi.h file declares low-level interface functions for reading and writing sensor regi..."];
+  Node0 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="data_format_hdlc.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$data__format__hdlc_8h.html",tooltip="The data_format_hdlc.h file contains the Host interface definitions and configuration. "];
+  Node13 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="data_format_json.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$data__format__json_8h.html",tooltip="The format_json.h file describes the structures and definitions for the data-format standard JSON..."];
+  Node14 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

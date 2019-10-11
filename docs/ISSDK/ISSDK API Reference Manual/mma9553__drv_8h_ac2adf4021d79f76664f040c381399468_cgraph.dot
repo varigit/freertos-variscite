@@ -1,0 +1,15 @@
+digraph "MMA9553_I2C_CommandResponse"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="MMA9553_I2C_CommandResponse",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="int32_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__format__service_8h.html#a5d7069350a7d7e65686c77a8038f462f",tooltip="The interface function to append the data on the formated stream. "];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Sensor_I2C_BlockWrite",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__io__i2c_8c.html#ad6c175b9a45aa936aa74abda223eeafe",tooltip="Write commands to a sensor. "];
+  Node2 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Sensor_I2C_Read",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__io__i2c_8c.html#aa75349faed7c77807cb88d9224aa2636",tooltip="Read register data from a sensor. "];
+  Node8 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

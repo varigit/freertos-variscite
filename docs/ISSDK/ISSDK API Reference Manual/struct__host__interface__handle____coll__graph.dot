@@ -1,0 +1,10 @@
+digraph "_host_interface_handle_"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{_host_interface_handle_\n|+ pInData\l+ status\l+ event\l+ instanceType\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +commHandle" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{_comm_handle_\n|+ pComm\l+ status\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct__comm__handle__.html"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +pCommInterface" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{_comm_interface_\n|+ GetCapabilities\l+ Init\l+ Configure\l+ Send\l+ Receive\l+ GetStatus\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct__comm__interface__.html"];
+}

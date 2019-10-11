@@ -1,0 +1,6 @@
+digraph "MPL3115_CTRL_REG5_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MPL3115_CTRL_REG5_t\n|+ int_cfg_tchg\l+ int_cfg_pchg\l+ int_cfg_tth\l+ int_cfg_pth\l+ int_cfg_tw\l+ int_cfg_pw\l+ int_cfg_fifo\l+ int_cfg_drdy\l+ b\l+ w\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

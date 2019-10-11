@@ -1,0 +1,6 @@
+digraph "SV_1DOF_P_BASIC"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SV_1DOF_P_BASIC\n|+ fLPH\l+ fLPT\l+ fdeltat\l+ flpf\l+ systick\l+ resetflag\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

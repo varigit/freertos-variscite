@@ -1,0 +1,15 @@
+digraph "clearFIFOs"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node28 [label="clearFIFOs",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node28 -> Node29 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 [label="initializeFusionEngine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sensor__fusion_8c.html#ab088da7731ffdf25710a364a7f88b224"];
+  Node29 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="initSensorFusionGlobals",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__fusion_8h.html#a367d92b99365a8143700b76439915d65",tooltip="utility function to insert default values in the top level structure "];
+  Node28 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node28 -> Node32 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node32 [label="runFusion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sensor__fusion_8c.html#a8b90119fee979d0309cc923bf1fad543"];
+  Node32 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

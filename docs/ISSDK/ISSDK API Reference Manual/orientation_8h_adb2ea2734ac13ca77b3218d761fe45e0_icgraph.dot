@@ -1,0 +1,9 @@
+digraph "qconjgAxB"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node275 [label="qconjgAxB",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node275 -> Node276 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node276 [label="fLPFOrientationQuaternion",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$orientation_8h.html#ad60a32e44f24a4b8fa5bddfb23721bc8",tooltip="function low pass filters an orientation quaternion and computes virtual gyro rotation rate ..."];
+}

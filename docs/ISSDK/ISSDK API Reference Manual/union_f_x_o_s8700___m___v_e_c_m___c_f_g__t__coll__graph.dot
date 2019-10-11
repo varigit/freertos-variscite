@@ -1,0 +1,6 @@
+digraph "FXOS8700_M_VECM_CFG_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FXOS8700_M_VECM_CFG_t\n|+ m_vecm_init_cfg\l+ m_vecm_int_en\l+ m_vecm_wake_en\l+ a_vecm_en\l+ m_vecm_updm\l+ m_vecm_initm\l+ m_vecm_ele\l+ reserved\l+ b\l+ w\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

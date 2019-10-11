@@ -1,0 +1,11 @@
+digraph "driverexamples/imx/mekmimx8qm/isl29023" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_cac466d31ff61a3c93a369f495016297 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="mekmimx8qm" fontname="Helvetica", fontsize="10", URL="dir_cac466d31ff61a3c93a369f495016297.html"]
+  dir_64b13e7b3726ee9a98a0d21133f79f03 [shape=box, label="isl29023", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_64b13e7b3726ee9a98a0d21133f79f03.html"];
+  }
+  dir_c77a8e2546a9c75bbba96be2ef542c8e [shape=box label="sensors" URL="dir_c77a8e2546a9c75bbba96be2ef542c8e.html"];
+  dir_64b13e7b3726ee9a98a0d21133f79f03->dir_c77a8e2546a9c75bbba96be2ef542c8e [headlabel="1", labeldistance=1.5 headhref="dir_000064_000084.html"];
+}

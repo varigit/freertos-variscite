@@ -1,0 +1,19 @@
+digraph "algorithms/pedometer" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_c0ce462e37efe0a8d60c01d75f78f8a0 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="algorithms" fontname="Helvetica", fontsize="10", URL="dir_c0ce462e37efe0a8d60c01d75f78f8a0.html"]
+  subgraph clusterdir_fee404f6f831fcfa321ee67f90b1e1c1 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_fee404f6f831fcfa321ee67f90b1e1c1.html"];
+    dir_fee404f6f831fcfa321ee67f90b1e1c1 [shape=plaintext label="pedometer"];
+    dir_82ba1771cf9ff13cea8934af5507220d [shape=box label="examples" color="black" fillcolor="white" style="filled" URL="dir_82ba1771cf9ff13cea8934af5507220d.html"];
+    dir_0ad8eb24ff6e81580c7f28d977c24fc7 [shape=box label="include" color="black" fillcolor="white" style="filled" URL="dir_0ad8eb24ff6e81580c7f28d977c24fc7.html"];
+    dir_8691356da0b74e268280f1013043f75b [shape=box label="source" color="black" fillcolor="white" style="filled" URL="dir_8691356da0b74e268280f1013043f75b.html"];
+  }
+  }
+  dir_c77a8e2546a9c75bbba96be2ef542c8e [shape=box label="sensors" URL="dir_c77a8e2546a9c75bbba96be2ef542c8e.html"];
+  dir_82ba1771cf9ff13cea8934af5507220d->dir_c77a8e2546a9c75bbba96be2ef542c8e [headlabel="7", labeldistance=1.5 headhref="dir_000002_000084.html"];
+  dir_82ba1771cf9ff13cea8934af5507220d->dir_0ad8eb24ff6e81580c7f28d977c24fc7 [headlabel="7", labeldistance=1.5 headhref="dir_000002_000003.html"];
+  dir_8691356da0b74e268280f1013043f75b->dir_0ad8eb24ff6e81580c7f28d977c24fc7 [headlabel="1", labeldistance=1.5 headhref="dir_000004_000003.html"];
+}

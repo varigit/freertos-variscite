@@ -1,0 +1,12 @@
+digraph "FXLC95000_I2C_FlashCommands"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node19 [label="FXLC95000_I2C_FlashCommands",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node19 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="int32_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__format__service_8h.html#a5d7069350a7d7e65686c77a8038f462f",tooltip="The interface function to append the data on the formated stream. "];
+  Node19 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="Sensor_I2C_BlockWrite",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__io__i2c_8c.html#ad6c175b9a45aa936aa74abda223eeafe",tooltip="Write commands to a sensor. "];
+  Node21 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

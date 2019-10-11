@@ -1,0 +1,18 @@
+digraph "fatan_deg"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node78 [label="fatan_deg",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node78 -> Node79 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node79 [label="facos_deg",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$approximations_8h.html#a084fe0ff189767dca40fbe330d7394f0"];
+  Node79 -> Node91 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node91 [label="fWin8AnglesDegFromRotation\lMatrix",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$orientation_8h.html#a13cd93780206a620abc7bdf7907e6dc6",tooltip="extract the Windows 8 angles in degrees from the Windows 8 rotation matrix "];
+  Node78 -> Node92 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node92 [label="fasin_deg",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$approximations_8h.html#a956336cb9e7270c6cfbf667b1075c063"];
+  Node92 -> Node91 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node78 -> Node98 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node98 [label="fatan2_deg",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$approximations_8h.html#aebfdfbd2df0fe4472f9861b0738bb410"];
+  Node98 -> Node91 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node78 -> Node91 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,6 @@
+digraph "pedometer_t::pedometer_status_tag"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{pedometer_t::pedometer\l_status_tag\n|+ activity\l+ suspend\l+ activitychange\l+ stepchange\l+ suspendchange\l+ mergedflags\l+ bits\l+ byte\l+ status\l+ version\l+ stepcount\l+ distance\l+ speed\l+ calories\l+ sleepcount\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

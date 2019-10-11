@@ -1,0 +1,6 @@
+digraph "FXLS8962_SENS_CONFIG4_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FXLS8962_SENS_CONFIG4_t\n|+ int_pol\l+ int_pp_od\l+ int2_func\l+ drdy_pul\l+ wk_orient\l+ wk_sdcd_ot\l+ wk_sdcd_wt\l+ ext_trig_m\l+ b\l+ w\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

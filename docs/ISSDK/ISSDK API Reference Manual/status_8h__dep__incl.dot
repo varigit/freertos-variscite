@@ -1,0 +1,36 @@
+digraph "algorithms/sensorfusion/sources/status.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="algorithms/sensorfusion\l/sources/status.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="driverexamples/demos\l/orientaion_application\l_baremetal_agm01.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$orientaion__application__baremetal__agm01_8c.html",tooltip="The orientaion_application_baremetal_agm01.c file implements the ISSDK baremetal orientation applicat..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="driverexamples/demos\l/orientaion_application\l_baremetal_agm04.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$orientaion__application__baremetal__agm04_8c.html",tooltip="The orientaion_application_baremetal_agm04.c file implements the ISSDK baremetal orientation applicat..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="driverexamples/demos\l/orientaion_application\l_baremetal_agmp03.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$orientaion__application__baremetal__agmp03_8c.html",tooltip="The orientaion_application_baremetal_agmp03.c file implements the ISSDK baremetal orientation applica..."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="algorithms/sensorfusion\l/sources/driver_FXOS8700.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$driver___f_x_o_s8700_8c.html",tooltip="Provides init() and read() functions for the FXOS8700 6-axis accel plus mag. "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="algorithms/sensorfusion\l/sources/main_agm01_freertos\l_two_tasks.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__agm01__freertos__two__tasks_8c.html",tooltip="FreeRTOS (two task) implementation of sensor fusion on FRDM-K64F. "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="algorithms/sensorfusion\l/sources/main_agm04_freertos\l_two_tasks.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__agm04__freertos__two__tasks_8c.html",tooltip="FreeRTOS (two task) implementation of sensor fusion on FRDM-K64F/FRDM-STBC-AGM04 using MMA8652 (Accel..."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="algorithms/sensorfusion\l/sources/main_agmp03_freertos\l_two_tasks.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__agmp03__freertos__two__tasks_8c.html",tooltip="FreeRTOS (two task) implementation of sensor fusion. "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="algorithms/sensorfusion\l/sources/main_baremetal.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__baremetal_8c.html",tooltip="Bare metal implementation of sensor fusion on FRDM-K64F. "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="algorithms/sensorfusion\l/sources/main_baremetal\l_agm04.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__baremetal__agm04_8c.html",tooltip="Bare metal implementation of sensor fusion on FRDM-K64F/FRDM-STBC-AGM04 using MMA8652 (Accel)..."];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="algorithms/sensorfusion\l/sources/main_baremetal\l_agmp03.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__baremetal__agmp03_8c.html",tooltip="Bare metal implementation of sensor fusion on FRDM-K64F. "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="algorithms/sensorfusion\l/sources/main_freertos\l_agm02.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__freertos__agm02_8c.html",tooltip="FreeRTOS (two task) implementation of sensor fusion on FRDM-K64F/FRDM-FXS-AGM02. "];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="algorithms/sensorfusion\l/sources/main_freertos\l_agm02_power_cycling.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__freertos__agm02__power__cycling_8c.html",tooltip="FreeRTOS (two task) implementation of sensor fusion on FRDM-K64F/FRDM-FXS-AGM02 with smart power-cycl..."];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="algorithms/sensorfusion\l/sources/main_freertos\l_two_tasks.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__freertos__two__tasks_8c.html",tooltip="FreeRTOS (two task) implementation of sensor fusion on FRDM-K64F. "];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="algorithms/sensorfusion\l/sources/sensor_fusion.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sensor__fusion_8c.html",tooltip="The sensor_fusion.c file implements the top level programming interface. "];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="algorithms/sensorfusion\l/sources/status.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$status_8c.html",tooltip="Application-specific status subsystem. "];
+}

@@ -1,0 +1,11 @@
+digraph "FXLS8471Q_SPI_WritePreprocess"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node33 [label="FXLS8471Q_SPI_WritePreprocess",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node33 -> Node34 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node34 [label="FXLS8471Q_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$drivers_8h.html#a7c8424e014e2bdbb1dd61fcb4731857b"];
+  Node33 -> Node35 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node35 [label="FXLS8471Q_SPI_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8471q__drv_8h.html#abaaef883aa8d1d70ac1e5d9b4efb5e26",tooltip="The interface function to initialize the sensor for I2C. "];
+}

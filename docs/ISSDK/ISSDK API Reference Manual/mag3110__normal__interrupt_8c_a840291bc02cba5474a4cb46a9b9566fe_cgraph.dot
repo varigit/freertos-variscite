@@ -1,0 +1,32 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="BOARD_InitDebugConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$frdm-k64f_2board_8c.html#a4c84ccb952cb083367d7040cf9de3db8"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="BOARD_InitPins",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__pin__mux.html#ga2c9fe54b6b84723fbaa590a6f4576966",tooltip="Configures pin routing and optionally pin electrical features. "];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="int32_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__format__service_8h.html#a5d7069350a7d7e65686c77a8038f462f",tooltip="The interface function to append the data on the formated stream. "];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="MAG3110_CalibrateHardIron\lOffset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mag3110__drv_8c.html#a9d3b77f97a98fdda9287ad0b682a74d4",tooltip="Calibrates the magnetometer reading by determining the current hard iron offset. "];
+  Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="MAG3110_I2C_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mag3110__drv_8c.html#a2de85bf13cfe26dbc0ca9be7f4625cba",tooltip="The interface function to configure he sensor. "];
+  Node8 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="MAG3110_I2C_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mag3110__drv_8c.html#a578b46ebf521f9d389bdc8f68904ed2e",tooltip="The interface function to initialize the sensor. "];
+  Node11 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="MAG3110_I2C_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mag3110__drv_8c.html#ad21e17c18a85571ddb312850e5d61f30",tooltip="The interface function to read the sensor data. "];
+  Node13 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="MAG3110_I2C_SetIdleTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mag3110__drv_8c.html#a81a9d6ede8ef261fd61d7ae0c32f7e1c",tooltip=": The interface function to set the I2C Idle Task. "];
+  Node3 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="mag3110_int_data_ready\l_callback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mag3110__normal__interrupt_8c.html#a8d5b450f18f0a0f9556683caefc468ba",tooltip="This is the Sensor Data Ready ISR implementation. "];
+  Node3 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="SMC_SetPowerModeVlpr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lpc54114_8c.html#a82cb114bb9a5ea2f235a0216709d70f8",tooltip="Configures the system to VLPR power mode. API name used from Kinetis family to maintain compatibility..."];
+  Node3 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="SMC_SetPowerModeWait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lpc54114_8c.html#a5423cac017d1d1a8ac8bba8e91e80e29",tooltip="Configures the system to WAIT power mode. API name used from Kinetis family to maintain compatibility..."];
+}

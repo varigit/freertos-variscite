@@ -1,0 +1,6 @@
+digraph "FXLS8962_SYS_MODE_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FXLS8962_SYS_MODE_t\n|+ sys_mode\l+ buf_gate_cnt\l+ buf_gate_error\l+ b\l+ w\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

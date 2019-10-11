@@ -1,0 +1,13 @@
+digraph "f3x3matrixAeqInvSymB"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node60 [label="f3x3matrixAeqInvSymB",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node60 -> Node61 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node61 [label="fComputeAccelCalibration10",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$precision_accelerometer_8h.html#a752887e826809837549c391aa3a4cbaf",tooltip="calculate the 10 element calibration from the available measurements "];
+  Node60 -> Node68 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node68 [label="fComputeMagCalibration10",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$magnetic_8c.html#aee45330512ed09a377b969fa229a2d45"];
+  Node60 -> Node69 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node69 [label="fUpdateMagCalibration10Slice",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$magnetic_8h.html#a51818fe46836eeda49b9da097725b49a"];
+}

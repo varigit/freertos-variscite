@@ -1,0 +1,9 @@
+digraph "ApplyMagHAL"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node22 [label="ApplyMagHAL",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node22 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="processMagData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__fusion_8c.html#aaf8b47198fa614f0b50265addf44a8b0"];
+}

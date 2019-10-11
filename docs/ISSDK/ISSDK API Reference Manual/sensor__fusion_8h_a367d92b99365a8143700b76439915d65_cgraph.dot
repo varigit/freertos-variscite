@@ -1,0 +1,29 @@
+digraph "initSensorFusionGlobals"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node63 [label="initSensorFusionGlobals",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node63 -> Node64 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node64 [label="clearFIFOs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sensor__fusion_8c.html#a9af8710b3e87acd2a33e7988b2d75b6c",tooltip="Function to clear FIFO at the end of each fusion computation. "];
+  Node63 -> Node65 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node65 [label="conditionSensorReadings",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__fusion_8c.html#aef2b1f23f820d2b513bc827f8baffd0d"];
+  Node63 -> Node83 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node83 [label="initializeFusionEngine",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__fusion_8c.html#ab088da7731ffdf25710a364a7f88b224"];
+  Node83 -> Node64 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node63 -> Node105 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node105 [label="installSensor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sensor__fusion_8c.html#ad86ade0d4a34861b6a7bb0d232fb8e0c"];
+  Node63 -> Node106 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node106 [label="queueStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sensor__fusion_8c.html#ae96e36747e6a1aabbec1381f15132ec6"];
+  Node63 -> Node107 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node107 [label="readSensors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sensor__fusion_8c.html#a0d688188b65f43d38ac760a79d9eb116"];
+  Node63 -> Node108 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node108 [label="runFusion",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__fusion_8c.html#a8b90119fee979d0309cc923bf1fad543"];
+  Node108 -> Node64 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node63 -> Node151 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node151 [label="setStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sensor__fusion_8c.html#a741fd2193cc58c09b692d1ae2b7a81e8"];
+  Node63 -> Node152 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node152 [label="testStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sensor__fusion_8c.html#a142a0a30c123f8acf79a3e8e5072cad8"];
+  Node63 -> Node153 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node153 [label="updateStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sensor__fusion_8c.html#aa13c4a9f07f3a2abfdb2e0808e5752d4"];
+}

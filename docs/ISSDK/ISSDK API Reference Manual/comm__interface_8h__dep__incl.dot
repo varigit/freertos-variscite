@@ -1,0 +1,10 @@
+digraph "drivers/host/comm_interface.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node4 [label="drivers/host/comm_interface.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="drivers/host/comm_if\l_uart.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$comm__if__uart_8c.html",tooltip="The comm_if_uart.c file implements comm interface for the UART. "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="drivers/host/host_interface\l_service.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$host__interface__service_8h.html",tooltip="The host_interface_service.h file describes the structures and definitions for the host..."];
+}

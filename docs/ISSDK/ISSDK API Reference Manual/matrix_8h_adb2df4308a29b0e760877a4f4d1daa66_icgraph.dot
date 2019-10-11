@@ -1,0 +1,11 @@
+digraph "f3x3matrixAeqScalar"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node89 [label="f3x3matrixAeqScalar",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node89 -> Node90 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node90 [label="fComputeAccelCalibration7",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$precision_accelerometer_8h.html#a2f17e091698125acbf0cdb780c2c93da",tooltip="calculate the 7 element calibration from the available measurements "];
+  Node89 -> Node97 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node97 [label="fComputeMagCalibration7",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$magnetic_8c.html#a25f3c141e543b477ed0885f38d9beda3"];
+}

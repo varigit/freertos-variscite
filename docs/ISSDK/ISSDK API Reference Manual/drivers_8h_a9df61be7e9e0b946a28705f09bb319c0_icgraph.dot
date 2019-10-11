@@ -1,0 +1,9 @@
+digraph "MMA8652_Init"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node141 [label="MMA8652_Init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node141 -> Node142 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node142 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__agm04__freertos__two__tasks_8c.html#a840291bc02cba5474a4cb46a9b9566fe",tooltip="This is a FreeRTOS (dual task) implementation of the NXP sensor fusion demo build. "];
+}

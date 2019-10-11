@@ -1,0 +1,22 @@
+digraph "fRotationVectorDegFromQuaternion"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node178 [label="fRotationVectorDegFromQuaternion",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node178 -> Node179 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node179 [label="fLPFOrientationQuaternion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$orientation_8h.html#ad60a32e44f24a4b8fa5bddfb23721bc8",tooltip="function low pass filters an orientation quaternion and computes virtual gyro rotation rate ..."];
+  Node179 -> Node180 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node180 [label="fRun_3DOF_G_BASIC",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fusion_8h.html#a7b5db1923cfa0dc160016e7d9b45b1c2"];
+  Node179 -> Node185 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node185 [label="fRun_3DOF_B_BASIC",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fusion_8h.html#a2df5be5795338038774a64b41cf53a8e"];
+  Node179 -> Node186 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node186 [label="fRun_6DOF_GB_BASIC",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fusion_8h.html#a34c550860d0e4e42bf22a2a3527043b9"];
+  Node178 -> Node185 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node178 -> Node180 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node178 -> Node187 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node187 [label="fRun_3DOF_Y_BASIC",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fusion_8h.html#a288f51cd39aeb8ace643d844e219e9d3"];
+  Node178 -> Node186 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node178 -> Node188 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node188 [label="fRun_6DOF_GY_KALMAN",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fusion_8h.html#a942d619f897d6820d5c148bdc910f962"];
+}

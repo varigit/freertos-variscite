@@ -1,0 +1,29 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="BOARD_InitDebugConsole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$frdm-k64f_2board_8c.html#a4c84ccb952cb083367d7040cf9de3db8"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="BOARD_InitPins",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__pin__mux.html#ga2c9fe54b6b84723fbaa590a6f4576966",tooltip="Configures pin routing and optionally pin electrical features. "];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="FXAS21002_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$drivers_8h.html#a81c5b987e709b3991bc7c1bc1e659c1f"];
+  Node0 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="FXAS21002_Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$drivers_8h.html#a1e2a1a192ed7f150fc24fc11df8d4c1e"];
+  Node0 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="FXOS8700_Init",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$driver___f_x_o_s8700_8c.html#ac61bf451efc3a4eab179dbc59268b3e7"];
+  Node0 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="FXOS8700_Read",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$driver___f_x_o_s8700_8c.html#a5388755d21701d88d79a4bfda99dbebf"];
+  Node0 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="initializeControlPort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$control_8c.html#a67029acf1be9712c5d30c625132ad958",tooltip="Initialize the control subsystem and all related hardware. "];
+  Node0 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="initializeStatusSubsystem",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$status_8c.html#a01619741119cf3432f8cfff23334c793"];
+  Node0 -> Node23 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="initSensorFusionGlobals",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__fusion_8c.html#a43b44018042fabb5179c2e62277cc942",tooltip="utility function to insert default values in the top level structure "];
+  Node0 -> Node114 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node114 [label="MPL3115_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$drivers_8h.html#af48197046b6d2f232932bf5ac61c4534"];
+  Node0 -> Node115 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node115 [label="MPL3115_Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$drivers_8h.html#a54f6d4249d7a6d3484b35f7c98970425"];
+}

@@ -1,0 +1,9 @@
+digraph "BOARD_BootClockVLPR"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="BOARD_BootClockVLPR",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SMC_SetPowerModeVlpr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lpc54114_8c.html#a82cb114bb9a5ea2f235a0216709d70f8",tooltip="Configures the system to VLPR power mode. API name used from Kinetis family to maintain compatibility..."];
+}

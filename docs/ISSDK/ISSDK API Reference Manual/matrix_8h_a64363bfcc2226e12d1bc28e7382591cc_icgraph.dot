@@ -1,0 +1,15 @@
+digraph "fmatrixAeqInvA"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node155 [label="fmatrixAeqInvA",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node155 -> Node156 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node156 [label="fComputeAccelCalibration4",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$precision_accelerometer_8h.html#a32c25ed3da9ec249bba57bbb1ab2d091",tooltip="calculate the 4 element calibration from the available measurements "];
+  Node155 -> Node163 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node163 [label="fComputeMagCalibration4",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$magnetic_8c.html#a9c0e36977a432b69ea78a1b516f1b574"];
+  Node155 -> Node164 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node164 [label="fRun_6DOF_GY_KALMAN",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fusion_8h.html#a942d619f897d6820d5c148bdc910f962"];
+  Node155 -> Node167 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node167 [label="fUpdateMagCalibration4Slice",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$magnetic_8h.html#a38eeceb44e144af5c9d497351519f5d2"];
+}

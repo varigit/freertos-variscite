@@ -1,0 +1,9 @@
+digraph "boardkit/frdm-k64f/frdm-stbc-agm02" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_3614a3810f3c4eeaffe2259fdfef6294 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="frdm-k64f" fontname="Helvetica", fontsize="10", URL="dir_3614a3810f3c4eeaffe2259fdfef6294.html"]
+  dir_a278f24efbd07657222f05d43d84cd6e [shape=box, label="frdm-stbc-agm02", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_a278f24efbd07657222f05d43d84cd6e.html"];
+  }
+}

@@ -1,0 +1,8 @@
+digraph "boardkit/frdm-ke15z/frdm-stbc-diffp/frdm-stbc-diffp_shield.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="boardkit/frdm-ke15z\l/frdm-stbc-diffp/frdm\l-stbc-diffp_shield.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="boardkit/frdm-ke15z\l/frdm-stbc-diffp/issdk_hal.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$frdm-ke15z_2frdm-stbc-diffp_2issdk__hal_8h.html"];
+}

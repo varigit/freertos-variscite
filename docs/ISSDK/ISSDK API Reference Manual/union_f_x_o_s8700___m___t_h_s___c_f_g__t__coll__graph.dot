@@ -1,0 +1,6 @@
+digraph "FXOS8700_M_THS_CFG_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FXOS8700_M_THS_CFG_t\n|+ m_ths_int_cfg\l+ m_ths_int_en\l+ m_ths_wake_en\l+ m_ths_xefe\l+ m_ths_yefe\l+ m_ths_zefe\l+ m_ths_oae\l+ m_ths_ele\l+ b\l+ w\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

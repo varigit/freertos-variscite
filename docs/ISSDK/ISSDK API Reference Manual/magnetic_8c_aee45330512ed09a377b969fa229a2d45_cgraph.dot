@@ -1,0 +1,17 @@
+digraph "fComputeMagCalibration10"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="fComputeMagCalibration10",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="f3x3matrixAeqAxScalar",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matrix_8c.html#a36f36bcaf2395595541a20fd4ab7c351",tooltip="function multiplies all elements of 3x3 matrix A by the specified scalar "];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="f3x3matrixAeqInvSymB",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$matrix_8c.html#a95d2ac82a68706e246b4cdd516f9378f"];
+  Node0 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="f3x3matrixAeqMinusA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matrix_8c.html#a810b959d44c67c3cd94347fe34d02d96",tooltip="function negates all elements of 3x3 matrix A "];
+  Node0 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="f3x3matrixDetA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matrix_8c.html#a661c761f004eb9f4b050f201b0991004",tooltip="function calculates the determinant of a 3x3 matrix "];
+  Node0 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="fEigenCompute10",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matrix_8c.html#ad339757b32a57fddf1b820b8921a7903"];
+}

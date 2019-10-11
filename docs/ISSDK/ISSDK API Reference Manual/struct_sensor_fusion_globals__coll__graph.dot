@@ -1,0 +1,19 @@
+digraph "SensorFusionGlobals"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SensorFusionGlobals\n|+ iFlags\l+ iPerturbation\l+ loopcounter\l+ systick_I2C\l+ systick_Spare\l+ installSensor\l+ initializeFusionEngine\l+ applyPerturbation\l+ readSensors\l+ runFusion\l+ conditionSensorReadings\l+ clearFIFOs\l+ setStatus\l+ queueStatus\l+ updateStatus\l+ testStatus\l|* iFlags\l* iPerturbation\l* loopcounter\l* systick_I2C\l* systick_Spare\l* installSensor\l* initializeFusionEngine\l* applyPerturbation\l* readSensors\l* runFusion\l* conditionSensorReadings\l* clearFIFOs\l* setStatus\l* queueStatus\l* updateStatus\l* testStatus\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +pStatusSubsystem" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{StatusSubsystem\n|+ previous\l+ status\l+ next\l+ set\l+ queue\l+ update\l+ test\l+ toggle\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_status_subsystem.html",tooltip="StatusSubsystem() provides an object-like interface for communicating status to the user..."];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +pSensors" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{PhysicalSensor\n|+ bus_driver\l+ addr\l+ isInitialized\l+ schedule\l+ initialize\l+ read\l|}",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$struct_physical_sensor.html",tooltip="An instance of PhysicalSensor structure type should be allocated for each physical sensors (combo dev..."];
+  Node3 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +next" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +MagCal" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{MagCalibration\n|+ fV\l+ finvW\l+ fB\l+ fBSq\l+ fFitErrorpc\l+ iValidMagCal\l+ ftrV\l+ ftrinvW\l+ ftrB\l+ ftrFitErrorpc\land 17 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_mag_calibration.html",tooltip="Magnetic Calibration Structure. "];
+  Node7 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +MagBuffer" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 [label="{MagBuffer\n|+ iBs\l+ index\l+ tanarray\l+ iMagBufferCount\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_mag_buffer.html"];
+  Node8 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +Mag" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node8 [label="{MagSensor\n|+ iWhoAmI\l+ isEnabled\l+ iFIFOCount\l+ iFIFOExceeded\l+ iBsFIFO\l+ fBs\l+ fBc\l+ fuTPerCount\l+ fCountsPeruT\l+ iBs\l+ iBc\l+ iCountsPeruT\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_mag_sensor.html",tooltip="The MagSensor structure stores raw and processed measurements for a 3-axis magnetic sensor..."];
+  Node9 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +pControlSubsystem" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node9 [label="{ControlSubsystem\n|+ DefaultQuaternionPacketType\l+ QuaternionPacketType\l+ AngularVelocityPacketOn\l+ DebugPacketOn\l+ RPCPacketOn\l+ AltPacketOn\l+ AccelCalPacketOn\l+ write\l+ stream\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_control_subsystem.html",tooltip="he ControlSubsystem encapsulates command and data streaming functions. "];
+}

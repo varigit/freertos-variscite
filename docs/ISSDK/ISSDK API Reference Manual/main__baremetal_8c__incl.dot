@@ -1,0 +1,40 @@
+digraph "algorithms/sensorfusion/sources/main_baremetal.c"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="algorithms/sensorfusion\l/sources/main_baremetal.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="fsl_debug_console.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="board.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="pin_mux.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="clock_config.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="fsl_port.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="fsl_pit.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="fsl_i2c.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="register_io_i2c.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$register__io__i2c_8h.html",tooltip="The register_io_i2c.h file declares low-level interface functions for reading and writing sensor regi..."];
+  Node0 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="fsl_i2c_cmsis.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="fxas21002.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxas21002_8h.html",tooltip="The fxas21002.h contains the fxas21002 sensor register definitions and its bit mask. "];
+  Node0 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="mpl3115.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mpl3115_8h.html"];
+  Node0 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="fxos8700.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxos8700_8h.html",tooltip="The fxos8700.h file contains the register definitions for FXOS8700 sensor driver. ..."];
+  Node0 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="sensor_fusion.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__fusion_8h.html",tooltip="The sensor_fusion.h file implements the top level programming interface. "];
+  Node0 -> Node29 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 [label="control.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$control_8h.html",tooltip="Defines control sub-system. "];
+  Node0 -> Node30 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="status.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$status_8h.html",tooltip="Application-specific status subsystem. "];
+  Node0 -> Node31 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="drivers.h",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$drivers_8h.html",tooltip="Provides function prototypes for driver level interfaces. "];
+  Node0 -> Node32 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node32 [label="driver_pit.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$driver__pit_8h.html",tooltip="Provides a simple abstraction for a periodic interval timer. "];
+}

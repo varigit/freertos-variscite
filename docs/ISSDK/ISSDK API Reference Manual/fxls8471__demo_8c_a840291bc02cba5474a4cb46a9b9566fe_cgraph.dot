@@ -1,0 +1,44 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="BOARD_RunADS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lpc_2auto__detection__service_8c.html#a95285f14f6707e326e523c82d926c900",tooltip="The function to register Application Name and initialte ADS. "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="BOARD_SystickElapsedTime_us",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$systick__utils_8c.html#a85a32737b730fbb713ec910e1ad17c74",tooltip="Function to compute the Elapsed Time. "];
+  Node3 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="BOARD_SystickEnable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$systick__utils_8c.html#ad43629969994e92bd3620e630bda24c8",tooltip="Function to enable systicks framework. "];
+  Node3 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="fxls8471_int_data_ready\l_callback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxls8471__demo_8c.html#a3e4b32a470c61b7773f21c1f6437d334"];
+  Node3 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="FXLS8471Q_SPI_Configure",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8471q__drv_8c.html#a1a82c26ff39b7d12bb85cf62f32f25b7",tooltip="The interface function to configure he sensor. "];
+  Node11 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="int32_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__format__service_8h.html#a5d7069350a7d7e65686c77a8038f462f",tooltip="The interface function to append the data on the formated stream. "];
+  Node3 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="FXLS8471Q_SPI_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8471q__drv_8c.html#abaaef883aa8d1d70ac1e5d9b4efb5e26",tooltip="The interface function to initialize the sensor for I2C. "];
+  Node15 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="FXLS8471Q_SPI_ReadData",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8471q__drv_8c.html#ad16c8372e2c0bcbcd12af93a2f223814",tooltip="The interface function to read the sensor data. "];
+  Node19 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="FXLS8471Q_SPI_SetIdleTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxls8471q__drv_8c.html#a114a400580705a963d24be3b401db679",tooltip=": The interface function to set the SPI Idle Task. "];
+  Node3 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="Host_IO_Add_ISO_Header",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$host__io__uart_8c.html#a68a2c033a0f6f967149dca76897f5c8a"];
+  Node3 -> Node23 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="Host_IO_Init",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$host__io__uart_8c.html#ab4b858422bbaae71aff2ab540ae0e2b1"];
+  Node3 -> Node27 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node27 [label="Host_IO_Receive",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$host__io__uart_8c.html#a3924d21a0703878695ebdb68f720fff9"];
+  Node27 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node27 -> Node36 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node36 [label="Host_IO_Send",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$host__io__uart_8c.html#a719ad6da4502e713f1573b5353af9617"];
+  Node3 -> Node36 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node40 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node40 [label="process_host_command",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8471__demo_8c.html#a0076d28c9a17cd6908c7b3b0f5c6006c"];
+  Node3 -> Node41 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node41 [label="SMC_SetPowerModeVlpr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lpc54114_8c.html#a82cb114bb9a5ea2f235a0216709d70f8",tooltip="Configures the system to VLPR power mode. API name used from Kinetis family to maintain compatibility..."];
+  Node3 -> Node42 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node42 [label="SMC_SetPowerModeWait",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lpc54114_8c.html#a5423cac017d1d1a8ac8bba8e91e80e29",tooltip="Configures the system to WAIT power mode. API name used from Kinetis family to maintain compatibility..."];
+}

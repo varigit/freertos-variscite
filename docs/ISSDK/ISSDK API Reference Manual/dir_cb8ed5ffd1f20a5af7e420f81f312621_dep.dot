@@ -1,0 +1,15 @@
+digraph "algorithms/sensorfusion" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_c0ce462e37efe0a8d60c01d75f78f8a0 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="algorithms" fontname="Helvetica", fontsize="10", URL="dir_c0ce462e37efe0a8d60c01d75f78f8a0.html"]
+  subgraph clusterdir_cb8ed5ffd1f20a5af7e420f81f312621 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_cb8ed5ffd1f20a5af7e420f81f312621.html"];
+    dir_cb8ed5ffd1f20a5af7e420f81f312621 [shape=plaintext label="sensorfusion"];
+    dir_c60867674b20e7d761cd401b87ce879d [shape=box label="sources" color="black" fillcolor="white" style="filled" URL="dir_c60867674b20e7d761cd401b87ce879d.html"];
+  }
+  }
+  dir_c77a8e2546a9c75bbba96be2ef542c8e [shape=box label="sensors" URL="dir_c77a8e2546a9c75bbba96be2ef542c8e.html"];
+  dir_c60867674b20e7d761cd401b87ce879d->dir_c77a8e2546a9c75bbba96be2ef542c8e [headlabel="53", labeldistance=1.5 headhref="dir_000006_000084.html"];
+}

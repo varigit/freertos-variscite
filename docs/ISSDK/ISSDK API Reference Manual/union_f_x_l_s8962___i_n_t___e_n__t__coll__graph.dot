@@ -1,0 +1,6 @@
+digraph "FXLS8962_INT_EN_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FXLS8962_INT_EN_t\n|+ wake_out_en\l+ boot_dis\l+ aslp_en\l+ orient_en\l+ sdcd_wt_en\l+ sdcd_ot_en\l+ buf_en\l+ drdy_en\l+ b\l+ w\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

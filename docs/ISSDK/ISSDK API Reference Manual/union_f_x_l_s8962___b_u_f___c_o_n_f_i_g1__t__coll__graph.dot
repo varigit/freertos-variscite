@@ -1,0 +1,6 @@
+digraph "FXLS8962_BUF_CONFIG1_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FXLS8962_BUF_CONFIG1_t\n|+ trg_orient\l+ _reserved_\l+ trg_sdcd_ot\l+ trg_sdcd_wt\l+ buf_gate\l+ buf_mode\l+ buf_type\l+ b\l+ w\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

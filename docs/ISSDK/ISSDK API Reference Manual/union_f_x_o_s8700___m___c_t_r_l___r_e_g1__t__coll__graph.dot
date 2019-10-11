@@ -1,0 +1,6 @@
+digraph "FXOS8700_M_CTRL_REG1_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FXOS8700_M_CTRL_REG1_t\n|+ m_hms\l+ m_os\l+ m_ost\l+ m_rst\l+ m_acal\l+ b\l+ w\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

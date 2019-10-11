@@ -1,0 +1,15 @@
+digraph "fInit_9DOF_GBY_KALMAN"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node123 [label="fInit_9DOF_GBY_KALMAN",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node123 -> Node124 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node124 [label="feCompassAndroid",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$orientation_8c.html#a43ad72cf13f54b0f96355bb7005b6872",tooltip="Android: basic 6DOF e-Compass function, computing rotation matrix fR and magnetic inclination angle f..."];
+  Node123 -> Node129 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node129 [label="feCompassNED",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$orientation_8c.html#afcde979fba0bcae15591096fe68648c9",tooltip="NED: basic 6DOF e-Compass function, computing rotation matrix fR and magnetic inclination angle fDelt..."];
+  Node123 -> Node130 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node130 [label="feCompassWin8",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$orientation_8c.html#aabc044b27a0cdd7db677c3203b77de90",tooltip="Win8: basic 6DOF e-Compass function, computing rotation matrix fR and magnetic inclination angle fDel..."];
+  Node123 -> Node131 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node131 [label="fQuaternionFromRotationMatrix",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$orientation_8c.html#a04da5468213c1687c5b3485f15af288e",tooltip="compute the orientation quaternion from a 3x3 rotation matrix "];
+}

@@ -1,0 +1,6 @@
+digraph "FXOS8700_PULSE_CFG_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FXOS8700_PULSE_CFG_t\n|+ pls_xspefe\l+ pls_xdpefe\l+ pls_yspefe\l+ pls_ydpefe\l+ pls_zspefe\l+ pls_zdpefe\l+ pls_ele\l+ pls_dpa\l+ b\l+ w\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

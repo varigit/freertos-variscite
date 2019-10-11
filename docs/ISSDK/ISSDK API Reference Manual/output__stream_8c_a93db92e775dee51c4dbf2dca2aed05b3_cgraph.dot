@@ -1,0 +1,9 @@
+digraph "sBufAppendZeros"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node21 [label="sBufAppendZeros",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node21 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="sBufAppendItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$output__stream_8c.html#a7ad6e53b35d6fc860a1299ceff40a299",tooltip="Utility function used to place data in output buffer about to be transmitted via UART. "];
+}

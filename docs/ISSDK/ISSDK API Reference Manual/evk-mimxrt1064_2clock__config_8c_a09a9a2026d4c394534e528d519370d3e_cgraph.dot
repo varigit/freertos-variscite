@@ -1,0 +1,11 @@
+digraph "BOARD_InitBootClocks"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="BOARD_InitBootClocks",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="BOARD_BootClockFROHF96M",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lpcxpresso54114_2clock__config_8c.html#a245da4f80747dadd943a8891f2d6592d",tooltip="This function executes configuration of clocks. "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="BOARD_BootClockRUN",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$frdm-k64f_2clock__config_8c.html#a5e69c4eff0fd5236bbb0ff4e1d5a7a7e",tooltip="This function executes configuration of clocks. "];
+}

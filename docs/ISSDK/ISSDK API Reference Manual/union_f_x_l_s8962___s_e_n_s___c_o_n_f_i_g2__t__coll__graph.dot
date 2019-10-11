@@ -1,0 +1,6 @@
+digraph "FXLS8962_SENS_CONFIG2_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{FXLS8962_SENS_CONFIG2_t\n|+ f_read\l+ anic_temp\l+ _reserved_\l+ le_be\l+ sleep_pm\l+ wake_pm\l+ b\l+ w\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

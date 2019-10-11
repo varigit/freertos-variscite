@@ -1,0 +1,11 @@
+digraph "driverexamples/imx/mekmimx8qm/fxos8700" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_cac466d31ff61a3c93a369f495016297 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="mekmimx8qm" fontname="Helvetica", fontsize="10", URL="dir_cac466d31ff61a3c93a369f495016297.html"]
+  dir_4102229b319c139e359e90911b9b2d3e [shape=box, label="fxos8700", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_4102229b319c139e359e90911b9b2d3e.html"];
+  }
+  dir_c77a8e2546a9c75bbba96be2ef542c8e [shape=box label="sensors" URL="dir_c77a8e2546a9c75bbba96be2ef542c8e.html"];
+  dir_4102229b319c139e359e90911b9b2d3e->dir_c77a8e2546a9c75bbba96be2ef542c8e [headlabel="2", labeldistance=1.5 headhref="dir_000062_000084.html"];
+}

@@ -1,0 +1,19 @@
+digraph "FXLC95000_SPI_Initialize"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node69 [label="FXLC95000_SPI_Initialize",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node69 -> Node70 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node70 [label="BOARD_DELAY_ms",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$systick__utils_8c.html#ab052b802081fd87e1bda8d56e2c0db42",tooltip="Function to insert delays. "];
+  Node70 -> Node72 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node72 [label="int32_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$data__format__service_8h.html#a5d7069350a7d7e65686c77a8038f462f",tooltip="The interface function to append the data on the formated stream. "];
+  Node69 -> Node74 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node74 [label="FXLC95000_SPI_ReadPreprocess",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxlc95000__drv_8c.html#a8e3488e3a4db535a6c822746377c289b",tooltip="The SPI Read Pre-Process function to generate Sensor specific SPI Message Header. ..."];
+  Node69 -> Node75 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node75 [label="FXLC95000_SPI_WritePreprocess",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxlc95000__drv_8c.html#a627506e76cad9d842873b8e549998baf",tooltip="The SPI Write Pre-Process function to generate Sensor specific SPI Message Header. "];
+  Node69 -> Node72 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node69 -> Node76 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node76 [label="Register_SPI_BlockWrite",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$register__io__spi_8c.html#a0662e3575811a227d02c1cfe802744c5",tooltip="The interface function to block write to a sensor register. "];
+  Node76 -> Node72 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

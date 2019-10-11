@@ -1,0 +1,16 @@
+digraph "f3DOFMagnetometerMatrixAndroid"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="f3DOFMagnetometerMatrixAndroid",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="f3DOFMagnetometerMatrixWin8",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$orientation_8h.html#a79e9bfb4c86c1cd82b83058afd08df10",tooltip="Windows 8 magnetometer 3DOF flat eCompass function, computing rotation matrix fR. ..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="fInit_3DOF_B_BASIC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fusion_8h.html#adc49d74394c2a94a33ff65edea18233b"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="fRun_3DOF_B_BASIC",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fusion_8h.html#a2df5be5795338038774a64b41cf53a8e"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

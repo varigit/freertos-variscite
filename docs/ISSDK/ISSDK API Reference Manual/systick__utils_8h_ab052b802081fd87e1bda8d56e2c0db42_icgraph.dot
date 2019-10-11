@@ -1,0 +1,32 @@
+digraph "BOARD_DELAY_ms"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node4 [label="BOARD_DELAY_ms",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="ADS_DetectShield",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$auto__detection__service__kl25z_8c.html#a01f30c94c49eadb65cc176f79209e84c"];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="ADS_MMA9553Query",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$auto__detection__service__kl25z_8c.html#a61f59d3254fb54c57b010f2f9f8a7499"];
+  Node7 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="DIFF_P_I2C_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$diff__p__drv_8h.html#a42609fa366eabcd1fe7def2c58a925bd",tooltip="The interface function to initialize the sensor. "];
+  Node4 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="DIFF_P_SPI_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$diff__p__drv_8h.html#a8daefe78cc812287f49b2f71b3afe24d",tooltip="The interface function to initialize the sensor. "];
+  Node4 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="FXLC95000_SPI_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxlc95000__drv_8h.html#aec67caf020c27066c2918ca5ba6807ac",tooltip="The interface function to initialize the sensor. "];
+  Node4 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="FXLS8962_I2C_DeInit",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$fxls8962__drv_8h.html#a13160308eebd2dce90198d9f1388ad27",tooltip="The interface function to De Initialize sensor.. "];
+  Node4 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="FXLS8962_SPI_Deinit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fxls8962__drv_8h.html#afa8884917291129b676fc1395fd95671",tooltip="The interface function to De Initialize sensor.. "];
+  Node4 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="MMA9553_I2C_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mma9553__drv_8h.html#af91dd70fb511444f848db38d965c68c0",tooltip="The interface function to initialize the sensor. "];
+  Node4 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="MMA9553_SPI_Initialize",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$mma9553__drv_8h.html#aa9e0baf731b01815b94c95276e6be639",tooltip="The interface function to initialize the sensor. "];
+  Node4 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="Sensor_I2C_BlockWrite",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__io__i2c_8h.html#ad6c175b9a45aa936aa74abda223eeafe",tooltip="Write commands to a sensor. "];
+  Node22 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node32 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node32 [label="Sensor_SPI_BlockWrite",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$sensor__io__spi_8h.html#a6891c5409037ff96ef29750f131f4c00",tooltip="Write commands to a sensor. "];
+  Node32 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

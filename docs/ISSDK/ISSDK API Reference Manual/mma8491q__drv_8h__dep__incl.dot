@@ -1,0 +1,12 @@
+digraph "sensors/mma8491q_drv.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node9 [label="sensors/mma8491q_drv.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="sensors/mma8491q_drv.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mma8491q__drv_8c.html",tooltip="The mma8491q_drv.c file implements the MMA8491 sensor driver interfaces. "];
+  Node9 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="driverexamples/mma8491q\l/mma8491q_example.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mma8491q__example_8c.html",tooltip="The mma8491q_example.c file implements the ISSDK MMA8491Q sensor driver example demonstration with Ti..."];
+  Node9 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="driverexamples/demos\l/mma8491q_demo.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mma8491q__demo_8c.html",tooltip="The mma8491q_demo.c file implements the ISSDK MMA8491Q sensor driver demo demonstration with polling ..."];
+}
