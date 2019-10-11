@@ -9,19 +9,41 @@
 #ifndef __HAL_UART_ADAPTER_H__
 #define __HAL_UART_ADAPTER_H__
 
+#if defined(FSL_RTOS_FREE_RTOS)
+#include "FreeRTOS.h"
+#endif
+
+/*!
+ * @addtogroup UART_Adapter
+ * @{
+ */
+
 /*******************************************************************************
  * Definitions
  ******************************************************************************/
 
+/*! @brief Enable or disable Uart adapter non-blocking mode (1 - enable, 0 - disable) */
 #ifdef DEBUG_CONSOLE_TRANSFER_NON_BLOCKING
-#define UART_ADAPTER_NON_BLOCKING_MODE \
-    (1U) /* Enable or disable Uart adapter non-blocking mode (1 - enable, 0 - disable) */
+#define UART_ADAPTER_NON_BLOCKING_MODE (1U)
 #else
 #ifndef SERIAL_MANAGER_NON_BLOCKING_MODE
-#define UART_ADAPTER_NON_BLOCKING_MODE \
-    (0U) /* Enable or disable Uart adapter non-blocking mode (1 - enable, 0 - disable) */
+#define UART_ADAPTER_NON_BLOCKING_MODE (0U)
 #else
 #define UART_ADAPTER_NON_BLOCKING_MODE SERIAL_MANAGER_NON_BLOCKING_MODE
+#endif
+#endif
+
+#if defined(__GIC_PRIO_BITS)
+#define HAL_UART_ISR_PRIORITY (25U)
+#else
+#if defined(configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY)
+#define HAL_UART_ISR_PRIORITY (configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY)
+#else
+/* The default value 3 is used to support different ARM Core, such as CM0P, CM4, CM7, and CM33, etc.
+ * The minimum number of priority bits implemented in the NVIC is 2 on these SOCs. The value of mininum
+ * priority is 3 (2^2 - 1). So, the default value is 3.
+ */
+#define HAL_UART_ISR_PRIORITY (3U)
 #endif
 #endif
 
@@ -31,26 +53,25 @@
 #define HAL_UART_HANDLE_SIZE (4U)
 #endif
 
-#define HAL_UART_TRANSFER_MODE                                                               \
-    (0U) /*!< Whether enable transactional function of the uart. (0 - disable, 1 - enable) \ \
-            */
+/*! @brief Whether enable transactional function of the uart. (0 - disable, 1 - enable) */
+#define HAL_UART_TRANSFER_MODE (0U)
 
 typedef void *hal_uart_handle_t;
 
 /*! @brief uart status */
 typedef enum _hal_uart_status
 {
-    kStatus_HAL_UartSuccess = kStatus_Success,                      /*!< Successfully */
-    kStatus_HAL_UartTxBusy = MAKE_STATUS(kStatusGroup_HAL_UART, 1), /*!< TX busy */
-    kStatus_HAL_UartRxBusy = MAKE_STATUS(kStatusGroup_HAL_UART, 2), /*!< RX busy */
-    kStatus_HAL_UartTxIdle = MAKE_STATUS(kStatusGroup_HAL_UART, 3), /*!< HAL uart transmitter is idle. */
-    kStatus_HAL_UartRxIdle = MAKE_STATUS(kStatusGroup_HAL_UART, 4), /*!< HAL uart receiver is idle */
+    kStatus_HAL_UartSuccess = kStatus_Success,                       /*!< Successfully */
+    kStatus_HAL_UartTxBusy  = MAKE_STATUS(kStatusGroup_HAL_UART, 1), /*!< TX busy */
+    kStatus_HAL_UartRxBusy  = MAKE_STATUS(kStatusGroup_HAL_UART, 2), /*!< RX busy */
+    kStatus_HAL_UartTxIdle  = MAKE_STATUS(kStatusGroup_HAL_UART, 3), /*!< HAL uart transmitter is idle. */
+    kStatus_HAL_UartRxIdle  = MAKE_STATUS(kStatusGroup_HAL_UART, 4), /*!< HAL uart receiver is idle */
     kStatus_HAL_UartBaudrateNotSupport =
         MAKE_STATUS(kStatusGroup_HAL_UART, 5), /*!< Baudrate is not support in current clock source */
     kStatus_HAL_UartProtocolError = MAKE_STATUS(
         kStatusGroup_HAL_UART,
         6),                                                        /*!< Error occurs for Noise, Framing, Parity, etc.
-                                                                        For transcational transfer, The up layer needs to abort the transfer and then starts again */
+                                                                        For transactional transfer, The up layer needs to abort the transfer and then starts again */
     kStatus_HAL_UartError = MAKE_STATUS(kStatusGroup_HAL_UART, 7), /*!< Error occurs on HAL uart */
 } hal_uart_status_t;
 
@@ -58,8 +79,8 @@ typedef enum _hal_uart_status
 typedef enum _hal_uart_parity_mode
 {
     kHAL_UartParityDisabled = 0x0U, /*!< Parity disabled */
-    kHAL_UartParityEven = 0x1U,     /*!< Parity even enabled */
-    kHAL_UartParityOdd = 0x2U,      /*!< Parity odd enabled */
+    kHAL_UartParityEven     = 0x1U, /*!< Parity even enabled */
+    kHAL_UartParityOdd      = 0x2U, /*!< Parity odd enabled */
 } hal_uart_parity_mode_t;
 
 /*! @brief uart stop bit count. */
@@ -107,31 +128,30 @@ extern "C" {
  */
 
 /*!
-* @brief Initializes a uart instance with the uart handle and the user configuration structure.
-*
-* This function configures the uart module with user-defined settings. The user can configure the configuration
-* structure. The parameter handle is a pointer to point to a memory space of size #HAL_UART_HANDLE_SIZE allocated by the
-* caller.
-* Example below shows how to use this API to configure the uart.
-*  @code
-*   uint8_t g_UartHandleBuffer[HAL_UART_HANDLE_SIZE];
-*   hal_uart_handle_t g_UartHandle = &g_UartHandleBuffer[0];
-*   hal_uart_config_t config;
-*   config.srcClock_Hz = 48000000;
-*   config.baudRate_Bps = 115200U;
-*   config.parityMode = kHAL_UartParityDisabled;
-*   config.stopBitCount = kHAL_UartOneStopBit;
-*   config.enableRx = 1;
-*   config.enableTx = 1;
-*   config.instance = 0;
-*   HAL_UartInit(g_UartHandle, &config);
-*  @endcode
-*
-* @param handle Pointer to point to a memory space of size #HAL_UART_HANDLE_SIZE allocated by the caller.
-* @param config Pointer to user-defined configuration structure.
-* @retval kStatus_HAL_UartBaudrateNotSupport Baudrate is not support in current clock source.
-* @retval kStatus_HAL_UartSuccess uart initialization succeed
-*/
+ * @brief Initializes a uart instance with the uart handle and the user configuration structure.
+ *
+ * This function configures the uart module with user-defined settings. The user can configure the configuration
+ * structure. The parameter handle is a pointer to point to a memory space of size #HAL_UART_HANDLE_SIZE allocated by
+ * the caller. Example below shows how to use this API to configure the uart.
+ *  @code
+ *   uint8_t g_UartHandleBuffer[HAL_UART_HANDLE_SIZE];
+ *   hal_uart_handle_t g_UartHandle = &g_UartHandleBuffer[0];
+ *   hal_uart_config_t config;
+ *   config.srcClock_Hz = 48000000;
+ *   config.baudRate_Bps = 115200U;
+ *   config.parityMode = kHAL_UartParityDisabled;
+ *   config.stopBitCount = kHAL_UartOneStopBit;
+ *   config.enableRx = 1;
+ *   config.enableTx = 1;
+ *   config.instance = 0;
+ *   HAL_UartInit(g_UartHandle, &config);
+ *  @endcode
+ *
+ * @param handle Pointer to point to a memory space of size #HAL_UART_HANDLE_SIZE allocated by the caller.
+ * @param config Pointer to user-defined configuration structure.
+ * @retval kStatus_HAL_UartBaudrateNotSupport Baudrate is not support in current clock source.
+ * @retval kStatus_HAL_UartSuccess uart initialization succeed
+ */
 hal_uart_status_t HAL_UartInit(hal_uart_handle_t handle, hal_uart_config_t *config);
 
 /*!
@@ -144,7 +164,7 @@ hal_uart_status_t HAL_UartInit(hal_uart_handle_t handle, hal_uart_config_t *conf
  */
 hal_uart_status_t HAL_UartDeinit(hal_uart_handle_t handle);
 
-/* @} */
+/*! @}*/
 
 /*!
  * @name Blocking bus Operations
@@ -187,7 +207,7 @@ hal_uart_status_t HAL_UartReceiveBlocking(hal_uart_handle_t handle, uint8_t *dat
  */
 hal_uart_status_t HAL_UartSendBlocking(hal_uart_handle_t handle, const uint8_t *data, size_t length);
 
-/* @} */
+/*! @}*/
 
 #if (defined(HAL_UART_TRANSFER_MODE) && (HAL_UART_TRANSFER_MODE > 0U))
 
@@ -308,7 +328,7 @@ hal_uart_status_t HAL_UartTransferAbortReceive(hal_uart_handle_t handle);
  */
 hal_uart_status_t HAL_UartTransferAbortSend(hal_uart_handle_t handle);
 
-/* @} */
+/*! @}*/
 
 #else
 
@@ -431,7 +451,7 @@ hal_uart_status_t HAL_UartAbortReceive(hal_uart_handle_t handle);
  */
 hal_uart_status_t HAL_UartAbortSend(hal_uart_handle_t handle);
 
-/* @} */
+/*! @}*/
 
 #endif
 
@@ -447,5 +467,5 @@ void HAL_UartIsrFunction(hal_uart_handle_t handle);
 #if defined(__cplusplus)
 }
 #endif
-
+/*! @}*/
 #endif /* __HAL_UART_ADAPTER_H__ */

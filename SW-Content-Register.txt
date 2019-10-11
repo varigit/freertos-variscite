@@ -1,5 +1,5 @@
 Release Name: MCUXpresso Software Development Kit (SDK)
-Release Version: 2.5.1
+Release Version: 2.5.2
 Package License: LA_OPT_NXP_Software_License.htm - Production Use, Section 2.3 applies
 
 KSDK_Peripheral_Driver     Description: Peripheral drivers are designed for  
@@ -11,6 +11,36 @@ KSDK_Peripheral_Driver     Description: Peripheral drivers are designed for
                            Format: source code                               
                            name: KSDK Peripheral Driver                      
                            Location: devices/<device>/drivers                
+
+Amazon_FreeRTOS            Author: Real Time Engineers, Ltd.                 
+                           Description: IoT operating system for             
+                           microcontrollers                                  
+                           Format: source code                               
+                           License: MIT. See                                 
+                           ,<rootfolder>/rtos/amazon-freertos/License.       
+                           Location: rtos/amazon-freertos                    
+                           name: Amazon FreeRTOS                             
+                           URL: https://aws.amazon.com/freertos/             
+                           version: 1.4.0                                    
+
+mmcau                      Author: Freescale                                 
+                           Description: S/W library that works with the      
+                           memory-mapped cryptographic acceleration unit     
+                           present on some MCUXpresso SoCs                   
+                           Format: source code                               
+                           License: Open Source - BSD-3-Clause               
+                           Location: middleware/mmcau                        
+                           name: mmCAU S/W Library                           
+                           version: 2.0.1                                    
+
+lwip                       Author: Swedish Institute of Computer Science     
+                           Description: A light-weight TCP/IP stack          
+                           Format: source code                               
+                           License: Open Source - BSD-3-Clause               
+                           Location: middleware/lwip                         
+                           name: lwIP TCP/IP Stack                           
+                           URL: http://savannah.nongnu.org/projects/lwip     
+                           version: 2.1.2                                    
 
 usb                        version: 2.1.0                                    
                            Location: middleware/usb                          

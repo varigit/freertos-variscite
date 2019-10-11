@@ -57,19 +57,6 @@
 #define RL_PACKED_END
 #endif
 
-/* GNUC */
-#elif defined(__GNUC__)
-
-#define MEM_BARRIER() asm volatile("dsb" : : : "memory")
-
-#ifndef RL_PACKED_BEGIN
-#define RL_PACKED_BEGIN
-#endif
-
-#ifndef RL_PACKED_END
-#define RL_PACKED_END __attribute__((__packed__))
-#endif
-
 /* ARM GCC */
 #elif defined(__CC_ARM) || (defined (__ARMCC_VERSION) && (__ARMCC_VERSION >= 6010050))
 
@@ -85,6 +72,19 @@
 
 #ifndef RL_PACKED_END
 #define RL_PACKED_END _Pragma("pack()")
+#endif
+
+/* GNUC */
+#elif defined(__GNUC__)
+
+#define MEM_BARRIER() asm volatile("dsb" : : : "memory")
+
+#ifndef RL_PACKED_BEGIN
+#define RL_PACKED_BEGIN
+#endif
+
+#ifndef RL_PACKED_END
+#define RL_PACKED_END __attribute__((__packed__))
 #endif
 
 #else

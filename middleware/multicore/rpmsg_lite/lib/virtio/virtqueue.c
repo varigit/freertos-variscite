@@ -1,6 +1,9 @@
 /*-
  * Copyright (c) 2011, Bryan Venteicher <bryanv@FreeBSD.org>
+ * Copyright (c) 2016 Freescale Semiconductor, Inc.
+ * Copyright 2016-2019 NXP
  * All rights reserved.
+ *
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
@@ -212,7 +215,11 @@ int virtqueue_fill_avail_buffers(struct virtqueue *vq, void *buffer, uint32_t le
         head_idx = vq->vq_desc_head_idx;
 
         dp = &vq->vq_ring.desc[head_idx];
+#if defined(RL_USE_ENVIRONMENT_CONTEXT) && (RL_USE_ENVIRONMENT_CONTEXT == 1)
+        dp->addr = env_map_vatopa(vq->env, buffer);
+#else
         dp->addr = env_map_vatopa(buffer);
+#endif
         dp->len = len;
         dp->flags = VRING_DESC_F_WRITE;
 
@@ -261,7 +268,11 @@ void *virtqueue_get_buffer(struct virtqueue *vq, uint32_t *len, uint16_t *idx)
 
     VQUEUE_IDLE(vq, used_read);
 
+#if defined(RL_USE_ENVIRONMENT_CONTEXT) && (RL_USE_ENVIRONMENT_CONTEXT == 1)
+    return env_map_patova(vq->env, vq->vq_ring.desc[desc_idx].addr);
+#else
     return env_map_patova(vq->vq_ring.desc[desc_idx].addr);
+#endif
 }
 
 /*!
@@ -341,8 +352,11 @@ void *virtqueue_get_available_buffer(struct virtqueue *vq, uint16_t *avail_idx, 
     *avail_idx = vq->vq_ring.avail->ring[head_idx];
 
     env_rmb();
-
+#if defined(RL_USE_ENVIRONMENT_CONTEXT) && (RL_USE_ENVIRONMENT_CONTEXT == 1)
+    buffer = env_map_patova(vq->env, vq->vq_ring.desc[*avail_idx].addr);
+#else
     buffer = env_map_patova(vq->vq_ring.desc[*avail_idx].addr);
+#endif
     *len = vq->vq_ring.desc[*avail_idx].len;
 
     VQUEUE_IDLE(vq, avail_read);
@@ -524,7 +538,11 @@ static uint16_t vq_ring_add_buffer(
     VQASSERT(vq, head_idx != VQ_RING_DESC_CHAIN_END, "premature end of free desc chain");
 
     dp = &desc[head_idx];
+#if defined(RL_USE_ENVIRONMENT_CONTEXT) && (RL_USE_ENVIRONMENT_CONTEXT == 1)
+    dp->addr = env_map_vatopa(vq->env, buffer);
+#else
     dp->addr = env_map_vatopa(buffer);
+#endif
     dp->len = length;
     dp->flags = VRING_DESC_F_WRITE;
 

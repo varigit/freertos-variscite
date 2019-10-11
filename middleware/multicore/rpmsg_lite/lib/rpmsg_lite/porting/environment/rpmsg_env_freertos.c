@@ -2,7 +2,7 @@
  * Copyright (c) 2014, Mentor Graphics Corporation
  * Copyright (c) 2015 Xilinx, Inc.
  * Copyright (c) 2016 Freescale Semiconductor, Inc.
- * Copyright 2016 NXP
+ * Copyright 2016-2019 NXP
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -57,6 +57,14 @@
 static int env_init_counter = 0;
 SemaphoreHandle_t env_sema = NULL;
 
+/* RL_ENV_MAX_MUTEX_COUNT is an arbitrary count greater than 'count'
+   if the inital count is 1, this function behaves as a mutex
+   if it is greater than 1, it acts as a "resource allocator" with 
+   the maximum of 'count' resources available. 
+   Currently, only the first use-case is applicable/applied in RPMsg-Lite.
+ */
+#define RL_ENV_MAX_MUTEX_COUNT (10)
+
 /* Max supported ISR counts */
 #define ISR_COUNT (32)
 /*!
@@ -67,6 +75,10 @@ struct isr_info
     void *data;
 };
 static struct isr_info isr_table[ISR_COUNT];
+
+#if defined(RL_USE_ENVIRONMENT_CONTEXT) && (RL_USE_ENVIRONMENT_CONTEXT == 1)
+#error "This RPMsg-Lite port requires RL_USE_ENVIRONMENT_CONTEXT set to 0"
+#endif
 
 /*!
  * env_in_isr
@@ -263,7 +275,7 @@ void env_mb(void)
 }
 
 /*!
- * osalr_mb - implementation
+ * env_rmb - implementation
  */
 void env_rmb(void)
 {
@@ -306,7 +318,12 @@ void *env_map_patova(unsigned long address)
  */
 int env_create_mutex(void **lock, int count)
 {
-    *lock = xSemaphoreCreateCounting(10, count);
+    if(count > RL_ENV_MAX_MUTEX_COUNT)
+    {
+        return -1;   
+    }
+    
+    *lock = xSemaphoreCreateCounting(RL_ENV_MAX_MUTEX_COUNT, count);
     if (*lock)
     {
         return 0;
@@ -563,7 +580,7 @@ void env_isr(int vector)
  *
  * @param queue -  pointer to created queue
  * @param length -  maximum number of elements in the queue
- * @param item_size - queue element size in bytes
+ * @param element_size - queue element size in bytes
  *
  * @return - status of function execution
  */

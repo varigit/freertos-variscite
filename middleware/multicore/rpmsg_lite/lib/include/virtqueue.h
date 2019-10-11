@@ -3,6 +3,8 @@
 
 /*-
  * Copyright (c) 2011, Bryan Venteicher <bryanv@FreeBSD.org>
+ * Copyright (c) 2016 Freescale Semiconductor, Inc.
+ * Copyright 2016-2019 NXP
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -30,6 +32,7 @@
  */
 
 #include <stdint.h>
+#include "rpmsg_default_config.h"
 typedef uint8_t boolean;
 
 #include "virtio_ring.h"
@@ -137,6 +140,9 @@ struct virtqueue
     uint16_t padd; /* aligned to 32bits after this: */
 
     void *priv; /* private pointer, upper layer instance pointer */
+#if defined(RL_USE_ENVIRONMENT_CONTEXT) && (RL_USE_ENVIRONMENT_CONTEXT == 1)
+    void *env; /* private pointer to environment layer internal context */
+#endif
 };
 
 /* struct to hold vring specific information */
