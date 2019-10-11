@@ -1,0 +1,26 @@
+var group__usb__device__configuration =
+[
+    [ "USB_DEVICE_CONFIG_HID", "group__usb__device__configuration.html#ga757f0b2891a16b7b7b5148e96138bd57", null ],
+    [ "USB_DEVICE_CONFIG_CDC_ACM", "group__usb__device__configuration.html#gafe6a19e7cf3a09f6172dd45a16038d62", null ],
+    [ "USB_DEVICE_CONFIG_MSC", "group__usb__device__configuration.html#ga9befa41f3cf5f2ed409dde6c0843cfc9", null ],
+    [ "USB_DEVICE_CONFIG_AUDIO", "group__usb__device__configuration.html#ga2a6528c61a7a6ca5ad03881d578c0caa", null ],
+    [ "USB_DEVICE_CONFIG_PHDC", "group__usb__device__configuration.html#gadc8ab6aaa300cc5d66f8dd0f053504ea", null ],
+    [ "USB_DEVICE_CONFIG_VIDEO", "group__usb__device__configuration.html#gad88f5696b7e9ac277f73f40870a178ef", null ],
+    [ "USB_DEVICE_CONFIG_CCID", "group__usb__device__configuration.html#gaeb6251f2d3d5a8074f2b4fc0501c0b90", null ],
+    [ "USB_DEVICE_CONFIG_PRINTER", "group__usb__device__configuration.html#ga2705e70823fd1287922f67c2311d507b", null ],
+    [ "USB_DEVICE_CONFIG_DFU", "group__usb__device__configuration.html#ga08fa5ae3560ecf891bb0354fa3941e3a", null ],
+    [ "USB_DEVICE_CONFIG_SELF_POWER", "group__usb__device__configuration.html#ga67facec135865cf3a48c5796f0b25b48", null ],
+    [ "USB_DEVICE_CONFIG_ENDPOINTS", "group__usb__device__configuration.html#gada28e5e29935a31e816cc3eb2653a41d", null ],
+    [ "USB_DEVICE_CONFIG_USE_TASK", "group__usb__device__configuration.html#gacafa57e424d6f4de343be97b519a23a1", null ],
+    [ "USB_DEVICE_CONFIG_MAX_MESSAGES", "group__usb__device__configuration.html#gaf2ff8b5aee72e0311aa0db50cb530cce", null ],
+    [ "USB_DEVICE_CONFIG_USB20_TEST_MODE", "group__usb__device__configuration.html#gae90956322e775e5f7669985c83585184", null ],
+    [ "USB_DEVICE_CONFIG_CV_TEST", "group__usb__device__configuration.html#ga5cf74155ad53ffe0073f5e84adb19b38", null ],
+    [ "USB_DEVICE_CONFIG_COMPLIANCE_TEST", "group__usb__device__configuration.html#gab3a74e1cd1b248dabd31f67d00a3e9ad", null ],
+    [ "USB_DEVICE_CONFIG_KEEP_ALIVE_MODE", "group__usb__device__configuration.html#ga35aa88b0e6f6bde7ffc7db14131b10e9", null ],
+    [ "USB_DEVICE_CONFIG_BUFFER_PROPERTY_CACHEABLE", "group__usb__device__configuration.html#gab438736df0701b2a60138387609c1141", null ],
+    [ "USB_DEVICE_CONFIG_LOW_POWER_MODE", "group__usb__device__configuration.html#ga41be4cbd6b752a5440a2406e62b43634", null ],
+    [ "USB_DEVICE_CONFIG_REMOTE_WAKEUP", "group__usb__device__configuration.html#ga5bf5578e4cf76e5ba64045546ec9e7ee", null ],
+    [ "USB_DEVICE_CONFIG_DETACH_ENABLE", "group__usb__device__configuration.html#ga837bda10bd6d27c85844b0a119e7e7e8", null ],
+    [ "USB_DEVICE_CONFIG_ERROR_HANDLING", "group__usb__device__configuration.html#ga4e9211ea53cfd37b6f14eea7fe87170f", null ],
+    [ "USB_DEVICE_CHARGER_DETECT_ENABLE", "group__usb__device__configuration.html#gaf7e5e45c286a297be722d6974e503464", null ]
+];
