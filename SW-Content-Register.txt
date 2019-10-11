@@ -12,6 +12,16 @@ KSDK_Peripheral_Driver     Description: Peripheral drivers are designed for
                            name: KSDK Peripheral Driver                      
                            Location: devices/<device>/drivers                
 
+issdk                      version: 1.7                                      
+                           Location: middleware/issdk                        
+                           Description: Freescale IoT Sensing SDK. It        
+                           combines a set of robust Sensor Drivers and       
+                           Algorithms along with example applications.       
+                           License: Open Source - BSD-3-Clause               
+                           Author: Freescale                                 
+                           name: ISSDK                                       
+                           Format: source code                               
+
 Amazon_FreeRTOS            Author: Real Time Engineers, Ltd.                 
                            Description: IoT operating system for             
                            microcontrollers                                  
