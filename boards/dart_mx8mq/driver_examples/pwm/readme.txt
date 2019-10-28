@@ -16,7 +16,7 @@ Hardware requirements
 
 Board settings
 ==============
-Use Oscilloscope to measure and observe the Test Point TP1801  output signal.
+Use Oscilloscope to measure and observe the output signal at J14 header, pin 3.
 
 
 
