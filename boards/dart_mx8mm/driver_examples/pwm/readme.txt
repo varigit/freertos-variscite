@@ -22,7 +22,7 @@ Hardware requirements
 
 Board settings
 ==============
-Use Oscilloscope to measure and observe the output signal at J14 header, pin 3.
+Use Oscilloscope to measure and observe the output signal at J14 header, pin 7.
 
 
 

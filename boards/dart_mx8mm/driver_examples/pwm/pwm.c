@@ -16,9 +16,9 @@
 /*******************************************************************************
  * Definitions
  ******************************************************************************/
-#define DEMO_PWM_BASEADDR PWM2
-#define DEMO_PWM_IRQn PWM2_IRQn
-#define DEMO_PWM_IRQHandler PWM2_IRQHandler
+#define DEMO_PWM_BASEADDR PWM3
+#define DEMO_PWM_IRQn PWM3_IRQn
+#define DEMO_PWM_IRQHandler PWM3_IRQHandler
 /*! @brief PWM period value. PWMO (Hz) = PCLK(Hz) / (period +2) */
 #define PWM_PERIOD_VALUE		30
 
