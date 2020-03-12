@@ -14,11 +14,11 @@
 /*******************************************************************************
  * Definitions
  ******************************************************************************/
-#define DEMO_UART UART2
+#define DEMO_UART UART3
 #define DEMO_UART_CLK_FREQ BOARD_DEBUG_UART_CLK_FREQ
 #define DEMO_UART_BAUDRATE 115200U
-#define DEMO_IRQn UART2_IRQn
-#define DEMO_UART_IRQHandler UART2_IRQHandler
+#define DEMO_IRQn UART3_IRQn
+#define DEMO_UART_IRQHandler UART3_IRQHandler
 
 /*! @brief Ring buffer size (Unit: Byte). */
 #define DEMO_RING_BUFFER_SIZE 16

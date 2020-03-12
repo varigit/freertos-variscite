@@ -46,13 +46,13 @@ void BOARD_InitPins(void);                                 /*!< Function assigne
  * @brief Configures pin routing and optionally pin electrical features.
  *
  */
-void UART2_InitPins(void);                                 /*!< Function assigned for the core: Cortex-M4[m4] */
+void UART3_InitPins(void);                                 /*!< Function assigned for the core: Cortex-M4[m4] */
 
 /*!
  * @brief Configures pin routing and optionally pin electrical features.
  *
  */
-void UART2_DeinitPins(void);                               /*!< Function assigned for the core: Cortex-M4[m4] */
+void UART3_DeinitPins(void);                               /*!< Function assigned for the core: Cortex-M4[m4] */
 
 #if defined(__cplusplus)
 }

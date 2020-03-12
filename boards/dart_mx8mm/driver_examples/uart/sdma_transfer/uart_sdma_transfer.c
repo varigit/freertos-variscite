@@ -17,7 +17,7 @@
  * Definitions
  ******************************************************************************/
 #define EXAMPLE_UART_DMA_BASEADDR SDMAARM1
-#define DEMO_UART UART2
+#define DEMO_UART UART3
 #define DEMO_UART_CLK_FREQ BOARD_DEBUG_UART_CLK_FREQ
 #define UART_RX_DMA_CHANNEL 1U
 #define UART_TX_DMA_CHANNEL 2U

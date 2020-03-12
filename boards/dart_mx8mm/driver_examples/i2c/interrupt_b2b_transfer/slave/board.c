@@ -23,7 +23,7 @@
 void BOARD_InitDebugConsole(void)
 {
     uint32_t uartClkSrcFreq = BOARD_DEBUG_UART_CLK_FREQ;
-    CLOCK_EnableClock(kCLOCK_Uart2);
+    CLOCK_EnableClock(kCLOCK_Uart3);
     DbgConsole_Init(BOARD_DEBUG_UART_INSTANCE, BOARD_DEBUG_UART_BAUDRATE, BOARD_DEBUG_UART_TYPE, uartClkSrcFreq);
 }
 /* Initialize MPU, configure non-cacheable memory */

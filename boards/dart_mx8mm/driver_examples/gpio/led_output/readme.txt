@@ -27,7 +27,7 @@ Use oscilloscope to probe the signal on LED D7 (On Base board).
 Prepare the Demo
 ================
 1.  Connect 5V power supply and J-Link Debug Probe to the board, switch SW8 to power on the board
-2.  Connect a proper cable between the host PC and the J12 header (pins UART2 TX, RX and GND) on the target board.
+2.  Connect a proper cable between the host PC and the J12 header (pins UART3 TX, RX and GND) on the target board.
 3.  Open a serial terminal with the following settings:
     - 115200 baud rate
     - 8 data bits

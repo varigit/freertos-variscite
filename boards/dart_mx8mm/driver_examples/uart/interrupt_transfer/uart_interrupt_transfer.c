@@ -14,7 +14,7 @@
 /*******************************************************************************
  * Definitions
  ******************************************************************************/
-#define DEMO_UART UART2
+#define DEMO_UART UART3
 #define DEMO_UART_CLK_FREQ BOARD_DEBUG_UART_CLK_FREQ
 
 #define ECHO_BUFFER_LENGTH 8

@@ -42,8 +42,8 @@ void BOARD_InitBootPins(void)
 BOARD_InitPins:
 - options: {callFromInitBoot: 'false', coreID: m4}
 - pin_list:
-  - {pin_num: F19, peripheral: UART2, signal: uart_rx, pin_signal: UART2_RXD, PE: Disabled, PUE: Disabled, SION: DISABLED, DSE: X6_0}
-  - {pin_num: F18, peripheral: UART2, signal: uart_tx, pin_signal: UART2_TXD, PE: Disabled, PUE: Disabled, DSE: X6_0}
+  - {pin_num: E18, peripheral: UART3, signal: uart_rx, pin_signal: UART3_RXD, PE: Disabled, PUE: Disabled, DSE: X6_0}
+  - {pin_num: D18, peripheral: UART3, signal: uart_tx, pin_signal: UART3_TXD, PE: Disabled, PUE: Disabled, DSE: X6_0}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 
@@ -54,12 +54,12 @@ BOARD_InitPins:
  *
  * END ****************************************************************************************************************/
 void BOARD_InitPins(void) {                                /*!< Function assigned for the core: Cortex-M4[m4] */
-    IOMUXC_SetPinMux(IOMUXC_UART2_RXD_UART2_RX, 0U);
-    IOMUXC_SetPinConfig(IOMUXC_UART2_RXD_UART2_RX,
+    IOMUXC_SetPinMux(IOMUXC_UART3_RXD_UART3_RX, 0U);
+    IOMUXC_SetPinConfig(IOMUXC_UART3_RXD_UART3_RX,
                         IOMUXC_SW_PAD_CTL_PAD_DSE(6U) |
                         IOMUXC_SW_PAD_CTL_PAD_FSEL(2U));
-    IOMUXC_SetPinMux(IOMUXC_UART2_TXD_UART2_TX, 0U);
-    IOMUXC_SetPinConfig(IOMUXC_UART2_TXD_UART2_TX,
+    IOMUXC_SetPinMux(IOMUXC_UART3_TXD_UART3_TX, 0U);
+    IOMUXC_SetPinConfig(IOMUXC_UART3_TXD_UART3_TX,
                         IOMUXC_SW_PAD_CTL_PAD_DSE(6U) |
                         IOMUXC_SW_PAD_CTL_PAD_FSEL(2U));
 }

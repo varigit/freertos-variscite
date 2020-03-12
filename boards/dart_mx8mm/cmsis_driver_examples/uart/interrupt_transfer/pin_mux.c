@@ -52,32 +52,33 @@ BOARD_InitPins:
  *
  * END ****************************************************************************************************************/
 void BOARD_InitPins(void) {                                /*!< Function assigned for the core: Cortex-M4[m4] */
+    UART3_InitPins();
 }
 
 
 /*
  * TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
-UART2_InitPins:
+UART3_InitPins:
 - options: {coreID: m4}
 - pin_list:
-  - {pin_num: F19, peripheral: UART2, signal: uart_rx, pin_signal: UART2_RXD, PE: Disabled, PUE: Disabled, DSE: X6_0}
-  - {pin_num: F18, peripheral: UART2, signal: uart_tx, pin_signal: UART2_TXD, PE: Disabled, PUE: Disabled, DSE: X6_0}
+  - {pin_num: E18, peripheral: UART3, signal: uart_rx, pin_signal: UART3_RXD, PE: Disabled, PUE: Disabled, DSE: X6_0}
+  - {pin_num: D18, peripheral: UART3, signal: uart_tx, pin_signal: UART3_TXD, PE: Disabled, PUE: Disabled, DSE: X6_0}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 
 /* FUNCTION ************************************************************************************************************
  *
- * Function Name : UART2_InitPins
+ * Function Name : UART3_InitPins
  * Description   : Configures pin routing and optionally pin electrical features.
  *
  * END ****************************************************************************************************************/
-void UART2_InitPins(void) {                                /*!< Function assigned for the core: Cortex-M4[m4] */
-    IOMUXC_SetPinMux(IOMUXC_UART2_RXD_UART2_RX, 0U);
-    IOMUXC_SetPinConfig(IOMUXC_UART2_RXD_UART2_RX,
+void UART3_InitPins(void) {                                /*!< Function assigned for the core: Cortex-M4[m4] */
+    IOMUXC_SetPinMux(IOMUXC_UART3_RXD_UART3_RX, 0U);
+    IOMUXC_SetPinConfig(IOMUXC_UART3_RXD_UART3_RX,
                         IOMUXC_SW_PAD_CTL_PAD_DSE(6U) |
                         IOMUXC_SW_PAD_CTL_PAD_FSEL(2U));
-    IOMUXC_SetPinMux(IOMUXC_UART2_TXD_UART2_TX, 0U);
-    IOMUXC_SetPinConfig(IOMUXC_UART2_TXD_UART2_TX,
+    IOMUXC_SetPinMux(IOMUXC_UART3_TXD_UART3_TX, 0U);
+    IOMUXC_SetPinConfig(IOMUXC_UART3_TXD_UART3_TX,
                         IOMUXC_SW_PAD_CTL_PAD_DSE(6U) |
                         IOMUXC_SW_PAD_CTL_PAD_FSEL(2U));
 }
@@ -85,23 +86,23 @@ void UART2_InitPins(void) {                                /*!< Function assigne
 
 /*
  * TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
-UART2_DeinitPins:
+UART3_DeinitPins:
 - options: {coreID: m4}
 - pin_list:
-  - {pin_num: F19, peripheral: UART2, signal: uart_rx, pin_signal: UART2_RXD}
-  - {pin_num: F18, peripheral: UART2, signal: uart_tx, pin_signal: UART2_TXD}
+  - {pin_num: E18, peripheral: GPIO5, signal: 'gpio_io, 26', pin_signal: UART3_RXD}
+  - {pin_num: D18, peripheral: GPIO5, signal: 'gpio_io, 27', pin_signal: UART3_TXD}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 
 /* FUNCTION ************************************************************************************************************
  *
- * Function Name : UART2_DeinitPins
+ * Function Name : UART3_DeinitPins
  * Description   : Configures pin routing and optionally pin electrical features.
  *
  * END ****************************************************************************************************************/
-void UART2_DeinitPins(void) {                              /*!< Function assigned for the core: Cortex-M4[m4] */
-    IOMUXC_SetPinMux(IOMUXC_UART2_RXD_UART2_RX, 0U);
-    IOMUXC_SetPinMux(IOMUXC_UART2_TXD_UART2_TX, 0U);
+void UART3_DeinitPins(void) {                              /*!< Function assigned for the core: Cortex-M4[m4] */
+    IOMUXC_SetPinMux(IOMUXC_UART3_RXD_GPIO5_IO26, 0U);
+    IOMUXC_SetPinMux(IOMUXC_UART3_TXD_GPIO5_IO27, 0U);
 }
 
 /***********************************************************************************************************************
