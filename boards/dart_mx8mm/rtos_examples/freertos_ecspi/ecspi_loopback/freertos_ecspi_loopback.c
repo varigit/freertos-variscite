@@ -26,12 +26,12 @@
  ******************************************************************************/
 #define ECSPI_TRANSFER_SIZE 64
 #define ECSPI_TRANSFER_BAUDRATE 500000U
-#define ECSPI_MASTER_BASEADDR ECSPI2
+#define ECSPI_MASTER_BASEADDR ECSPI1
 #define ECSPI_MASTER_CLK_FREQ                                                                 \
-    (CLOCK_GetPllFreq(kCLOCK_SystemPll1Ctrl) / (CLOCK_GetRootPreDivider(kCLOCK_RootEcspi2)) / \
-     (CLOCK_GetRootPostDivider(kCLOCK_RootEcspi2)))
+    (CLOCK_GetPllFreq(kCLOCK_SystemPll1Ctrl) / (CLOCK_GetRootPreDivider(kCLOCK_RootEcspi1)) / \
+     (CLOCK_GetRootPostDivider(kCLOCK_RootEcspi1)))
 #define ECSPI_MASTER_TRANSFER_CHANNEL kECSPI_Channel0
-#define EXAMPLE_ECSPI_MASTER_IRQN ECSPI2_IRQn
+#define EXAMPLE_ECSPI_MASTER_IRQN ECSPI1_IRQn
 
 /* Task priorities. */
 #define ecspi_task_PRIORITY (configMAX_PRIORITIES - 2)
@@ -60,8 +60,8 @@ int main(void)
     BOARD_InitDebugConsole();
     BOARD_InitMemory();
 
-    CLOCK_SetRootMux(kCLOCK_RootEcspi2, kCLOCK_EcspiRootmuxSysPll1); /* Set ECSPI2 source to SYSTEM PLL1 800MHZ */
-    CLOCK_SetRootDivider(kCLOCK_RootEcspi2, 2U, 5U);                 /* Set root clock to 800MHZ / 10 = 80MHZ */
+    CLOCK_SetRootMux(kCLOCK_RootEcspi1, kCLOCK_EcspiRootmuxSysPll1); /* Set ECSPI1 source to SYSTEM PLL1 800MHZ */
+    CLOCK_SetRootDivider(kCLOCK_RootEcspi1, 2U, 5U);                 /* Set root clock to 800MHZ / 10 = 80MHZ */
     /* Set IRQ priority for freertos_ecspi */
     NVIC_SetPriority(EXAMPLE_ECSPI_MASTER_IRQN, 2);
 

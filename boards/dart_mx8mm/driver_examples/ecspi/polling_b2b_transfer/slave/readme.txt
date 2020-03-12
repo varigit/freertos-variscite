@@ -23,8 +23,8 @@ Hardware requirements
 Board settings
 ==============
 ECSPI board to board:
-Transfers data through the instance 2 of the ECSPI interface. ECSPI2 pins of the master board are
-connected to the ECSPI2 pins of the slave board.
+Transfers data through the instance 2 of the ECSPI interface. ECSPI pins of the master board are
+connected to the ECSPI pins of the slave board.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 MASTER BOARD    CONNECTS TO   SLAVE BOARD
 Pin Name    Board Location    Pin Name    Board Location
@@ -34,11 +34,6 @@ SCK         TBD               SCK         TBD
 SS0         TBD               SS0         TBD
 GND         TBD               GND         TBD
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#### Please note this application can't run without resolving HW conflicts ####
-ECSPI1 conflicts with TSC2046 and MCP2517 on the board
-ECSPI2 conflicts with UART4 used by BT
-ECSPI3 conflicts with UART1 (console) and UART3 (M4)
 
 Prepare the Demo
 ================

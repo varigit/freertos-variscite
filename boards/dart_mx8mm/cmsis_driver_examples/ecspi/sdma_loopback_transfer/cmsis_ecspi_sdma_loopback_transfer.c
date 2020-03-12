@@ -15,9 +15,9 @@
 /*******************************************************************************
  * Definitions
  ******************************************************************************/
-#define DRIVER_MASTER_SPI Driver_SPI2
+#define DRIVER_MASTER_SPI Driver_SPI1
 #define DRIVER_MASTER_SPI_DMA_BASE SDMAARM1
-#define EXAMPLE_MASTER_SPI_BASE ECSPI2
+#define EXAMPLE_MASTER_SPI_BASE ECSPI1
 #define TRANSFER_SIZE 64U         /*! Transfer dataSize */
 #define TRANSFER_BAUDRATE 500000U /*! Transfer baudrate - 500k */
 
@@ -38,10 +38,10 @@ volatile bool isTransferCompleted = false;
  * Code
  ******************************************************************************/
 
-uint32_t ECSPI2_GetFreq(void)
+uint32_t ECSPI1_GetFreq(void)
 {
-    return (CLOCK_GetPllFreq(kCLOCK_SystemPll1Ctrl) / (CLOCK_GetRootPreDivider(kCLOCK_RootEcspi2)) /
-            (CLOCK_GetRootPostDivider(kCLOCK_RootEcspi2)));
+    return (CLOCK_GetPllFreq(kCLOCK_SystemPll1Ctrl) / (CLOCK_GetRootPreDivider(kCLOCK_RootEcspi1)) /
+            (CLOCK_GetRootPostDivider(kCLOCK_RootEcspi1)));
 }
 
 void ECSPI_EnableLoopBackTransfer(ECSPI_Type *base)
@@ -76,8 +76,8 @@ int main(void)
     SDMA_GetDefaultConfig(&sdmaConfig);
     SDMA_Init(DRIVER_MASTER_SPI_DMA_BASE, &sdmaConfig);
 
-    CLOCK_SetRootMux(kCLOCK_RootEcspi2, kCLOCK_EcspiRootmuxSysPll1); /* Set ECSPI1 source to SYSTEM PLL1 800MHZ */
-    CLOCK_SetRootDivider(kCLOCK_RootEcspi2, 2U, 5U);                 /* Set root clock to 800MHZ / 10 = 80MHZ */
+    CLOCK_SetRootMux(kCLOCK_RootEcspi1, kCLOCK_EcspiRootmuxSysPll1); /* Set ECSPI1 source to SYSTEM PLL1 800MHZ */
+    CLOCK_SetRootDivider(kCLOCK_RootEcspi1, 2U, 5U);                 /* Set root clock to 800MHZ / 10 = 80MHZ */
 
     PRINTF("This is ECSPI CMSIS SDMA loopback transfer example.\r\n");
     PRINTF("The ECSPI will connect the transmitter and receiver sections internally.\r\n");

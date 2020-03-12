@@ -67,7 +67,7 @@ void BOARD_InitPins(void) {                                /*!< Function assigne
 
 /*
  * TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
-ECSPI2_DeinitPins:
+ECSPI1_DeinitPins:
 - options: {coreID: m4}
 - pin_list:
   - {pin_num: E18, peripheral: GPIO5, signal: 'gpio_io, 26', pin_signal: UART3_RXD}
@@ -77,11 +77,11 @@ ECSPI2_DeinitPins:
 
 /* FUNCTION ************************************************************************************************************
  *
- * Function Name : ECSPI2_DeinitPins
+ * Function Name : ECSPI1_DeinitPins
  * Description   : Configures pin routing and optionally pin electrical features.
  *
  * END ****************************************************************************************************************/
-void ECSPI2_DeinitPins(void) {                             /*!< Function assigned for the core: Cortex-M4[m4] */
+void ECSPI1_DeinitPins(void) {                             /*!< Function assigned for the core: Cortex-M4[m4] */
     IOMUXC_SetPinMux(IOMUXC_UART3_RXD_GPIO5_IO26, 0U);
     IOMUXC_SetPinMux(IOMUXC_UART3_TXD_GPIO5_IO27, 0U);
 }
@@ -89,7 +89,7 @@ void ECSPI2_DeinitPins(void) {                             /*!< Function assigne
 
 /*
  * TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
-ECSPI2_InitPins:
+ECSPI1_InitPins:
 - options: {coreID: m4}
 - pin_list: []
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
@@ -97,11 +97,11 @@ ECSPI2_InitPins:
 
 /* FUNCTION ************************************************************************************************************
  *
- * Function Name : ECSPI2_InitPins
+ * Function Name : ECSPI1_InitPins
  * Description   : Configures pin routing and optionally pin electrical features.
  *
  * END ****************************************************************************************************************/
-void ECSPI2_InitPins(void) {                               /*!< Function assigned for the core: Cortex-M4[m4] */
+void ECSPI1_InitPins(void) {                               /*!< Function assigned for the core: Cortex-M4[m4] */
 }
 
 /***********************************************************************************************************************

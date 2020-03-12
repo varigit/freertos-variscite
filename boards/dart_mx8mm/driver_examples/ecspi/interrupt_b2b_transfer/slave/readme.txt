@@ -36,11 +36,6 @@ SS0         TBD               SS0         TBD
 GND         TBD               GND         TBD
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#### Please note this application can't run without resolving HW conflicts ####
-ECSPI1 conflicts with TSC2046 and MCP2517 on the board
-ECSPI2 conflicts with UART4 used by BT
-ECSPI3 conflicts with UART1 (console) and UART3 (M4)
-
 Prepare the Demo
 ================
 1.  Connect 5V power supply and J-Link Debug Probe to the board, switch SW8 to power on the board

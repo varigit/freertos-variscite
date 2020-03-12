@@ -16,11 +16,11 @@
 /*******************************************************************************
  * Definitions
  ******************************************************************************/
-#define EXAMPLE_ECSPI_MASTER_BASEADDR ECSPI2
+#define EXAMPLE_ECSPI_MASTER_BASEADDR ECSPI1
 #define EXAMPLE_ECSPI_DEALY_COUNT 1000000U
 #define ECSPI_MASTER_CLK_FREQ                                                                 \
-    (CLOCK_GetPllFreq(kCLOCK_SystemPll1Ctrl) / (CLOCK_GetRootPreDivider(kCLOCK_RootEcspi2)) / \
-     (CLOCK_GetRootPostDivider(kCLOCK_RootEcspi2)))
+    (CLOCK_GetPllFreq(kCLOCK_SystemPll1Ctrl) / (CLOCK_GetRootPreDivider(kCLOCK_RootEcspi1)) / \
+     (CLOCK_GetRootPostDivider(kCLOCK_RootEcspi1)))
 #define TRANSFER_SIZE 64U         /*! Transfer dataSize */
 #define TRANSFER_BAUDRATE 500000U /*! Transfer baudrate - 500k */
 
@@ -48,8 +48,8 @@ int main(void)
     BOARD_InitDebugConsole();
     BOARD_InitMemory();
 
-    CLOCK_SetRootMux(kCLOCK_RootEcspi2, kCLOCK_EcspiRootmuxSysPll1); /* Set ECSPI2 source to SYSTEM PLL1 800MHZ */
-    CLOCK_SetRootDivider(kCLOCK_RootEcspi2, 2U, 5U);                 /* Set root clock to 800MHZ / 10 = 80MHZ */
+    CLOCK_SetRootMux(kCLOCK_RootEcspi1, kCLOCK_EcspiRootmuxSysPll1); /* Set ECSPI1 source to SYSTEM PLL1 800MHZ */
+    CLOCK_SetRootDivider(kCLOCK_RootEcspi1, 2U, 5U);                 /* Set root clock to 800MHZ / 10 = 80MHZ */
 
     PRINTF("ECSPI board to board polling example.\r\n");
     PRINTF("This example use one board as master and another as slave.\r\n");
