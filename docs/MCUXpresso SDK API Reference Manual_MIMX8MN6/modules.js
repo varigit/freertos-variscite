@@ -1,0 +1,25 @@
+var modules =
+[
+    [ "ASRC: Asynchronous sample rate converter", "a00114.html", "a00114" ],
+    [ "Clock Driver", "a00010.html", "a00010" ],
+    [ "Debug Console", "a00115.html", "a00115" ],
+    [ "ECSPI: Serial Peripheral Interface Driver", "a00099.html", "a00099" ],
+    [ "GPIO: General-Purpose Input/Output Driver", "a00101.html", "a00101" ],
+    [ "GPT: General Purpose Timer", "a00014.html", "a00014" ],
+    [ "GenericList", "a00017.html", "a00017" ],
+    [ "I2C: Inter-Integrated Circuit Driver", "a00102.html", "a00102" ],
+    [ "MU: Messaging Unit", "a00108.html", "a00108" ],
+    [ "PDM: Microphone Interface", "a00104.html", "a00104" ],
+    [ "PWM: Pulse Width Modulation Driver", "a00105.html", "a00105" ],
+    [ "Pdm_edma", "a00019.html", "a00019" ],
+    [ "RDC: Resource Domain Controller", "a00021.html", "a00021" ],
+    [ "RDC_SEMA42: Hardware Semaphores Driver", "a00109.html", "a00109" ],
+    [ "SAI: Serial Audio Interface", "a00110.html", "a00110" ],
+    [ "SDMA: Smart Direct Memory Access (SDMA) Controller Driver", "a00024.html", "a00024" ],
+    [ "SEMA4: Hardware Semaphores Driver", "a00113.html", "a00113" ],
+    [ "Serial Manager", "a00025.html", "a00025" ],
+    [ "TMU: Thermal Management Unit Driver", "a00030.html", "a00030" ],
+    [ "UART: Universal Asynchronous Receiver/Transmitter Driver", "a00107.html", "a00107" ],
+    [ "UART_Adapter", "a00015.html", "a00015" ],
+    [ "WDOG: Watchdog Timer Driver", "a00034.html", "a00034" ]
+];
