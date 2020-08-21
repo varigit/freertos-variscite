@@ -21,8 +21,8 @@
 #define DEMO_UART_CLK_FREQ BOARD_DEBUG_UART_CLK_FREQ
 #define UART_RX_DMA_CHANNEL 1U
 #define UART_TX_DMA_CHANNEL 2U
-#define UART_RX_DMA_REQUEST (28)
-#define UART_TX_DMA_REQUEST (29)
+#define UART_RX_DMA_REQUEST (26)
+#define UART_TX_DMA_REQUEST (27)
 #define ECHO_BUFFER_LENGTH 8
 
 /*******************************************************************************
