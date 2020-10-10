@@ -70,6 +70,17 @@ usb                        Name: USB
                            Location: middleware/usb                          
                            Origin: NXP (BSD-3-Clause)                        
 
+issdk                      Name: ISSDK                                       
+                           Version: 1.7                                      
+                           Outgoing License: BSD-3-Clause                    
+                           License File: COPYING-BSD-3                       
+                           Format: source code                               
+                           Description: NXP IoT Sensing SDK. It combines a   
+                           set of robust Sensor Drivers and Algorithms along 
+                           with example applications.                        
+                           Location: middleware/issdk                        
+                           Origin: NXP (BSD-3-Clause)                        
+
 freertos                   Name: FreeRTOS                                    
                            Version: 202002.00.0                              
                            Outgoing License: MIT                             
@@ -129,4 +140,29 @@ rpmsg_lite                 Name: RPMsg-Lite
                            Location: middleware/multicore/rpmsg_lite         
                            Origin: Mentor Graphics Corporation & community   
                            contributors                                      
-                           Url: https://github.com/NXPmicro/rpmsg-lite       
+                           Url: https://github.com/NXPmicro/rpmsg-lite
+
+lwip                       Name: lwIP TCP/IP Stack                           
+                           Version: lwIP git repository (2019-12-12, branch: 
+                           master, SHA-1:                                    
+                           555812dcec38c9a2ef1ef9b31816291549fbf9f8)         
+                           Outgoing License: BSD-3-Clause                    
+                           License File: middleware/lwip/COPYING             
+                           Format: source code                               
+                           Description: A light-weight TCP/IP stack          
+                           Location: middleware/lwip                         
+                           Origin: Swedish Institute of Computer Science     
+                           Url: http://savannah.nongnu.org/projects/lwip     
+
+mmcau                      Name: mmCAU S/W Library                           
+                           Version: 2.0.1                                    
+                           Outgoing License: BSD-3-Clause                    
+                           License File: COPYING-BSD-3                       
+                           Format: source code                               
+                           Description: S/W library that works with the      
+                           memory-mapped cryptographic acceleration unit     
+                           present on some MCUXpresso SoCs                   
+                           Location: middleware/mmcau                        
+                           Origin: NXP (BSD-3-Clause)                        
+
+       
