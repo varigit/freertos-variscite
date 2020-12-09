@@ -151,11 +151,6 @@ void BOARD_BootClockRUN(void)
     // CLOCK_EnableClock(kCLOCK_Dram);
     // CLOCK_EnableClock(kCLOCK_Sec_Debug);
 
-    /* Disable unused PLL */
-    CLOCK_DeinitSysPll3();
-    CLOCK_DeinitVideoPll1();
-    CLOCK_DeinitAudioPll1();
-    CLOCK_DeinitAudioPll2();
     /* Update core clock */
     SystemCoreClockUpdate();
 }
