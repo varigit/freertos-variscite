@@ -150,3 +150,14 @@ rpmsg_lite                 Name: RPMsg-Lite
                            Origin: Mentor Graphics Corporation & community   
                            contributors                                      
                            Url: https://github.com/NXPmicro/rpmsg-lite       
+
+usb                        Name: USB
+                           Version: 2.7.0
+                           Outgoing License: BSD-3-Clause
+                           License File: COPYING-BSD-3
+                           Format: source code
+                           Description: NXP USB stack. This is a version of
+                           the USB stack that has been integrated with the
+                           MCUXpresso SDK.
+                           Location: middleware/usb
+                           Origin: NXP (BSD-3-Clause)
