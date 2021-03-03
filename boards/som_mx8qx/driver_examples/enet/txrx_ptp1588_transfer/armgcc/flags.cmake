@@ -1,6 +1,5 @@
 SET(CMAKE_ASM_FLAGS_DDR_DEBUG " \
     -DFSL_SDK_DRIVER_QUICK_ACCESS_ENABLE=1 \
-    -D__STARTUP_CONFIG_DDR_ALIAS=1 \
     -D__STARTUP_CLEAR_BSS \
     -D__STARTUP_INITIALIZE_NONCACHEDATA \
     -g \
@@ -20,7 +19,6 @@ SET(CMAKE_ASM_FLAGS_DDR_DEBUG " \
 ")
 SET(CMAKE_ASM_FLAGS_DDR_RELEASE " \
     -DFSL_SDK_DRIVER_QUICK_ACCESS_ENABLE=1 \
-    -D__STARTUP_CONFIG_DDR_ALIAS=1 \
     -D__STARTUP_CLEAR_BSS \
     -D__STARTUP_INITIALIZE_NONCACHEDATA \
     -mcpu=cortex-m4 \
@@ -403,8 +401,6 @@ SET(CMAKE_EXE_LINKER_FLAGS_DDR_DEBUG " \
     -Xlinker \
     -Map=output.map \
     -Xlinker \
-    --defsym=__STARTUP_CONFIG_DDR_ALIAS=1 \
-    -Xlinker \
     --defsym=__stack_size__=0x1000 \
     -Xlinker \
     --defsym=__heap_size__=0x1000 \
@@ -436,8 +432,6 @@ SET(CMAKE_EXE_LINKER_FLAGS_DDR_RELEASE " \
     muldefs \
     -Xlinker \
     -Map=output.map \
-    -Xlinker \
-    --defsym=__STARTUP_CONFIG_DDR_ALIAS=1 \
     -Xlinker \
     --defsym=__stack_size__=0x1000 \
     -Xlinker \

@@ -37,7 +37,6 @@ SET(CMAKE_ASM_FLAGS_RELEASE " \
 ")
 SET(CMAKE_ASM_FLAGS_DDR_DEBUG " \
     -DFSL_SDK_DRIVER_QUICK_ACCESS_ENABLE=1 \
-    -D__STARTUP_CONFIG_DDR_ALIAS=1 \
     -D__STARTUP_CLEAR_BSS \
     -D__STARTUP_INITIALIZE_NONCACHEDATA \
     -g \
@@ -57,7 +56,6 @@ SET(CMAKE_ASM_FLAGS_DDR_DEBUG " \
 ")
 SET(CMAKE_ASM_FLAGS_DDR_RELEASE " \
     -DFSL_SDK_DRIVER_QUICK_ACCESS_ENABLE=1 \
-    -D__STARTUP_CONFIG_DDR_ALIAS=1 \
     -D__STARTUP_CLEAR_BSS \
     -D__STARTUP_INITIALIZE_NONCACHEDATA \
     -mcpu=cortex-m4 \
@@ -447,8 +445,6 @@ SET(CMAKE_EXE_LINKER_FLAGS_DDR_DEBUG " \
     muldefs \
     -Xlinker \
     -Map=output.map \
-    -Xlinker \
-    --defsym=__STARTUP_CONFIG_DDR_ALIAS=1 \
     -T${ProjDirPath}/MIMX8QX6xxxxx_cm4_ddr_ram.ld -static \
 ")
 SET(CMAKE_EXE_LINKER_FLAGS_DDR_RELEASE " \
@@ -475,8 +471,6 @@ SET(CMAKE_EXE_LINKER_FLAGS_DDR_RELEASE " \
     muldefs \
     -Xlinker \
     -Map=output.map \
-    -Xlinker \
-    --defsym=__STARTUP_CONFIG_DDR_ALIAS=1 \
     -T${ProjDirPath}/MIMX8QX6xxxxx_cm4_ddr_ram.ld -static \
 ")
 SET(CMAKE_EXE_LINKER_FLAGS_FLASH_DEBUG " \
