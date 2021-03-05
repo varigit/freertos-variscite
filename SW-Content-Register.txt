@@ -184,3 +184,14 @@ mmcau                      Name: mmCAU S/W Library
                            present on some MCUXpresso SoCs
                            Location: middleware/mmcau
                            Origin: NXP (BSD-3-Clause)
+                           
+issdk                      Name: ISSDK
+                           Version: 1.7
+                           Outgoing License: BSD-3-Clause
+                           License File: COPYING-BSD-3
+                           Format: source code
+                           Description: NXP IoT Sensing SDK. It combines a
+                           set of robust Sensor Drivers and Algorithms along
+                           with example applications.
+                           Location: middleware/issdk
+                           Origin: NXP (BSD-3-Clause)
