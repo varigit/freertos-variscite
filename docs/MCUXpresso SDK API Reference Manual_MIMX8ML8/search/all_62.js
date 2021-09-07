@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['base',['base',['../a00027.html#af93759d3503ab560aef347c02e5f42dd',1,'uart_rtos_config_t::base()'],['../a00020.html#a39a102177f33c97feccda8cdfa9c7335',1,'_sai_handle::base()'],['../a00022.html#a67a8c4e55fa8d248bd6436e079cbd690',1,'sdma_handle_t::base()']]],
+  ['baseaddress',['baseAddress',['../a00019.html#a9407a23678502889ab8eccd55cba8377',1,'rdc_mem_access_config_t']]],
+  ['basebdaddr',['baseBDAddr',['../a00022.html#acb0cc52393d44bc2bd25dbfcf4c76e05',1,'sdma_channel_control_t']]],
+  ['baudrate',['baudrate',['../a00027.html#a3a516fb385a59c89720a3dead326df78',1,'uart_rtos_config_t::baudrate()'],['../a00024.html#af06ab1ceb2156bba95ee5b125ef77e40',1,'serial_port_swo_config_t::baudRate()']]],
+  ['baudrate_5fbps',['baudRate_Bps',['../a00012.html#a8b5fce2d680a7e33f0ca1c03108f5a50',1,'ecspi_master_config_t::baudRate_Bps()'],['../a00016.html#a2186844dc87bcde999fc12005f4c550a',1,'i2c_master_config_t::baudRate_Bps()'],['../a00026.html#acc123668836f3432c54ee6a2f6f318f1',1,'uart_config_t::baudRate_Bps()']]],
+  ['bclkinputdelay',['bclkInputDelay',['../a00020.html#a6b6f07959f9178be8a812d3cf0c2b5aa',1,'sai_bit_clock_t']]],
+  ['bclkpolarity',['bclkPolarity',['../a00020.html#a42d3debf179fb3168f945ba53c8f4ed9',1,'sai_bit_clock_t']]],
+  ['bclksource',['bclkSource',['../a00020.html#a156dc7868da25bfc262bfac4bd4499a1',1,'sai_config_t::bclkSource()'],['../a00020.html#a3734e8fb8f5c15d3e3769db3740474d6',1,'sai_bit_clock_t::bclkSource()']]],
+  ['bclksrcswap',['bclkSrcSwap',['../a00020.html#ab4f8c0bd4eb48623a7804caecf4f3985',1,'sai_bit_clock_t']]],
+  ['bdcount',['bdCount',['../a00022.html#a4ad6118d5a7cf45bce519b5dd3840abb',1,'sdma_handle_t']]],
+  ['bdindex',['bdIndex',['../a00022.html#a6cee67f6f26c19ce663c3f97c50573fe',1,'sdma_handle_t']]],
+  ['bdpool',['BDPool',['../a00022.html#ac3c6b8dc20ccf5ab03d8b18b24546915',1,'sdma_handle_t::BDPool()'],['../a00009.html#a976abf527a6ca4b08cbed59381e1c46a',1,'asrc_sdma_in_handle_t::bdPool()'],['../a00009.html#a553f7a0c952d44c2231ea4581a508d01',1,'asrc_sdma_out_handle_t::bdPool()'],['../a00018.html#ac3f041657b4a8a016fed5f95a3b2d1f5',1,'_pdm_sdma_handle::bdPool()'],['../a00021.html#a00d61e5f96c85026e7905efa4c3130e8',1,'_sai_sdma_handle::bdPool()']]],
+  ['bitclock',['bitClock',['../a00020.html#ae054379f5d808df31dd9413d589aeba6',1,'sai_transceiver_t']]],
+  ['bitwidth',['bitWidth',['../a00020.html#ad4f8f19e4e01850841127ca7d0920302',1,'sai_transfer_format_t::bitWidth()'],['../a00020.html#a6031e7b8e826009f5f2964b6a53bb66b',1,'_sai_handle::bitWidth()'],['../a00030.html#abd1d53b78beb2d929a1d1200c2a18227',1,'wm8960_audio_format_t::bitWidth()']]],
+  ['blocktype',['blockType',['../a00023.html#ae1f413cf0928c0efdf89ce584adf8007',1,'serial_manager_config_t']]],
+  ['buffer',['buffer',['../a00027.html#ad05b4abce6a95baa7ba35eaa57569cfe',1,'uart_rtos_config_t::buffer()'],['../a00023.html#a80694c056b447b821f7e146122040e0f',1,'serial_manager_callback_message_t::buffer()']]],
+  ['buffer_5fsize',['buffer_size',['../a00027.html#a7b7d6d667f6e06c720f506a07869e14d',1,'uart_rtos_config_t']]],
+  ['bufferaddr',['bufferAddr',['../a00022.html#a2ddf152ce09e41d6890dead8c15142ea',1,'sdma_buffer_descriptor_t']]],
+  ['burstlength',['burstLength',['../a00012.html#aadad8a26aa23fe97db1b1ebf26a6d7a1',1,'ecspi_master_config_t::burstLength()'],['../a00012.html#a47dc1fd0b2e1db49b4b0adb242cce23f',1,'ecspi_slave_config_t::burstLength()']]],
+  ['bus',['bus',['../a00030.html#a2aa9a1534286c670f9cccc121dfc2427',1,'wm8960_config_t']]],
+  ['bytesperframe',['bytesPerFrame',['../a00021.html#abd9f526b0ce960a0501bc496db79eaa1',1,'_sai_sdma_handle']]],
+  ['bytesperrequest',['bytesPerRequest',['../a00022.html#ad78baf0e67245cf315a5ec866b85a2ff',1,'sdma_transfer_config_t']]],
+  ['bytespersample',['bytesPerSample',['../a00009.html#a32590fc3559cb674967d49654c682c3b',1,'asrc_sdma_in_handle_t::bytesPerSample()'],['../a00009.html#a5a75208bc402844bfb3b1f969cb447de',1,'asrc_sdma_out_handle_t::bytesPerSample()']]]
+];
