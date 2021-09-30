@@ -46,13 +46,13 @@ void BOARD_InitPins(void);                                 /*!< Function assigne
  * @brief Configures pin routing and optionally pin electrical features.
  *
  */
-void I2C3_DeinitPins(void);                                /*!< Function assigned for the core: Cortex-M7F[m7] */
+void I2C4_DeinitPins(void);                                /*!< Function assigned for the core: Cortex-M7F[m7] */
 
 /*!
  * @brief Configures pin routing and optionally pin electrical features.
  *
  */
-void I2C3_InitPins(void);                                  /*!< Function assigned for the core: Cortex-M7F[m7] */
+void I2C4_InitPins(void);                                  /*!< Function assigned for the core: Cortex-M7F[m7] */
 
 #if defined(__cplusplus)
 }
