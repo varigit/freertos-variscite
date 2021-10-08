@@ -43,9 +43,9 @@ Transfer data from MASTER_BOARD to SLAVE_BOARD of I2C interface, I2C3 pins of MA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 SLAVE_BOARD        CONNECTS TO          MASTER_BOARD
 Pin Name   Board Location     Pin Name   Board Location
-I2C3_SCL       J21-5         I2C3_SCL      J21-5 
-I2C3_SDA       J21-3         I2C3_SDA      J21-3
-GND            J21-9         GND           J21-9
+I2C3_SCL       J12-18         I2C3_SCL      J12-18 
+I2C3_SDA       J12-20         I2C3_SDA      J12-20
+GND            J12-15         GND           J12-15
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Prepare the Demo
