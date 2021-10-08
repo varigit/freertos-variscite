@@ -26,7 +26,7 @@ No special settings are required.
 Prepare the Demo
 ================
 1.  Prepare an SD card with the prebuilt U-Boot image. Then, insert the SD card to the target board.
-2.  Connect a USB cable between the host PC and the J23 USB port on the target board.
+2.  Connect a proper cable between the host PC and the J12 header (pins UART2 TX, RX and GND) on the target board..
 3.  Connect proper power supply and J-Link Debug Probe to the board, switch SW8 to power on the board
 4.  Open a serial terminal with the following settings:
     - 115200 baud rate
