@@ -38,7 +38,7 @@ GND         J21 - 6                      GND       J21 - 6
 Prepare the Demo
 ================
 1.  Connect proper power supply and J-Link Debug Probe to the board, switch SW8 to power on the board
-2.  Connect a USB cable between the host PC and the J23 USB port on the target board.
+2.  Connect a proper cable between the host PC and the J18 header (pins UART4 TX, RX and GND) on the target board..
 3.  Open a serial terminal with the following settings:
     - 115200 baud rate
     - 8 data bits
