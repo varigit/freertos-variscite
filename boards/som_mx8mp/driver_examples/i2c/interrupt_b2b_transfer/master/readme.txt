@@ -23,14 +23,14 @@ Hardware requirements
 Board settings
 ==============
 I2C one board:
-  + Transfer data from MASTER_BOARD to SLAVE_BOARD of I2C interface, I2C3 pins of MASTER_BOARD are connected with
-    I2C3 pins of SLAVE_BOARD
+  + Transfer data from MASTER_BOARD to SLAVE_BOARD of I2C interface, I2C4 pins of MASTER_BOARD are connected with
+    I2C4 pins of SLAVE_BOARD
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 SLAVE_BOARD        CONNECTS TO          MASTER_BOARD
 Pin Name   Board Location     Pin Name   Board Location
-I2C3_SCL       J21-5         I2C3_SCL      J21-5 
-I2C3_SDA       J21-3         I2C3_SDA      J21-3
-GND            J21-9         GND           J21-9
+I2C4_SCL       J16-13         I2C4_SCL      J16-13 
+I2C4_SDA       J16-15         I2C4_SDA      J16-15
+GND            J16-19         GND           J16-19
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Prepare the Demo
