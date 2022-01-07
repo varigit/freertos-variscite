@@ -5,7 +5,7 @@ set -e
 
 readonly SCRIPT_NAME=${0##*/}
 readonly BSP_BASE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-readonly PATH_TO_ARM_TOOLCHAIN="${BSP_BASE_DIR}/../gcc-arm-none-eabi-9-2020-q2-update"
+readonly PATH_TO_ARM_TOOLCHAIN="${BSP_BASE_DIR}/../gcc-arm-none-eabi-10-2020-q4-major"
 CM_ID=cm_c0
 CM4_CORE_DIR=cm4_core0
 
