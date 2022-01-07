@@ -26,8 +26,8 @@ usage()
 	echo " -t <tcm/ddr>				                                                   ram target"
 	echo
 	echo "Examples of use for DART-MX8M:"
-	echo "  generate .vscode folder for hello_world demo: ./${SCRIPT_NAME} -b dart_mx8mq -e boards/dart_mx8mq/demo_apps/hello_world -t ddr -d /opt/SEGGER/JLink_Linux_V754c_x86_64"
-	echo "  generate .vscode folder for all demos:        ./${SCRIPT_NAME} -b dart_mx8mq -e all -t ddr -d /opt/SEGGER/JLink_Linux_V754c_x86_64"
+	echo "  generate .vscode folder for hello_world demo: ./${SCRIPT_NAME} -b dart_mx8mq -e boards/dart_mx8mq/demo_apps/hello_world -t ddr -d /opt/SEGGER/JLink"
+	echo "  generate .vscode folder for all demos:        ./${SCRIPT_NAME} -b dart_mx8mq -e all -t ddr -d /opt/SEGGER/JLink"
 	echo
 }
 
