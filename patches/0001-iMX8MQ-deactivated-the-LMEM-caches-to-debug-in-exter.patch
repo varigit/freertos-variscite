@@ -1,0 +1,34 @@
+From 41dcde1b05d6b9981cbe26894475e6388babbdd3 Mon Sep 17 00:00:00 2001
+From: FrancescoFerraro <francesco.f@variscite.com>
+Date: Fri, 7 Jan 2022 09:57:32 +0100
+Subject: [PATCH] iMX8MQ: deactivated the LMEM caches to debug in external RAM
+ on the Cortex-M4
+
+Signed-off-by: FrancescoFerraro <francesco.f@variscite.com>
+---
+ devices/MIMX8MQ6/system_MIMX8MQ6_cm4.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/devices/MIMX8MQ6/system_MIMX8MQ6_cm4.c b/devices/MIMX8MQ6/system_MIMX8MQ6_cm4.c
+index 6c57c4e2..5cf7994f 100644
+--- a/devices/MIMX8MQ6/system_MIMX8MQ6_cm4.c
++++ b/devices/MIMX8MQ6/system_MIMX8MQ6_cm4.c
+@@ -184,6 +184,7 @@ void SystemInit(void)
+     SCB->CPACR |= ((3UL << 10 * 2) | (3UL << 11 * 2)); /* set CP10, CP11 Full Access */
+ #endif                                                 /* ((__FPU_PRESENT == 1) && (__FPU_USED == 1)) */
+ 
++#if 0
+     /* Initialize Cache */
+     /* Enable Code Bus Cache */
+     /* set command to invalidate all ways, and write GO bit to initiate command */
+@@ -209,6 +210,7 @@ void SystemInit(void)
+ 
+     __ISB();
+     __DSB();
++#endif
+ 
+     SystemInitHook();
+ }
+-- 
+2.25.1
+

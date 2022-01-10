@@ -147,7 +147,7 @@ make_vscode()
 
 	dart_mx8mq)
 		readonly FREE_RTOS_DEVICE_DIR="MIMX8MQ6"
-		readonly DEVICE_SPECIFIC_CFG_FILE="${BSP_BASE_DIR}/devices/$FREE_RTOS_DEVICE_DIR/system_MIMX8MQ6_cm4.c"
+		readonly DEACTIVATE_LMEM_CACHE_PATCH="patches/0001-iMX8MQ-deactivated-the-LMEM-caches-to-debug-in-exter.patch"
 		readonly CM_DEVICE_ID="MIMX8MQ6_M4"
 		readonly PATH_TO_JLINKSCRIPT=iMX8M/NXP_iMX8M_Connect_CortexM4.JLinkScript
 		readonly SVD_FILE_NAME=MIMX8MQ6_cm4
