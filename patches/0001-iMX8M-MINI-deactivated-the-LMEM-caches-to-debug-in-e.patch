@@ -1,0 +1,37 @@
+From ba732eb837d9e8bd7259340d85dc11f586007d94 Mon Sep 17 00:00:00 2001
+From: FrancescoFerraro <francesco.f@variscite.com>
+Date: Fri, 7 Jan 2022 08:46:56 +0100
+Subject: [PATCH] iMX8M-MINI: deactivated the LMEM caches to debug in external
+ RAM on the Cortex-M4.
+
+To debug applications mapped in DDR, is mandatory to not enable LMEM
+caches.
+
+Signed-off-by: FrancescoFerraro <francesco.f@variscite.com>
+---
+ devices/MIMX8MM6/system_MIMX8MM6_cm4.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/devices/MIMX8MM6/system_MIMX8MM6_cm4.c b/devices/MIMX8MM6/system_MIMX8MM6_cm4.c
+index 8f0f69e2..814bf1a4 100644
+--- a/devices/MIMX8MM6/system_MIMX8MM6_cm4.c
++++ b/devices/MIMX8MM6/system_MIMX8MM6_cm4.c
+@@ -160,6 +160,7 @@ void SystemInit(void)
+     SCB->CPACR |= ((3UL << 10 * 2) | (3UL << 11 * 2)); /* set CP10, CP11 Full Access */
+ #endif                                                 /* ((__FPU_PRESENT == 1) && (__FPU_USED == 1)) */
+ 
++#if 0
+     /* Initialize Cache */
+     /* Enable Code Bus Cache */
+     /* set command to invalidate all ways, and write GO bit to initiate command */
+@@ -185,6 +186,7 @@ void SystemInit(void)
+ 
+     __ISB();
+     __DSB();
++#endif
+ 
+     SystemInitHook();
+ }
+-- 
+2.25.1
+
