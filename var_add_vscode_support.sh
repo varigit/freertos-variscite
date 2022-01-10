@@ -129,7 +129,7 @@ make_vscode()
 	case $BOARD_DIR in
 	dart_mx8mm)
 		readonly FREE_RTOS_DEVICE_DIR="MIMX8MM6"
-		readonly DEVICE_SPECIFIC_CFG_FILE="${BSP_BASE_DIR}/devices/$FREE_RTOS_DEVICE_DIR/system_MIMX8MM6_cm4.c"
+		readonly DEACTIVATE_LMEM_CACHE_PATCH="patches/0001-iMX8M-MINI-deactivated-the-LMEM-caches-to-debug-in-e.patch"
 		readonly CM_DEVICE_ID="MIMX8MM6_M4"
 		readonly PATH_TO_JLINKSCRIPT=iMX8MM/NXP_iMX8M_Connect_CortexM4.JLinkScript
 		readonly SVD_FILE_NAME=MIMX8MM6_cm4
@@ -197,11 +197,11 @@ make_vscode()
 		echo
 	fi
 
-	#recommondations
+	#recommandations
 	if [ $CORTEX_M_CPU == "cortex-m4" ] && [ $RAM_TARGET == "ddr" ] && [ $CM_DEVICE_ID != "MIMX8MN6_M7" ] && [ $CM_DEVICE_ID != "MIMX8ML8_M7" ]; then
 		echo
-		echo "NOTE: to debug applications mapped in DDR, is mandatory to not enable cache"
-		echo "      the function to be changed is SystemInit() in the $DEVICE_SPECIFIC_CFG_FILE file"
+		echo "NOTE: to debug applications mapped in DDR, is mandatory to deactivate the LMEM caches"
+		echo "      use <git apply $DEACTIVATE_LMEM_CACHE_PATCH> if you need"
 		echo
 	fi
 }
