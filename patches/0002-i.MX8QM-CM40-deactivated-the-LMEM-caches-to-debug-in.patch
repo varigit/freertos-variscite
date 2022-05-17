@@ -1,0 +1,36 @@
+From ea952c3f5b1c2390fed8e0eb5a249c2a8d8b3d52 Mon Sep 17 00:00:00 2001
+From: FrancescoFerraro <francesco.f@variscite.com>
+Date: Tue, 17 May 2022 19:42:41 +0200
+Subject: [PATCH 2/3] i.MX8QM: CM40: deactivated the LMEM caches to debug in
+ external RAM
+
+Signed-off-by: FrancescoFerraro <francesco.f@variscite.com>
+---
+ devices/MIMX8QM6/system_MIMX8QM6_cm4_core0.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/devices/MIMX8QM6/system_MIMX8QM6_cm4_core0.c b/devices/MIMX8QM6/system_MIMX8QM6_cm4_core0.c
+index 4bc14571..8bd97bf9 100644
+--- a/devices/MIMX8QM6/system_MIMX8QM6_cm4_core0.c
++++ b/devices/MIMX8QM6/system_MIMX8QM6_cm4_core0.c
+@@ -99,7 +99,8 @@ void SystemInit (void) {
+   CM4_0__WDOG->TOVAL = 0xFFFF;
+   CM4_0__WDOG->CS = (uint32_t) ((CM4_0__WDOG->CS) & ~WDOG_CS_EN_MASK) | WDOG_CS_UPDATE_MASK;
+ #endif /* (DISABLE_WDOG) */
+-  
++
++#if 0
+   /* Initialize Cache */
+   /* Enable Code Bus Cache */
+   /* set command to invalidate all ways, and write GO bit to initiate command */
+@@ -121,6 +122,7 @@ void SystemInit (void) {
+   /* Enable cache, enable write buffer */
+   LMEM->PSCCR |= (LMEM_PSCCR_ENWRBUF_MASK | LMEM_PSCCR_ENCACHE_MASK);
+ /* i.MX8QM systemInit */
++#endif
+ }
+ 
+ /* ----------------------------------------------------------------------------
+-- 
+2.36.1
+
