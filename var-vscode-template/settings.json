@@ -1,0 +1,27 @@
+{
+    "VARISCITE": {
+        /* Configure ARMGCC_DIR per https://variwiki.com/index.php?title=MCUXpresso */
+        "ARMGCC_DIR": "t_path_to_arm_gcc_dir",
+
+        /* Configure GDBServer dir */
+        "GDB_SERVER_DIR": "t_path_to_gdb_server_dir",
+
+        /* SOC Include Path */
+        "SOC_INCLUDE_PATH" : "t_path_to_soc_include",
+        /* RTOS Include Path */
+        "RTOS_INCLUDE_PATH" : "t_path_to_rtos_include",
+        /* MIDDLEWARE Include Path */
+        "MIDDLEWARE_INCLUDE_PATH" : "t_path_to_middleware_include",
+
+        /* Build Target */
+        "BUILD_TARGET" : "t_build_target"
+    },
+    "files.associations": {
+        "fsl_common.h": "c",
+        "clock_config.h": "c",
+        "pin_mux.h": "c",
+        "board.h": "c"
+    },
+    "cmake.sourceDirectory": "${workspaceFolder}/armgcc",
+    "git.ignoreLimitWarning": true
+ }
