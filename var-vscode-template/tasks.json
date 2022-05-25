@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    /* Configure ARMGCC_DIR per https://variwiki.com/index.php?title=MCUXpresso */
+    "options": {
+        "env": {
+            "ARMGCC_DIR": "${config:VARISCITE.ARMGCC_DIR}",
+        }
+     },
+     /* Configure integrated VS Code Terminal */
+    "presentation": {
+        "echo": false,
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "showReuseMessage": true,
+    },
+    "tasks": [
+        /* Build Task */
+        {
+            "label": "build",
+            "type": "shell",
+            "dependsOn": ["clean"],
+            "problemMatcher": ["$gcc"],
+            "options": {
+                "cwd": "${workspaceFolder}/armgcc"
+            },
+           "command": "./build_${config:VARISCITE.BUILD_TARGET}.sh",
+        },
+        /* Clean task */
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "./clean.sh;",
+            "problemMatcher": ["$gcc"],
+            "options": {
+                "cwd": "${workspaceFolder}/armgcc"
+            }
+        }
+    ]
+}
