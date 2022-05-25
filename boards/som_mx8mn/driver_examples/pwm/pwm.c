@@ -106,7 +106,7 @@ int main(void)
     BOARD_BootClockRUN();
     BOARD_InitDebugConsole();
 
-    PRINTF("\r\nfefr PWM driver example.\r\n");
+    PRINTF("\r\nPWM driver example.\r\n");
 
     /*!
      * config->enableStopMode = false;
