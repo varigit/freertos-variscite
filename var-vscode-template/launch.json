@@ -1,0 +1,40 @@
+{
+  "configurations": [
+  {
+    "cwd": "${workspaceRoot}",
+    "executable": "t_path_to_executable",
+    "name": "Debug Microcontroller",
+    "request": "launch",
+    "type": "cortex-debug",
+    "showDevDebugOutput": "none",
+    "servertype": "jlink",
+    "device": "t_soc-cm",
+    "interface": "jtag",
+    "serverpath": "${config:VARISCITE.GDB_SERVER_DIR}/JLinkGDBServer",
+    "armToolchainPath": "t_path_to_arm_toolchain",
+    "jlinkscript": "${config:VARISCITE.GDB_SERVER_DIR}/Devices/NXP/t_path_to_JLinkScript",
+    "svdFile": "t_path_tosvd_file",
+    "cpu": "t_cortex-m-cpu",
+    "rtos": "FreeRTOS",
+    "preLaunchCommands": [
+      "set mem inaccessible-by-default off",
+    ],
+    "postLaunchCommands": [
+
+      /*
+       * This delay is need after reset and/or halt issued by debugger
+       * Without this delay the below error occurs very often
+       * <Remote communication error.  Target disconnected.: Connection reset by peer>
+      */
+      "monitor sleep 1500",
+
+      "target remote localhost:50000",
+      "monitor reset",
+      "monitor halt",
+      "load"
+    ]
+    /*"runToMain": true*/
+  }
+  ]
+}
+
