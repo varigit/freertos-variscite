@@ -1,0 +1,25 @@
+var modules =
+[
+    [ "CODEC Driver", "a00124.html", "a00124" ],
+    [ "Clock Driver", "a00009.html", "a00009" ],
+    [ "Common Driver", "a00105.html", "a00105" ],
+    [ "Debug Console", "a00121.html", "a00121" ],
+    [ "ECSPI: Enhanced Configurable Serial Peripheral Interface Driver", "a00106.html", "a00106" ],
+    [ "GPC: General Power Controller Driver", "a00109.html", "a00109" ],
+    [ "GPIO: General-Purpose Input/Output Driver", "a00014.html", "a00014" ],
+    [ "GPT: General Purpose Timer", "a00015.html", "a00015" ],
+    [ "I2C: Inter-Integrated Circuit Driver", "a00110.html", "a00110" ],
+    [ "IOMUXC: IOMUX Controller", "a00104.html", "a00104" ],
+    [ "MU: Messaging Unit", "a00116.html", "a00116" ],
+    [ "PDM: Microphone Interface", "a00117.html", "a00117" ],
+    [ "PWM: Pulse Width Modulation Driver", "a00113.html", "a00113" ],
+    [ "RDC: Resource Domain Controller", "a00019.html", "a00019" ],
+    [ "RDC_SEMA42: Hardware Semaphores Driver", "a00118.html", "a00118" ],
+    [ "SAI: Serial Audio Interface", "a00119.html", "a00119" ],
+    [ "SDMA: Smart Direct Memory Access (SDMA) Controller Driver", "a00022.html", "a00022" ],
+    [ "SEMA4: Hardware Semaphores Driver", "a00120.html", "a00120" ],
+    [ "Serial Manager", "a00023.html", "a00023" ],
+    [ "TMU: Thermal Management Unit Driver", "a00025.html", "a00025" ],
+    [ "UART: Universal Asynchronous Receiver/Transmitter Driver", "a00114.html", "a00114" ],
+    [ "WDOG: Watchdog Timer Driver", "a00029.html", "a00029" ]
+];
