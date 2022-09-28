@@ -30,7 +30,7 @@ print_wiki_referencies ()
 	echo " - Kernel: change M7 device tree file"
 	echo " - FS:     change variscite-rproc.conf file"
 	echo " The detailed guide is provided in the Variscite Wiki at link:"
-	echo "   https://variwiki.com/index.php?title=MCUXpresso&release=MCUXPRESSO_2.9.0_V1.0_DART-MX8M-PLUS#Add_support_to_SOMs_with_1GB_DDR"
+	echo "   https://variwiki.com/index.php?title=MCUXpresso&release=MCUXPRESSO_2.12.1_V1.0_DART-MX8M-PLUS#Add_support_to_SOMs_with_1GB_DDR"
 	echo
 }
 
