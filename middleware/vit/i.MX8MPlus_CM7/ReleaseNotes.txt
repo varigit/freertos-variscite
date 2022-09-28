@@ -1,0 +1,11 @@
+
+----------------------------------------------------------------------
+REL 10.02.00 - LA_OPT_NXP_Software_License
+----------------------------------------------------------------------
+VIT integrating LP_VAD only
+Core supported : Cortex_M7
+Library validated on i.MX8M plus platform
+
+Dependencies : -
+
+Changes : -
