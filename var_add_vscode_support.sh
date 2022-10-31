@@ -5,7 +5,7 @@ set -e
 
 readonly SCRIPT_NAME=${0##*/}
 readonly BSP_BASE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-readonly PATH_TO_ARM_TOOLCHAIN="${BSP_BASE_DIR}/../gcc-arm-none-eabi-10.3-2021.07"
+readonly PATH_TO_ARM_TOOLCHAIN="${BSP_BASE_DIR}/../gcc-arm-none-eabi-10.3-2021.10"
 CM_ID=cm_c0
 CM4_CORE_DIR=cm4_core0
 
@@ -68,8 +68,8 @@ check_params()
 	if [[ ! -d $PATH_TO_ARM_TOOLCHAIN ]] ; then
 		echo "ERROR5: \"$PATH_TO_ARM_TOOLCHAIN\" does not exist"
 		echo "Download the SDK:"
-		echo "wget https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07-x86_64-linux.tar.bz2"
-		echo "tar xvf gcc-arm-none-eabi-10.3-2021.07-x86_64-linux.tar.bz2"
+		echo "wget https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2"
+		echo "tar xvf gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2"
 		usage
 		exit 1
 	fi
