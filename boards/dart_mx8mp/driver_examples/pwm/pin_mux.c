@@ -45,7 +45,7 @@ BOARD_InitPins:
 - pin_list:
   - {pin_num: AE6, peripheral: UART3, signal: uart_rx, pin_signal: UART3_RXD, PE: Enabled, HYS: CMOS, PUE: Weak_Pull_Up, DSE: X6}
   - {pin_num: AJ4, peripheral: UART3, signal: uart_tx, pin_signal: UART3_TXD, PE: Enabled, HYS: CMOS, PUE: Weak_Pull_Up, DSE: X6}
-  - {pin_num: AJ6, peripheral: PWM3, signal: pwm_out, pin_signal: I2C3_SDA, PE: Enabled, HYS: CMOS, PUE: Weak_Pull_Up}
+  - {pin_num: AE18, peripheral: PWM3, signal: pwm_out, pin_signal: SPDIF_TX, PE: Enabled, HYS: CMOS, PUE: Weak_Pull_Up}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 
@@ -56,8 +56,8 @@ BOARD_InitPins:
  *
  * END ****************************************************************************************************************/
 void BOARD_InitPins(void) {                                /*!< Function assigned for the core: Cortex-M7F[m7] */
-    IOMUXC_SetPinMux(IOMUXC_I2C3_SDA_PWM3_OUT, 0U);
-    IOMUXC_SetPinConfig(IOMUXC_I2C3_SDA_PWM3_OUT, 
+    IOMUXC_SetPinMux(IOMUXC_SPDIF_TX_PWM3_OUT, 0U);
+    IOMUXC_SetPinConfig(IOMUXC_SPDIF_TX_PWM3_OUT,
                         IOMUXC_SW_PAD_CTL_PAD_DSE(3U) |
                         IOMUXC_SW_PAD_CTL_PAD_PUE_MASK |
                         IOMUXC_SW_PAD_CTL_PAD_PE_MASK);

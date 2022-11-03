@@ -22,7 +22,7 @@ Hardware requirements
 
 Board settings
 ==============
-Use Oscilloscope to measure and observe the Test Point J12-20 output signal.
+Use Oscilloscope to measure and observe the Test Point J14-7 output signal.
 
 
 
