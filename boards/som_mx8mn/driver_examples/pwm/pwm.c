@@ -13,6 +13,8 @@
 #include "fsl_pwm.h"
 
 #include "fsl_common.h"
+#include "fsl_rdc.h"
+
 /*******************************************************************************
  * Definitions
  ******************************************************************************/
@@ -21,6 +23,7 @@
 #define DEMO_PWM_IRQHandler PWM3_IRQHandler
 /*! @brief PWM period value. PWMO (Hz) = PCLK(Hz) / (period +2) */
 #define PWM_PERIOD_VALUE 30
+#define APP_RDC_PERIPH_PWM3 kRDC_Periph_PWM3
 
 /*******************************************************************************
  * Prototypes
@@ -31,6 +34,8 @@
  ******************************************************************************/
 volatile uint32_t pwmDutycycle = 0U;
 volatile bool pwmDutyUp        = true; /* Indicate PWM Duty cycle is increase or decrease */
+rdc_domain_assignment_t assignment;
+rdc_periph_access_config_t periphConfig;
 
 /*******************************************************************************
  * Code
@@ -66,6 +71,20 @@ void DEMO_PWM_IRQHandler(void)
     SDK_ISR_EXIT_BARRIER;
 }
 
+static void APP_RDC_Periph(void)
+{
+    PRINTF("RDC Peripheral access control\r\n");
+
+    /*
+     * Make PWM3 accessible only by M7
+     */
+    RDC_GetDefaultPeriphAccessConfig(&periphConfig);
+    periphConfig.periph = APP_RDC_PERIPH_PWM3;
+    periphConfig.policy = RDC_ACCESS_POLICY(1, kRDC_ReadWrite);
+    /* Set peripheral to accessible by M7 domain only. */
+    RDC_SetPeriphAccessConfig(RDC, &periphConfig);
+}
+
 /*!
  * @brief Main function
  */
@@ -81,6 +100,7 @@ int main(void)
 
     /* Board specific RDC settings */
     BOARD_RdcInit();
+    APP_RDC_Periph();
 
     BOARD_InitBootPins();
     BOARD_BootClockRUN();
