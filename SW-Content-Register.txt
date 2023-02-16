@@ -59,6 +59,17 @@ SDK_Components             Name: SDK components and board peripheral drivers
                            Location: components/                             
                            Origin: NXP (BSD-3-Clause), ITE (BSD-3-Clause)    
 
+usb                        Name: USB                                         
+                           Version: 2.8.4                                    
+                           Outgoing License: BSD-3-Clause                    
+                           License File: COPYING-BSD-3                       
+                           Format: source code                               
+                           Description: NXP USB stack. This is a version of  
+                           the USB stack that has been integrated with the   
+                           MCUXpresso SDK.                                   
+                           Location: middleware/usb                          
+                           Origin: NXP (BSD-3-Clause)                        
+
 rtcesl                     Name: rtcesl                                      
                            Version: 4.7 (CM0,CM4,CM7,CM33) + 4.5 (DSC)       
                            Outgoing License: BSD-3-Clause                    
@@ -103,25 +114,6 @@ rpmsg_lite                 Name: RPMsg-Lite
                            contributors                                      
                            Url: https://github.com/NXPmicro/rpmsg-lite       
 
-VoiceSeeker_arm            Name: VoiceSeeker (no AEC)                        
-                           Version: 0.6.0                                    
-                           Outgoing License: LA_OPT_NXP_Software_License.txt 
-                           v39 August 2022 - Additional distribution license 
-                           granted - License in Section 2.3 applies          
-                           License File: LA_OPT_NXP_Software_License.txt     
-                           Format: Precompiled libraries, header files,      
-                           example application                               
-                           Description: VoiceSeeker is a multi-microphone    
-                           voice control audio front-end signal processing   
-                           solution. Acoustic Echo Cancellation (AEC) is not 
-                           enabled in this free version.                     
-                           Location: middleware/voice_seeker                 
-                           Origin: NXP (Proprietary) ARM (Apache-2.0)        
-                           Url:                                              
-                           https://www.nxp.com/design/software/embedded-softw
-                           are/voiceseeker-audio-front-end:VOICESEEKER       
-                           https://github.com/ARM-software/CMSIS_5           
-
 tinycbor                   Name: TinyCBOR                                    
                            Version: 0.6.0                                    
                            Outgoing License: MIT                             
@@ -152,21 +144,3 @@ llhttp                     Name: llhttp
                            Location: middleware/llhttp                       
                            Origin: Node.js (MIT)                             
                            Url: https://github.com/nodejs/llhttp             
-
-VoiceSpot                  Name: VoiceSpot_v0.23.2                           
-                           Version: 0.23.2                                   
-                           Outgoing License: LA_OPT_NXP_Software_License.txt 
-                           v39 August 2022 - License in Section 2.4 applies, 
-                           see Appendix A.                                   
-                           License File: LA_OPT_NXP_Software_License.txt     
-                           Format: Precompiled libraries, header files,      
-                           example application                               
-                           Description: VoiceSpot is a highly accurate, small
-                           memory and MIPS profile wake word engine          
-                           supporting custom voice trigger words and phrases 
-                           Location: middleware/voice_spot                   
-                           Origin: NXP (Proprietary) ARM (Apache-2.0)        
-                           Url:                                              
-                           https://www.nxp.com/design/software/embedded-softw
-                           are/voicespot-wake-word-engine:VOICESPOT          
-                           https://github.com/ARM-software/CMSIS_5           
