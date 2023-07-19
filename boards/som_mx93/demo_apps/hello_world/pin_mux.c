@@ -39,8 +39,8 @@ void BOARD_InitBootPins(void)
 BOARD_InitPins:
 - options: {callFromInitBoot: 'true', coreID: cm33}
 - pin_list:
-  - {pin_num: F20, peripheral: LPUART2, signal: lpuart_rx, pin_signal: UART2_RXD, FSEL1: SlOW_SLEW_RATE, DSE: NO_DRIVE}
-  - {pin_num: F21, peripheral: LPUART2, signal: lpuart_tx, pin_signal: UART2_TXD, PD: DISABLED, FSEL1: SlOW_SLEW_RATE}
+  - {pin_num: M21, peripheral: LPUART7, signal: lpuart_rx, pin_signal: GPIO_IO09, FSEL1: SlOW_SLEW_RATE, DSE: NO_DRIVE}
+  - {pin_num: M20, peripheral: LPUART7, signal: lpuart_tx, pin_signal: GPIO_IO08, PD: DISABLED, FSEL1: SlOW_SLEW_RATE}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 

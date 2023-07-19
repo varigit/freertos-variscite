@@ -15,9 +15,9 @@ Toolchain supported
 Hardware requirements
 =====================
 - Micro USB cable
-- MCIMX93-EVK board
-- J-Link Debug Probe
-- 12V~20V power supply
+- USB to UART Adapter
+- VAR-SOM-MX93 SoM(s) and Symphony Board(s)
+- Proper power supply
 - Personal Computer
 
 Board settings
@@ -26,16 +26,15 @@ No special settings are required.
 
 Prepare the Demo
 ================
-1.  Connect 12V~20V power supply and J-Link Debug Probe to the board, switch SW301 to power on the board.
-2.  Connect a micro USB cable between the host PC and the J1401 USB port on the target board.
-3.  Open a serial terminal with the following settings:
+1.  Connect the power supply to the board and switch on the board.
+2.  Connect the micro USB to J29 (Cortex-A55s) and the USB to UART adapter to J18.5/J18.3 (RX/TX) (Cortex-M33).
+3.  Open a serial terminal on the Cortex-M33 serial port with the following settings:
     - 115200 baud rate
     - 8 data bits
     - No parity
     - One stop bit
     - No flow control
-4.  Download the program to the target board.
-5.  Either re-power up your board or launch the debugger in your IDE to begin running the example.
+4.  Load and start the demo on the M33 using either U-Boot (bootaux) or Linux (remoteproc) per the variwiki guide.
 
 Running the demo
 ================
