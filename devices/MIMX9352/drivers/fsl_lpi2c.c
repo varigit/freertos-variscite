@@ -2550,6 +2550,24 @@ void LPI2C6_DriverIRQHandler(void)
 }
 #endif
 
+#if defined(LPI2C7)
+/* Implementation of LPI2C7 handler named in startup code. */
+void LPI2C7_DriverIRQHandler(void);
+void LPI2C7_DriverIRQHandler(void)
+{
+    LPI2C_CommonIRQHandler(LPI2C7, 7U);
+}
+#endif
+
+#if defined(LPI2C8)
+/* Implementation of LPI2C8 handler named in startup code. */
+void LPI2C8_DriverIRQHandler(void);
+void LPI2C8_DriverIRQHandler(void)
+{
+    LPI2C_CommonIRQHandler(LPI2C8, 8U);
+}
+#endif
+
 #if defined(CM4_0__LPI2C)
 /* Implementation of CM4_0__LPI2C handler named in startup code. */
 void M4_0_LPI2C_DriverIRQHandler(void);
