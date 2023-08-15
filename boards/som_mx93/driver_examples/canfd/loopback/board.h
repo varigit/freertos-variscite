@@ -29,8 +29,6 @@
 #define LED_INIT()
 #define LED_TOGGLE()
 
-#define BOARD_CODEC_I2C_BASEADDR LPI2C1
-#define BOARD_CODEC_I2C_INSTANCE 1U
 
 
 
