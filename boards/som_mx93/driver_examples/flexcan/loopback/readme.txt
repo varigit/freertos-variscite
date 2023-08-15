@@ -17,7 +17,6 @@ Hardware requirements
 - Micro USB cable
 - USB to UART Adapter
 - VAR-SOM-MX93 SoM(s) and Symphony Board(s)
-- JLink Plus
 - Proper power supply
 - Personal Computer
 
