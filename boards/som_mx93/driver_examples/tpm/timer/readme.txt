@@ -6,7 +6,6 @@ When the TPM interrupt is triggered 1000 times, a message is printed on the UART
 
 Toolchain supported
 ===================
-- IAR embedded Workbench  9.30.1
 - GCC ARM Embedded  10.3.1
 
 Hardware requirements
