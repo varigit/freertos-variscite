@@ -21,6 +21,7 @@ processor_version: 0.12.3
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 
+#include "fsl_debug_console.h"
 #include "pin_mux.h"
 
 /* FUNCTION ************************************************************************************************************
@@ -51,6 +52,7 @@ BOARD_InitPins:
  *
  * END ****************************************************************************************************************/
 void BOARD_InitPins(void) {                                /*!< Function assigned for the core: undefined[cm33] */
+#if SDK_DEBUGCONSOLE == DEBUGCONSOLE_REDIRECT_TO_SDK
     IOMUXC_SetPinMux(IOMUXC_PAD_GPIO_IO09__LPUART7_RX, 0U);
     IOMUXC_SetPinMux(IOMUXC_PAD_GPIO_IO08__LPUART7_TX, 0U);
 
@@ -58,6 +60,7 @@ void BOARD_InitPins(void) {                                /*!< Function assigne
                         IOMUXC_PAD_PD_MASK);
     IOMUXC_SetPinConfig(IOMUXC_PAD_GPIO_IO08__LPUART7_TX, 
                         IOMUXC_PAD_DSE(15U));
+#endif
 }
 
 /***********************************************************************************************************************

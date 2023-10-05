@@ -6,6 +6,9 @@ IF(NOT DEFINED SPECS)
     SET(SPECS "--specs=nano.specs --specs=nosys.specs")  
 ENDIF()  
 
+# Disable the debug console
+SET(DEBUG_CONSOLE_CONFIG "-DSDK_DEBUGCONSOLE=2")
+
 IF(NOT DEFINED DEBUG_CONSOLE_CONFIG)  
     SET(DEBUG_CONSOLE_CONFIG "-DSDK_DEBUGCONSOLE=1")  
 ENDIF()  
