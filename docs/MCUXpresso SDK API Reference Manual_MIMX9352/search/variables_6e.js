@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['nakallrequest',['nakAllRequest',['../a00038.html#a4302cc872a697850efa15f3e0ef2de7f',1,'i3c_slave_config_t::nakAllRequest()'],['../a00036.html#a53c9d81367d3da27cc54b4923a50a432',1,'i3c_config_t::nakAllRequest()']]],
+  ['nanosecond',['nanosecond',['../a00016.html#ae3da4f2e43aca656e9a8a0fd3c5cd386',1,'enet_qos_ptp_time_t']]],
+  ['nbytes',['nbytes',['../a00021.html#a12a81c4048e7c1cc3d82b9030631a049',1,'_flexio_camera_edma_handle::nbytes()'],['../a00025.html#a0c4f3ae0b658cf448c53bb0c85859989',1,'_flexio_i2s_edma_handle::nbytes()'],['../a00029.html#a32e1ff6188daf9c28eea501cf7585761',1,'_flexio_spi_master_edma_handle::nbytes()'],['../a00031.html#a31c522fa133f42dc19a10ce3707a3546',1,'_flexio_uart_edma_handle::nbytes()'],['../a00043.html#a71e19bdaa2d6ed8e95d4b25497a45149',1,'_lpi2c_master_edma_handle::nbytes()'],['../a00047.html#a6cb0ef8b643f0c8da471897277a79e11',1,'_lpspi_master_edma_handle::nbytes()'],['../a00047.html#ac4304fd510994667fcc72cf37ef1345a',1,'_lpspi_slave_edma_handle::nbytes()'],['../a00050.html#a7ffb3be259d932a6a9f7e86aed4cc790',1,'_lpuart_edma_handle::nbytes()'],['../a00062.html#a061d53e53af802d59eca8bc3171297ce',1,'sai_edma_handle::nbytes()'],['../a00013.html#ada2a3af3cbf20ed38a3669c963d49f7d',1,'edma_tcd_t::NBYTES()'],['../a00014.html#a2a9431b51dd0288a6b5ea88e6d5ab6ef',1,'edma_core_tcd_t::NBYTES()']]],
+  ['needrestart',['needRestart',['../a00023.html#aaf7dbf9de526b48d31035afdf18a2d8d',1,'_flexio_i2c_master_handle']]],
+  ['nextchanedgemode',['nextChanEdgeMode',['../a00069.html#a700c20e23231ba39cf5413dde606d5fb',1,'tpm_dual_edge_capture_param_t']]],
+  ['nextcontrol',['nextControl',['../a00016.html#a022e9fcbf6525539196969f2db03d1be',1,'enet_qos_rxp_config_t']]],
+  ['noisefilteradjustment',['noiseFilterAdjustment',['../a00056.html#aa9df6cdbf47ef4eaf06f29bff548a8bd',1,'pdm_hwvad_noise_filter_t']]],
+  ['noisegain',['noiseGain',['../a00056.html#ade6a68f4d654916e434895fea2479757',1,'pdm_hwvad_noise_filter_t']]],
+  ['nonsecureprivr',['nonsecurePrivR',['../a00070.html#aaf49281105db00456c3519aef4d06941',1,'trdc_memory_access_control_config_t']]],
+  ['nonsecureprivw',['nonsecurePrivW',['../a00070.html#afa85f3afb384b91ba782b86d8cd44bd0',1,'trdc_memory_access_control_config_t']]],
+  ['nonsecureprivx',['nonsecurePrivX',['../a00070.html#ac724452cb605348ade0c5b45523b38a8',1,'trdc_memory_access_control_config_t']]],
+  ['nonsecureusrr',['nonsecureUsrR',['../a00070.html#ae85c0b219826d30f49ed4b8759e7c6f7',1,'trdc_memory_access_control_config_t']]],
+  ['nonsecureusrw',['nonsecureUsrW',['../a00070.html#a356c2d64c1f53870f718a56aecad756c',1,'trdc_memory_access_control_config_t']]],
+  ['nonsecureusrx',['nonsecureUsrX',['../a00070.html#a9c71c515495b9dff79231c1b598f249a',1,'trdc_memory_access_control_config_t']]],
+  ['notifytype',['notifyType',['../a00055.html#a2ca3b1a52e315e072a8ab48fcc1dd62a',1,'notifier_notification_block_t']]],
+  ['nseenable',['nseEnable',['../a00070.html#a916d262eec0aaebf1eb4d65b3957fa24',1,'trdc_mrc_region_descriptor_config_t::nseEnable()'],['../a00070.html#ac0e2df4e5be4e039759ec602a047eeae',1,'trdc_mbc_memory_block_config_t::nseEnable()']]],
+  ['numentries',['numEntries',['../a00016.html#a4ea0ffe5ab809275c43283f98c828211',1,'enet_qos_est_gcl_t']]]
+];

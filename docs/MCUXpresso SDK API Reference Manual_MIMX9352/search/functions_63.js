@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['codec_5fdeinit',['CODEC_Deinit',['../a00009.html#ga32056c566dae7864a103114dd461b090',1,'fsl_codec_common.h']]],
+  ['codec_5fi2c_5fdeinit',['CODEC_I2C_Deinit',['../a00010.html#ga2c33fdd5bd6fe377e53f92cbbb03223b',1,'fsl_codec_i2c.h']]],
+  ['codec_5fi2c_5finit',['CODEC_I2C_Init',['../a00010.html#gadf64ef142b3bbc5a2f9ba1b7e01e5356',1,'fsl_codec_i2c.h']]],
+  ['codec_5fi2c_5freceive',['CODEC_I2C_Receive',['../a00010.html#gae0da3dcb4574fedde25b82432890e2ec',1,'fsl_codec_i2c.h']]],
+  ['codec_5fi2c_5fsend',['CODEC_I2C_Send',['../a00010.html#gaadd85b986313b7ee984cd57bc9b883b4',1,'fsl_codec_i2c.h']]],
+  ['codec_5finit',['CODEC_Init',['../a00009.html#ga5d14bc698e079b917832b43b248ea78c',1,'fsl_codec_common.h']]],
+  ['codec_5fmodulecontrol',['CODEC_ModuleControl',['../a00009.html#ga2d29c9f1b4a3da8f2afaccc9aad15555',1,'fsl_codec_common.h']]],
+  ['codec_5fsetformat',['CODEC_SetFormat',['../a00009.html#ga22534d14e8c6ac287e27ea06e9bdd032',1,'fsl_codec_common.h']]],
+  ['codec_5fsetmute',['CODEC_SetMute',['../a00009.html#ga82d2fbaf2e232f9934a1981f4a8315b5',1,'fsl_codec_common.h']]],
+  ['codec_5fsetplay',['CODEC_SetPlay',['../a00009.html#ga691cf0f3517139c6ad8f43918de8ea86',1,'fsl_codec_common.h']]],
+  ['codec_5fsetpower',['CODEC_SetPower',['../a00009.html#gaa1cf75fe8598db6a6a9e33b56421a725',1,'fsl_codec_common.h']]],
+  ['codec_5fsetrecord',['CODEC_SetRecord',['../a00009.html#ga6f348297e309b371c512b1c025f7aba7',1,'fsl_codec_common.h']]],
+  ['codec_5fsetrecordchannel',['CODEC_SetRecordChannel',['../a00009.html#ga22e45cee1bd24d656f16311bfa8bc7d7',1,'fsl_codec_common.h']]],
+  ['codec_5fsetvolume',['CODEC_SetVolume',['../a00009.html#gabede767456945f55045dc116f9f4f4ca',1,'fsl_codec_common.h']]],
+  ['crc_5fdeinit',['CRC_Deinit',['../a00011.html#ga7a4d725b011a98efb29a26bcca04c35b',1,'fsl_crc.h']]],
+  ['crc_5fget16bitresult',['CRC_Get16bitResult',['../a00011.html#ga446972c25252d95d42f573553d32091f',1,'fsl_crc.h']]],
+  ['crc_5fget32bitresult',['CRC_Get32bitResult',['../a00011.html#gac34102a9fb2c3d1f67bb5e5f7eb7de32',1,'fsl_crc.h']]],
+  ['crc_5fgetdefaultconfig',['CRC_GetDefaultConfig',['../a00011.html#gab681cd7c82fbafd927d6b22f23a81804',1,'fsl_crc.h']]],
+  ['crc_5finit',['CRC_Init',['../a00011.html#ga7114311534a33b6688f35ceaaa3f7832',1,'fsl_crc.h']]],
+  ['crc_5fwritedata',['CRC_WriteData',['../a00011.html#ga33f99b0cb581e677dbc009a695adf5d5',1,'fsl_crc.h']]]
+];

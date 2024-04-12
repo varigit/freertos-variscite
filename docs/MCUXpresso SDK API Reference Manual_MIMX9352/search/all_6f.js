@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['ocotp_3a_20on_20chip_20one_2dtime_20programmable_20controller_2e',['OCOTP: On Chip One-Time Programmable controller.',['../a00247.html',1,'']]],
+  ['ocotp_5fcheckbusystatus',['OCOTP_CheckBusyStatus',['../a00247.html#gaa3040092099624ec476dd81bd022712c',1,'fsl_ocotp.h']]],
+  ['ocotp_5fcheckerrorstatus',['OCOTP_CheckErrorStatus',['../a00247.html#gaf0ee0166ccd35b0273d468b7eb72c954',1,'fsl_ocotp.h']]],
+  ['ocotp_5fclearerrorstatus',['OCOTP_ClearErrorStatus',['../a00247.html#gad9294be0c39be4dfaa1eea436ac85171',1,'fsl_ocotp.h']]],
+  ['ocotp_5fdeinit',['OCOTP_Deinit',['../a00247.html#gaafffa3b5fe3f1f69f077e88ba5a7e107',1,'fsl_ocotp.h']]],
+  ['ocotp_5fgetversion',['OCOTP_GetVersion',['../a00247.html#ga38c12a5cb815d9330cd8f2c04e8e1ec5',1,'fsl_ocotp.h']]],
+  ['ocotp_5finit',['OCOTP_Init',['../a00247.html#ga54480b3c489116b8cb76053b16f02c89',1,'fsl_ocotp.h']]],
+  ['ocotp_5freadfuseshadowregister',['OCOTP_ReadFuseShadowRegister',['../a00247.html#gaecc991ccf4be0c49286fb13cba97e389',1,'fsl_ocotp.h']]],
+  ['ocotp_5freadfuseshadowregisterext',['OCOTP_ReadFuseShadowRegisterExt',['../a00247.html#gaa1b0f813fa5ca43225d71d9218c48a28',1,'fsl_ocotp.h']]],
+  ['ocotp_5freloadshadowregister',['OCOTP_ReloadShadowRegister',['../a00247.html#ga7a7b1cd03383fafde15157a06fdda557',1,'fsl_ocotp.h']]],
+  ['ocotp_5fwritefuseshadowregister',['OCOTP_WriteFuseShadowRegister',['../a00247.html#ga43636ab96125958c9a14fe82c176e33e',1,'fsl_ocotp.h']]],
+  ['ocotp_5fwritefuseshadowregisterwithlock',['OCOTP_WriteFuseShadowRegisterWithLock',['../a00247.html#ga4f837c7b4a66ffe3153f2975fd5c6388',1,'fsl_ocotp.h']]],
+  ['offline',['offline',['../a00038.html#a96f746320ee2cbf323f962a87234c932',1,'i3c_slave_config_t::offline()'],['../a00036.html#adade73f94999173e293a2f0a44afcbb8',1,'i3c_config_t::offline()']]],
+  ['okindex',['okIndex',['../a00016.html#a31f70ae27246ee35dc4450da27410d3e',1,'enet_qos_rxp_config_t']]],
+  ['opendrainenable',['openDrainEnable',['../a00039.html#a67580e5e579658f1fb1c088ce0e6dcd7',1,'iomux_pin_config_t::openDrainEnable()'],['../a00039.html#a941e5fcfa5f3bf9134744147d86dac41',1,'iomux_pin_reset_config_t::openDrainEnable()']]],
+  ['oplist',['opList',['../a00016.html#a0629686817c2783cce90e48e8e13e339',1,'enet_qos_est_gcl_t']]],
+  ['outdata',['outData',['../a00052.html#acb0844179746900965b346c4dee6f2e4',1,'_ltc_edma_handle']]],
+  ['outmode',['outMode',['../a00059.html#a12a786368dba272c6242f43283ae9f57',1,'pxp_lut_config_t']]],
+  ['outputbufferenable',['outputBufferEnable',['../a00039.html#ae8337b24bb96abf5cc69ca82448478af',1,'iomux_pin_config_t']]],
+  ['outputclock_5fhz',['outputClock_HZ',['../a00012.html#aa437baa5261123cd810488ac65e201dd',1,'da7212_pll_config_t']]],
+  ['outputfifoedmahandle',['outputFifoEdmaHandle',['../a00052.html#a1d44a8a680fb9be9a2830343a30e12de',1,'_ltc_edma_handle']]],
+  ['outputlogic',['outputLogic',['../a00022.html#a8d4c5fb177ec9ef3d2203025391c458d',1,'flexio_gpio_config_t::outputLogic()'],['../a00034.html#a9d37ffd9a2943f10a91095759bd52da5',1,'gpio_pin_config_t::outputLogic()'],['../a00060.html#a0ce24e404fd7f867304a7deb933b0f53',1,'rgpio_pin_config_t::outputLogic()']]]
+];

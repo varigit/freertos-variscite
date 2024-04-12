@@ -1,0 +1,40 @@
+Release Name: Ethos-U Core Software
+Release Version: 22.08
+Release Details: Ethos-U Core Software is released as part of MCUXpresso SDK 2.x release ecosystem: https://mcuxpresso.nxp.com.
+
+Outgoing License: Apache-2.0
+License File: LICENSE.txt
+Format: source code
+Description: NXP Ethos-U Core Software. It provides the example applications and core driver.
+Origin: NXP and following.
+
+============================================
+Ethos-U Core Software                       Version: 22.08
+                                            Author: Arm Limited
+                                            License: Apache-2.0
+                                            Origin: Arm Limited ethos-u-core-software v22.08 (Apache-2.0) - https://git.mlplatform.org/ml/ethos-u/ethos-u-core-software.git
+                                            Format: source code
+                                            Location: middleware/ethos-u-core-software/applications/*, middleware/ethos-u-core-software/cmake/*,
+                                                      middleware/ethos-u-core-software/core_driver/*, middleware/ethos-u-core-software/drivers/*,
+                                                      middleware/ethos-u-core-software/lib/*, middleware/ethos-u-core-software/rtos/*
+
+Ethos-U core interface header file          Version: 22.08
+                                            Author: Arm Limited
+                                            License: GPL-2.0
+                                            Description and comments: Ethos-U core interface header file, Ethos-U core software will include this header file to handle messages with Linux.
+                                            Origin: Arm Limited ethos-u-linux-driver-stack v22.08 (Apache-2.0) -
+                                                      https://git.mlplatform.org/ml/ethos-u/ethos-u-linux-driver-stack.git/tree/kernel/ethosu_core_interface.h
+                                            Format: source code
+                                            Location: middleware/ethos-u-core-software/include/*
+
+Ethos-U application example                 Version: 22.08
+                                            Author: NXP
+                                            License: BSD-3-Clause
+                                            Format: source code
+                                            Location: middleware/ethos-u-core-software/examples/*, middleware/ethos-u-core-software/boards/*
+
+FreeRTOS header file                        Version: 22.08
+                                            Author: Amazon
+                                            License: MIT
+                                            Format: source code
+                                            Location: middleware/ethos-u-core-software/boards/mcimx93evk/FreeRTOSConfig.h
