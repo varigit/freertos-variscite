@@ -1,0 +1,11 @@
+# Files generated from build
+**/armgcc/release/
+**/armgcc/debug/
+**/armgcc/CMakeCache.txt
+**/armgcc/CMakeFiles
+**/armgcc/Makefile
+**/armgcc/cmake_install.cmake
+**/armgcc/*.map
+
+# Any tooling scripts placed directly in root
+/*.sh
