@@ -1,0 +1,48 @@
+Overview
+========
+The TPM project is a demonstration program of the SDK TPM driver's output compare feature.
+It sets up one TPM channel to toggle the output when a match occurs with the channel value. The user
+should probe the TPM output with a oscilloscope to see the signal toggling.
+
+SDK version
+===========
+- Version: 2.15.000
+
+Toolchain supported
+===================
+- IAR embedded Workbench  9.40.1
+- GCC ARM Embedded  12.2
+
+Hardware requirements
+=====================
+- USB Type-C cable
+- VAR-SOM-MX93 SoM(s) and Symphony Board(s)
+- Proper power supply
+- Personal Computer
+- Oscilloscope
+
+Board settings
+==============
+- CM33: connect J18-2 and J16-19(GND) to Oscilloscope
+
+Prepare the Demo
+================
+1.  Connect the power supply to the board and switch on the board.
+2.  Connect a USB Type-C cable between the host PC and the J1401 USB port on the cpu board.
+3.  Open a serial terminal on the Cortex-M33 serial port with the following settings:
+    - 115200 baud rate
+    - 8 data bits
+    - No parity
+    - One stop bit
+    - No flow control
+4.  Load and start the demo on the M33 using either U-Boot (bootaux) or Linux (remoteproc) per the variwiki guide.
+
+Running the demo
+================
+When the example runs successfully, the following message is displayed in the terminal:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TPM example for output compare
+You will see the output signal toggle
+Probe the signal using an oscilloscope
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
