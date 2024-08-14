@@ -22,7 +22,7 @@
 
 /* Get source clock for TPM driver */
 #define LPTPM_CLOCK_ROOT kCLOCK_Root_Tpm6
-#define LPTPM_CLOCK_GATE kCLOCK_Tpm2
+#define LPTPM_CLOCK_GATE kCLOCK_Tpm6
 #define TPM_SOURCE_CLOCK CLOCK_GetIpFreq(LPTPM_CLOCK_ROOT)
 #ifndef DEMO_TIMER_PERIOD_MS
 /* To make led toggling visible, set default counter period to 40ms, which will make output frequency (two counter

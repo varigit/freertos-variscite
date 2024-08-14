@@ -32,7 +32,7 @@
 
 /* Get source clock for TPM driver */
 #define LPTPM_CLOCK_ROOT kCLOCK_Root_Tpm6
-#define LPTPM_CLOCK_GATE kCLOCK_Tpm2
+#define LPTPM_CLOCK_GATE kCLOCK_Tpm6
 #define TPM_SOURCE_CLOCK CLOCK_GetIpFreq(LPTPM_CLOCK_ROOT)
 
 /*******************************************************************************

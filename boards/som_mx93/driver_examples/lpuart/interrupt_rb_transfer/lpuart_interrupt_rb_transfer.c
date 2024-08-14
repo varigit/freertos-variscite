@@ -18,7 +18,7 @@
 /* Get source clock for LPIT driver */
 #define DEMO_LPUART          LPUART7
 #define LPUART_CLOCK_ROOT    kCLOCK_Root_Lpuart7
-#define LPUART_CLOCK_GATE    kCLOCK_Lpuart2
+#define LPUART_CLOCK_GATE    kCLOCK_Lpuart7
 #define DEMO_LPUART_CLK_FREQ CLOCK_GetIpFreq(LPUART_CLOCK_ROOT)
 
 #define RX_RING_BUFFER_SIZE 20U

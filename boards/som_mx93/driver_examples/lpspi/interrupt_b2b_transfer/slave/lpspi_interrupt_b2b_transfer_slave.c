@@ -23,7 +23,7 @@
 
 #define EXAMPLE_LPSPI_SLAVE_CLOCK_NAME (LPSPI_SLAVE_CLOCK_ROOT)
 #define LPSPI_SLAVE_CLOCK_ROOT         kCLOCK_Root_Lpspi6
-#define LPSPI_SLAVE_CLOCK_GATE         kCLOCK_Lpspi3
+#define LPSPI_SLAVE_CLOCK_GATE         kCLOCK_Lpspi6
 #define TRANSFER_SIZE 64U /*! Transfer dataSize */
 
 /*******************************************************************************

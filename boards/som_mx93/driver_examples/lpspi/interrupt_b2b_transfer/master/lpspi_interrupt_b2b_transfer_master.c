@@ -18,7 +18,7 @@
  ******************************************************************************/
 #define EXAMPLE_LPSPI_MASTER_BASEADDR         LPSPI6
 #define LPSPI_MASTER_CLOCK_ROOT               kCLOCK_Root_Lpspi6
-#define LPSPI_MASTER_CLOCK_GATE               kCLOCK_Lpspi3
+#define LPSPI_MASTER_CLOCK_GATE               kCLOCK_Lpspi6
 #define LPSPI_MASTER_CLK_FREQ                 (CLOCK_GetIpFreq(LPSPI_MASTER_CLOCK_ROOT))
 #define EXAMPLE_LPSPI_MASTER_PCS_FOR_INIT     kLPSPI_Pcs0
 #define EXAMPLE_LPSPI_MASTER_PCS_FOR_TRANSFER kLPSPI_MasterPcs0

@@ -18,7 +18,7 @@
  ******************************************************************************/
 #define EXAMPLE_I2C_MASTER_BASE      (LPI2C7_BASE)
 #define LPI2C_MASTER_CLOCK_ROOT      kCLOCK_Root_Lpi2c7
-#define LPI2C_MASTER_CLOCK_GATE      kCLOCK_Lpi2c1
+#define LPI2C_MASTER_CLOCK_GATE      kCLOCK_Lpi2c7
 #define LPI2C_MASTER_CLOCK_FREQUENCY CLOCK_GetIpFreq(LPI2C_MASTER_CLOCK_ROOT)
 #define WAIT_TIME                    10U
 
