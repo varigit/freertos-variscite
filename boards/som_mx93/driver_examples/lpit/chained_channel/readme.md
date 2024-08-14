@@ -21,7 +21,8 @@ Toolchain supported
 
 Hardware requirements
 =====================
-- USB Type-C cable
+- Micro USB cable
+- USB to UART Adapter
 - VAR-SOM-MX93 SoM(s) and Symphony Board(s)
 - Proper power supply
 - Personal Computer
