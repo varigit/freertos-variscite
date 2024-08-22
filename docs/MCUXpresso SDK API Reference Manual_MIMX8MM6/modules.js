@@ -1,0 +1,27 @@
+var modules =
+[
+    [ "CODEC Driver", "a00131.html", "a00131" ],
+    [ "Clock Driver", "a00009.html", "a00009" ],
+    [ "Common Driver", "a00111.html", "a00111" ],
+    [ "Debug Console", "a00127.html", "a00127" ],
+    [ "ECSPI: Enhanced Configurable Serial Peripheral Interface Driver", "a00112.html", "a00112" ],
+    [ "ENET: Ethernet MAC Driver", "a00014.html", "a00014" ],
+    [ "Enet_cmsis_driver", "a00135.html", null ],
+    [ "GPC: General Power Controller Driver", "a00115.html", "a00115" ],
+    [ "GPIO: General-Purpose Input/Output Driver", "a00015.html", "a00015" ],
+    [ "GPT: General Purpose Timer", "a00016.html", "a00016" ],
+    [ "I2C: Inter-Integrated Circuit Driver", "a00116.html", "a00116" ],
+    [ "IOMUXC: IOMUX Controller", "a00110.html", "a00110" ],
+    [ "MU: Messaging Unit", "a00122.html", "a00122" ],
+    [ "PDM: Microphone Interface", "a00123.html", "a00123" ],
+    [ "PWM: Pulse Width Modulation Driver", "a00119.html", "a00119" ],
+    [ "RDC: Resource Domain Controller", "a00020.html", "a00020" ],
+    [ "RDC_SEMA42: Hardware Semaphores Driver", "a00124.html", "a00124" ],
+    [ "SAI: Serial Audio Interface", "a00125.html", "a00125" ],
+    [ "SDMA: Smart Direct Memory Access (SDMA) Controller Driver", "a00023.html", "a00023" ],
+    [ "SEMA4: Hardware Semaphores Driver", "a00126.html", "a00126" ],
+    [ "Serial Manager", "a00024.html", "a00024" ],
+    [ "TMU: Thermal Management Unit Driver", "a00026.html", "a00026" ],
+    [ "UART: Universal Asynchronous Receiver/Transmitter Driver", "a00120.html", "a00120" ],
+    [ "WDOG: Watchdog Timer Driver", "a00030.html", "a00030" ]
+];

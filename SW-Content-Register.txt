@@ -1,6 +1,6 @@
 Release Name: MCUXpresso Software Development Kit (SDK)
 Release Version: 2.15.000
-Package License: LA_OPT_NXP_Software_License v49 September 2023 - Additional Distribution License granted, license in Section 2.3 applies
+Package License: LA_OPT_NXP_Software_License.txt v49 September 2023- Additional Distribution License granted, license in Section 2.3 applies
 
 SDK_Peripheral_Driver      Name: SDK Peripheral Driver                       
                            Version: 2.x.x                                    
@@ -84,42 +84,6 @@ corehttp                   Name: FreeRTOS coreHTTP
                            Origin: Amazon (MIT)                              
                            Url: https://github.com/FreeRTOS/coreHTTP         
 
-voice_seeker_cm33          Name: VoiceSeeker (no AEC)                        
-                           Version: 0.6.8                                    
-                           Outgoing License: LA_OPT_NXP_Software_License v49 
-                           September 2023 - Additional distribution license  
-                           granted, license in Section 2.3 applies           
-                           License File: LA_OPT_NXP_Software_License.txt     
-                           Format: Precompiled libraries, header files,      
-                           example application                               
-                           Description: VoiceSeeker is a multi-microphone    
-                           voice control audio front-end signal processing   
-                           solution. Acoustic Echo Cancellation (AEC) is not 
-                           enabled in this free version.                     
-                           Location: middleware/voice_seeker/ARM_CortexM33   
-                           Origin: NXP (Proprietary) ARM (Apache-2.0)        
-                           Url:                                              
-                           https://www.nxp.com/design/software/embedded-softw
-                           are/voiceseeker-audio-front-end:VOICESEEKER       
-                           https://github.com/ARM-software/CMSIS_5           
-
-voice_spot                 Name: VoiceSpot library                           
-                           Outgoing License: LA_OPT_NXP_Software_License v49 
-                           September 2023 - Additional distribution license  
-                           granted, license in Section 2.3 applies           
-                           License File: LA_OPT_NXP_Software_License.txt     
-                           Format: Precompiled libraries, header files,      
-                           example application                               
-                           Description: VoiceSpot is a highly accurate, small
-                           memory and MIPS profile wake word engine          
-                           supporting custom voice trigger words and phrases 
-                           Location: middleware/voice_spot                   
-                           Origin: NXP (Proprietary) ARM (Apache-2.0)        
-                           Url:                                              
-                           https://www.nxp.com/design/software/embedded-softw
-                           are/voicespot-wake-word-engine:VOICESPOT          
-                           https://github.com/ARM-software/CMSIS_5           
-
 llhttp                     Name: llhttp                                      
                            Version: 6.0.9                                    
                            Outgoing License: MIT                             
@@ -129,19 +93,6 @@ llhttp                     Name: llhttp
                            Location: middleware/llhttp                       
                            Origin: Node.js (MIT)                             
                            Url: https://github.com/nodejs/llhttp             
-
-lwip                       Name: lwIP TCP/IP Stack                           
-                           Version: lwIP git repository (2023-01-03, branch: 
-                           master, SHA-1:                                    
-                           3fe8d2fc43a9b69f7ed28c63d44a7744f9c0def9)         
-                           Outgoing License: BSD-3-Clause                    
-                           License File: middleware/lwip/COPYING             
-                           Format: source code                               
-                           Description: A light-weight TCP/IP stack          
-                           Location: middleware/lwip                         
-                           Origin: NXP (BSD-3-Clause) Swedish Institute of   
-                           Computer Science (BSD-3-Clause) -                 
-                           http://savannah.nongnu.org/projects/lwip          
 
 multicore                  Name: Multicore SDK                               
                            Version: 2.15.0                                   
@@ -165,59 +116,6 @@ multicore_rpmsg_lite       Name: RPMsg-Lite
                            contributors                                      
                            Url: https://github.com/NXPmicro/rpmsg-lite       
 
-multicore_erpc             Name: eRPC                                        
-                           Version: 1.12.0                                   
-                           Outgoing License: BSD-3-Clause                    
-                           License File: middleware/multicore/erpc/LICENSE   
-                           Format: source code                               
-                           Description: Embedded Remote Procedure Call       
-                           Location: middleware/multicore/erpc               
-                           Origin: NXP & community contributors              
-                           Url: https://github.com/EmbeddedRPC/erpc          
-
-multicore_erpc_the_bus_piraName: The Bus Pirate                              
-te                         Version: NA                                       
-                           Outgoing License: Open Source - CC0 (Public Domain
-                           Dedication License)                               
-                           License File:                                     
-                           http://code.google.com/p/the-bus-pirate/          
-                           Format: source code                               
-                           Description: OS independent serial interface      
-                           Location:                                         
-                           middleware/multicore/erpc/erpc_c/port/erpc_serial.
-                           h,                                                
-                           middleware/multicore/erpc/erpc_c/port/erpc_serial.
-                           cpp                                               
-                           Origin: Community                                 
-                           Url: http://code.google.com/p/the-bus-pirate/     
-
-multicore_erpc_cpp_templateName: CPP Template                                
-                           Version: NA                                       
-                           Outgoing License: Open Source - MIT               
-                           License File:                                     
-                           middleware/multicore/erpc/erpcgen/src/cpptemplate/
-                           LICENSE.txt                                       
-                           Format: source code                               
-                           Description: CPP Template                         
-                           Location:                                         
-                           middleware/multicore/erpc/erpcgen/src/cpptemplate 
-                           Origin: Ryan Ginstrom & Martinho Fernandes        
-
-multicore_erpc_cpp_option_pName: C++ option-parser                           
-arser                      Version: NA                                       
-                           Outgoing License: Brad Appleton's license         
-                           License File:                                     
-                           http://www.bradapp.com/ftp/src/libs/C++/Options.ta
-                           r.gz , see README file                            
-                           Format: Plain Text                                
-                           Description: C++ option-parser                    
-                           Location:                                         
-                           middleware/multicore/erpc/erpcgen/src/options.cpp 
-                           Origin: Brad Appleton bradapp@enteract.com        
-                           Url:                                              
-                           http://www.bradapp.com/ftp/src/libs/C++/Options.ht
-                           ml                                                
-
 pkcs11                     Name: OASIS TC pkcs11                             
                            Version: 2.40.1                                   
                            Outgoing License: MIT                             
@@ -239,125 +137,41 @@ tinycbor                   Name: TinyCBOR
                            Origin: Intel Corporation (MIT)                   
                            Url: https://github.com/intel/TinyCBOR            
 
-eiq_tensorflow_lite        Name: TensorFlow Lite for Microcontrollers        
-                           Version: 23-09-18 (commit dc64e48)                
-                           Outgoing License: Apache-2.0                      
-                           License File:                                     
-                           middleware/eiq/tensorflow-lite/LICENSE            
-                           Format: source code                               
-                           Description: Software library for running machine 
-                           learning models on embedded devices               
-                           Location: middleware/eiq/tensorflow-lite          
-                           Origin: See middleware/eiq/tensorflow-lite/AUTHORS
-                           Url: https://github.com/tensorflow/tensorflow     
-
-eiq_FFT2D                  Name: FFT2D                                       
-                           Version: NA                                       
-                           Outgoing License: Public Domain                   
-                           License File:                                     
-                           middleware/eiq/tensorflow-lite/third_party/fft2d/L
-                           ICENSE                                            
-                           Format: source code                               
-                           Description: FFT package in C                     
-                           Location:                                         
-                           middleware/eiq/tensorflow-lite/third_party/fft2d  
-                           Origin: Takuya Ooura                              
+voice_seeker_cm4           Name: VoiceSeeker (no AEC)                        
+                           Version: 0.6.8                                    
+                           Outgoing License: LA_OPT_NXP_Software_License.txt 
+                           v49 September 2023- Additional Distribution       
+                           License granted, license in Section 2.3 applies   
+                           License File: LA_OPT_NXP_Software_License.txt     
+                           Format: Precompiled libraries, header files,      
+                           example application                               
+                           Description: VoiceSeeker is a multi-microphone    
+                           voice control audio front-end signal processing   
+                           solution. Acoustic Echo Cancellation (AEC) is not 
+                           enabled in this free version.                     
+                           Location: middleware/voice_seeker/ARM_CortexM4    
+                           Origin: NXP (Proprietary) ARM (Apache-2.0)        
                            Url:                                              
-                           http://www.kurims.kyoto-u.ac.jp/~ooura/fft.html   
+                           https://www.nxp.com/design/software/embedded-softw
+                           are/voiceseeker-audio-front-end:VOICESEEKER       
+                           https://github.com/ARM-software/CMSIS_5           
 
-eiq_FlatBuffers            Name: FlatBuffers                                 
-                           Version: 2.0.6 (commit a66de58)                   
-                           Outgoing License: Apache-2.0                      
-                           License File:                                     
-                           middleware/eiq/tensorflow-lite/third_party/flatbuf
-                           fers/LICENSE.txt                                  
-                           Format: source code                               
-                           Description: Cross platform serialization library 
-                           Location:                                         
-                           middleware/eiq/tensorflow-lite/third_party/flatbuf
-                           fers                                              
-                           Origin: https://google.github.io/flatbuffers      
-                           Url: https://github.com/google/flatbuffers        
-
-eiq_gemmlowp               Name: gemmlowp                                    
-                           Version: NA (commit 719139c)                      
-                           Outgoing License: Apache-2.0                      
-                           License File:                                     
-                           middleware/eiq/tensorflow-lite/third_party/gemmlow
-                           p/LICENSE                                         
-                           Format: source code                               
-                           Description: A small self-contained low-precision 
-                           GEMM library                                      
-                           Location:                                         
-                           middleware/eiq/tensorflow-lite/third_party/gemmlow
-                           p                                                 
-                           Origin: See                                       
-                           middleware/eiq/tensorflow-lite/third_party/gemmlow
-                           p/AUTHORS                                         
-                           Url: https://github.com/google/gemmlowp           
-
-eiq_KissFFT                Name: Kiss FFT                                    
-                           Version: 1.3.0                                    
-                           Outgoing License: BSD-3-Clause                    
-                           License File:                                     
-                           middleware/eiq/tensorflow-lite/third_party/kissfft
-                           /COPYING                                          
-                           Format: source code                               
-                           Description: A mixed-radix Fast Fourier Transform 
-                           library                                           
-                           Location:                                         
-                           middleware/eiq/tensorflow-lite/third_party/kissfft
-                           Origin: Mark Borgerding                           
-                           Url: https://github.com/mborgerding/kissfft       
-
-eiq_ruy                    Name: ruy                                         
-                           Version: NA (commit d371283)                      
-                           Outgoing License: Apache-2.0                      
-                           License File:                                     
-                           middleware/eiq/tensorflow-lite/third_party/ruy/LIC
-                           ENSE                                              
-                           Format: source code                               
-                           Description: The ruy matrix multiplication library
-                           Location:                                         
-                           middleware/eiq/tensorflow-lite/third_party/ruy    
-                           Origin: Google, Inc.                              
-                           Url: https://github.com/google/ruy                
-
-eiq_tensorflow_lite_micro_cName: CMSIS-NN library                            
-msis_nn                    Version: 23.08 (commit dc64e48)                   
-                           Outgoing License: Apache-2.0                      
-                           License File:                                     
-                           middleware/eiq/tensorflow-lite/third_party/cmsis_n
-                           n/LICENSE.txt                                     
-                           Format: source code                               
-                           Description: A neural network kernels library for 
-                           Cortex-M cores from ARM                           
-                           Location:                                         
-                           middleware/eiq/tensorflow-lite/third_party/cmsis_n
-                           n                                                 
-                           Origin: ARM                                       
-                           Url: https://github.com/ARM-software/CMSIS-NN     
-
-ethosu                     Name: Ethos-U Core Software                       
-                           Version: 22.02                                    
-                           Outgoing License: Apache-2.0                      
-                           License File:                                     
-                           middleware/ethos-u-core-software/LICENSE.txt      
-                           Format: source code                               
-                           Description: NXP Ethos-U Core Software. It        
-                           provides the example applications and core driver.
-                           Location: middleware/ethos-u-core-software        
-                           Origin: NXP (BSD-3-Clause) Arm Limited            
-                           (Apache-2.0) Arm Limited (GPL-2.0, interface      
-                           header file) Amazon (MIT) Details see             
-                           middleware/ethos-u-core-software/SW-Content-Regist
-                           er.txt                                            
+voice_spot                 Name: VoiceSpot library                           
+                           Outgoing License: LA_OPT_NXP_Software_License.txt 
+                           v49 September 2023- Additional Distribution       
+                           License granted, license in Section 2.3 applies   
+                           License File: LA_OPT_NXP_Software_License.txt     
+                           Format: Precompiled libraries, header files,      
+                           example application                               
+                           Description: VoiceSpot is a highly accurate, small
+                           memory and MIPS profile wake word engine          
+                           supporting custom voice trigger words and phrases 
+                           Location: middleware/voice_spot                   
+                           Origin: NXP (Proprietary) ARM (Apache-2.0)        
                            Url:                                              
-                           https://git.mlplatform.org/ml/ethos-u/ethos-u-linu
-                           x-driver-stack.git/tree/kernel/ethosu_core_interfa
-                           ce.h                                              
-                           https://git.mlplatform.org/ml/ethos-u/ethos-u-core
-                           -software.git                                     
+                           https://www.nxp.com/design/software/embedded-softw
+                           are/voicespot-wake-word-engine:VOICESPOT          
+                           https://github.com/ARM-software/CMSIS_5           
 
 SDK_Examples               Name: SDK examples                                
                            Version: NA                                       
