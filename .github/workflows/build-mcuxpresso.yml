@@ -1,0 +1,51 @@
+name: MCUXpresso CI/CD Workflow
+
+on:
+  push:
+    branches-ignore:
+      - 'dev_*'
+
+jobs:
+  mcuxpresso-build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        machine: ['som_mx8mn', 'som_mx93', 'dart_mx93', 'dart_mx8mm', 'dart_mx8mp', 'som_mx8mp']
+    steps:
+
+    # Step 1: Checkout repository
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # Step 2: Download and extract GNU-ARM bare-metal toolchain
+    - name: Download and extract toolchain
+      run: |
+        case "${{ matrix.machine }}" in
+          *93*) toolchain_ver="12.2" ;;
+          *)    toolchain_ver="12.3" ;;
+        esac
+        # Make toolchain_ver be accessible by other jobs/steps
+        echo "toolchain_ver=${toolchain_ver}" >> $GITHUB_ENV
+        wget https://developer.arm.com/-/media/Files/downloads/gnu/${toolchain_ver}.rel1/binrel/arm-gnu-toolchain-${toolchain_ver}.rel1-x86_64-arm-none-eabi.tar.xz
+        tar xvf arm-gnu-toolchain-${toolchain_ver}.rel1-x86_64-arm-none-eabi.tar.xz
+
+    # Step 3: Compile demos
+    - name: Compile demos
+      run: |
+        export ARMGCC_DIR=$(pwd)/arm-gnu-toolchain-${{ env.toolchain_ver }}.rel1-x86_64-arm-none-eabi
+        for i in $(find boards/${{ matrix.machine }} -name armgcc)
+        do
+          cd $i
+          ./clean.sh
+          if [ -f build_all.sh ]; then
+              # Check if demo to be built is ethos
+              case "$i" in
+                # Use half of the threads during compilation to reduce RAM usage
+                *ethos*) sed -i -e '3i make() { case \$* in -j* ) shift 1; command make -j\$(expr \$NPROC / 2) ;; * ) command make "\$@" ;; esac }' build_all.sh ; \
+                         sed -i -e '3i NPROC=$(nproc)' build_all.sh ;;
+              esac
+              ./build_all.sh || (exit $?)
+          fi
+          cd - > /dev/null
+        done
