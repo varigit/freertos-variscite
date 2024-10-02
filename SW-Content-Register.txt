@@ -137,7 +137,7 @@ tinycbor                   Name: TinyCBOR
                            Origin: Intel Corporation (MIT)                   
                            Url: https://github.com/intel/TinyCBOR            
 
-voice_seeker_cm4           Name: VoiceSeeker (no AEC)                        
+voice_seeker_cm7           Name: VoiceSeeker (no AEC)                        
                            Version: 0.6.8                                    
                            Outgoing License: LA_OPT_NXP_Software_License.txt 
                            v49 September 2023- Additional Distribution       
@@ -149,7 +149,7 @@ voice_seeker_cm4           Name: VoiceSeeker (no AEC)
                            voice control audio front-end signal processing   
                            solution. Acoustic Echo Cancellation (AEC) is not 
                            enabled in this free version.                     
-                           Location: middleware/voice_seeker/ARM_CortexM4    
+                           Location: middleware/voice_seeker/ARM_CortexM7    
                            Origin: NXP (Proprietary) ARM (Apache-2.0)        
                            Url:                                              
                            https://www.nxp.com/design/software/embedded-softw

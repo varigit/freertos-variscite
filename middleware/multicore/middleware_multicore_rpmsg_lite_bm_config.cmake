@@ -3,7 +3,7 @@
 include_guard(GLOBAL)
 message("${CMAKE_CURRENT_LIST_FILE} component is included.")
 
-if(CONFIG_USE_middleware_multicore_rpmsg_lite AND (CONFIG_BOARD STREQUAL mcimx93evk OR CONFIG_BOARD STREQUAL mcimx93qsb OR CONFIG_BOARD STREQUAL mcimx93autoevk) AND CONFIG_USE_middleware_multicore_rpmsg_lite_imx93_m33_bm)
+if(CONFIG_USE_middleware_multicore_rpmsg_lite AND (CONFIG_BOARD STREQUAL evkmimx8mp) AND CONFIG_USE_middleware_multicore_rpmsg_lite_imx8mp_m7_bm)
 
 add_config_file(${CMAKE_CURRENT_LIST_DIR}/rpmsg_lite/template_application/rpmsg_config.h "" middleware_multicore_rpmsg_lite_bm_config)
 
