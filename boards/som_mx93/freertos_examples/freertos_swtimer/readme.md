@@ -34,7 +34,7 @@ No special settings are required.
 Prepare the Demo
 ================
 1.  Connect the power supply to the board and switch on the board.
-2.  Connect a USB Type-C cable between the host PC and the J1401 USB port on the target board.
+2.  Connect the micro USB to J29 (Cortex-A55s) and the USB to UART adapter to J18.5/J18.3 (RX/TX) (Cortex-M33).
 3.  Open a serial terminal on the Cortex-M33 serial port with the following settings:
     - 115200 baud rate
     - 8 data bits

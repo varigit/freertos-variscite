@@ -44,7 +44,7 @@ configurations in default state when running this demo.
 
 Prepare the Demo
 ================
-1. Connect a USB Type-C cable between the host PC and the J1401 USB port on the target board.
+1. Connect the micro USB to J29 (Cortex-A55s) and the USB to UART adapter to J18.5/J18.3 (RX/TX) (Cortex-M33).
    Open two serial terminals for A Core and M Core with the following settings:
     - 115200 baud rate
     - 8 data bits
