@@ -173,6 +173,28 @@ voice_spot                 Name: VoiceSpot library
                            are/voicespot-wake-word-engine:VOICESPOT          
                            https://github.com/ARM-software/CMSIS_5           
 
+usb                        Name: USB                                         
+                           Version: 2.9.1                                    
+                           Outgoing License: BSD-3-Clause                    
+                           License File: COPYING-BSD-3                       
+                           Format: source code                               
+                           Description: NXP USB stack. This is a version of  
+                           the USB stack that has been integrated with the   
+                           MCUXpresso SDK.                                   
+                           Location: middleware/usb                          
+                           Origin: NXP (BSD-3-Clause)                        
+
+osa                        Name: OSA                                         
+                           Version: 1.0.0                                    
+                           Outgoing License: BSD-3-Clause                    
+                           License File: COPYING-BSD-3                       
+                           Format: source code
+                           Description: NXP USB stack. This is a version of  
+                           the USB stack that has been integrated with the   
+                           MCUXpresso SDK.                                   
+                           Origin: NXP (BSD-3-Clause)                        
+                           Location: components/osa                          
+
 SDK_Examples               Name: SDK examples                                
                            Version: NA                                       
                            Outgoing License: BSD-3-Clause                    
