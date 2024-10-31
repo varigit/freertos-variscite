@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        machine: ['som_mx8mn', 'som_mx93', 'dart_mx93', 'dart_mx8mm', 'dart_mx8mp', 'som_mx8mp']
+        machine: ['som_mx8mn', 'som_mx93', 'dart_mx93', 'dart_mx8mm', 'dart_mx8mp', 'som_mx8mp', 'dart_mx8mq']
     steps:
 
     # Step 1: Checkout repository
