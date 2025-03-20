@@ -95,11 +95,14 @@ InferenceJob::InferenceJob(const string &_name,
                            struct ethosu_driver *_ethosuDriver,
                            const size_t _numBytesToPrint,
                            void *_externalContext,
+                           uint32_t _flash_offset,
+                           uint32_t _arena_offset,
                            bool _isEthosuOp) :
     name(_name),
     networkModel(_networkModel), input(_input), output(_output), expectedOutput(_expectedOutput),
     pmuEventConfig(_pmuEventConfig), ethosuMonitor(_pmuCycleCounterEnable), ethosuDriver(_ethosuDriver),
-    numBytesToPrint(_numBytesToPrint), externalContext(_externalContext), isEthosuOp(_isEthosuOp){}
+    numBytesToPrint(_numBytesToPrint), externalContext(_externalContext),
+    flashOffset(_flash_offset), arenaOffset(_arena_offset), isEthosuOp(_isEthosuOp) {}
 
 void InferenceJob::invalidate() {
     networkModel.invalidate();
@@ -152,34 +155,23 @@ std::vector<ethosu_pmu_event_type> PMU_DEFAULT_CONFIG{ETHOSU_PMU_CYCLE,
                                                       ETHOSU_PMU_MAC_ACTIVE};
 
 bool InferenceProcess::runEthosuOp(InferenceJob &job) {
+#define NUM_BASE_ADDR 3 // flash,arena and fast_memory
+#define PTR_TO_UINT64(ptr) (static_cast<uint64_t>(reinterpret_cast<uintptr_t>(ptr)))
     LOG_INFO("Running inference job, name: %s, type: OP", job.name.c_str());
 
-#define BUFFER_ALIGNMENT 16
-#define ALIGN_SIZE(size) ((size + BUFFER_ALIGNMENT - 1) & (~(BUFFER_ALIGNMENT - 1)))
-    void *custom_data_ptr = job.networkModel.data;;
-    void *arena_data_ptr = job.input[0].data;
-    uint32_t *tensor_layout = reinterpret_cast<uint32_t*>(job.input[1].data);
-    size_t *base_addr_size = reinterpret_cast<size_t*>(tensor_layout + 2);
-
+    void *custom_data_ptr = job.networkModel.data;
     int custom_data_size = job.networkModel.size;
-    int num_base_addr = tensor_layout[0] + tensor_layout[1] + 3; //inputs + outputs + scatch + flash
-    uint64_t *base_addr = reinterpret_cast<uint64_t*>(tensor_layout + 2 + num_base_addr);
-    uint64_t flash_data_u64, arena_data_u64;
+    uint64_t arena_addr = PTR_TO_UINT64(job.input[0].data) + job.arenaOffset;
+    uint64_t base_addr[NUM_BASE_ADDR] = {0};
 
-    arena_data_u64 = static_cast<uint64_t>(reinterpret_cast<uintptr_t>(arena_data_ptr));
-    if (job.input.size() == 3) {
-        flash_data_u64 = static_cast<uint64_t>(reinterpret_cast<uintptr_t>(job.input[2].data));
+    base_addr[1] = arena_addr;
+    if (job.input.size() == 2) {
+    	// Flash memory at first
+        base_addr[0] = PTR_TO_UINT64(job.input[1].data) + job.flashOffset;
     } else {
-        flash_data_u64 = arena_data_u64;
+        // No flash tensor
+        base_addr[0] = arena_addr;
     }
-
-    base_addr[0] = flash_data_u64; //flash tensor
-    for (int i = 1; i < num_base_addr; i ++)
-        base_addr[i] = arena_data_u64;
-
-    // Ethos-U guarantees that the tensors that require a base pointer are among
-    // the 8 first tensors
-    num_base_addr = std::min(num_base_addr, 8);
 
     struct ethosu_driver* drv = ethosu_reserve_driver();
     if (drv == NULL) {
@@ -191,7 +183,7 @@ bool InferenceProcess::runEthosuOp(InferenceJob &job) {
         auto qread_buffer = reinterpret_cast<EthosuQreadEvent*>(job.output[0].data);
         size_t buffer_size = job.output[0].size / sizeof(EthosuQreadEvent);
         int ret = ethosu_invoke_async(drv, custom_data_ptr, custom_data_size, base_addr,
-                         base_addr_size, num_base_addr, 0);
+                         NULL, NUM_BASE_ADDR, 0);
         if (ret < 0) {
              return true;
         }
@@ -215,7 +207,7 @@ bool InferenceProcess::runEthosuOp(InferenceJob &job) {
         }
     } else {
         int ret = ethosu_invoke_v3(drv, custom_data_ptr, custom_data_size, base_addr,
-                         base_addr_size, num_base_addr, 0);
+                         NULL, NUM_BASE_ADDR, 0);
         if (ret != 0) {
             return true;
         }

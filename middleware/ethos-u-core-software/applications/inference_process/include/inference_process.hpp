@@ -61,6 +61,8 @@ struct InferenceJob {
     uint64_t cpuCycles{0};
     size_t numBytesToPrint;
     void *externalContext;
+    uint32_t flashOffset;
+    uint32_t arenaOffset;
     bool isEthosuOp;
 
     InferenceJob();
@@ -74,6 +76,8 @@ struct InferenceJob {
                  struct ethosu_driver *ethosuDriver,
                  const size_t numBytesToPrint = 0,
                  void *externalContext        = nullptr,
+                 const uint32_t flashOffset = 0,
+                 const uint32_t arenaOffset = 0,
                  bool isEthosuOp = false);
 
     void invalidate();

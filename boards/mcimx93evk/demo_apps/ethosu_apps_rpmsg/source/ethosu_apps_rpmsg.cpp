@@ -226,7 +226,8 @@ static int handleInferenceReq(struct rpmsg_lite_instance *volatile ethosu_rpmsg,
     }
 
     InferenceProcess::InferenceJob job("job", networkModel, ifm, ofm, expectedOutput, pmuEventConfig,
-                                       req->pmu_cycle_counter_enable, &ethosu_drv, 0, nullptr, isEthosuOp);
+                                        req->pmu_cycle_counter_enable, &ethosu_drv, 0, nullptr,
+                                        req->flash_offset, req->arena_offset, isEthosuOp);
     job.invalidate();
 
     InferenceProcess::InferenceProcess inferenceprocess(tensorArena, tensorArenaSize);

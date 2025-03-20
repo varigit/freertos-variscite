@@ -85,7 +85,7 @@ int main(void)
     std::vector<uint8_t> pmuEventConfig(ETHOSU_CORE_PMU_MAX);
 
     InferenceProcess::InferenceJob job("job", networkModel, ifm, ofm, expectedOutput, pmuEventConfig, 0,
-				       &ethosu_drv, 0, nullptr, false);
+                        &ethosu_drv, 0, nullptr, 0, 0, false);
     job.invalidate();
 
     InferenceProcess::InferenceProcess inferenceprocess(inferenceProcessTensorArena, TENSOR_ARENA_SIZE);
