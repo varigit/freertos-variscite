@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ksdk:examples xmlns:ksdk="http://nxp.com/ksdk/2.0/ksdk_manifest_v3.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nxp.com/ksdk/2.0/ksdk_manifest_v3.0.xsd manifest.xsd">
+  <externalDefinitions>
+    <definition extID="cm7_MIMX9596xxxxN"/>
+    <definition extID="platform.drivers.clock.MIMX9596"/>
+    <definition extID="platform.drivers.iomuxc.MIMX9596"/>
+    <definition extID="platform.drivers.memory.MIMX9596"/>
+    <definition extID="CMSIS_Include_core_cm.MIMX9596"/>
+    <definition extID="device.MIMX9596_CMSIS.MIMX9596"/>
+    <definition extID="device.MIMX9596_system.MIMX9596"/>
+    <definition extID="device.MIMX9596_startup.MIMX9596"/>
+    <definition extID="platform.drivers.cache_armv7_m7.MIMX9596"/>
+    <definition extID="platform.drivers.common.MIMX9596"/>
+    <definition extID="platform.drivers.lpuart.MIMX9596"/>
+    <definition extID="platform.drivers.mu1.MIMX9596"/>
+    <definition extID="platform.drivers.tpm.MIMX9596"/>
+    <definition extID="platform.utilities.assert_lite.MIMX9596"/>
+    <definition extID="platform.utilities.misc_utilities.MIMX9596"/>
+    <definition extID="utility.str.MIMX9596"/>
+    <definition extID="utility.debug_console_lite.MIMX9596"/>
+    <definition extID="component.lpuart_adapter.MIMX9596"/>
+    <definition extID="component.hal_clock.MIMX9596"/>
+    <definition extID="component.hal_clock.imx95.MIMX9596"/>
+    <definition extID="component.hal_pinctrl.MIMX9596"/>
+    <definition extID="component.hal_pinctrl.imx95.MIMX9596"/>
+    <definition extID="component.hal_power.MIMX9596"/>
+    <definition extID="component.hal_power.imx95.MIMX9596"/>
+    <definition extID="component.sm_clock.MIMX9596"/>
+    <definition extID="component.sm_pinctrl.MIMX9596"/>
+    <definition extID="component.sm_power.MIMX9596"/>
+    <definition extID="component.sm.imx95_cm7.MIMX9596"/>
+    <definition extID="component.sm.crc.MIMX9596"/>
+    <definition extID="component.sm.scmi.MIMX9596"/>
+    <definition extID="component.sm.smt.MIMX9596"/>
+    <definition extID="iar"/>
+    <definition extID="armgcc"/>
+    <definition extID="mcuxpresso"/>
+    <definition extID="com.nxp.mcuxpresso"/>
+  </externalDefinitions>
+  <example id="imx95lpd5evk19_tpm_combine_pwm_cm7" name="tpm_combine_pwm_cm7" device_core="cm7_MIMX9596xxxxN" dependency="platform.drivers.clock.MIMX9596 platform.drivers.iomuxc.MIMX9596 platform.drivers.memory.MIMX9596 CMSIS_Include_core_cm.MIMX9596 device.MIMX9596_CMSIS.MIMX9596 device.MIMX9596_system.MIMX9596 device.MIMX9596_startup.MIMX9596 platform.drivers.cache_armv7_m7.MIMX9596 platform.drivers.common.MIMX9596 platform.drivers.lpuart.MIMX9596 platform.drivers.mu1.MIMX9596 platform.drivers.tpm.MIMX9596 platform.utilities.assert_lite.MIMX9596 platform.utilities.misc_utilities.MIMX9596 utility.str.MIMX9596 utility.debug_console_lite.MIMX9596 component.lpuart_adapter.MIMX9596 component.hal_clock.MIMX9596 component.hal_clock.imx95.MIMX9596 component.hal_pinctrl.MIMX9596 component.hal_pinctrl.imx95.MIMX9596 component.hal_power.MIMX9596 component.hal_power.imx95.MIMX9596 component.sm_clock.MIMX9596 component.sm_pinctrl.MIMX9596 component.sm_power.MIMX9596 component.sm.imx95_cm7.MIMX9596 component.sm.crc.MIMX9596 component.sm.scmi.MIMX9596 component.sm.smt.MIMX9596" category="driver_examples/tpm">
+    <projects>
+      <project type="com.crt.advproject.projecttype.exe" nature="org.eclipse.cdt.core.cnature"/>
+    </projects>
+    <toolchainSettings>
+      <toolchainSetting id_refs="com.nxp.mcuxpresso">
+        <option id="gnu.c.compiler.option.preprocessor.def.symbols" type="stringList">
+          <value>MCUXPRESSO_SDK</value>
+          <value>SDK_DEBUGCONSOLE=1</value>
+          <value>MCUX_META_BUILD</value>
+          <value>FSL_SDK_DISABLE_DRIVER_CLOCK_CONTROL=1</value>
+          <value>CPU_MIMX9596AVZXN_cm7</value>
+          <value>MIMX9596_cm7_SERIES</value>
+        </option>
+        <option id="gnu.c.link.option.nostdlibs" type="boolean">
+          <value>true</value>
+        </option>
+        <option id="com.crt.advproject.link.fpu" type="enum">
+          <value>com.crt.advproject.link.fpu.fpv5dp.hard</value>
+        </option>
+        <option id="gnu.c.link.option.other" type="stringList">
+          <value>-no-warn-rwx-segments</value>
+        </option>
+        <option id="gnu.c.link.option.group" type="boolean">
+          <value>true</value>
+        </option>
+        <option id="gnu.c.compiler.option.optimization.flags" type="string">
+          <value>-fno-common</value>
+        </option>
+        <option id="com.crt.advproject.c.misc.dialect" type="enum">
+          <value>com.crt.advproject.misc.dialect.gnu99</value>
+        </option>
+        <option id="com.crt.advproject.gcc.fpu" type="enum">
+          <value>com.crt.advproject.gcc.fpu.fpv5dp.hard</value>
+        </option>
+        <option id="gnu.c.compiler.option.misc.other" type="string">
+          <value>-c -ffunction-sections -fdata-sections -fno-builtin -mthumb</value>
+        </option>
+        <option id="gnu.c.compiler.option.warnings.allwarn" type="boolean">
+          <value>false</value>
+        </option>
+        <option id="gnu.c.compiler.option.warnings.toerrors" type="boolean">
+          <value>false</value>
+        </option>
+        <option id="com.crt.advproject.gas.fpu" type="enum">
+          <value>com.crt.advproject.gas.fpu.fpv5dp.hard</value>
+        </option>
+      </toolchainSetting>
+    </toolchainSettings>
+    <include_paths>
+      <include_path path="." project_relative_path="source" type="c_include"/>
+      <include_path path="." project_relative_path="board" type="c_include"/>
+      <include_path path="." project_relative_path="source" type="asm_include"/>
+    </include_paths>
+    <source path="iar" project_relative_path="./" type="workspace" toolchain="iar">
+      <files mask="tpm_combine_pwm_cm7.ewd"/>
+      <files mask="tpm_combine_pwm_cm7.ewp"/>
+      <files mask="tpm_combine_pwm_cm7.eww"/>
+    </source>
+    <source path="armgcc" project_relative_path="./" type="workspace" toolchain="armgcc">
+      <files mask="build_all.bat"/>
+      <files mask="build_all.sh"/>
+      <files mask="clean.bat"/>
+      <files mask="clean.sh"/>
+      <files mask="CMakeLists.txt"/>
+      <files mask="flags.cmake"/>
+      <files mask="config.cmake"/>
+      <files mask="build_debug.bat"/>
+      <files mask="build_debug.sh"/>
+      <files mask="build_release.bat"/>
+      <files mask="build_release.sh"/>
+    </source>
+    <source path="../../../../../../devices/MIMX9596" project_relative_path="./" type="workspace" toolchain="armgcc">
+      <files mask="all_lib_device.cmake"/>
+    </source>
+    <source path="." project_relative_path="source" type="src">
+      <files mask="tpm_combine_pwm.c"/>
+    </source>
+    <source path="." project_relative_path="board" type="c_include">
+      <files mask="board.h"/>
+      <files mask="clock_config.h"/>
+    </source>
+    <source path="." project_relative_path="board" type="src">
+      <files mask="board.c"/>
+      <files mask="clock_config.c"/>
+    </source>
+    <source path="iar" project_relative_path="MIMX9596/iar" type="linker" toolchain="iar">
+      <files mask="MIMX9596xxxxN_cm7_ram.icf"/>
+    </source>
+    <source path="armgcc" project_relative_path="MIMX9596/armgcc" type="linker" toolchain="armgcc">
+      <files mask="MIMX9596xxxxN_cm7_ram.ld"/>
+    </source>
+    <source path="." project_relative_path="source" type="c_include">
+      <files mask="hal_config.h"/>
+    </source>
+    <source path="." project_relative_path="board" type="src">
+      <files mask="pin_mux.c"/>
+      <files mask="hardware_init.c"/>
+    </source>
+    <source path="." project_relative_path="board" type="c_include">
+      <files mask="pin_mux.h"/>
+      <files mask="app.h"/>
+    </source>
+    <source path="." project_relative_path="source" type="c_preinclude">
+      <files mask="mcux_config.h"/>
+    </source>
+    <source path="." project_relative_path="doc" type="doc">
+      <files mask="readme.md"/>
+    </source>
+    <source path="." project_relative_path="doc" type="doc">
+      <files mask="example_board_readme.md"/>
+    </source>
+    <source path="." project_relative_path="doc" type="doc">
+      <files mask="examples_shared_readme.md"/>
+    </source>
+  </example>
+</ksdk:examples>
