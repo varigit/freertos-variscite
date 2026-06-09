@@ -213,11 +213,11 @@ int32_t platform_interrupt_disable(uint32_t vector_id)
     {
         case RL_PLATFORM_IMX95_M33_A55_COM_ID:
             RL_ASSERT(0 <= disable_counter0);
-            disable_counter0++;
             if (disable_counter0 == 0)
             {
                 NVIC_DisableIRQ(RPMSG_LITE_M33_A55_MU_IRQn);
             }
+            disable_counter0++;
             break;
         default:
             /* All the cases have been listed above, the default clause should not be reached. */
